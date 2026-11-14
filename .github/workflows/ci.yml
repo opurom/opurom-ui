@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: ${{ matrix.check }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        check: [rust-test, rust-fmt, node-test, node-syntax, validate]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+          targets: wasm32-unknown-unknown
+      # Only the IDE plugin project compiles Java, so only it needs a JDK.
+      - uses: actions/setup-java@v4
+        if: matrix.check == 'node-test' && github.event.repository.name == 'opurom-ide-plugins'
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install libsqlite3-dev
+        if: matrix.check == 'rust-test'
+        run: sudo apt-get update && sudo apt-get install -y libsqlite3-dev
+      # Per-repository sibling clones: tests read golden fixtures and sibling
+      # binaries from the local checkout layout, cloned shallow into the parent
+      # directory. Every cloned repository is public, so no token is needed.
+      - name: Checkout sibling repositories
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE/.."
+          case "$(basename "$GITHUB_WORKSPACE")" in
+            opurom-render|opurom-platform|opurom-cli)
+              git clone --depth 1 "https://github.com/opurom/opurom-examples.git" opurom-examples
+              ;;
+            opurom-examples)
+              for repo in opurom-core opurom-lang opurom-render opurom-cli; do
+                git clone --depth 1 "https://github.com/opurom/${repo}.git" "$repo"
+              done
+              ;;
+            *) ;;
+          esac
+      - name: Run ${{ matrix.check }}
+        run: node .github/scripts/ci-check.mjs ${{ matrix.check }}
+
+  # One ping per push, after every matrix check finished green on main. The
+  # train recomputes its own gate, so this is only a wake-up call, not a
+  # verdict. A ping failure never turns CI red.
+  ci-green:
+    name: notify release train
+    needs: check
+    if: >-
+      ${{
+        always() &&
+        github.event_name == 'push' && github.ref == 'refs/heads/main' &&
+        needs.check.result == 'success' && github.repository_owner == 'opurom' &&
+        github.event.repository.name != 'opurom-ui' &&
+        github.event.repository.name != 'opurom-icons' &&
+        github.event.repository.name != 'opurom-examples'
+      }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the release train
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TRAIN_TOKEN }}
+        run: |
+          gh api repos/opurom/opurom-release/dispatches \
+            -f event_type=ci-green \
+            -f 'client_payload[repo]=${{ github.event.repository.name }}' \
+            -f 'client_payload[sha]=${{ github.sha }}' \
+            >/dev/null 2>&1 || echo "::warning::release train ping skipped"
