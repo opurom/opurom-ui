@@ -39,4 +39,15 @@ for (const variant of ['theme/default.opu', 'theme/dark.opu']) {
 const dark = readFileSync(path.join(root, 'theme/dark.opu'), 'utf8');
 assert.match(dark, /mode: dark/, 'the dark variant must declare dark mode');
 
-console.log(`opurom-ui self-check: ${declared.length} manifest files, ${TOKENS.length} tokens x 2 variants OK`);
+// Every component module must be a declared package file carrying one or more
+// `component` declarations, so the manifest and the library never drift.
+const components = files.filter((file) => file.startsWith('components/'));
+assert.ok(components.length > 0, 'the package must ship component modules');
+for (const file of components) {
+  const text = readFileSync(path.join(root, file), 'utf8');
+  assert.ok(text.length > 0, `${file} must be non-empty`);
+  assert.match(text, /component\s+[A-Z]/, `${file} must declare a component`);
+  assert.ok(!/[\u4e00-\u9fff]/.test(text), `${file} must stay free of CJK characters`);
+}
+
+console.log(`opurom-ui self-check: ${declared.length} manifest files, ${components.length} components, ${TOKENS.length} tokens x 2 variants OK`);

@@ -7,6 +7,15 @@
   "files": [
     "opurom-pkg.json",
     "theme/default.opu",
-    "theme/dark.opu"
+    "theme/dark.opu",
+    "components/avatar.opu",
+    "components/badge.opu",
+    "components/button.opu",
+    "components/card.opu",
+    "components/dialog.opu",
+    "components/list.opu",
+    "components/navbar.opu",
+    "components/text.opu",
+    "components/toast.opu"
   ]
 }
