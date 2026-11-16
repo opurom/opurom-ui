@@ -9,6 +9,7 @@
     "theme/default.opu",
     "theme/dark.opu",
     "components/app_bar.opu",
+    "components/aspect_ratio.opu",
     "components/avatar.opu",
     "components/avatar_group.opu",
     "components/badge.opu",
@@ -28,6 +29,7 @@
     "components/empty_state.opu",
     "components/expanded.opu",
     "components/filetree.opu",
+    "components/flex.opu",
     "components/form_field.opu",
     "components/glass_card.opu",
     "components/glass_fab.opu",
@@ -44,6 +46,7 @@
     "components/navbar.opu",
     "components/number_flow.opu",
     "components/pagination.opu",
+    "components/positioned.opu",
     "components/profile_header.opu",
     "components/progress.opu",
     "components/rating.opu",
@@ -63,6 +66,7 @@
     "components/timeline.opu",
     "components/toast.opu",
     "components/toolbar.opu",
-    "components/tooltip.opu"
+    "components/tooltip.opu",
+    "components/wrap.opu"
   ]
 }

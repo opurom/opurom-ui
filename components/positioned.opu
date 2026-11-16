@@ -1,0 +1,17 @@
+// OffsetBox(offset, state): skeleton of Flutter Positioned. Real edge insets
+// need the overlay/absolute layout primitive (kernel gap L1); this renders a
+// fixed Spacer offset as a deterministic approximation. All edge props reserved.
+// API   R: none. O: offset (fixed offset stand-in), state.
+//       X: left, top, right, bottom, width, height (reserved, L1).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onOffsetReserved (no-op gesture fallback until L1 lands; never crashes).
+// Bounds offset 0..10000 enforced by compiler (Spacer width); label bounded by cell.
+// Example OffsetBox(16, "default")
+component OffsetBox(offset: int, state: string) {
+  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "positioned") {
+    Row(gap: 0) {
+      Spacer(width: offset)
+      Text("offset", size: 12)
+    }
+  }
+}

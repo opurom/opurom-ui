@@ -113,15 +113,19 @@ import "components/text.opu";
 | `components/app_bar.opu` | `AppBarShell(title, leading, action, state)` | SKELETON: static band; route contract reserved (gap A4, NOT IN PLAN) |
 | `components/bottom_navigation_bar.opu` | `BottomNav(labels, selected, segments, state, gesture)` | SKELETON: static TabStrip; per-segment routing reserved (gaps B3, A3) |
 | `components/scaffold.opu` | `RouteShell(title, body, bottom, state)` | SKELETON: three-band shape; route shell reserved (gap A4, NOT IN PLAN) |
+| `components/positioned.opu` | `OffsetBox(offset, state)` | SKELETON: fixed Spacer offset; edge insets reserved (gap L1) |
+| `components/wrap.opu` | `FlowWrap(gap, state)` | SKELETON: fixed-width row; flow/run controls reserved (gap L3) |
+| `components/aspect_ratio.opu` | `RatioBox(width, height, state)` | SKELETON: fixed width+height; aspectRatio reserved (gap L4) |
+| `components/flex.opu` | `FlexRun(gap, align, state)` | SKELETON: Row/Column base; direction/fit/spaceBetween reserved (no kernel gap) |
 
-The six P0 SKELETON modules above are API-complete placeholders: required,
+The ten SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, all four states
 (normal/default, pressed/active, focus, disabled) have token-driven style
 placement, gesture callbacks are defined as no-op fallbacks, and each carries a
 minimal usage example. They keep the single-source IR, no-runtime-interpreter
 and no-mutable-object-model rules. Kernel-dependent behaviour stays `reserved`
-and is tracked in `opurom-spec/FLUTTER_REPLICA_KERNEL_PLAN.md` (gaps L1, L2,
-A3, A4, B3); L1/L2 are new spec entries, not yet numbered in that plan.
+and is tracked in `opurom-spec/FLUTTER_REPLICA_KERNEL_PLAN.md` (gaps L1, L2, L3,
+L4, A3, A4, B3); L3/L4 are new spec entries, not yet numbered in that plan.
 
 Component modules never import anything: the application owns the theme, and components take
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may

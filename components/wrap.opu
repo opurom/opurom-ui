@@ -1,0 +1,18 @@
+// FlowWrap(gap, state): skeleton of Flutter Wrap. Flow layout with run breaking
+// needs a new primitive (kernel gap L3); this renders a single fixed-width row
+// as a deterministic approximation. Flow controls are reserved, never faked.
+// API   R: none. O: gap (fixed gap stand-in), state.
+//       X: direction, alignment, spacing, runSpacing (reserved, L3).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onFlowReserved (no-op gesture fallback until L3 lands; never crashes).
+// Bounds gap 0..10000 enforced by compiler; overlong labels bounded by fixed cells.
+// Example FlowWrap(8, "default")
+component FlowWrap(gap: int, state: string) {
+  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "wrap") {
+    Row(gap: gap) {
+      Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("a", size: 12) }
+      Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("b", size: 12) }
+      Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("c", size: 12) }
+    }
+  }
+}

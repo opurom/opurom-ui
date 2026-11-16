@@ -1,0 +1,14 @@
+// RatioBox(width, height, state): skeleton of Flutter AspectRatio. Constraint
+// solver ratio propagation needs a new primitive (kernel gap L4); this renders
+// fixed width+height cells as a deterministic approximation, ratio stays reserved.
+// API   R: none. O: width, height (fixed size stand-ins), state.
+//       X: aspectRatio (reserved, L4).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onRatioReserved (no-op gesture fallback until L4 lands; never crashes).
+// Bounds width/height 0..10000 enforced by compiler; zero height collapses safely.
+// Example RatioBox(120, 80, "default")
+component RatioBox(width: int, height: int, state: string) {
+  Container(width: width, height: height, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "aspect ratio") {
+    Text("ratio", size: 12)
+  }
+}

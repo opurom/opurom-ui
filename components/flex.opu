@@ -1,0 +1,18 @@
+// FlexRun(gap, align, state): skeleton of Flutter Flex. Direction, fit and
+// space-between distribution stay reserved: Row/Column cover the core path with
+// no kernel need, so only the missing one-primitive properties are held back.
+// API   R: none. O: gap, align (Row align keyword), state.
+//       X: direction, fit, spaceBetween (reserved; no gap, Row/Column cover core).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onFlexReserved (no-op gesture fallback; never crashes).
+// Bounds gap 0..10000 enforced by compiler; invalid align falls back to renderer default.
+// Example FlexRun(8, "center", "default")
+component FlexRun(gap: int, align: string, state: string) {
+  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "flex") {
+    Row(gap: gap, align: align) {
+      Text("start", size: 12)
+      Spacer()
+      Text("end", size: 12)
+    }
+  }
+}
