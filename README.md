@@ -66,12 +66,28 @@ import "components/text.opu";
 | `components/toast.opu` | `ToastNote(message)` | success-toned strip |
 | `components/badge.opu` | `BadgePill(count)` | count pill |
 | `components/avatar.opu` | `AvatarDisc(initials)` | initials disc |
+| `components/data_table.opu` | `DataTable(title, headers, rowA, rowB, rowC, selected)` | header, zebra rows, highlighted current row |
+| `components/tabs.opu` | `TabsBar(selected, segments)` | segmented strip; `selected` is a zero-based index |
+| `components/sidebar.opu` | `SidebarNav(title, active, itemA, itemB, itemC)` | navigation panel with the active row highlighted |
+| `components/stat_card.opu` | `MetricCard(label, value, trend, tone)` | statistic card; `tone` colours the trend line |
+| `components/form_field.opu` | `FormField(label, placeholder)` | label above a field; bind at the call site |
+| `components/search.opu` | `SearchField(placeholder)` | search box with a leading glyph |
+| `components/chip.opu` | `FilterChip(label, variant)` | pass `primary` when active, `ghost` when idle |
+| `components/progress.opu` | `ProgressTrack(percent)` | determinate bar in the theme accent |
+| `components/confirm_dialog.opu` | `ConfirmDialog(title, body, confirm)` | dialog with a primary confirm action |
+| `components/section_header.opu` | `SectionHeader(title)` | heading with a trailing action affordance |
+
+New modules import the theme once (`import "pkg-theme/default.opu";`) and take every colour
+from design props (`variant`, `tone`) or the theme; no module may hardcode a hex value except
+the two documented legacy files (`card.opu`, `text.opu`) whose expansion is pinned by a
+checked-in golden. The self-check enforces both rules.
 
 A component takes positional literal arguments only (an `int`, `bool` or `string`), and its
 body is fixed at compile time. Interactive primitives that need a state binding (`Input`,
 `Switch`, `Slider`) or a tap handler (`Button { ... }`) are used directly at the call site,
 because a binding is a state name and a handler is a statement, neither of which a component
-argument can carry.
+argument can carry. For the same reason a `bool` parameter cannot drive an `if`; select a
+visual state by passing a `variant` (see `FilterChip`).
 
 ## Verify
 

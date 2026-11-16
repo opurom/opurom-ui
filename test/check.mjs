@@ -40,13 +40,25 @@ const dark = readFileSync(path.join(root, 'theme/dark.opu'), 'utf8');
 assert.match(dark, /mode: dark/, 'the dark variant must declare dark mode');
 
 // Every component module must be a declared package file carrying one or more
-// `component` declarations, so the manifest and the library never drift.
+// `component` declarations, so the manifest and the library never drift. Each
+// opens with a one-line usage comment, and colour comes from design props
+// (variant/tone) plus the theme, never from a literal hex.
+// card/text keep their literals: todo.opuir.json pins their expansion, so
+// changing them means regenerating that golden, which is not this package's job.
+const LEGACY_HEX = new Set(['components/card.opu', 'components/text.opu']);
 const components = files.filter((file) => file.startsWith('components/'));
 assert.ok(components.length > 0, 'the package must ship component modules');
 for (const file of components) {
   const text = readFileSync(path.join(root, file), 'utf8');
   assert.ok(text.length > 0, `${file} must be non-empty`);
   assert.match(text, /component\s+[A-Z]/, `${file} must declare a component`);
+  assert.match(text, /^\/\/ /, `${file} must open with a one-line usage comment`);
+  if (!LEGACY_HEX.has(file)) {
+    assert.ok(
+      !/#[0-9A-Fa-f]{6}/.test(text),
+      `${file} must not hardcode hex colours; use variant or tone`,
+    );
+  }
   assert.ok(!/[\u4e00-\u9fff]/.test(text), `${file} must stay free of CJK characters`);
 }
 
