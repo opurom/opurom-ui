@@ -1,0 +1,15 @@
+// BottomNav(labels, selected, segments, state, gesture): skeleton of Flutter
+// BottomNavigationBar. Per-segment tap routing and press feedback need kernel
+// gaps B3 and A3; selection here is a static TabStrip readout and the gesture is
+// a no-op fallback, so no tap is mis-routed to the first segment.
+// API   R: labels (comma-separated). O: selected (zero-based), segments, state,
+//       gesture. X: items objects, selectedItemColor, badges, bind (reserved; B3/A3).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events gesture = tap/doubleTap/longPress/drag, no-op until B3 routing lands.
+// Bounds selected/segments 0..10000 by compiler; overlong labels bounded by strip.
+// Example BottomNav("Home,Search,Profile", 0, 3, "default", "tap")
+component BottomNav(labels: string, selected: int, segments: int, state: string, gesture: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: "{gesture}", label: "bottom nav") {
+    TabStrip(value: selected, segments: segments, labels: "{labels}")
+  }
+}

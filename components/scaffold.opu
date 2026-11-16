@@ -1,0 +1,19 @@
+// RouteShell(title, body, bottom, state): skeleton of Flutter Scaffold. A route
+// shell primitive with drawer/FAB/safe-area belongs to kernel gap A4 plus a new
+// spec entry (NOT IN PLAN); this is a static three-band approximation from
+// Container/Row/Column, not a runtime object model.
+// API   R: none. O: title, body, bottom, state. X: drawer, floatingActionButton,
+//       resizeToAvoidBottomInset, route transitions (reserved; A4).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onRouteReserved (no-op gesture fallback until A4 lands; never crashes).
+// Bounds body/bottom are flat strings; overlong text bounded by each band.
+// Example RouteShell("Title", "Body copy", "Home,Profile", "default")
+component RouteShell(title: string, body: string, bottom: string, state: string) {
+  Container(variant: "secondary", state: "{state}", gesture: tap, label: "route shell") {
+    Column(gap: 0) {
+      Container(p: 12, variant: "primary") { Text("{title}", size: 18) }
+      Container(p: 12) { Text("{body}", size: 14) }
+      Container(p: 8, variant: "secondary") { Text("{bottom}", size: 12) }
+    }
+  }
+}

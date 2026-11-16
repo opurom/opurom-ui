@@ -1,0 +1,16 @@
+// OverlayStack(state): skeleton of Flutter Stack. Real overlay/absolute positioning
+// needs a new layout primitive (kernel gap L1, NOT IN PLAN). This renders a
+// deterministic vertical approximation from Container/Row; children are reserved.
+// API   R: none. O: state. X: alignment, fit, clipBehavior, children (reserved, L1).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onLayoutReserved (no-op gesture fallback until L1 lands; never crashes).
+// Bounds width/height via Container props; overflow clipping reserved (L1).
+// Example OverlayStack("default")
+component OverlayStack(state: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "stack") {
+    Column(gap: 6) {
+      Container(p: 8, rounded: 8, variant: "ghost") { Text("layer-0", size: 12) }
+      Container(p: 8, rounded: 8, variant: "secondary") { Text("layer-1", size: 12) }
+    }
+  }
+}

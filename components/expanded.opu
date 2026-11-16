@@ -1,0 +1,13 @@
+// FlexCell(width, state): skeleton of Flutter Expanded. A flex-weight child
+// primitive is missing (kernel gap L2, NOT IN PLAN); this renders a fixed-width
+// cell as a stand-in, so flex/fit are reserved and never faked.
+// API   R: none. O: width, state. X: flex, fit (reserved, L2); child sizing.
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onWeightReserved (no-op gesture fallback until L2 lands; never crashes).
+// Bounds width 0..10000 enforced by compiler; overlong label clipped by container.
+// Example FlexCell(120, "default")
+component FlexCell(width: int, state: string) {
+  Container(width: width, p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "expanded") {
+    Text("flex-cell", size: 12)
+  }
+}

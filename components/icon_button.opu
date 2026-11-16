@@ -1,0 +1,14 @@
+// IconAction(icon, state, gesture): skeleton of Flutter IconButton. Icon slot on
+// Button and gesture-to-state press feedback land with kernel gap A3; until then
+// a Container+Icon carries the shape and the gesture binding is a no-op fallback.
+// API   R: icon (built-in icon name). O: state, gesture. X: style, tooltip,
+//       mouseCursor, raw color (reserved; A3/A4, no style resolver in IR).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events gesture = tap/doubleTap/longPress/drag, each a no-op until A3 is live.
+// Bounds fixed 40x40 touch target; unknown icon name falls back to renderer default.
+// Example IconAction("arrow_back", "default", "tap")
+component IconAction(icon: string, state: string, gesture: string) {
+  Container(width: 40, height: 40, rounded: 12, variant: "ghost", state: "{state}", gesture: "{gesture}", label: "icon button") {
+    Icon(name: "{icon}")
+  }
+}
