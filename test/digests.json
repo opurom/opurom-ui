@@ -218,5 +218,45 @@
     "module": "components/grid_tile.opu",
     "use": "GridTile(\"assets/photo1.png\", \"Dawn\")",
     "digest": "e0b979105e70088c"
+  },
+  "GlassPrimaryButton": {
+    "module": "components/glass_primary_button.opu",
+    "use": "GlassPrimaryButton(\"Save\", \"default\")",
+    "digest": "db5ac543361bb9c3"
+  },
+  "GlassSecondaryButton": {
+    "module": "components/glass_secondary_button.opu",
+    "use": "GlassSecondaryButton(\"Cancel\", \"hover\")",
+    "digest": "249bac8ee2b52ee1"
+  },
+  "GlassGhostButton": {
+    "module": "components/glass_ghost_button.opu",
+    "use": "GlassGhostButton(\"Skip\", \"focus\")",
+    "digest": "659cfc9ec099b3ac"
+  },
+  "GlassFab": {
+    "module": "components/glass_fab.opu",
+    "use": "GlassFab(\"+\", \"active\")",
+    "digest": "9a7639a1c287e099"
+  },
+  "GlassCard": {
+    "module": "components/glass_card.opu",
+    "use": "GlassCard(\"Surface\", \"disabled\")",
+    "digest": "41ac8dbb4248720b"
+  },
+  "GlassSwitchOff": {
+    "module": "components/glass_switch_off.opu",
+    "use": "GlassSwitchOff(\"default\")",
+    "digest": "541355e9fb80b65d"
+  },
+  "GlassSwitchOn": {
+    "module": "components/glass_switch_on.opu",
+    "use": "GlassSwitchOn(\"default\")",
+    "digest": "1c8a4e973535a0fd"
+  },
+  "GlassInput": {
+    "module": "components/glass_input.opu",
+    "use": "GlassInput(\"Search\", \"default\")",
+    "digest": "2b223d9af1a1d6d2"
   }
 }

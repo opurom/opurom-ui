@@ -99,12 +99,22 @@ import "components/text.opu";
 | `components/secure_field.opu` | `SecureField(placeholder)` | masked input; bind at the call site |
 | `components/status_pill.opu` | `StatusPill(label, tone)` | semantic status badge |
 | `components/grid_tile.opu` | `GridTile(src, title)` | media tile with a caption |
+| `components/glass_primary_button.opu` | `GlassPrimaryButton(label, state)` | T2 primary: 180deg brand gradient, glass, shadow |
+| `components/glass_secondary_button.opu` | `GlassSecondaryButton(label, state)` | T2 outlined glass button |
+| `components/glass_ghost_button.opu` | `GlassGhostButton(label, state)` | T3 flat glass button |
+| `components/glass_fab.opu` | `GlassFab(label, state)` | circular 56x56 primary FAB, radius 28 |
+| `components/glass_card.opu` | `GlassCard(title, state)` | T2 glass card with soft shadow |
+| `components/glass_switch_off.opu` | `GlassSwitchOff(state)` | 48x24 track, 20x20 thumb at x=2 |
+| `components/glass_switch_on.opu` | `GlassSwitchOn(state)` | 48x24 track, 20x20 thumb at x=26 |
+| `components/glass_input.opu` | `GlassInput(placeholder, state)` | T2 glass text field; bind at the call site |
 
 Component modules never import anything: the application owns the theme, and components take
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may
-hardcode a hex value except the two documented legacy files (`card.opu`, `text.opu`) whose
-expansion is pinned by a checked-in golden. The self-check enforces all three rules (usage
-comment, no imports, no hex).
+hardcode a hex value except the two documented legacy files (`card.opu`, `text.opu`) and the
+exact brand gradient literal `#2DD8FF,#006EFF` the premium glass slice authors explicitly.
+The self-check enforces all rules. The premium slice sets `state` from a literal parameter so
+the five design states can be authored; transitions, alpha fills, inside borders, focus glow
+and subpixel edges are kernel capabilities, not component syntax.
 
 A component takes positional literal arguments only (an `int`, `bool` or `string`), and its
 body is fixed at compile time. Interactive primitives that need a state binding (`Input`,

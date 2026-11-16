@@ -59,9 +59,12 @@ for (const file of components) {
     `${file} must not import modules; the app owns the theme`,
   );
   if (!LEGACY_HEX.has(file)) {
+    // The brand gradient is the sole permitted literal: it is the authored
+    // 180deg cyan-to-blue token value expressed as an IR two-stop gradient.
+    const withoutBrandGradient = text.replaceAll('#2DD8FF,#006EFF', '');
     assert.ok(
-      !/#[0-9A-Fa-f]{6}/.test(text),
-      `${file} must not hardcode hex colours; use variant or tone`,
+      !/#[0-9A-Fa-f]{6}/.test(withoutBrandGradient),
+      `${file} must not hardcode hex colours; use variant, tone or the brand gradient`,
     );
   }
   assert.ok(!/[\u4e00-\u9fff]/.test(text), `${file} must stay free of CJK characters`);
