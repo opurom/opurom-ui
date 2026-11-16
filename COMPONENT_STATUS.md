@@ -60,12 +60,12 @@ Typography sources: `md-type-body-large` `typography.dart:2109`, `md-type-body-m
 
 ### Reconciliation note
 
-Two values stated in the Card remediation brief differ from the token source of truth recorded in `theme/material-tokens.json`. The tables above follow the token file, as the brief requires each value to name a token whose source is that file. The differences are listed here for an explicit decision; this document does not silently adopt either side.
+Two values stated in the Card remediation brief differed from the token source of truth recorded in `theme/material-tokens.json`. Both are now resolved in favour of the audited Flutter source; the tables above already carry the winning values. The resolutions are recorded here for traceability.
 
 | Item | Brief value | Token value (source) | Status |
 | --- | --- | --- | --- |
-| body-large weight | 500 | 400 (`typography.dart:2109`) | differs; token kept pending decision |
-| elevation-1 shadow | umbra alpha 0.05 / blur 1 / offset (0,1); penumbra alpha 0.08 / blur 2 / offset (0,1); two layers only | umbra alpha 0.20 / blur 1 / offset (0,2) / spread -1; penumbra alpha 0.14 / blur 1 / offset (0,1); plus ambient alpha 0.12 / blur 3 (`shadows.dart:50-59`) | differs in alphas, offsets, layer count; token kept pending decision |
+| body-large weight | 500 | 400 (`typography.dart:2109`) | RESOLVED: source wins — englishLike 2021 is w400 at `typography.dart:2109`; the brief's 500 was an unchecked value. |
+| elevation-1 shadow | umbra alpha 0.05 / blur 1 / offset (0,1); penumbra alpha 0.08 / blur 2 / offset (0,1); two layers only | umbra alpha 0.20 / blur 1 / offset (0,2) / spread -1; penumbra alpha 0.14 / blur 1 / offset (0,1); plus ambient alpha 0.12 / blur 3 (`shadows.dart:50-59`) | RESOLVED: kElevationToShadow wins — the brief value is M3 spec prose, not the render constants Flutter actually draws (`shadows.dart:50-59`). |
 
 The brief's elevation figure matches the Material 3 tonal-shadow guidance; the token figure matches the Flutter `kElevationToShadow` constants actually present in the audited source. They are two different shadow definitions, not a rounding difference.
 
