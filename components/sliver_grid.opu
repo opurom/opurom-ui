@@ -1,0 +1,22 @@
+// SliverGridShell(height, columns, state): skeleton of Flutter SliverGrid. The
+// sliver protocol is a kernel need (gaps B2/B3); this renders a Grid inside
+// Scroll(height) with a fixed height. fillHeight is NOT FOUND in the compiler,
+// so it is never used; only fixed-height cells appear.
+// API   R: none (gridDelegate/delegate are builders, reserved). O: height, columns, state.
+//       X: gridDelegate, delegate, sliver geometry, cache flags (reserved, B2/B3).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onSliverReserved (no-op gesture fallback until B2/B3 land; never crashes).
+// Bounds height/columns 0..10000 enforced by compiler; fixed cells bound overflow.
+// Example SliverGridShell(240, 2, "default")
+component SliverGridShell(height: int, columns: int, state: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "sliver grid") {
+    Scroll(height: height) {
+      Grid(columns: columns) {
+        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-0", size: 12) }
+        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-1", size: 12) }
+        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-2", size: 12) }
+        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-3", size: 12) }
+      }
+    }
+  }
+}

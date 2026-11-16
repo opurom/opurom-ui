@@ -117,15 +117,19 @@ import "components/text.opu";
 | `components/wrap.opu` | `FlowWrap(gap, state)` | SKELETON: fixed-width row; flow/run controls reserved (gap L3) |
 | `components/aspect_ratio.opu` | `RatioBox(width, height, state)` | SKELETON: fixed width+height; aspectRatio reserved (gap L4) |
 | `components/flex.opu` | `FlexRun(gap, align, state)` | SKELETON: Row/Column base; direction/fit/spaceBetween reserved (no kernel gap) |
+| `components/sliver_list.opu` | `SliverListShell(height, state)` | SKELETON: List in Scroll; sliver protocol reserved (gaps B2, B3) |
+| `components/sliver_grid.opu` | `SliverGridShell(height, columns, state)` | SKELETON: Grid in Scroll, fixed height; sliver geometry reserved (gaps B2, B3) |
+| `components/dropdown.opu` | `DropdownField(value, width, state)` | SKELETON: closed field; popup/selection reserved (gaps B3, A4) |
+| `components/form.opu` | `FormShell(title, label, placeholder, required, state)` | SKELETON: form_field shell; FormState/save/validate reserved (gap B4) |
 
-The ten SKELETON modules above are API-complete placeholders: required,
+The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, all four states
 (normal/default, pressed/active, focus, disabled) have token-driven style
 placement, gesture callbacks are defined as no-op fallbacks, and each carries a
 minimal usage example. They keep the single-source IR, no-runtime-interpreter
 and no-mutable-object-model rules. Kernel-dependent behaviour stays `reserved`
 and is tracked in `opurom-spec/FLUTTER_REPLICA_KERNEL_PLAN.md` (gaps L1, L2, L3,
-L4, A3, A4, B3); L3/L4 are new spec entries, not yet numbered in that plan.
+L4, A3, A4, B2, B3, B4); all listed gaps are numbered in that plan.
 
 Component modules never import anything: the application owns the theme, and components take
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may

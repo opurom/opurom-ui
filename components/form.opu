@@ -1,0 +1,22 @@
+// FormShell(title, label, placeholder, required, state): skeleton of Flutter
+// Form. A form-scope controller without a mutable object tree is a kernel need
+// (gap B4); this wraps the existing form_field shape in a titled shell, with
+// field validators owned by the Input primitive and no aggregate controller.
+// API   R: none. O: title, label, placeholder, required (bool), minLength, maxLength,
+//       pattern (applied at the call site on Input), state.
+//       X: FormState, save, validate, autovalidate (reserved, B4).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onValidateReserved (no-op gesture fallback until B4 lands; never crashes).
+// Bounds validators checked by compiler; overlong text bounded by the shell.
+// Example FormShell("Sign in", "Email", "you@example.com", true, "default")
+component FormShell(title: string, label: string, placeholder: string, required: bool, state: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "form") {
+    Column(gap: 8) {
+      Text("{title}", size: 16)
+      Column(gap: 6) {
+        Text("{label}", size: 11)
+        Input(placeholder: "{placeholder}", required: required)
+      }
+    }
+  }
+}

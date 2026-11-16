@@ -1,0 +1,18 @@
+// DropdownField(value, width, state): skeleton of Flutter Dropdown. Popup route
+// and selection state binding are kernel needs (gaps B3/A4); this renders the
+// closed-field shape only, so no item is selectable and no tap is mis-routed.
+// API   R: none. O: value (current label), width, state.
+//       X: items widget builder, onChanged, labels list, isExpanded (reserved, B3/A4).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onChangedReserved (no-op gesture fallback until B3/A4 land; never crashes).
+// Bounds width 0..10000 enforced by compiler; overlong value bounded by container.
+// Example DropdownField("Choose one", 200, "default")
+component DropdownField(value: string, width: int, state: string) {
+  Container(width: width, p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "dropdown") {
+    Row(gap: 8, align: center) {
+      Text("{value}", size: 14)
+      Spacer()
+      Text("v", size: 12)
+    }
+  }
+}

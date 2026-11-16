@@ -1,0 +1,20 @@
+// SliverListShell(height, state): skeleton of Flutter SliverList. The sliver
+// protocol inside the dual-snapshot diff is a kernel need (gaps B2/B3); this
+// renders a deterministic List inside Scroll(height) as a static approximation.
+// API   R: none (delegate is a builder, reserved). O: height, state.
+//       X: delegate, addRepaintBoundaries, viewport/sliver constraints (reserved, B2/B3).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onSliverReserved (no-op gesture fallback until B2/B3 land; never crashes).
+// Bounds height 0..10000 enforced by compiler; fixed rows bound overflow.
+// Example SliverListShell(240, "default")
+component SliverListShell(height: int, state: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "sliver list") {
+    Scroll(height: height) {
+      List() {
+        Text("sliver-0", size: 12)
+        Text("sliver-1", size: 12)
+        Text("sliver-2", size: 12)
+      }
+    }
+  }
+}
