@@ -42,6 +42,12 @@ import "theme/default.opu";
 
 The values are the built-in defaults. Programs that declare their own `theme` keep it: a program admits at most one theme declaration, so importing the package is optional per application.
 
+### Material 3 token baseline
+
+`theme/material-tokens.json` is an independent `md-` namespace extracted from the Flutter Material 3 source (flutter-golden `ab291203`, stable 3.50.0). Every value carries a `file:line` source or an explicit `spec:` marker. Groups: color (light/dark, 30 keys each), shape (6 levels), elevation (6 levels plus 3 shadow colours), typography (15 styles), spacing (9 keys). It does not override any Liquid Glass default and no component consumes it yet; this is the storage layer that precedes component migration.
+
+The compiler's `theme { tokens { ... } }` block currently accepts only six fixed semantic names and `#RRGGBB` strings, so these `md-` tokens and their multi-field entries are kept in the data file rather than in the compiled theme. Squircle corners (kernel gap M1) and dual-layer shadow rendering (kernel gap M2) are stored as values only, pending kernel support. `node test/material-tokens.test.mjs` validates structure, source coverage and light/dark parity.
+
 ## Components
 
 The package ships a set of `.opu` component modules under `components/`. A component

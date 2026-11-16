@@ -8,6 +8,7 @@
     "opurom-pkg.json",
     "theme/default.opu",
     "theme/dark.opu",
+    "theme/material-tokens.json",
     "components/app_bar.opu",
     "components/aspect_ratio.opu",
     "components/avatar.opu",
