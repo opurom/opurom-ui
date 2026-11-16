@@ -33,7 +33,7 @@ import "theme/default.opu";
 
 | Token | Light | Dark |
 |---|---|---|
-| accent | `#007AFF` | `#0A84FF` |
+| accent | `#006EFF` | `#006EFF` |
 | radius | `12` | `12` |
 | fontScale | `1.0` | `1.0` |
 | surface | `#FFFFFF` | `#1E1E1E` |
