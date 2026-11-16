@@ -41,8 +41,9 @@ assert.match(dark, /mode: dark/, 'the dark variant must declare dark mode');
 
 // Every component module must be a declared package file carrying one or more
 // `component` declarations, so the manifest and the library never drift. Each
-// opens with a one-line usage comment, and colour comes from design props
-// (variant/tone) plus the theme, never from a literal hex.
+// opens with a one-line usage comment, never imports anything (the app owns the
+// theme; components only consume design props), and takes colour from variant
+// or tone, never from a literal hex.
 // card/text keep their literals: todo.opuir.json pins their expansion, so
 // changing them means regenerating that golden, which is not this package's job.
 const LEGACY_HEX = new Set(['components/card.opu', 'components/text.opu']);
@@ -53,6 +54,10 @@ for (const file of components) {
   assert.ok(text.length > 0, `${file} must be non-empty`);
   assert.match(text, /component\s+[A-Z]/, `${file} must declare a component`);
   assert.match(text, /^\/\/ /, `${file} must open with a one-line usage comment`);
+  assert.ok(
+    !/^import\b/m.test(text),
+    `${file} must not import modules; the app owns the theme`,
+  );
   if (!LEGACY_HEX.has(file)) {
     assert.ok(
       !/#[0-9A-Fa-f]{6}/.test(text),

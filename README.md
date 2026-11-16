@@ -76,11 +76,20 @@ import "components/text.opu";
 | `components/progress.opu` | `ProgressTrack(percent)` | determinate bar in the theme accent |
 | `components/confirm_dialog.opu` | `ConfirmDialog(title, body, confirm)` | dialog with a primary confirm action |
 | `components/section_header.opu` | `SectionHeader(title)` | heading with a trailing action affordance |
+| `components/tooltip.opu` | `TipCallout(text, placement)` | hint bubble; reveal it with an `if` at the call site |
+| `components/drawer.opu` | `Drawer(title, itemA, itemB, itemC)` | side panel; toggle it with an `if` at the call site |
+| `components/stepper.opu` | `StepBar(steps, current)` | step progress strip; `current` is zero-based |
+| `components/breadcrumb.opu` | `Breadcrumb(root, section, page)` | chevron-separated path trail |
+| `components/empty_state.opu` | `EmptyState(icon, title, body)` | empty-view placeholder; `icon` is a built-in name |
+| `components/skeleton.opu` | `Skeleton(width, height)` | dimmed loading block in logical pixels |
+| `components/pagination.opu` | `PaginationBar(page, total)` | static page readout with chevrons |
+| `components/segmented.opu` | `SegmentedControl(first, second, third, selected)` | three-way segment picker; `selected` is zero-based |
 
-New modules import the theme once (`import "pkg-theme/default.opu";`) and take every colour
-from design props (`variant`, `tone`) or the theme; no module may hardcode a hex value except
-the two documented legacy files (`card.opu`, `text.opu`) whose expansion is pinned by a
-checked-in golden. The self-check enforces both rules.
+Component modules never import anything: the application owns the theme, and components take
+every colour from design props (`variant`, `tone`) or the theme defaults; no module may
+hardcode a hex value except the two documented legacy files (`card.opu`, `text.opu`) whose
+expansion is pinned by a checked-in golden. The self-check enforces all three rules (usage
+comment, no imports, no hex).
 
 A component takes positional literal arguments only (an `int`, `bool` or `string`), and its
 body is fixed at compile time. Interactive primitives that need a state binding (`Input`,
