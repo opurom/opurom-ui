@@ -84,6 +84,14 @@ import "components/text.opu";
 | `components/skeleton.opu` | `Skeleton(width, height)` | dimmed loading block in logical pixels |
 | `components/pagination.opu` | `PaginationBar(page, total)` | static page readout with chevrons |
 | `components/segmented.opu` | `SegmentedControl(first, second, third, selected)` | three-way segment picker; `selected` is zero-based |
+| `components/banner.opu` | `Banner(title, body, tone)` | persistent inline notice with a semantic border |
+| `components/timeline.opu` | `Timeline(title, first, second, third)` | event trail with a marker dot per entry |
+| `components/filetree.opu` | `FileTree(root, childA, childB, childC)` | indented listing under one folder root |
+| `components/chart_card.opu` | `ChartCard(title, kind)` | titled card wrapping the chart primitive |
+| `components/avatar_group.opu` | `AvatarGroup(first, second, third)` | row of three member avatars |
+| `components/number_flow.opu` | `NumberFlow(value, unit)` | large numeric readout without card chrome |
+| `components/rating.opu` | `StarRating(label, value, stars)` | rating readout; `value` is the fill percent |
+| `components/code_block.opu` | `CodeSnippet(title, lineA, lineB, lineC)` | preformatted snippet block |
 
 Component modules never import anything: the application owns the theme, and components take
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may
