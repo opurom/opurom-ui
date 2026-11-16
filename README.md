@@ -92,6 +92,13 @@ import "components/text.opu";
 | `components/number_flow.opu` | `NumberFlow(value, unit)` | large numeric readout without card chrome |
 | `components/rating.opu` | `StarRating(label, value, stars)` | rating readout; `value` is the fill percent |
 | `components/code_block.opu` | `CodeSnippet(title, lineA, lineB, lineC)` | preformatted snippet block |
+| `components/hero_header.opu` | `HeroHeader(title, subtitle)` | solid-accent hero panel |
+| `components/profile_header.opu` | `ProfileHeader(initials, name, meta)` | avatar identity row |
+| `components/detail_row.opu` | `DetailRow(icon, title, value)` | settings row with leading icon and trailing value |
+| `components/toolbar.opu` | `Toolbar(confirm, cancel)` | action bar chrome; handlers at the call site |
+| `components/secure_field.opu` | `SecureField(placeholder)` | masked input; bind at the call site |
+| `components/status_pill.opu` | `StatusPill(label, tone)` | semantic status badge |
+| `components/grid_tile.opu` | `GridTile(src, title)` | media tile with a caption |
 
 Component modules never import anything: the application owns the theme, and components take
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may

@@ -183,5 +183,40 @@
     "module": "components/code_block.opu",
     "use": "CodeSnippet(\"deploy.opu\", \"import theme\", \"app Deploy ready\", \"api /build\")",
     "digest": "7b9ff9b3190240ae"
+  },
+  "HeroHeader": {
+    "module": "components/hero_header.opu",
+    "use": "HeroHeader(\"Opurom Console\", \"Ship from one place\")",
+    "digest": "0eb31c2f73a39946"
+  },
+  "ProfileHeader": {
+    "module": "components/profile_header.opu",
+    "use": "ProfileHeader(\"OP\", \"Opurom Team\", \"Release engineering\")",
+    "digest": "3f41f39078d8eec9"
+  },
+  "DetailRow": {
+    "module": "components/detail_row.opu",
+    "use": "DetailRow(\"lock\", \"Access\", \"Admin only\")",
+    "digest": "416a299f0f76f8ae"
+  },
+  "Toolbar": {
+    "module": "components/toolbar.opu",
+    "use": "Toolbar(\"Deploy\", \"Cancel\")",
+    "digest": "800d3d803c38fe34"
+  },
+  "SecureField": {
+    "module": "components/secure_field.opu",
+    "use": "SecureField(\"Access token\")",
+    "digest": "544b8c660b351ee4"
+  },
+  "StatusPill": {
+    "module": "components/status_pill.opu",
+    "use": "StatusPill(\"Healthy\", \"success\")",
+    "digest": "97f673919514437a"
+  },
+  "GridTile": {
+    "module": "components/grid_tile.opu",
+    "use": "GridTile(\"assets/photo1.png\", \"Dawn\")",
+    "digest": "e0b979105e70088c"
   }
 }
