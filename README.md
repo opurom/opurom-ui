@@ -64,7 +64,7 @@ import "components/text.opu";
 | Module | Components | Notes |
 |---|---|---|
 | `components/button.opu` | `ActionButton(label, variant)` | `variant` is `primary`, `secondary` or `ghost` |
-| `components/buttons_m3.opu` | `ElevatedActionButton`, `FilledActionButton`, `OutlinedActionButton`, `TextActionButton`, `DangerActionButton` (label, state, animate) | M3 button family; five states, implicit `animate` transition; exact state-layer alpha reserved (A3/M4) |
+| `components/buttons_m3.opu` | `ElevatedActionButton`, `FilledActionButton`, `OutlinedActionButton`, `TextActionButton`, `DangerActionButton` (label, state, animate) | M3 button family; five states, 40dp stadium (radius 20), implicit `animate` transition; 24dp horizontal inset reserved (uniform padding), exact state-layer alpha reserved (A3/M4) |
 | `components/card.opu` | `SurfaceCard(title)` | token radius and soft elevation; pinned legacy, do not edit |
 | `components/card_m3.opu` | `ElevatedCardM3`, `OutlinedCardM3` (title, subtitle, state, animate) | M3 cards; five states, radius 12 / padding 16, elevation 1; content slots (M7), three-layer shadow (M2) reserved |
 | `components/text.opu` | `TitleHeading`, `BodyText`, `CaptionText` | one pinned type scale per level |

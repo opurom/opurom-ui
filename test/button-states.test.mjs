@@ -34,20 +34,29 @@ const renderer = existsSync('/Users/mac/work/opurom/opurom-dist/lang-clean-targe
   ? '/Users/mac/work/opurom/opurom-dist/lang-clean-target/debug/opurom-render' : null;
 
 const STATES = ['default', 'hover', 'active', 'focus', 'disabled'];
+const BUTTONS = [
+  'ElevatedActionButton', 'FilledActionButton', 'OutlinedActionButton',
+  'TextActionButton', 'DangerActionButton',
+];
 
-function compileAndRender(tmp, state) {
+function compileOne(tmp, call) {
   const src = path.join(tmp, 'one.opu');
   const ir = path.join(tmp, 'one.json');
-  const ppm = path.join(tmp, 'one.ppm');
   writeFileSync(src, `import "components/buttons_m3.opu";
 app One {
   quality { msaa: 4 }
   theme { mode: light, accent: "#6200EE", radius: 12, fontScale: 1.0, surface: "#FFFFFF", onSurface: "#000000", stage: "#FFFFFF", fontMetrics: proportional }
-  ElevatedActionButton("State", "${state}", "ease")
+  ${call}
 }
 `);
   const c = spawnSync(compiler, ['compile', src, '-o', ir], { encoding: 'utf8' });
-  assert.equal(c.status, 0, `compile ${state} failed: ${c.stderr}`);
+  assert.equal(c.status, 0, `compile failed: ${c.stderr}`);
+  return ir;
+}
+
+function compileAndRender(tmp, state) {
+  const ir = compileOne(tmp, `ElevatedActionButton("State", "${state}", "ease")`);
+  const ppm = path.join(tmp, 'one.ppm');
   const r = spawnSync(renderer, [ir, '400', '200', ppm], { encoding: 'utf8' });
   assert.equal(r.status, 0, `render ${state} failed: ${r.stderr}`);
   // dominant non-white colour = solid fill
@@ -81,6 +90,43 @@ test('button five states paint distinct fills', { skip: !compiler || !renderer }
     const spread = (c) => Math.max(...c) - Math.min(...c);
     assert.ok(spread(fill.disabled) < spread(fill.default), `disabled ${fill.disabled} must be less saturated than default ${fill.default}`);
     console.log('button states OK', JSON.stringify(fill));
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('m3 buttons render a 40dp stadium with the built-in 12dp inset', {
+  skip: !compiler || !renderer,
+}, () => {
+  const tmp = mkdtempSync(path.join(tmpdir(), 'opurom-ui-btngeom-'));
+  try {
+    cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
+    const attr = (line, key) => {
+      const m = line.match(new RegExp(`${key}="([^"]+)"`));
+      return m ? m[1] : null;
+    };
+    for (const name of BUTTONS) {
+      const ir = compileOne(tmp, `${name}("Save", "default", "ease")`);
+      const svg = path.join(tmp, 'one.svg');
+      const r = spawnSync(renderer, [ir, '500', '200', path.join(tmp, 'one.ppm'), '--svg', svg], { encoding: 'utf8' });
+      assert.equal(r.status, 0, `${name} svg failed: ${r.stderr}`);
+      const lines = readFileSync(svg, 'utf8').split('\n');
+      const text = lines.find((l) => l.includes('<text') && l.includes('data-role="button"'));
+      assert.ok(text, `${name} must render a label`);
+      const tx = Number(attr(text, 'x'));
+      assert.ok(Math.abs(tx - 12) <= 1, `${name} inset ${tx} must be the built-in 12dp`);
+      const filled = name !== 'TextActionButton';
+      if (filled) {
+        const rect = lines.find((l) => l.includes('<rect') && l.includes('data-role="button"'));
+        assert.ok(rect, `${name} must render a filled stadium`);
+        const h = Number(attr(rect, 'height'));
+        const rx = Number(attr(rect, 'rx'));
+        assert.equal(h, 40, `${name} height must be 40dp`);
+        assert.equal(rx, 20, `${name} radius must be half the height`);
+        assert.equal(rx, h / 2, `${name} must be a stadium`);
+      }
+      console.log(name, filled ? '40dp stadium rx20 inset12' : 'text variant inset12');
+    }
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }
