@@ -12,6 +12,8 @@ import path from 'node:path';
 import test from 'node:test';
 
 const root = path.resolve(import.meta.dirname, '..');
+// Pins match the 8x8 rounded-edge renderer (0e7d01b era); rebuild all pins
+// together once AAA coverage lands.
 const pins = JSON.parse(readFileSync(path.join(root, 'test/digests.json'), 'utf8'));
 
 function siblingBinary(repo, names) {

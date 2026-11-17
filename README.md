@@ -64,9 +64,12 @@ import "components/text.opu";
 | Module | Components | Notes |
 |---|---|---|
 | `components/button.opu` | `ActionButton(label, variant)` | `variant` is `primary`, `secondary` or `ghost` |
-| `components/card.opu` | `SurfaceCard(title)` | token radius and soft elevation |
+| `components/buttons_m3.opu` | `ElevatedActionButton`, `FilledActionButton`, `OutlinedActionButton`, `TextActionButton`, `DangerActionButton` (label, state, animate) | M3 button family; five states, 40dp stadium (radius 20), implicit `animate` transition; 24dp horizontal inset reserved (uniform padding), exact state-layer alpha reserved (A3/M4) |
+| `components/card.opu` | `SurfaceCard(title)` | token radius and soft elevation; pinned legacy, do not edit |
+| `components/card_m3.opu` | `ElevatedCardM3`, `OutlinedCardM3` (title, subtitle, state, animate) | M3 cards; five states, radius 12 / padding 16, elevation 1; content slots (M7), three-layer shadow (M2) reserved |
 | `components/text.opu` | `TitleHeading`, `BodyText`, `CaptionText` | one pinned type scale per level |
 | `components/list.opu` | `ListPanel(title)` | titled list surface |
+| `components/list_tile_m3.opu` | `ListTileM3(title, subtitle, state, animate)` | two-line M3 tile; five states; selected overlay (A3), slots (M7), exact tile metrics (B12) reserved |
 | `components/navbar.opu` | `NavBar(title, action)` | leading title, trailing action |
 | `components/dialog.opu` | `DialogPanel(title)` | titled modal |
 | `components/toast.opu` | `ToastNote(message)` | success-toned strip |
@@ -79,6 +82,7 @@ import "components/text.opu";
 | `components/form_field.opu` | `FormField(label, placeholder)` | label above a field; bind at the call site |
 | `components/search.opu` | `SearchField(placeholder)` | search box with a leading glyph |
 | `components/chip.opu` | `FilterChip(label, variant)` | pass `primary` when active, `ghost` when idle |
+| `components/chips_m3.opu` | `AssistChipM3`, `SelectedChipM3` (label, state, animate) | static M3 chip appearances; five states, radius 8 / 195 ms motion; runtime selection and delete affordance (A3/M4) reserved |
 | `components/progress.opu` | `ProgressTrack(percent)` | determinate bar in the theme accent |
 | `components/confirm_dialog.opu` | `ConfirmDialog(title, body, confirm)` | dialog with a primary confirm action |
 | `components/section_header.opu` | `SectionHeader(title)` | heading with a trailing action affordance |
@@ -113,6 +117,7 @@ import "components/text.opu";
 | `components/glass_switch_off.opu` | `GlassSwitchOff(state)` | 48x24 track, 20x20 thumb at x=2 |
 | `components/glass_switch_on.opu` | `GlassSwitchOn(state)` | 48x24 track, 20x20 thumb at x=26 |
 | `components/glass_input.opu` | `GlassInput(placeholder, state)` | T2 glass text field; bind at the call site |
+| `components/gallery_app_bar.opu` | `GalleryAppBar(title, bg, textColor, radius, height, state)` | M3 Gallery detail title band; 996px wide, colour/radius/height params, bold title (top-only corner clip reserved M1) |
 | `components/stack.opu` | `OverlayStack(state)` | SKELETON: Stack shape; overlay/children reserved (gap L1, NOT IN PLAN) |
 | `components/expanded.opu` | `FlexCell(width, state)` | SKELETON: fixed-width stand-in; flex weight reserved (gap L2, NOT IN PLAN) |
 | `components/icon_button.opu` | `IconAction(icon, state, gesture)` | SKELETON: Container+Icon; press feedback reserved (gap A3) |
@@ -135,7 +140,7 @@ placement, gesture callbacks are defined as no-op fallbacks, and each carries a
 minimal usage example. They keep the single-source IR, no-runtime-interpreter
 and no-mutable-object-model rules. Kernel-dependent behaviour stays `reserved`
 and is tracked in `opurom-spec/FLUTTER_REPLICA_KERNEL_PLAN.md` (gaps L1, L2, L3,
-L4, A3, A4, B2, B3, B4); all listed gaps are numbered in that plan.
+L4, A3, A4, B2, B3, B4, M2, M4, M7, B12); all listed gaps are numbered in that plan.
 
 Component modules never import anything: the application owns the theme, and components take
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may
