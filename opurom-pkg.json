@@ -34,6 +34,7 @@
     "components/flex.opu",
     "components/form.opu",
     "components/form_field.opu",
+    "components/gallery_app_bar.opu",
     "components/glass_card.opu",
     "components/glass_fab.opu",
     "components/glass_ghost_button.opu",

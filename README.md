@@ -113,6 +113,7 @@ import "components/text.opu";
 | `components/glass_switch_off.opu` | `GlassSwitchOff(state)` | 48x24 track, 20x20 thumb at x=2 |
 | `components/glass_switch_on.opu` | `GlassSwitchOn(state)` | 48x24 track, 20x20 thumb at x=26 |
 | `components/glass_input.opu` | `GlassInput(placeholder, state)` | T2 glass text field; bind at the call site |
+| `components/gallery_app_bar.opu` | `GalleryAppBar(title, bg, textColor, radius, height, state)` | M3 Gallery detail title band; 996px wide, colour/radius/height params, bold title (top-only corner clip reserved M1) |
 | `components/stack.opu` | `OverlayStack(state)` | SKELETON: Stack shape; overlay/children reserved (gap L1, NOT IN PLAN) |
 | `components/expanded.opu` | `FlexCell(width, state)` | SKELETON: fixed-width stand-in; flex weight reserved (gap L2, NOT IN PLAN) |
 | `components/icon_button.opu` | `IconAction(icon, state, gesture)` | SKELETON: Container+Icon; press feedback reserved (gap A3) |

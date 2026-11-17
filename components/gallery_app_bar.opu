@@ -1,0 +1,18 @@
+// GalleryAppBar(title, bg, textColor, radius, height, state): Material 3
+// Gallery detail-page title band. Measured from flutter-golden ab291203:
+// the audited brand-purple band, x=42..1037 (996 px at 1080-wide canvas),
+// y=275..421 (147 px), top corner radius ~25 px, white bold title left-padded
+// 45 px, baseline near the band bottom. Colours are parameters so no literal
+// hex lives in the module.
+// API   R: title, bg, textColor, radius, height. O: state.
+//       X: bottom-only radius, exact top-corner clip, elevation (reserved; M1).
+// State default/hover/active/focus/disabled; map normal->default, pressed->active.
+// Events onTitleReserved (no-op gesture fallback; never crashes).
+// Bounds radius/height 0..10000 by compiler; overlong title clipped by container.
+// Note IR Container rounds all four corners; the golden rounds the top only.
+// Example GalleryAppBar("Cards", bandColor, titleColor, 25, 147, "default")
+component GalleryAppBar(title: string, bg: string, textColor: string, radius: int, height: int, state: string) {
+  Container(width: 996, height: height, rounded: radius, color: "{bg}", border: "{bg}", p: 0, state: "{state}", gesture: tap, label: "gallery app bar") {
+    Text("{title}", size: 64, weight: "bold", color: "{textColor}", label: "gallery/title")
+  }
+}
