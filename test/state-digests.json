@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "purpose": "internal consistency pins, not Flutter parity",
+    "note": "Settle-frame byte locks under the signed state-transition renderer. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
+    "render": "7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2",
+    "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug",
+    "viewport": [
+      320,
+      240
+    ],
+    "tick": 4000,
+    "quality": {
+      "msaa": 4
+    },
+    "fontMetrics": "proportional",
+    "states": [
+      "loading",
+      "success",
+      "error",
+      "focus",
+      "hover",
+      "disabled"
+    ]
+  },
+  "pins": [
+    {
+      "name": "ElevatedActionButton-loading",
+      "module": "components/buttons_m3.opu",
+      "use": "ElevatedActionButton(\"Save\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "e334b231a19f62c0"
+    },
+    {
+      "name": "ElevatedActionButton-success",
+      "module": "components/buttons_m3.opu",
+      "use": "ElevatedActionButton(\"Save\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "62393a10cad8fe1b"
+    },
+    {
+      "name": "ElevatedActionButton-error",
+      "module": "components/buttons_m3.opu",
+      "use": "ElevatedActionButton(\"Save\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "c86ff5a8b51960df"
+    },
+    {
+      "name": "ElevatedActionButton-focus",
+      "module": "components/buttons_m3.opu",
+      "use": "ElevatedActionButton(\"Save\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "5f82c308045d2cc5"
+    },
+    {
+      "name": "ElevatedActionButton-hover",
+      "module": "components/buttons_m3.opu",
+      "use": "ElevatedActionButton(\"Save\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "6abe21bebbc393b0"
+    },
+    {
+      "name": "ElevatedActionButton-disabled",
+      "module": "components/buttons_m3.opu",
+      "use": "ElevatedActionButton(\"Save\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "d5574d9b181a1b0b"
+    },
+    {
+      "name": "FilledActionButton-loading",
+      "module": "components/buttons_m3.opu",
+      "use": "FilledActionButton(\"Save\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "fb5de58902a6c761"
+    },
+    {
+      "name": "FilledActionButton-success",
+      "module": "components/buttons_m3.opu",
+      "use": "FilledActionButton(\"Save\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "2412fbeb4d2dc716"
+    },
+    {
+      "name": "FilledActionButton-error",
+      "module": "components/buttons_m3.opu",
+      "use": "FilledActionButton(\"Save\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "b2ab6109815485d8"
+    },
+    {
+      "name": "FilledActionButton-focus",
+      "module": "components/buttons_m3.opu",
+      "use": "FilledActionButton(\"Save\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "7869dc69f4f6bbb1"
+    },
+    {
+      "name": "FilledActionButton-hover",
+      "module": "components/buttons_m3.opu",
+      "use": "FilledActionButton(\"Save\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "a39019642c64ab21"
+    },
+    {
+      "name": "FilledActionButton-disabled",
+      "module": "components/buttons_m3.opu",
+      "use": "FilledActionButton(\"Save\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "a0200a92d70b604c"
+    },
+    {
+      "name": "OutlinedActionButton-loading",
+      "module": "components/buttons_m3.opu",
+      "use": "OutlinedActionButton(\"Save\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "0d2aa626e2ac81cd"
+    },
+    {
+      "name": "OutlinedActionButton-success",
+      "module": "components/buttons_m3.opu",
+      "use": "OutlinedActionButton(\"Save\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "8c199d517e10b012"
+    },
+    {
+      "name": "OutlinedActionButton-error",
+      "module": "components/buttons_m3.opu",
+      "use": "OutlinedActionButton(\"Save\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "85e66cbf34014fdc"
+    },
+    {
+      "name": "OutlinedActionButton-focus",
+      "module": "components/buttons_m3.opu",
+      "use": "OutlinedActionButton(\"Save\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "a58e3a82242de1ae"
+    },
+    {
+      "name": "OutlinedActionButton-hover",
+      "module": "components/buttons_m3.opu",
+      "use": "OutlinedActionButton(\"Save\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "a78e160c8c63c13d"
+    },
+    {
+      "name": "OutlinedActionButton-disabled",
+      "module": "components/buttons_m3.opu",
+      "use": "OutlinedActionButton(\"Save\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "16c50e93875877c2"
+    },
+    {
+      "name": "TextActionButton-loading",
+      "module": "components/buttons_m3.opu",
+      "use": "TextActionButton(\"Save\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "130ff5457f1c6c8b"
+    },
+    {
+      "name": "TextActionButton-success",
+      "module": "components/buttons_m3.opu",
+      "use": "TextActionButton(\"Save\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "89b658fbb9775ae6"
+    },
+    {
+      "name": "TextActionButton-error",
+      "module": "components/buttons_m3.opu",
+      "use": "TextActionButton(\"Save\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "2ed54883a54f7385"
+    },
+    {
+      "name": "TextActionButton-focus",
+      "module": "components/buttons_m3.opu",
+      "use": "TextActionButton(\"Save\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "8aa93e6bd9e0f48a"
+    },
+    {
+      "name": "TextActionButton-hover",
+      "module": "components/buttons_m3.opu",
+      "use": "TextActionButton(\"Save\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "1f0e9433a79c38cf"
+    },
+    {
+      "name": "TextActionButton-disabled",
+      "module": "components/buttons_m3.opu",
+      "use": "TextActionButton(\"Save\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "bd0a3f967c65d1ec"
+    },
+    {
+      "name": "DangerActionButton-loading",
+      "module": "components/buttons_m3.opu",
+      "use": "DangerActionButton(\"Save\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "e334b231a19f62c0"
+    },
+    {
+      "name": "DangerActionButton-success",
+      "module": "components/buttons_m3.opu",
+      "use": "DangerActionButton(\"Save\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "62393a10cad8fe1b"
+    },
+    {
+      "name": "DangerActionButton-error",
+      "module": "components/buttons_m3.opu",
+      "use": "DangerActionButton(\"Save\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "c86ff5a8b51960df"
+    },
+    {
+      "name": "DangerActionButton-focus",
+      "module": "components/buttons_m3.opu",
+      "use": "DangerActionButton(\"Save\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "742eb8ec747a2364"
+    },
+    {
+      "name": "DangerActionButton-hover",
+      "module": "components/buttons_m3.opu",
+      "use": "DangerActionButton(\"Save\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "7a7db7ee94274a73"
+    },
+    {
+      "name": "DangerActionButton-disabled",
+      "module": "components/buttons_m3.opu",
+      "use": "DangerActionButton(\"Save\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "6e41f08879417c68"
+    },
+    {
+      "name": "ElevatedCardM3-loading",
+      "module": "components/card_m3.opu",
+      "use": "ElevatedCardM3(\"Title\", \"Subtitle\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "f9e330b5e519f022"
+    },
+    {
+      "name": "ElevatedCardM3-success",
+      "module": "components/card_m3.opu",
+      "use": "ElevatedCardM3(\"Title\", \"Subtitle\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "c994547cec6d1b35"
+    },
+    {
+      "name": "ElevatedCardM3-error",
+      "module": "components/card_m3.opu",
+      "use": "ElevatedCardM3(\"Title\", \"Subtitle\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "cca87512419104d8"
+    },
+    {
+      "name": "ElevatedCardM3-focus",
+      "module": "components/card_m3.opu",
+      "use": "ElevatedCardM3(\"Title\", \"Subtitle\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "d25f1c8f0edf5afb"
+    },
+    {
+      "name": "ElevatedCardM3-hover",
+      "module": "components/card_m3.opu",
+      "use": "ElevatedCardM3(\"Title\", \"Subtitle\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "263e2c6aa8dcd756"
+    },
+    {
+      "name": "ElevatedCardM3-disabled",
+      "module": "components/card_m3.opu",
+      "use": "ElevatedCardM3(\"Title\", \"Subtitle\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "e2578c50944bbf47"
+    },
+    {
+      "name": "OutlinedCardM3-loading",
+      "module": "components/card_m3.opu",
+      "use": "OutlinedCardM3(\"Title\", \"Subtitle\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "79108d5318b07b80"
+    },
+    {
+      "name": "OutlinedCardM3-success",
+      "module": "components/card_m3.opu",
+      "use": "OutlinedCardM3(\"Title\", \"Subtitle\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "028b52b0fcc3a240"
+    },
+    {
+      "name": "OutlinedCardM3-error",
+      "module": "components/card_m3.opu",
+      "use": "OutlinedCardM3(\"Title\", \"Subtitle\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "ed0fab83ef032fd7"
+    },
+    {
+      "name": "OutlinedCardM3-focus",
+      "module": "components/card_m3.opu",
+      "use": "OutlinedCardM3(\"Title\", \"Subtitle\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "60a4e642115d13e1"
+    },
+    {
+      "name": "OutlinedCardM3-hover",
+      "module": "components/card_m3.opu",
+      "use": "OutlinedCardM3(\"Title\", \"Subtitle\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "4d8ce81001d27635"
+    },
+    {
+      "name": "OutlinedCardM3-disabled",
+      "module": "components/card_m3.opu",
+      "use": "OutlinedCardM3(\"Title\", \"Subtitle\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "c0eb9a2952865219"
+    },
+    {
+      "name": "ListTileM3-loading",
+      "module": "components/list_tile_m3.opu",
+      "use": "ListTileM3(\"Title\", \"Subtitle\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "79108d5318b07b80"
+    },
+    {
+      "name": "ListTileM3-success",
+      "module": "components/list_tile_m3.opu",
+      "use": "ListTileM3(\"Title\", \"Subtitle\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "028b52b0fcc3a240"
+    },
+    {
+      "name": "ListTileM3-error",
+      "module": "components/list_tile_m3.opu",
+      "use": "ListTileM3(\"Title\", \"Subtitle\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "ed0fab83ef032fd7"
+    },
+    {
+      "name": "ListTileM3-focus",
+      "module": "components/list_tile_m3.opu",
+      "use": "ListTileM3(\"Title\", \"Subtitle\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "55a28d04f15eb91a"
+    },
+    {
+      "name": "ListTileM3-hover",
+      "module": "components/list_tile_m3.opu",
+      "use": "ListTileM3(\"Title\", \"Subtitle\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "091d6f2414bd6f5c"
+    },
+    {
+      "name": "ListTileM3-disabled",
+      "module": "components/list_tile_m3.opu",
+      "use": "ListTileM3(\"Title\", \"Subtitle\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "644306ba81c17c92"
+    },
+    {
+      "name": "AssistChipM3-loading",
+      "module": "components/chips_m3.opu",
+      "use": "AssistChipM3(\"Label\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "a1d4550b0b21ffb6"
+    },
+    {
+      "name": "AssistChipM3-success",
+      "module": "components/chips_m3.opu",
+      "use": "AssistChipM3(\"Label\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "823e3bb1a1e2c53a"
+    },
+    {
+      "name": "AssistChipM3-error",
+      "module": "components/chips_m3.opu",
+      "use": "AssistChipM3(\"Label\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "df04cd921adf7369"
+    },
+    {
+      "name": "AssistChipM3-focus",
+      "module": "components/chips_m3.opu",
+      "use": "AssistChipM3(\"Label\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "5ed84b66f14db240"
+    },
+    {
+      "name": "AssistChipM3-hover",
+      "module": "components/chips_m3.opu",
+      "use": "AssistChipM3(\"Label\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "9c06f7109a265d28"
+    },
+    {
+      "name": "AssistChipM3-disabled",
+      "module": "components/chips_m3.opu",
+      "use": "AssistChipM3(\"Label\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "7d79be35dae05504"
+    },
+    {
+      "name": "SelectedChipM3-loading",
+      "module": "components/chips_m3.opu",
+      "use": "SelectedChipM3(\"Label\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "a1d4550b0b21ffb6"
+    },
+    {
+      "name": "SelectedChipM3-success",
+      "module": "components/chips_m3.opu",
+      "use": "SelectedChipM3(\"Label\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "823e3bb1a1e2c53a"
+    },
+    {
+      "name": "SelectedChipM3-error",
+      "module": "components/chips_m3.opu",
+      "use": "SelectedChipM3(\"Label\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "df04cd921adf7369"
+    },
+    {
+      "name": "SelectedChipM3-focus",
+      "module": "components/chips_m3.opu",
+      "use": "SelectedChipM3(\"Label\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "d8f5b959e3d3674f"
+    },
+    {
+      "name": "SelectedChipM3-hover",
+      "module": "components/chips_m3.opu",
+      "use": "SelectedChipM3(\"Label\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "7e1c5227261c6cd0"
+    },
+    {
+      "name": "SelectedChipM3-disabled",
+      "module": "components/chips_m3.opu",
+      "use": "SelectedChipM3(\"Label\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "3f34317aa32cb964"
+    }
+  ]
+}

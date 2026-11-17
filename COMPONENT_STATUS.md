@@ -8,6 +8,10 @@ The gap identifiers referenced below are registered in `opurom-spec/FLUTTER_REPL
 
 All component APIs accept eight `state` keywords: default, hover, active, focus, disabled, loading, success and error. The first five are interaction states; loading, success and error are business states with no Flutter `WidgetState` member and are marked `NO_FLUTTER_EQUIVALENT` in `opurom-spec/COMPONENT_STATE_PROPOSAL.md`. Duration values follow `opurom-spec/ANIMATION_DURATION_ADJUDICATION.md`; no component claims a Flutter-owned business-state duration. The 14 skeleton rows below remain SKELETON: their headers describe the interaction states used by the current golden pins; business-state visual pins await the renderer state-transition work and are not claimed here.
 
+### Non-default state pins
+
+`test/state-digests.json` pins settled frames (tick 4000, viewport 320x240) for ten M3 components across loading, success, error, focus, hover and disabled under render `7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2` and lang `d1a0418179fd20c58a899d012dffb82ac5f7d8a1`. These are **internal consistency pins, not Flutter parity**: CI has no Flutter oracle or font file, and no 2%/12% threshold is applied. The pin set uses its own sibling toolchain and does not touch the 52 default-state pins signed at render `8a76e1d` / lang `6d5cb74`.
+
 R = required, O = optional, X = reserved / not expressive in the current IR. Every row is transcribed from the corresponding component file header and the README component table.
 
 | Module | API | R | O | X (reserved) | Gaps | Stage |
