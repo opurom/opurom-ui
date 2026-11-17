@@ -1,0 +1,36 @@
+// Material 3 button family — state-complete shells over the Button primitive.
+// Five design states map to the renderer's state transform: default/hover/
+// active/focus/disabled. variant selects the M3 role; animate adds the implicit
+// transition. Colours come from the variant token, never a literal hex.
+// API   R: label. O: state, animate, variant-keyword. X: exact M3 state-layer
+//       alpha 0.10/0.08/0.10 and press scale (kernel gaps A3/M4); style resolver.
+// Boundary: empty label renders an empty button; overlong label wraps then the
+//       container clips; disabled selects the disabled paint and drops tap.
+// Example ElevatedActionButton("Save", "default", "ease")
+component ElevatedActionButton(label: string, state: string, animate: string) {
+  Button("{label}", p: 12, rounded: 12, shadow: 2, variant: "primary", state: "{state}", animate: "{animate}")
+}
+
+// Filled button: same filled M3 role as elevated minus the shadow.
+// Example FilledActionButton("Confirm", "default", "ease")
+component FilledActionButton(label: string, state: string, animate: string) {
+  Button("{label}", p: 12, rounded: 12, variant: "primary", state: "{state}", animate: "{animate}")
+}
+
+// Outlined button: 1px primary border, transparent fill.
+// Example OutlinedActionButton("Cancel", "default", "ease")
+component OutlinedActionButton(label: string, state: string, animate: string) {
+  Button("{label}", p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}")
+}
+
+// Text button: no fill, primary label.
+// Example TextActionButton("Learn more", "default", "ease")
+component TextActionButton(label: string, state: string, animate: string) {
+  Button("{label}", p: 12, rounded: 12, variant: "text", state: "{state}", animate: "{animate}")
+}
+
+// Danger/destructive variant of the filled button.
+// Example DangerActionButton("Delete", "default", "ease")
+component DangerActionButton(label: string, state: string, animate: string) {
+  Button("{label}", p: 12, rounded: 12, shadow: 2, variant: "danger", state: "{state}", animate: "{animate}")
+}

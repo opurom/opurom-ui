@@ -18,6 +18,7 @@
     "components/bottom_navigation_bar.opu",
     "components/breadcrumb.opu",
     "components/button.opu",
+    "components/buttons_m3.opu",
     "components/card.opu",
     "components/chart_card.opu",
     "components/chip.opu",
