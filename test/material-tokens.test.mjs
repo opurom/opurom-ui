@@ -12,7 +12,9 @@ assert.equal(doc.kind, 'design-tokens');
 assert.equal(doc.namespace, 'md');
 assert.equal(doc.source.commit, 'ab291203');
 const cats = doc.tokens;
-assert.deepEqual(Object.keys(cats).sort(), ['color', 'elevation', 'shape', 'spacing', 'typography']);
+assert.deepEqual(Object.keys(cats), [
+  'color', 'shape', 'elevation', 'typography', 'spacing', 'motion',
+]);
 
 const counts = {};
 let missingSource = 0;
@@ -76,6 +78,21 @@ counts.typography = Object.keys(cats.typography).length;
 // spacing
 for (const [k, v] of Object.entries(cats.spacing)) { assert.match(k, /^md-space-/); checkSource(v, k); }
 counts.spacing = Object.keys(cats.spacing).length;
+
+// motion: five Flutter duration tokens and the standard easing curve
+const motion = cats.motion;
+assert.deepEqual(Object.keys(motion), [
+  'md-motion-duration-short1', 'md-motion-duration-short2', 'md-motion-duration-short3',
+  'md-motion-duration-short4', 'md-motion-duration-medium1', 'md-motion-easing-standard',
+]);
+for (const [key, ms] of [['short1', 50], ['short2', 100], ['short3', 150], ['short4', 200], ['medium1', 250]]) {
+  const entry = motion[`md-motion-duration-${key}`];
+  assert.equal(entry.value, ms, `${key} must be ${ms}ms`);
+  checkSource(entry, key);
+}
+assert.equal(motion['md-motion-easing-standard'].value, 'cubic-bezier(0.2,0,0,1)');
+checkSource(motion['md-motion-easing-standard'], 'standard easing');
+counts.motion = Object.keys(motion).length;
 
 assert.equal(missingSource, 0, 'every token must carry a source reference');
 console.log('material-tokens OK', JSON.stringify(counts), 'total=' + Object.values(counts).reduce((a, b) => a + b, 0));

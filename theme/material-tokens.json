@@ -192,6 +192,14 @@
       "md-space-56": { "value": 56, "source": "constants.dart:30" },
       "md-space-toolbar-height": { "value": 56, "source": "constants.dart:30" },
       "md-space-bottom-nav-height": { "value": 56, "source": "constants.dart:33" }
+    },
+    "motion": {
+      "md-motion-duration-short1": { "value": 50, "source": "motion.dart:28" },
+      "md-motion-duration-short2": { "value": 100, "source": "motion.dart:36" },
+      "md-motion-duration-short3": { "value": 150, "source": "motion.dart:44" },
+      "md-motion-duration-short4": { "value": 200, "source": "motion.dart:52" },
+      "md-motion-duration-medium1": { "value": 250, "source": "motion.dart:60" },
+      "md-motion-easing-standard": { "value": "cubic-bezier(0.2,0,0,1)", "source": "motion.dart:192" }
     }
   }
 }
