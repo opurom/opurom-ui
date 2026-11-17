@@ -1,37 +1,18 @@
 #!/usr/bin/env node
 // Button-family state test: compile the M3 buttons and assert the five states
 // paint distinct fills (hover lightens, active darkens, disabled desaturates).
-// Skips honestly when the sibling toolchain binaries are absent.
+// Native binaries come from the pinned sibling checkout; missing ones fail.
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
+import { requireNative } from './native-tools.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
-
-function siblingBinary(roots, names) {
-  for (const repo of roots) {
-    for (const profile of ['debug', 'release']) {
-      for (const name of names) {
-        // lang-clean / render-clean hold the unified toolchain; fall back to the
-        // main checkouts only if those are absent.
-        for (const base of ['../' + repo, '../../opurom-dist/' + repo]) {
-          const candidate = path.resolve(root, base, 'target', profile, name);
-          if (existsSync(candidate)) return candidate;
-        }
-      }
-    }
-  }
-  return null;
-}
-
-const compiler = siblingBinary(['opurom-lang'], ['opuromc']) ??
-  (existsSync('/Users/mac/work/opurom/opurom-dist/lang-clean/target/debug/opuromc')
-    ? '/Users/mac/work/opurom/opurom-dist/lang-clean/target/debug/opuromc' : null);
-const renderer = existsSync('/Users/mac/work/opurom/opurom-dist/lang-clean-target/debug/opurom-render')
-  ? '/Users/mac/work/opurom/opurom-dist/lang-clean-target/debug/opurom-render' : null;
+const compiler = requireNative(root, 'opurom-lang', ['opuromc']);
+const renderer = requireNative(root, 'opurom-render', ['opurom-render', 'opurom_render']);
 
 const STATES = ['default', 'hover', 'active', 'focus', 'disabled'];
 const BUTTONS = [
@@ -75,7 +56,7 @@ function compileAndRender(tmp, state) {
   return best.split(',').map(Number);
 }
 
-test('button five states paint distinct fills', { skip: !compiler || !renderer }, () => {
+test('button five states paint distinct fills', () => {
   const tmp = mkdtempSync(path.join(tmpdir(), 'opurom-ui-buttons-'));
   try {
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
@@ -95,9 +76,7 @@ test('button five states paint distinct fills', { skip: !compiler || !renderer }
   }
 });
 
-test('m3 buttons render a 40dp stadium with the built-in 12dp inset', {
-  skip: !compiler || !renderer,
-}, () => {
+test('m3 buttons render a 40dp stadium with the built-in 12dp inset', () => {
   const tmp = mkdtempSync(path.join(tmpdir(), 'opurom-ui-btngeom-'));
   try {
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });

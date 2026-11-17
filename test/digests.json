@@ -1,262 +1,480 @@
 {
-  "ActionButton": {
-    "module": "components/button.opu",
-    "use": "ActionButton(\"Save\", \"primary\")",
-    "digest": "1de5730599b03a87"
+  "toolchain": {
+    "render": "8a76e1dfdddc8b82ed5284cabd2921f17cd73571",
+    "lang": "6d5cb74",
+    "profile": "debug",
+    "defaultPathDigest": "8d45f412996a99c6",
+    "oldPinCommit": "0e7d01b",
+    "oldPinsReproduced": true
   },
-  "SurfaceCard": {
-    "module": "components/card.opu",
-    "use": "SurfaceCard(\"A card\")",
-    "digest": "bb023ed9aef5cdd5"
-  },
-  "TitleHeading": {
-    "module": "components/text.opu",
-    "use": "TitleHeading(\"Welcome\")",
-    "digest": "2d3f0a3963eecc53"
-  },
-  "BodyText": {
-    "module": "components/text.opu",
-    "use": "BodyText(\"Body copy\")",
-    "digest": "3e871f8bec0e5d7d"
-  },
-  "CaptionText": {
-    "module": "components/text.opu",
-    "use": "CaptionText(\"Caption line\")",
-    "digest": "dbc337c7f6cdb76e"
-  },
-  "ListPanel": {
-    "module": "components/list.opu",
-    "use": "ListPanel(\"Queue\")",
-    "digest": "a5d10041e3ea08ea"
-  },
-  "NavBar": {
-    "module": "components/navbar.opu",
-    "use": "NavBar(\"Console\", \"Edit\")",
-    "digest": "4bc1779228f73c75"
-  },
-  "DialogPanel": {
-    "module": "components/dialog.opu",
-    "use": "DialogPanel(\"Details\")",
-    "digest": "bf556a42e9f3979a"
-  },
-  "ToastNote": {
-    "module": "components/toast.opu",
-    "use": "ToastNote(\"Saved\")",
-    "digest": "577f8fd382121154"
-  },
-  "BadgePill": {
-    "module": "components/badge.opu",
-    "use": "BadgePill(\"3\")",
-    "digest": "e5e0455e850878f0"
-  },
-  "AvatarDisc": {
-    "module": "components/avatar.opu",
-    "use": "AvatarDisc(\"AB\")",
-    "digest": "1d536506dd9a5270"
-  },
-  "DataTable": {
-    "module": "components/data_table.opu",
-    "use": "DataTable(\"Table\", \"A / B\", \"row one\", \"row two\", \"row three\", \"row two\")",
-    "digest": "194019ee81874688"
-  },
-  "TabsBar": {
-    "module": "components/tabs.opu",
-    "use": "TabsBar(1, 4)",
-    "digest": "cb8ba38641586a83"
-  },
-  "SidebarNav": {
-    "module": "components/sidebar.opu",
-    "use": "SidebarNav(\"Nav\", \"Overview\", \"Runs\", \"Members\", \"Settings\")",
-    "digest": "c929d156bf8fb9dc"
-  },
-  "MetricCard": {
-    "module": "components/stat_card.opu",
-    "use": "MetricCard(\"Total\", \"128\", \"+4%\", \"success\")",
-    "digest": "956dd57e70f82e0e"
-  },
-  "FormField": {
-    "module": "components/form_field.opu",
-    "use": "FormField(\"Name\", \"Enter name\")",
-    "digest": "39d72e65ebf66eb8"
-  },
-  "SearchField": {
-    "module": "components/search.opu",
-    "use": "SearchField(\"Find\")",
-    "digest": "98e8212f58efd54e"
-  },
-  "FilterChip": {
-    "module": "components/chip.opu",
-    "use": "FilterChip(\"Open\", \"primary\")",
-    "digest": "1ad27721f3f25ea4"
-  },
-  "ProgressTrack": {
-    "module": "components/progress.opu",
-    "use": "ProgressTrack(40)",
-    "digest": "13fab55d50bbbd05"
-  },
-  "ConfirmDialog": {
-    "module": "components/confirm_dialog.opu",
-    "use": "ConfirmDialog(\"Remove item?\", \"This cannot be undone.\", \"Remove\")",
-    "digest": "99ed07a8dedf38a3"
-  },
-  "SectionHeader": {
-    "module": "components/section_header.opu",
-    "use": "SectionHeader(\"Overview\")",
-    "digest": "abc9b1467db3dd1b"
-  },
-  "TipCallout": {
-    "module": "components/tooltip.opu",
-    "use": "TipCallout(\"Press to continue\", \"top\")",
-    "digest": "b491f83f1144c84d"
-  },
-  "Drawer": {
-    "module": "components/drawer.opu",
-    "use": "Drawer(\"Navigation\", \"Overview\", \"Runs\", \"Settings\")",
-    "digest": "aabc2d666994e7c2"
-  },
-  "StepBar": {
-    "module": "components/stepper.opu",
-    "use": "StepBar(4, 2)",
-    "digest": "038c7637a75416a1"
-  },
-  "Breadcrumb": {
-    "module": "components/breadcrumb.opu",
-    "use": "Breadcrumb(\"Home\", \"Projects\", \"Release\")",
-    "digest": "1e5e5c60b97707d1"
-  },
-  "EmptyState": {
-    "module": "components/empty_state.opu",
-    "use": "EmptyState(\"folder\", \"No projects\", \"Create one\")",
-    "digest": "92047729b09b8d42"
-  },
-  "Skeleton": {
-    "module": "components/skeleton.opu",
-    "use": "Skeleton(240, 20)",
-    "digest": "baa07cb45ab4a735"
-  },
-  "PaginationBar": {
-    "module": "components/pagination.opu",
-    "use": "PaginationBar(3, 12)",
-    "digest": "1c48c9f16dd0649b"
-  },
-  "SegmentedControl": {
-    "module": "components/segmented.opu",
-    "use": "SegmentedControl(\"Day\", \"Week\", \"Month\", 1)",
-    "digest": "908738b3033042fd"
-  },
-  "Banner": {
-    "module": "components/banner.opu",
-    "use": "Banner(\"Heads up\", \"A deploy is running\", \"info\")",
-    "digest": "c1b5ef7fc1f0b482"
-  },
-  "Timeline": {
-    "module": "components/timeline.opu",
-    "use": "Timeline(\"Activity\", \"09:12 Build ok\", \"09:30 Staging\", \"10:02 Prod\")",
-    "digest": "54c573f2320bc40a"
-  },
-  "FileTree": {
-    "module": "components/filetree.opu",
-    "use": "FileTree(\"src\", \"main.opu\", \"cards.opu\", \"tokens.opu\")",
-    "digest": "e38d835c82a4c7fc"
-  },
-  "ChartCard": {
-    "module": "components/chart_card.opu",
-    "use": "ChartCard(\"Throughput\", \"line\")",
-    "digest": "c1f26cf151459018"
-  },
-  "AvatarGroup": {
-    "module": "components/avatar_group.opu",
-    "use": "AvatarGroup(\"AB\", \"CD\", \"EF\")",
-    "digest": "73ac43cc74a54415"
-  },
-  "NumberFlow": {
-    "module": "components/number_flow.opu",
-    "use": "NumberFlow(\"1,284\", \"req/s\")",
-    "digest": "76c83dd1ac892007"
-  },
-  "StarRating": {
-    "module": "components/rating.opu",
-    "use": "StarRating(\"Review score\", 72, 5)",
-    "digest": "f6b9a7e4e13ad48a"
-  },
-  "CodeSnippet": {
-    "module": "components/code_block.opu",
-    "use": "CodeSnippet(\"deploy.opu\", \"import theme\", \"app Deploy ready\", \"api /build\")",
-    "digest": "7b9ff9b3190240ae"
-  },
-  "HeroHeader": {
-    "module": "components/hero_header.opu",
-    "use": "HeroHeader(\"Opurom Console\", \"Ship from one place\")",
-    "digest": "0eb31c2f73a39946"
-  },
-  "ProfileHeader": {
-    "module": "components/profile_header.opu",
-    "use": "ProfileHeader(\"OP\", \"Opurom Team\", \"Release engineering\")",
-    "digest": "3f41f39078d8eec9"
-  },
-  "DetailRow": {
-    "module": "components/detail_row.opu",
-    "use": "DetailRow(\"lock\", \"Access\", \"Admin only\")",
-    "digest": "9e19e5ef2b54ea86"
-  },
-  "Toolbar": {
-    "module": "components/toolbar.opu",
-    "use": "Toolbar(\"Deploy\", \"Cancel\")",
-    "digest": "800d3d803c38fe34"
-  },
-  "SecureField": {
-    "module": "components/secure_field.opu",
-    "use": "SecureField(\"Access token\")",
-    "digest": "544b8c660b351ee4"
-  },
-  "StatusPill": {
-    "module": "components/status_pill.opu",
-    "use": "StatusPill(\"Healthy\", \"success\")",
-    "digest": "97f673919514437a"
-  },
-  "GridTile": {
-    "module": "components/grid_tile.opu",
-    "use": "GridTile(\"assets/photo1.png\", \"Dawn\")",
-    "digest": "e0b979105e70088c"
-  },
-  "GlassPrimaryButton": {
-    "module": "components/glass_primary_button.opu",
-    "use": "GlassPrimaryButton(\"Save\", \"default\")",
-    "digest": "db5ac543361bb9c3"
-  },
-  "GlassSecondaryButton": {
-    "module": "components/glass_secondary_button.opu",
-    "use": "GlassSecondaryButton(\"Cancel\", \"hover\")",
-    "digest": "249bac8ee2b52ee1"
-  },
-  "GlassGhostButton": {
-    "module": "components/glass_ghost_button.opu",
-    "use": "GlassGhostButton(\"Skip\", \"focus\")",
-    "digest": "659cfc9ec099b3ac"
-  },
-  "GlassFab": {
-    "module": "components/glass_fab.opu",
-    "use": "GlassFab(\"+\", \"active\")",
-    "digest": "9a7639a1c287e099"
-  },
-  "GlassCard": {
-    "module": "components/glass_card.opu",
-    "use": "GlassCard(\"Surface\", \"disabled\")",
-    "digest": "41ac8dbb4248720b"
-  },
-  "GlassSwitchOff": {
-    "module": "components/glass_switch_off.opu",
-    "use": "GlassSwitchOff(\"default\")",
-    "digest": "541355e9fb80b65d"
-  },
-  "GlassSwitchOn": {
-    "module": "components/glass_switch_on.opu",
-    "use": "GlassSwitchOn(\"default\")",
-    "digest": "1c8a4e973535a0fd"
-  },
-  "GlassInput": {
-    "module": "components/glass_input.opu",
-    "use": "GlassInput(\"Search\", \"default\")",
-    "digest": "2b223d9af1a1d6d2"
+  "pins": {
+    "ActionButton": {
+      "module": "components/button.opu",
+      "use": "ActionButton(\"Save\", \"primary\")",
+      "digest": "1de5730599b03a87",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "SurfaceCard": {
+      "module": "components/card.opu",
+      "use": "SurfaceCard(\"A card\")",
+      "digest": "bb023ed9aef5cdd5",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "TitleHeading": {
+      "module": "components/text.opu",
+      "use": "TitleHeading(\"Welcome\")",
+      "digest": "2d3f0a3963eecc53",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "BodyText": {
+      "module": "components/text.opu",
+      "use": "BodyText(\"Body copy\")",
+      "digest": "3e871f8bec0e5d7d",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "CaptionText": {
+      "module": "components/text.opu",
+      "use": "CaptionText(\"Caption line\")",
+      "digest": "dbc337c7f6cdb76e",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "ListPanel": {
+      "module": "components/list.opu",
+      "use": "ListPanel(\"Queue\")",
+      "digest": "a5d10041e3ea08ea",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "NavBar": {
+      "module": "components/navbar.opu",
+      "use": "NavBar(\"Console\", \"Edit\")",
+      "digest": "4bc1779228f73c75",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "DialogPanel": {
+      "module": "components/dialog.opu",
+      "use": "DialogPanel(\"Details\")",
+      "digest": "bf556a42e9f3979a",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "ToastNote": {
+      "module": "components/toast.opu",
+      "use": "ToastNote(\"Saved\")",
+      "digest": "577f8fd382121154",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "BadgePill": {
+      "module": "components/badge.opu",
+      "use": "BadgePill(\"3\")",
+      "digest": "e5e0455e850878f0",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "AvatarDisc": {
+      "module": "components/avatar.opu",
+      "use": "AvatarDisc(\"AB\")",
+      "digest": "1d536506dd9a5270",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "DataTable": {
+      "module": "components/data_table.opu",
+      "use": "DataTable(\"Table\", \"A / B\", \"row one\", \"row two\", \"row three\", \"row two\")",
+      "digest": "194019ee81874688",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "TabsBar": {
+      "module": "components/tabs.opu",
+      "use": "TabsBar(1, 4)",
+      "digest": "cb8ba38641586a83",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "SidebarNav": {
+      "module": "components/sidebar.opu",
+      "use": "SidebarNav(\"Nav\", \"Overview\", \"Runs\", \"Members\", \"Settings\")",
+      "digest": "c929d156bf8fb9dc",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "MetricCard": {
+      "module": "components/stat_card.opu",
+      "use": "MetricCard(\"Total\", \"128\", \"+4%\", \"success\")",
+      "digest": "956dd57e70f82e0e",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "FormField": {
+      "module": "components/form_field.opu",
+      "use": "FormField(\"Name\", \"Enter name\")",
+      "digest": "39d72e65ebf66eb8",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "SearchField": {
+      "module": "components/search.opu",
+      "use": "SearchField(\"Find\")",
+      "digest": "98e8212f58efd54e",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "FilterChip": {
+      "module": "components/chip.opu",
+      "use": "FilterChip(\"Open\", \"primary\")",
+      "digest": "1ad27721f3f25ea4",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "ProgressTrack": {
+      "module": "components/progress.opu",
+      "use": "ProgressTrack(40)",
+      "digest": "13fab55d50bbbd05",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "ConfirmDialog": {
+      "module": "components/confirm_dialog.opu",
+      "use": "ConfirmDialog(\"Remove item?\", \"This cannot be undone.\", \"Remove\")",
+      "digest": "99ed07a8dedf38a3",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "SectionHeader": {
+      "module": "components/section_header.opu",
+      "use": "SectionHeader(\"Overview\")",
+      "digest": "abc9b1467db3dd1b",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "TipCallout": {
+      "module": "components/tooltip.opu",
+      "use": "TipCallout(\"Press to continue\", \"top\")",
+      "digest": "b491f83f1144c84d",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "Drawer": {
+      "module": "components/drawer.opu",
+      "use": "Drawer(\"Navigation\", \"Overview\", \"Runs\", \"Settings\")",
+      "digest": "aabc2d666994e7c2",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "StepBar": {
+      "module": "components/stepper.opu",
+      "use": "StepBar(4, 2)",
+      "digest": "038c7637a75416a1",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "Breadcrumb": {
+      "module": "components/breadcrumb.opu",
+      "use": "Breadcrumb(\"Home\", \"Projects\", \"Release\")",
+      "digest": "1e5e5c60b97707d1",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "EmptyState": {
+      "module": "components/empty_state.opu",
+      "use": "EmptyState(\"folder\", \"No projects\", \"Create one\")",
+      "digest": "92047729b09b8d42",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "Skeleton": {
+      "module": "components/skeleton.opu",
+      "use": "Skeleton(240, 20)",
+      "digest": "baa07cb45ab4a735",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "PaginationBar": {
+      "module": "components/pagination.opu",
+      "use": "PaginationBar(3, 12)",
+      "digest": "1c48c9f16dd0649b",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "SegmentedControl": {
+      "module": "components/segmented.opu",
+      "use": "SegmentedControl(\"Day\", \"Week\", \"Month\", 1)",
+      "digest": "908738b3033042fd",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "Banner": {
+      "module": "components/banner.opu",
+      "use": "Banner(\"Heads up\", \"A deploy is running\", \"info\")",
+      "digest": "c1b5ef7fc1f0b482",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "Timeline": {
+      "module": "components/timeline.opu",
+      "use": "Timeline(\"Activity\", \"09:12 Build ok\", \"09:30 Staging\", \"10:02 Prod\")",
+      "digest": "54c573f2320bc40a",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "FileTree": {
+      "module": "components/filetree.opu",
+      "use": "FileTree(\"src\", \"main.opu\", \"cards.opu\", \"tokens.opu\")",
+      "digest": "e38d835c82a4c7fc",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "ChartCard": {
+      "module": "components/chart_card.opu",
+      "use": "ChartCard(\"Throughput\", \"line\")",
+      "digest": "c1f26cf151459018",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "AvatarGroup": {
+      "module": "components/avatar_group.opu",
+      "use": "AvatarGroup(\"AB\", \"CD\", \"EF\")",
+      "digest": "73ac43cc74a54415",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "NumberFlow": {
+      "module": "components/number_flow.opu",
+      "use": "NumberFlow(\"1,284\", \"req/s\")",
+      "digest": "76c83dd1ac892007",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "StarRating": {
+      "module": "components/rating.opu",
+      "use": "StarRating(\"Review score\", 72, 5)",
+      "digest": "f6b9a7e4e13ad48a",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "CodeSnippet": {
+      "module": "components/code_block.opu",
+      "use": "CodeSnippet(\"deploy.opu\", \"import theme\", \"app Deploy ready\", \"api /build\")",
+      "digest": "7b9ff9b3190240ae",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "HeroHeader": {
+      "module": "components/hero_header.opu",
+      "use": "HeroHeader(\"Opurom Console\", \"Ship from one place\")",
+      "digest": "0eb31c2f73a39946",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "ProfileHeader": {
+      "module": "components/profile_header.opu",
+      "use": "ProfileHeader(\"OP\", \"Opurom Team\", \"Release engineering\")",
+      "digest": "3f41f39078d8eec9",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "DetailRow": {
+      "module": "components/detail_row.opu",
+      "use": "DetailRow(\"lock\", \"Access\", \"Admin only\")",
+      "digest": "9e19e5ef2b54ea86",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "Toolbar": {
+      "module": "components/toolbar.opu",
+      "use": "Toolbar(\"Deploy\", \"Cancel\")",
+      "digest": "800d3d803c38fe34",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "SecureField": {
+      "module": "components/secure_field.opu",
+      "use": "SecureField(\"Access token\")",
+      "digest": "544b8c660b351ee4",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "StatusPill": {
+      "module": "components/status_pill.opu",
+      "use": "StatusPill(\"Healthy\", \"success\")",
+      "digest": "97f673919514437a",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GridTile": {
+      "module": "components/grid_tile.opu",
+      "use": "GridTile(\"assets/photo1.png\", \"Dawn\")",
+      "digest": "464556a01cef4e65",
+      "attribution": {
+        "renderCommit": "393bd834530756c25972f540658a454f35082e84",
+        "reason": "per-corner radii emitted in display list; first drift at 393bd83, isolated by rebuilding every render commit from 0e7d01b"
+      }
+    },
+    "GlassPrimaryButton": {
+      "module": "components/glass_primary_button.opu",
+      "use": "GlassPrimaryButton(\"Save\", \"default\")",
+      "digest": "db5ac543361bb9c3",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassSecondaryButton": {
+      "module": "components/glass_secondary_button.opu",
+      "use": "GlassSecondaryButton(\"Cancel\", \"hover\")",
+      "digest": "249bac8ee2b52ee1",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassGhostButton": {
+      "module": "components/glass_ghost_button.opu",
+      "use": "GlassGhostButton(\"Skip\", \"focus\")",
+      "digest": "659cfc9ec099b3ac",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassFab": {
+      "module": "components/glass_fab.opu",
+      "use": "GlassFab(\"+\", \"active\")",
+      "digest": "9a7639a1c287e099",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassCard": {
+      "module": "components/glass_card.opu",
+      "use": "GlassCard(\"Surface\", \"disabled\")",
+      "digest": "41ac8dbb4248720b",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassSwitchOff": {
+      "module": "components/glass_switch_off.opu",
+      "use": "GlassSwitchOff(\"default\")",
+      "digest": "541355e9fb80b65d",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassSwitchOn": {
+      "module": "components/glass_switch_on.opu",
+      "use": "GlassSwitchOn(\"default\")",
+      "digest": "1c8a4e973535a0fd",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    },
+    "GlassInput": {
+      "module": "components/glass_input.opu",
+      "use": "GlassInput(\"Search\", \"default\")",
+      "digest": "2b223d9af1a1d6d2",
+      "attribution": {
+        "renderCommit": "0e7d01b",
+        "reason": "byte-identical from 0e7d01b through signed render 8a76e1d; verified by rebuild"
+      }
+    }
   }
 }

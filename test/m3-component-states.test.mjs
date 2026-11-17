@@ -4,14 +4,15 @@
 // state transform. Also covers empty content, overlong labels and invalid state.
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
+import { requireNative } from './native-tools.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
-const compiler = '/Users/mac/work/opurom/opurom-dist/lang-clean/target/debug/opuromc';
-const renderer = '/Users/mac/work/opurom/opurom-dist/lang-clean-target/debug/opurom-render';
+const compiler = requireNative(root, 'opurom-lang', ['opuromc']);
+const renderer = requireNative(root, 'opurom-render', ['opurom-render', 'opurom_render']);
 const STATES = ['default', 'hover', 'active', 'focus', 'disabled'];
 const CASES = {
   ElevatedCardM3: ['components/card_m3.opu', '"Title", "Subtitle"'],
@@ -63,9 +64,7 @@ function signature(counts) {
     .join('|');
 }
 
-test('m3 cards, list tile and chips render all five states', {
-  skip: !existsSync(compiler) || !existsSync(renderer),
-}, () => {
+test('m3 cards, list tile and chips render all five states', () => {
   const tmp = mkdtempSync(path.join(tmpdir(), 'opurom-ui-m3shells-'));
   try {
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
@@ -92,9 +91,7 @@ test('m3 cards, list tile and chips render all five states', {
   }
 });
 
-test('m3 shells guard empty content, long labels and invalid states', {
-  skip: !existsSync(compiler) || !existsSync(renderer),
-}, () => {
+test('m3 shells guard empty content, long labels and invalid states', () => {
   const tmp = mkdtempSync(path.join(tmpdir(), 'opurom-ui-m3bounds-'));
   try {
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
