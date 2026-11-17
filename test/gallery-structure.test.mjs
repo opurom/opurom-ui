@@ -16,8 +16,11 @@ import { requireNative } from './native-tools.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const doc = JSON.parse(readFileSync(path.join(root, 'test/gallery-structure.pins.json'), 'utf8'));
-const compiler = requireNative(root, 'opurom-lang', ['opuromc']);
-const renderer = requireNative(root, 'opurom-render', ['opurom-render', 'opurom_render']);
+// The gallery pins declare their own toolchain (test/gallery-structure.pins.json
+// toolchain block); CI provisions those exact commits into these sibling dirs so
+// the pins never depend on the default digest-gate toolchain.
+const compiler = requireNative(root, 'opurom-lang-gal', ['opuromc'], doc.toolchain.profile);
+const renderer = requireNative(root, 'opurom-render-gal', ['opurom-render', 'opurom_render'], doc.toolchain.profile);
 
 function run(tool, args) {
   const r = spawnSync(tool, args, { encoding: 'utf8' });

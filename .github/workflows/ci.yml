@@ -85,6 +85,8 @@ jobs:
           EIGHT_LANG_SHA=$(node -p "require('./test/eight-state-toolchain.json').lang")
           STATE_RENDER_SHA=$(node -p "require('./test/state-digests.json').meta.render")
           STATE_LANG_SHA=$(node -p "require('./test/state-digests.json').meta.lang")
+          GAL_RENDER_SHA=$(node -p "require('./test/gallery-structure.pins.json').toolchain.render")
+          GAL_LANG_SHA=$(node -p "require('./test/gallery-structure.pins.json').toolchain.lang")
           cd "$GITHUB_WORKSPACE/.."
           clone_pinned() {
             local dir="$1" repo="$2" sha="$3"
@@ -102,11 +104,15 @@ jobs:
           clone_pinned opurom-lang-8state opurom-lang "$EIGHT_LANG_SHA"
           clone_pinned opurom-render-statedigests opurom-render "$STATE_RENDER_SHA"
           clone_pinned opurom-lang-statedigests opurom-lang "$STATE_LANG_SHA"
+          clone_pinned opurom-render-gal opurom-render "$GAL_RENDER_SHA"
+          clone_pinned opurom-lang-gal opurom-lang "$GAL_LANG_SHA"
           cargo build --quiet --manifest-path opurom-render/Cargo.toml --bin opurom-render
           cargo build --quiet --manifest-path opurom-lang/Cargo.toml --bin opuromc
           cargo build --quiet --manifest-path opurom-lang-8state/Cargo.toml --bin opuromc
           cargo build --quiet --manifest-path opurom-render-statedigests/Cargo.toml --bin opurom-render
           cargo build --quiet --manifest-path opurom-lang-statedigests/Cargo.toml --bin opuromc
+          cargo build --quiet --manifest-path opurom-render-gal/Cargo.toml --bin opurom-render
+          cargo build --quiet --manifest-path opurom-lang-gal/Cargo.toml --bin opuromc
       - name: Run ${{ matrix.check }}
         run: node .github/scripts/ci-check.mjs ${{ matrix.check }}
 
