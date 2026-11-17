@@ -82,11 +82,12 @@ jobs:
           set -euo pipefail
           RENDER_SHA=$(node -p "require('./test/digests.json').toolchain.render")
           LANG_SHA=$(node -p "require('./test/digests.json').toolchain.lang")
+          EIGHT_LANG_SHA=$(node -p "require('./test/eight-state-toolchain.json').lang")
           cd "$GITHUB_WORKSPACE/.."
           clone_pinned() {
-            local repo="$1" sha="$2"
-            mkdir -p "$repo"
-            cd "$repo"
+            local dir="$1" repo="$2" sha="$3"
+            mkdir -p "$dir"
+            cd "$dir"
             git init -q
             git remote add origin "https://github.com/opurom/${repo}.git" 2>/dev/null || \
               git remote set-url origin "https://github.com/opurom/${repo}.git"
@@ -94,10 +95,12 @@ jobs:
             git checkout -q --detach FETCH_HEAD
             cd ..
           }
-          clone_pinned opurom-render "$RENDER_SHA"
-          clone_pinned opurom-lang "$LANG_SHA"
+          clone_pinned opurom-render opurom-render "$RENDER_SHA"
+          clone_pinned opurom-lang opurom-lang "$LANG_SHA"
+          clone_pinned opurom-lang-8state opurom-lang "$EIGHT_LANG_SHA"
           cargo build --quiet --manifest-path opurom-render/Cargo.toml --bin opurom-render
           cargo build --quiet --manifest-path opurom-lang/Cargo.toml --bin opuromc
+          cargo build --quiet --manifest-path opurom-lang-8state/Cargo.toml --bin opuromc
       - name: Run ${{ matrix.check }}
         run: node .github/scripts/ci-check.mjs ${{ matrix.check }}
 

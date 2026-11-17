@@ -4,6 +4,10 @@ Fourteen SKELETON modules are in place: six P0 skeletons (batch 1), four P1 layo
 
 The gap identifiers referenced below are registered in `opurom-spec/FLUTTER_REPLICA_KERNEL_PLAN.md`: L1, L2, L3, L4, A3, A4, B2, B3, B4.
 
+## State vocabulary
+
+All component APIs accept eight `state` keywords: default, hover, active, focus, disabled, loading, success and error. The first five are interaction states; loading, success and error are business states with no Flutter `WidgetState` member and are marked `NO_FLUTTER_EQUIVALENT` in `opurom-spec/COMPONENT_STATE_PROPOSAL.md`. Duration values follow `opurom-spec/ANIMATION_DURATION_ADJUDICATION.md`; no component claims a Flutter-owned business-state duration. The 14 skeleton rows below remain SKELETON: their headers describe the interaction states used by the current golden pins; business-state visual pins await the renderer state-transition work and are not claimed here.
+
 R = required, O = optional, X = reserved / not expressive in the current IR. Every row is transcribed from the corresponding component file header and the README component table.
 
 | Module | API | R | O | X (reserved) | Gaps | Stage |

@@ -64,12 +64,12 @@ import "components/text.opu";
 | Module | Components | Notes |
 |---|---|---|
 | `components/button.opu` | `ActionButton(label, variant)` | `variant` is `primary`, `secondary` or `ghost` |
-| `components/buttons_m3.opu` | `ElevatedActionButton`, `FilledActionButton`, `OutlinedActionButton`, `TextActionButton`, `DangerActionButton` (label, state, animate) | M3 button family; five states, 40dp stadium (radius 20), implicit `animate` transition; 24dp horizontal inset reserved (uniform padding), exact state-layer alpha reserved (A3/M4) |
+| `components/buttons_m3.opu` | `ElevatedActionButton`, `FilledActionButton`, `OutlinedActionButton`, `TextActionButton`, `DangerActionButton` (label, state, animate) | M3 button family; eight states, 40dp stadium (radius 20), implicit `animate` transition; 24dp horizontal inset reserved (uniform padding), exact state-layer alpha reserved (A3/M4) |
 | `components/card.opu` | `SurfaceCard(title)` | token radius and soft elevation; pinned legacy, do not edit |
-| `components/card_m3.opu` | `ElevatedCardM3`, `OutlinedCardM3` (title, subtitle, state, animate) | M3 cards; five states, radius 12 / padding 16, elevation 1; content slots (M7), three-layer shadow (M2) reserved |
+| `components/card_m3.opu` | `ElevatedCardM3`, `OutlinedCardM3` (title, subtitle, state, animate) | M3 cards; eight states, radius 12 / padding 16, elevation 1; content slots (M7), three-layer shadow (M2) reserved |
 | `components/text.opu` | `TitleHeading`, `BodyText`, `CaptionText` | one pinned type scale per level |
 | `components/list.opu` | `ListPanel(title)` | titled list surface |
-| `components/list_tile_m3.opu` | `ListTileM3(title, subtitle, state, animate)` | two-line M3 tile; five states; selected overlay (A3), slots (M7), exact tile metrics (B12) reserved |
+| `components/list_tile_m3.opu` | `ListTileM3(title, subtitle, state, animate)` | two-line M3 tile; eight states; selected overlay (A3), slots (M7), exact tile metrics (B12) reserved |
 | `components/navbar.opu` | `NavBar(title, action)` | leading title, trailing action |
 | `components/dialog.opu` | `DialogPanel(title)` | titled modal |
 | `components/toast.opu` | `ToastNote(message)` | success-toned strip |
@@ -82,7 +82,7 @@ import "components/text.opu";
 | `components/form_field.opu` | `FormField(label, placeholder)` | label above a field; bind at the call site |
 | `components/search.opu` | `SearchField(placeholder)` | search box with a leading glyph |
 | `components/chip.opu` | `FilterChip(label, variant)` | pass `primary` when active, `ghost` when idle |
-| `components/chips_m3.opu` | `AssistChipM3`, `SelectedChipM3` (label, state, animate) | static M3 chip appearances; five states, radius 8 / 195 ms motion; runtime selection and delete affordance (A3/M4) reserved |
+| `components/chips_m3.opu` | `AssistChipM3`, `SelectedChipM3` (label, state, animate) | static M3 chip appearances; eight states, radius 8 / 195 ms motion; runtime selection and delete affordance (A3/M4) reserved |
 | `components/progress.opu` | `ProgressTrack(percent)` | determinate bar in the theme accent |
 | `components/confirm_dialog.opu` | `ConfirmDialog(title, body, confirm)` | dialog with a primary confirm action |
 | `components/section_header.opu` | `SectionHeader(title)` | heading with a trailing action affordance |
@@ -134,10 +134,10 @@ import "components/text.opu";
 | `components/form.opu` | `FormShell(title, label, placeholder, required, state)` | SKELETON: form_field shell; FormState/save/validate reserved (gap B4) |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
-optional and reserved props are marked in each file header, all four states
-(normal/default, pressed/active, focus, disabled) have token-driven style
-placement, gesture callbacks are defined as no-op fallbacks, and each carries a
-minimal usage example. They keep the single-source IR, no-runtime-interpreter
+optional and reserved props are marked in each file header, the five interaction
+states (normal/default, pressed/active, focus, disabled, hover) have token-driven
+style placement, gesture callbacks are defined as no-op fallbacks, and each
+carries a minimal usage example. They keep the single-source IR, no-runtime-interpreter
 and no-mutable-object-model rules. Kernel-dependent behaviour stays `reserved`
 and is tracked in `opurom-spec/FLUTTER_REPLICA_KERNEL_PLAN.md` (gaps L1, L2, L3,
 L4, A3, A4, B2, B3, B4, M2, M4, M7, B12); all listed gaps are numbered in that plan.
@@ -146,9 +146,13 @@ Component modules never import anything: the application owns the theme, and com
 every colour from design props (`variant`, `tone`) or the theme defaults; no module may
 hardcode a hex value except the two documented legacy files (`card.opu`, `text.opu`) and the
 exact brand gradient literal `#2DD8FF,#006EFF` the premium glass slice authors explicitly.
-The self-check enforces all rules. The premium slice sets `state` from a literal parameter so
-the five design states can be authored; transitions, alpha fills, inside borders, focus glow
-and subpixel edges are kernel capabilities, not component syntax.
+The self-check enforces all rules. Components set `state` from a literal parameter so all eight
+design keywords can be authored: default, hover, active, focus, disabled, loading, success and
+error. The last three are business states with no Flutter `WidgetState` equivalent
+(`NO_FLUTTER_EQUIVALENT`, see `COMPONENT_STATE_PROPOSAL.md` and
+`ANIMATION_DURATION_ADJUDICATION.md`); they are not presented as framework states. Transitions,
+alpha fills, inside borders, focus glow and subpixel edges are kernel capabilities, not component
+syntax.
 
 A component takes positional literal arguments only (an `int`, `bool` or `string`), and its
 body is fixed at compile time. Interactive primitives that need a state binding (`Input`,

@@ -2,8 +2,10 @@
 // Geometry: 40dp tall stadium (radius 20 = height / 2). The wrapper sets the
 // height and stays transparent through the no-fill "text" role; the Button
 // primitive carries the variant fill, the state and the implicit transition.
-// Five design states map to the renderer's state transform: default/hover/
-// active/focus/disabled. Colours come from the variant token, never a literal hex.
+// Eight design states map to the renderer's state transform: default/hover/
+// active/focus/disabled/loading/success/error. loading, success and error are
+// business states (NO_FLUTTER_EQUIVALENT, no Flutter WidgetState members) and
+// mask interaction feedback. Colours come from the variant token, never a hex.
 // API   R: label. O: state, animate, variant-keyword. X: 24dp horizontal inset
 //       (uniform padding cannot set axes separately, so the Button's built-in
 //       12dp per side renders), 64dp minimum width (natural label width is the

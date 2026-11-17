@@ -1,0 +1,5 @@
+{
+  "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+  "langCommitShort": "d1a0418",
+  "note": "Compiler-only toolchain for the eight-state emit test. The signed digest renderer (8a76e1d) and its compiler (6d5cb74) stay untouched; this compiler is not used for pinned frames."
+}
