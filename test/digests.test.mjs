@@ -27,7 +27,7 @@ function run(tool, args) {
 
 test('every pinned component digest still matches its render', () => {
   assert.equal(toolchain.render, '8a76e1dfdddc8b82ed5284cabd2921f17cd73571');
-  assert.equal(toolchain.lang, '6d5cb74');
+  assert.equal(toolchain.lang, '6d5cb7454d904a7a62af5aef3cf6672e892d9013');
   assert.equal(toolchain.defaultPathDigest, '8d45f412996a99c6');
   assert.ok(Object.keys(pins).length === 52, 'all 52 pins must be present');
   const tmp = mkdtempSync(path.join(tmpdir(), 'opurom-ui-digests-'));
