@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node test/check.mjs && node test/material-tokens.test.mjs && node --test test/digests.test.mjs test/button-states.test.mjs test/m3-component-states.test.mjs test/eight-state-compile.test.mjs test/state-digests.test.mjs"
+    "test": "node test/check.mjs && node test/material-tokens.test.mjs && node --test test/digests.test.mjs test/button-states.test.mjs test/m3-component-states.test.mjs test/eight-state-compile.test.mjs test/state-digests.test.mjs test/gallery-structure.test.mjs"
   }
 }

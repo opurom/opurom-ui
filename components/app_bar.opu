@@ -1,6 +1,7 @@
-// AppBarShell(title, leading, action, state): skeleton of Flutter AppBar. A real
-// route-level app bar contract belongs to the route shell (kernel gap A4 plus a
-// new spec entry, NOT IN PLAN); this renders a static navbar-shaped band.
+// AppBarShell(title, leading, action, state): skeleton of the Flutter Material 3
+// AppBar. Metrics pinned to app_bar.dart:2522-2570 at ab291203: toolbar height 64
+// (kToolbarHeight 56 is the M2 constant), elevation 0, leading icon 24, title
+// titleLarge 22/400, action label 14, middle spacing 16.
 // API   R: none. O: title, leading (icon name), action, state. X: PreferredSize,
 //       bottom, elevation, route actions (reserved; A4).
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
@@ -8,12 +9,12 @@
 // Bounds title/action are flat strings; overlong text is bounded by the container.
 // Example AppBarShell("Title", "arrow_back", "More", "default")
 component AppBarShell(title: string, leading: string, action: string, state: string) {
-  Container(p: 12, rounded: 12, variant: "primary", state: "{state}", gesture: tap, label: "app bar") {
-    Row(gap: 12, align: center) {
-      Icon(name: "{leading}")
-      Text("{title}", size: 18)
+  Container(height: 64, p: 16, variant: "primary", state: "{state}", gesture: tap, label: "app bar") {
+    Row(gap: 16, align: center) {
+      Icon(name: "{leading}", width: 24, height: 24)
+      Text("{title}", size: 22, weight: "normal")
       Spacer()
-      Text("{action}", size: 13, tone: "info")
+      Text("{action}", size: 14, tone: "info")
     }
   }
 }

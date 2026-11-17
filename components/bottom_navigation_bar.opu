@@ -1,5 +1,6 @@
-// BottomNav(labels, selected, segments, state, gesture): skeleton of Flutter
-// BottomNavigationBar. Per-segment tap routing and press feedback need kernel
+// BottomNav(labels, selected, segments, state, gesture): skeleton of the Flutter
+// Material 3 NavigationBar. Metrics pinned to navigation_bar.dart:1427-1470 at
+// ab291203: height 80, elevation 3, square bar (no radius), label labelMedium 12. Per-segment tap routing and press feedback need kernel
 // gaps B3 and A3; selection here is a static TabStrip readout and the gesture is
 // a no-op fallback, so no tap is mis-routed to the first segment.
 // API   R: labels (comma-separated). O: selected (zero-based), segments, state,
@@ -9,7 +10,7 @@
 // Bounds selected/segments 0..10000 by compiler; overlong labels bounded by strip.
 // Example BottomNav("Home,Search,Profile", 0, 3, "default", "tap")
 component BottomNav(labels: string, selected: int, segments: int, state: string, gesture: string) {
-  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: "{gesture}", label: "bottom nav") {
+  Container(height: 80, p: 0, shadow: 3, variant: "secondary", state: "{state}", gesture: "{gesture}", label: "bottom nav") {
     TabStrip(value: selected, segments: segments, labels: "{labels}")
   }
 }

@@ -1,0 +1,27 @@
+{
+  "viewport": [360, 140],
+  "reference": {
+    "flutter": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "files": {
+      "app_bar": "packages/flutter/lib/src/material/app_bar.dart:2522-2570",
+      "navigation_bar": "packages/flutter/lib/src/material/navigation_bar.dart:1427-1470"
+    }
+  },
+  "toolchain": {
+    "render": "f3a8bca",
+    "lang": "caa985f",
+    "profile": "debug"
+  },
+  "pins": {
+    "AppBarShell": {
+      "module": "components/app_bar.opu",
+      "use": "AppBarShell(\"Title\", \"arrow_back\", \"More\", \"default\")",
+      "digest": "3cb5506ccf667c9f"
+    },
+    "BottomNav": {
+      "module": "components/bottom_navigation_bar.opu",
+      "use": "BottomNav(\"Home,Search,Profile\", 0, 3, \"default\", \"tap\")",
+      "digest": "7a02afe0e0d03c67"
+    }
+  }
+}
