@@ -83,6 +83,7 @@ import "components/text.opu";
 | `components/search.opu` | `SearchField(placeholder)` | search box with a leading glyph |
 | `components/chip.opu` | `FilterChip(label, variant)` | pass `primary` when active, `ghost` when idle |
 | `components/chips_m3.opu` | `AssistChipM3`, `SelectedChipM3` (label, state, animate) | static M3 chip appearances; eight states, radius 8 / 195 ms motion; runtime selection and delete affordance (A3/M4) reserved |
+| `components/selection_m3.opu` | `CheckboxM3`, `RadioM3`, `SwitchOnM3`, `SwitchOffM3`, `SliderM3` (state, animate), `SegmentedM3` (first, second, third, selected, state, animate) | eight-state selection shells; `bind` stays at the call site (component args are literals), value/checkmark/drag reserved; M3 token durations 200/300 ms, segment state via `SegmentedInput` |
 | `components/progress.opu` | `ProgressTrack(percent)` | determinate bar in the theme accent |
 | `components/confirm_dialog.opu` | `ConfirmDialog(title, body, confirm)` | dialog with a primary confirm action |
 | `components/section_header.opu` | `SectionHeader(title)` | heading with a trailing action affordance |

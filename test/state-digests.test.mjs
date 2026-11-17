@@ -34,8 +34,10 @@ test('state digests pin settled frames under the signed toolchain', () => {
   assert.equal(meta.render, '7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2');
   assert.equal(meta.lang, 'd1a0418179fd20c58a899d012dffb82ac5f7d8a1');
   assert.equal(meta.tick, 4000);
-  assert.equal(pins.length, 60, '10 components x 6 states must be pinned');
+  assert.equal(pins.length, 108, '10 components x 6 states plus 6 selection components x 8 states');
+  assert.equal(meta.states.length, 8, 'the eight state keywords must be declared');
   const byComponent = new Map();
+  const expected = new Map();
   const tmp = mkdtempSync(path.join(tmpdir(), 'uibuild-state-digests-'));
   try {
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
@@ -52,14 +54,15 @@ test('state digests pin settled frames under the signed toolchain', () => {
       assert.ok(got, `${pin.name} produced no digest`);
       assert.equal(got, pin.digest, `${pin.name} state digest drifted: got ${got}, pinned ${pin.digest}`);
       const component = pin.name.slice(0, pin.name.lastIndexOf('-'));
+      expected.set(component, (expected.get(component) ?? 0) + 1);
       if (!byComponent.has(component)) byComponent.set(component, new Set());
       byComponent.get(component).add(got);
     }
-    assert.equal(byComponent.size, 10, 'all ten core components must be covered');
+    assert.equal(byComponent.size, 16, '16 core components must be covered');
     for (const [component, digests] of byComponent) {
-      assert.equal(digests.size, 6, `${component} must keep six distinct state frames`);
+      assert.equal(digests.size, expected.get(component), `${component} state frames must stay distinct`);
     }
-    console.log('state digests OK', `${byComponent.size} components x ${meta.states.length} states, settle tick ${meta.tick}`);
+    console.log('state digests OK', `${byComponent.size} components, ${pins.length} pins, settle tick ${meta.tick}`);
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }

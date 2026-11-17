@@ -60,6 +60,7 @@
     "components/rating.opu",
     "components/scaffold.opu",
     "components/search.opu",
+    "components/selection_m3.opu",
     "components/section_header.opu",
     "components/secure_field.opu",
     "components/segmented.opu",

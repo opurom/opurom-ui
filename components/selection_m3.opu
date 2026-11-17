@@ -1,0 +1,80 @@
+// Selection shells with the eight-state design prop. Bind-based primitives
+// (Checkbox, Radio, Switch, Slider) require an app state name; a component
+// argument is a literal, so `bind` cannot cross a component API. These shells
+// carry the visual state and leave value binding at the call site, as the
+// package README already documents. Segmented uses SegmentedInput, which needs
+// no bind and receives state directly. Durations are Opurom selections among
+// Flutter Durations tokens (ANIMATION_DURATION_ADJUDICATION.md): 200 ms short4
+// for checkbox/radio/slider/segmented, 300 ms medium2 for the switch, which
+// matches switch.dart:2387. The glass "ease" curve family is
+// NO_FLUTTER_EQUIVALENT, never attributed to Flutter.
+
+// CheckboxM3(state, animate): M3 18dp box (checkbox.dart:405), 2dp outline
+// (checkbox.dart:933-950), five interaction states plus three business states.
+// API   R: state (8-value keyword). O: animate (implicit transition).
+//       X: bind/checked value, checkmark, gesture wiring (IR needs a call-site
+//       state name; A3 for press feedback). No theme declaration in this module.
+// Example CheckboxM3("default", "ease")
+component CheckboxM3(state: string, animate: string) {
+  Container(width: 18, height: 18, rounded: 2, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "checkbox shell") {
+  }
+}
+
+// RadioM3(state, animate): M3 18dp radio outline; selected dot needs the
+// call-site value, so it stays reserved. Same eight-state contract as Checkbox.
+// Example RadioM3("hover", "ease")
+component RadioM3(state: string, animate: string) {
+  Container(width: 18, height: 18, rounded: 9, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "radio shell") {
+  }
+}
+
+// SwitchOnM3 / SwitchOffM3: M3 track 52x32 with radius 16 (switch.dart:2373-2377),
+// thumb 24dp on / 16dp off (switch.dart:2318,2355), toggle 300 ms
+// (switch.dart:2387). The two appearances are compile-time because a bool
+// argument cannot drive an 'if' and the value lives in app state.
+// API   R: state. O: animate. X: bind, toggle callback, press thumb growth (A3).
+// Example SwitchOnM3("default", "ease")
+component SwitchOnM3(state: string, animate: string) {
+  Container(width: 52, height: 32, variant: "primary", state: "{state}", animate: "{animate}", duration: 300, gesture: tap, label: "switch on") {
+    Row(padding: 8, gap: 0) {
+      Spacer(width: 12)
+      Container(width: 24, height: 24, rounded: 12, variant: "ghost")
+    }
+  }
+}
+
+// Example SwitchOffM3("disabled", "ease")
+component SwitchOffM3(state: string, animate: string) {
+  Container(width: 52, height: 32, variant: "secondary", state: "{state}", animate: "{animate}", duration: 300, gesture: tap, label: "switch off") {
+    Row(padding: 8, gap: 0) {
+      Container(width: 16, height: 16, rounded: 8, variant: "ghost")
+      Spacer(width: 20)
+    }
+  }
+}
+
+// SliderM3(state, animate): 120x8 track with a 20dp thumb stand-in. Flutter's
+// value-driven thumb offset needs an app state bind at the call site.
+// API   R: state. O: animate. X: bind, min/max drag, value label (A3).
+// Example SliderM3("focus", "ease")
+component SliderM3(state: string, animate: string) {
+  Container(width: 120, height: 8, rounded: 4, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: drag, label: "slider shell") {
+    Row(gap: 0) {
+      Container(width: 20, height: 8, rounded: 4, variant: "primary")
+      Spacer(width: 100)
+    }
+  }
+}
+
+// SegmentedM3(first, second, third, selected, state, animate): SegmentedInput
+// takes a literal value and no bind, so this is a genuine primitive passthrough
+// with state and transition props. A 40dp minimum segment height matches
+// segmented_button.dart:1272.
+// API   R: first, second, third, selected (zero-based), state.
+//       O: animate. X: value bind, variable segment count, delete affordance.
+// Example SegmentedM3("Day", "Week", "Month", 1, "default", "ease")
+component SegmentedM3(first: string, second: string, third: string, selected: int, state: string, animate: string) {
+  Container(rounded: 8, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200) {
+    SegmentedInput(value: selected, segments: 3, labels: "{first},{second},{third}", state: "{state}", animate: "{animate}", duration: 200)
+  }
+}

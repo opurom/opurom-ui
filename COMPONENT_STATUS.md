@@ -12,6 +12,8 @@ All component APIs accept eight `state` keywords: default, hover, active, focus,
 
 `test/state-digests.json` pins settled frames (tick 4000, viewport 320x240) for ten M3 components across loading, success, error, focus, hover and disabled under render `7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2` and lang `d1a0418179fd20c58a899d012dffb82ac5f7d8a1`. These are **internal consistency pins, not Flutter parity**: CI has no Flutter oracle or font file, and no 2%/12% threshold is applied. The pin set uses its own sibling toolchain and does not touch the 52 default-state pins signed at render `8a76e1d` / lang `6d5cb74`.
 
+The selection batch adds `components/selection_m3.opu`: `CheckboxM3`, `RadioM3`, `SwitchOnM3`, `SwitchOffM3`, `SliderM3` and `SegmentedM3`, each pinned in all eight states (48 further pins, 108 total). Checkbox, radio, switch and slider primitives require an app-state `bind`; component arguments are literals, so those shells carry the visual state and leave `bind`/value/drag at the call site. `SegmentedM3` passes state directly to `SegmentedInput`. Durations are Opurom selections among Flutter `Durations` tokens (200 ms short4, 300 ms medium2 for the switch per `switch.dart:2387`); the glass "ease" curve family is `NO_FLUTTER_EQUIVALENT`.
+
 R = required, O = optional, X = reserved / not expressive in the current IR. Every row is transcribed from the corresponding component file header and the README component table.
 
 | Module | API | R | O | X (reserved) | Gaps | Stage |

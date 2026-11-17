@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "internal consistency pins, not Flutter parity",
-    "note": "Settle-frame byte locks under the signed state-transition renderer. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
+    "note": "Settle-frame byte locks under the signed state-transition renderer. The original 60 pins use six non-default states; the selection batch adds eight states per component. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
     "render": "7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2",
     "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
     "profile": "debug",
@@ -15,12 +15,14 @@
     },
     "fontMetrics": "proportional",
     "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
       "loading",
       "success",
-      "error",
-      "focus",
-      "hover",
-      "disabled"
+      "error"
     ]
   },
   "pins": [
@@ -443,6 +445,342 @@
       "use": "SelectedChipM3(\"Label\", \"disabled\", \"ease\")",
       "state": "disabled",
       "digest": "3f34317aa32cb964"
+    },
+    {
+      "name": "CheckboxM3-default",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"default\", \"ease\")",
+      "state": "default",
+      "digest": "53c65ecc22b823f5"
+    },
+    {
+      "name": "CheckboxM3-hover",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "28d0072b19871c15"
+    },
+    {
+      "name": "CheckboxM3-active",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"active\", \"ease\")",
+      "state": "active",
+      "digest": "8de9f11ca91ee0d3"
+    },
+    {
+      "name": "CheckboxM3-focus",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "98165554b65764e5"
+    },
+    {
+      "name": "CheckboxM3-disabled",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "3d700b538a0b75c5"
+    },
+    {
+      "name": "CheckboxM3-loading",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "2d7607538b01cc05"
+    },
+    {
+      "name": "CheckboxM3-success",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"success\", \"ease\")",
+      "state": "success",
+      "digest": "12bca44721672e65"
+    },
+    {
+      "name": "CheckboxM3-error",
+      "module": "components/selection_m3.opu",
+      "use": "CheckboxM3(\"error\", \"ease\")",
+      "state": "error",
+      "digest": "c64e1117dec44545"
+    },
+    {
+      "name": "RadioM3-default",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"default\", \"ease\")",
+      "state": "default",
+      "digest": "53c65ecc22b823f5"
+    },
+    {
+      "name": "RadioM3-hover",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "28d0072b19871c15"
+    },
+    {
+      "name": "RadioM3-active",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"active\", \"ease\")",
+      "state": "active",
+      "digest": "8de9f11ca91ee0d3"
+    },
+    {
+      "name": "RadioM3-focus",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "98165554b65764e5"
+    },
+    {
+      "name": "RadioM3-disabled",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "3d700b538a0b75c5"
+    },
+    {
+      "name": "RadioM3-loading",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "fc5d1681a7fae602"
+    },
+    {
+      "name": "RadioM3-success",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"success\", \"ease\")",
+      "state": "success",
+      "digest": "9189c2bfa10629e0"
+    },
+    {
+      "name": "RadioM3-error",
+      "module": "components/selection_m3.opu",
+      "use": "RadioM3(\"error\", \"ease\")",
+      "state": "error",
+      "digest": "fd9b9bf6425a3f05"
+    },
+    {
+      "name": "SwitchOnM3-default",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"default\", \"ease\")",
+      "state": "default",
+      "digest": "851806e6bf51817d"
+    },
+    {
+      "name": "SwitchOnM3-hover",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "5ad6d99c89917fa9"
+    },
+    {
+      "name": "SwitchOnM3-active",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"active\", \"ease\")",
+      "state": "active",
+      "digest": "91b16eda8e642ea2"
+    },
+    {
+      "name": "SwitchOnM3-focus",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "e6f724824ce3e00d"
+    },
+    {
+      "name": "SwitchOnM3-disabled",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "b672c1ba1e5a86e8"
+    },
+    {
+      "name": "SwitchOnM3-loading",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "84348f83f9553dbd"
+    },
+    {
+      "name": "SwitchOnM3-success",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"success\", \"ease\")",
+      "state": "success",
+      "digest": "eef1ae76b975aeb8"
+    },
+    {
+      "name": "SwitchOnM3-error",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOnM3(\"error\", \"ease\")",
+      "state": "error",
+      "digest": "6fa0b58f6aaef0b4"
+    },
+    {
+      "name": "SwitchOffM3-default",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"default\", \"ease\")",
+      "state": "default",
+      "digest": "254157d603c39049"
+    },
+    {
+      "name": "SwitchOffM3-hover",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "1e2fd195c5e6f818"
+    },
+    {
+      "name": "SwitchOffM3-active",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"active\", \"ease\")",
+      "state": "active",
+      "digest": "448135301bf3ba35"
+    },
+    {
+      "name": "SwitchOffM3-focus",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "efe214c1deb6d071"
+    },
+    {
+      "name": "SwitchOffM3-disabled",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "f988f1229fb349b2"
+    },
+    {
+      "name": "SwitchOffM3-loading",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "dc016baa6dc9caf7"
+    },
+    {
+      "name": "SwitchOffM3-success",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"success\", \"ease\")",
+      "state": "success",
+      "digest": "57122796cff7b684"
+    },
+    {
+      "name": "SwitchOffM3-error",
+      "module": "components/selection_m3.opu",
+      "use": "SwitchOffM3(\"error\", \"ease\")",
+      "state": "error",
+      "digest": "7660841afcb97d5c"
+    },
+    {
+      "name": "SliderM3-default",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"default\", \"ease\")",
+      "state": "default",
+      "digest": "cf25f4008006b779"
+    },
+    {
+      "name": "SliderM3-hover",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "806827790b432989"
+    },
+    {
+      "name": "SliderM3-active",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"active\", \"ease\")",
+      "state": "active",
+      "digest": "1a303ed3891f847c"
+    },
+    {
+      "name": "SliderM3-focus",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "9f3d2bbf104425b9"
+    },
+    {
+      "name": "SliderM3-disabled",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "da7dcd6e9687e4cd"
+    },
+    {
+      "name": "SliderM3-loading",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "f45017f72a9d39ad"
+    },
+    {
+      "name": "SliderM3-success",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"success\", \"ease\")",
+      "state": "success",
+      "digest": "eda7747a1732732d"
+    },
+    {
+      "name": "SliderM3-error",
+      "module": "components/selection_m3.opu",
+      "use": "SliderM3(\"error\", \"ease\")",
+      "state": "error",
+      "digest": "7e771309e9eb6dc5"
+    },
+    {
+      "name": "SegmentedM3-default",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "c64ebcb95b0c5f35"
+    },
+    {
+      "name": "SegmentedM3-hover",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "61250a3df13ac46b"
+    },
+    {
+      "name": "SegmentedM3-active",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "e94fca4cfef36ae5"
+    },
+    {
+      "name": "SegmentedM3-focus",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "d1cfc1a9c2235e1d"
+    },
+    {
+      "name": "SegmentedM3-disabled",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "4d1a7ba6f3a6712e"
+    },
+    {
+      "name": "SegmentedM3-loading",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "5a85f38a9953f475"
+    },
+    {
+      "name": "SegmentedM3-success",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "3d13a1d6e0b44967"
+    },
+    {
+      "name": "SegmentedM3-error",
+      "module": "components/selection_m3.opu",
+      "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "46e2cb701de570e5"
     }
   ]
 }
