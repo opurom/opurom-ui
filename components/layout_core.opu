@@ -7,7 +7,9 @@
 // Opurom IR has no arbitrary single-child constraint delegate (kernel gap L4),
 // so these shells use Container width/height/padding and Row/Column align.
 // Only static, deterministic geometry is emitted; no runtime interpretation.
-// State default/hover/active/focus/disabled follows WidgetState vocabulary.
+// State default/hover/active/focus/disabled follows the WidgetState vocabulary;
+// loading/success/error are business-state values with no Flutter equivalent
+// (NO_FLUTTER_EQUIVALENT) and only change the static state placeholder.
 // Example FixedBox(80, 40, "default")
 
 component FixedBox(width: int, height: int, state: string) {

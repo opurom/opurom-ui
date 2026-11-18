@@ -14,7 +14,7 @@ import { requireNative } from './native-tools.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const compiler = requireNative(root, 'opurom-lang-8state', ['opuromc']);
-const STATES = ['default', 'hover', 'active', 'focus', 'disabled'];
+const STATES = ['default', 'hover', 'active', 'focus', 'disabled', 'loading', 'success', 'error'];
 const CASES = [
   'FixedBox(80, 40, "{state}")',
   'InsetBox(12, "{state}")',
