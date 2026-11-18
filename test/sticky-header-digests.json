@@ -1,0 +1,1581 @@
+{
+  "toolchain": {
+    "render": "f3a8bcaeb88b82068beb8c9cc10353a300aca5f8",
+    "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug",
+    "note": "gallery pinned toolchain; CI provisions these exact commits into opurom-lang-gal/opurom-render-gal"
+  },
+  "meta": {
+    "purpose": "UI sticky header internal consistency pins, not Flutter sliver parity",
+    "version": "flutter-3.50.0:ab2912035e160d9cad6306df307576da6128ebdb",
+    "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
+      "loading",
+      "success",
+      "error"
+    ],
+    "cases": [
+      "expanded",
+      "compact",
+      "equal",
+      "zero"
+    ],
+    "viewports": [
+      [
+        320,
+        240
+      ],
+      [
+        200,
+        120
+      ]
+    ],
+    "ticks": [
+      0,
+      200
+    ],
+    "note": "Internal consistency pins, not Flutter sliver parity. No SliverPersistentHeader in the IR: shrinkOffset, overlapsContent and the pinned header offset are rendered as static Container extents. B2/B3/L stay open."
+  },
+  "pins": [
+    {
+      "name": "expanded-default-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-default-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "2bcf44c2978c04ff"
+    },
+    {
+      "name": "expanded-default-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-default-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "6b19396e9a0a0242"
+    },
+    {
+      "name": "expanded-hover-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-hover-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "3ea9f2c2148d6986"
+    },
+    {
+      "name": "expanded-hover-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-hover-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "86b08450313958c7"
+    },
+    {
+      "name": "expanded-active-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-active-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "9b98067b4919e688"
+    },
+    {
+      "name": "expanded-active-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-active-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "f4c1ce7dfd5634c1"
+    },
+    {
+      "name": "expanded-focus-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-focus-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "525e9ba255b4be37"
+    },
+    {
+      "name": "expanded-focus-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-focus-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "04915e2c23610eda"
+    },
+    {
+      "name": "expanded-disabled-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-disabled-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "f78592edf8e393fb"
+    },
+    {
+      "name": "expanded-disabled-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-disabled-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "ec301af965c8bad2"
+    },
+    {
+      "name": "expanded-loading-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-loading-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "ad422f51b2569ec5"
+    },
+    {
+      "name": "expanded-loading-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-loading-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "e3c02782802d174c"
+    },
+    {
+      "name": "expanded-success-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-success-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "93f3b81cf46628df"
+    },
+    {
+      "name": "expanded-success-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-success-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "fbabe008fe307bea"
+    },
+    {
+      "name": "expanded-error-320x240-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "expanded-error-320x240-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "853acd29583aa9a5"
+    },
+    {
+      "name": "expanded-error-200x120-0",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "expanded-error-200x120-200",
+      "case": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "5c64f510a84734a4"
+    },
+    {
+      "name": "compact-default-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-default-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "de4ef889c6dfcb6d"
+    },
+    {
+      "name": "compact-default-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-default-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "d4d80626609c52ed"
+    },
+    {
+      "name": "compact-hover-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-hover-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "d79306d661844aae"
+    },
+    {
+      "name": "compact-hover-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-hover-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "802243930b99ce4e"
+    },
+    {
+      "name": "compact-active-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-active-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "e481a9ae691c87e2"
+    },
+    {
+      "name": "compact-active-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-active-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "a7720069ec5c7622"
+    },
+    {
+      "name": "compact-focus-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-focus-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "4e5701bc6340cc9d"
+    },
+    {
+      "name": "compact-focus-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-focus-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "f0774487fd97cd1d"
+    },
+    {
+      "name": "compact-disabled-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-disabled-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "38814ad4a60e37e4"
+    },
+    {
+      "name": "compact-disabled-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-disabled-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "0af90d7f106316a4"
+    },
+    {
+      "name": "compact-loading-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-loading-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "189fcbfbd7af485f"
+    },
+    {
+      "name": "compact-loading-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-loading-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "bcc5e3447705d5bf"
+    },
+    {
+      "name": "compact-success-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-success-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "43c1c2552f4ae148"
+    },
+    {
+      "name": "compact-success-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-success-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "1f6ab31525f546c8"
+    },
+    {
+      "name": "compact-error-320x240-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "compact-error-320x240-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "76b943a6b4a26630"
+    },
+    {
+      "name": "compact-error-200x120-0",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "compact-error-200x120-200",
+      "case": "compact",
+      "use": "StickyHeaderM3(\"Today\", 24, 8, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "e00252763f489770"
+    },
+    {
+      "name": "equal-default-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-default-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "484341d7e4ebbe7f"
+    },
+    {
+      "name": "equal-default-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-default-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "e79d33c166c3591f"
+    },
+    {
+      "name": "equal-hover-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-hover-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "f151485f8f2f8d46"
+    },
+    {
+      "name": "equal-hover-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-hover-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "eedad563faa197e6"
+    },
+    {
+      "name": "equal-active-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-active-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "db200dcad5452564"
+    },
+    {
+      "name": "equal-active-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-active-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "05457e5f86e3a424"
+    },
+    {
+      "name": "equal-focus-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-focus-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "cb484e10baf54987"
+    },
+    {
+      "name": "equal-focus-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-focus-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "6c475eeaf12afe27"
+    },
+    {
+      "name": "equal-disabled-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-disabled-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "4c24eae7d7c0d073"
+    },
+    {
+      "name": "equal-disabled-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-disabled-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "d1d3098f41b4e433"
+    },
+    {
+      "name": "equal-loading-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-loading-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "cc8fe6dbbfa1e6c5"
+    },
+    {
+      "name": "equal-loading-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-loading-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "69a9e2d892cdabc5"
+    },
+    {
+      "name": "equal-success-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-success-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "e66211afbaac9edf"
+    },
+    {
+      "name": "equal-success-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-success-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "fbb625aecc5845ff"
+    },
+    {
+      "name": "equal-error-320x240-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "equal-error-320x240-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "44c5f154f747a065"
+    },
+    {
+      "name": "equal-error-200x120-0",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "equal-error-200x120-200",
+      "case": "equal",
+      "use": "StickyHeaderM3(\"Today\", 40, 40, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "6ed6ea2457d9fae5"
+    },
+    {
+      "name": "zero-default-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-default-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "3f574b002529b458"
+    },
+    {
+      "name": "zero-default-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-default-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "8a27c62c6bd3a065"
+    },
+    {
+      "name": "zero-hover-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-hover-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "56a5e2eab46b6911"
+    },
+    {
+      "name": "zero-hover-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-hover-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "7461e75c1fbce200"
+    },
+    {
+      "name": "zero-active-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-active-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "6322910ae62cdcd2"
+    },
+    {
+      "name": "zero-active-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-active-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "d14c216ca9a3d19b"
+    },
+    {
+      "name": "zero-focus-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-focus-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "6d91bd75a2be49c8"
+    },
+    {
+      "name": "zero-focus-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-focus-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "1d52c7a7c8563ed5"
+    },
+    {
+      "name": "zero-disabled-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-disabled-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "e8a653360d2b9336"
+    },
+    {
+      "name": "zero-disabled-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-disabled-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "175c2a60e9fdcda7"
+    },
+    {
+      "name": "zero-loading-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-loading-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "b5d2b172b2d0ed52"
+    },
+    {
+      "name": "zero-loading-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-loading-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "a700ceadb6dca8db"
+    },
+    {
+      "name": "zero-success-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-success-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "d7dabbb733d25577"
+    },
+    {
+      "name": "zero-success-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-success-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "e0456dd52f4ae5c2"
+    },
+    {
+      "name": "zero-error-320x240-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "zero-error-320x240-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "b4d1630c1b00b080"
+    },
+    {
+      "name": "zero-error-200x120-0",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "zero-error-200x120-200",
+      "case": "zero",
+      "use": "StickyHeaderM3(\"\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "2c717962600896f9"
+    }
+  ]
+}

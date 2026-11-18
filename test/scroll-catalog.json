@@ -1,0 +1,65 @@
+{
+  "purpose": "scroll container breakpoint catalog: static clipping frames for three scroll shells at compact, medium and expanded tiers; internal Opurom pins, not Flutter bounce parity",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "bouncingPhysics": "widgets/scroll_physics.dart:748-760,826-833",
+    "clampingPhysics": "widgets/scroll_physics.dart:964",
+    "scrollSimulation": "widgets/scroll_simulation.dart:18-132",
+    "breakpoints": "render/src/layout.rs:50-74",
+    "scrollIR": "opurom-lang/src/lower.rs:715"
+  },
+  "toolchain": {
+    "meta": "test/state-digests.json",
+    "profile": "debug",
+    "replayTicks": [0, 200],
+    "note": "Tick pins record deterministic rendering only; IR Scroll has no offset, velocity or overscroll slot. Rebound stays reserved B2/B3."
+  },
+  "overflowRule": {
+    "scrollHeight": 160,
+    "mode": "clip",
+    "rebound": "reserved-B2/B3",
+    "assertion": "declared scroll height is shorter than the three-tier viewport height, so content clips inside Scroll"
+  },
+  "tiers": [
+    { "name": "compact", "width": 480, "height": 800 },
+    { "name": "medium", "width": 800, "height": 480 },
+    { "name": "expanded", "width": 1000, "height": 600 }
+  ],
+  "docs": ["README.md", "COMPONENT_STATUS.md"],
+  "shells": [
+    {
+      "name": "refresh",
+      "module": "components/lists_m3.opu",
+      "component": "RefreshListShell",
+      "use": "RefreshListShell(160, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "931d52871174a030" },
+        "medium": { "0": "a33574c67265d325", "200": "acaad99f3255bc30" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "06b63091cfeaead0" }
+      }
+    },
+    {
+      "name": "grouped",
+      "module": "components/lists_m3.opu",
+      "component": "GroupedListShell",
+      "use": "GroupedListShell(\"Today\", 160, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "6ae96d7f6e204411" },
+        "medium": { "0": "a33574c67265d325", "200": "1a9d15d085dc6e91" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "880f513dd0649801" }
+      }
+    },
+    {
+      "name": "loadmore",
+      "module": "components/lists_m3.opu",
+      "component": "LoadMoreListShell",
+      "use": "LoadMoreListShell(160, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "cbd2266ce7db8d28" },
+        "medium": { "0": "a33574c67265d325", "200": "361592f686608e28" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "68deb9769742d968" }
+      }
+    }
+  ]
+}

@@ -676,3 +676,14 @@ diversity, component registration, source anchors, documentation references and
 toolchain identity. Flutter stable 3.50.0 remains the sole source authority;
 page states have no single Flutter widget and are documented as
 NO_FLUTTER_EQUIVALENT.
+
+## Scroll container breakpoint catalog audit (uibuild, 2026-11-18)
+
+`test/scroll-catalog.json` and `test/scroll-catalog.test.mjs` roll the refresh,
+grouped and load-more scroll shells into one signed JSON manifest and gate. The
+audit re-renders static clipping frames at compact, medium and expanded tiers
+at replay ticks 0 and 200, verifies tier coverage, overflow declaration,
+rebound reservation, source anchors, component registration, documentation
+references and repeated-render determinism. Flutter stable 3.50.0 remains the
+sole source authority; rebound physics stays reserved B2/B3 because IR `Scroll`
+only declares `height`.

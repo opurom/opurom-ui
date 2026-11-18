@@ -181,6 +181,10 @@ consistency.
 into one signed audit gate for tier coverage, frame diversity and source-anchor
 consistency.
 
+`test/scroll-catalog.json` rolls static scroll clipping into one signed audit
+gate for tier coverage, overflow rules, rebound reservation and deterministic
+rendering.
+
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction
 states (normal/default, pressed/active, focus, disabled, hover) have token-driven
