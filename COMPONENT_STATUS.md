@@ -476,3 +476,13 @@ elevation 1 and 16dp end radius (`:778-804`). The existing 240dp Drawer and
 and focus handling remain reserved (A3/A4/B3). Verification adds eight state
 pins (684 total over 88 components), one eight-state compile case, one a11y
 case, one boundary case and an explicit source-budget update.
+
+## Scrolled app bar shell (uibuild, 2026-11-18)
+
+`components/app_bar_scrolled_m3.opu` adds `ScrolledAppBarM3`, the source-backed
+Flutter 3.50.0 M3 scrolled-under presentation: 64dp toolbar, elevation 3,
+16dp title spacing and 24dp icons (`app_bar.dart:2520-2555`). The existing
+flat AppBarShell pin is unchanged. Route actions and scroll observation stay
+at the call site (A3/A4). Verification adds eight state pins (692 total over
+89 components), one eight-state compile case, one a11y case, one boundary
+case and an explicit source-budget update.

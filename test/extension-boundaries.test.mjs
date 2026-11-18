@@ -65,6 +65,7 @@ const CASES = [
   ['M3Fab2024("plus", "loading", "ease")', 'components/fab_2024_m3.opu'],
   ['SegmentedButtonM3("", "", "", -1, "error", "ease")', 'components/segmented_button_m3.opu'],
   ['StandardDrawerM3("", "", "", "error", "ease")', 'components/drawer_metrics_m3.opu'],
+  ['ScrolledAppBarM3("", "home", "disabled", "ease")', 'components/app_bar_scrolled_m3.opu'],
 
 ];
 

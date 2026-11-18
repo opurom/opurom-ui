@@ -69,6 +69,7 @@ const CASES = [
   ['components/selection_touch_m3.opu', 'TouchCheckboxM3("{state}", "ease")'],
   ['components/selection_touch_m3.opu', 'TouchRadioM3("{state}", "ease")'],
   ['components/drawer_metrics_m3.opu', 'StandardDrawerM3("Navigation", "Overview", "Runs", "{state}", "ease")'],
+  ['components/app_bar_scrolled_m3.opu', 'ScrolledAppBarM3("Title", "home", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

@@ -108,6 +108,7 @@
     "components/segmented_button_m3.opu",
     "components/dropdown_menu_m3.opu",
     "components/tooltip_metrics_m3.opu",
-    "components/drawer_metrics_m3.opu"
+    "components/drawer_metrics_m3.opu",
+    "components/app_bar_scrolled_m3.opu"
   ]
 }

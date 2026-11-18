@@ -1,0 +1,21 @@
+// AppBar shell covering Flutter stable 3.50.0 M3 scrolled-under elevation.
+// Sources:
+//   app_bar.dart:2520-2527  elevation 0, scrolledUnderElevation 3,
+//                           toolbarHeight 64, titleSpacing 16
+//   app_bar.dart:2546-2555  icon 24, titleLarge 22/400, actions 24
+//   motion.dart:52          200ms short4 state transition
+// The existing AppBarShell (flat 64dp bar) is unchanged. Scroll detection and
+// route actions stay at the call site (A3/A4); no runtime object model.
+// Example ScrolledAppBarM3("Title", "home", "default", "ease")
+component ScrolledAppBarM3(title: string, leading: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "app bar focus host") {
+    Container(height: 64, p: 16, shadow: 3, rounded: 16, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "scrolled app bar", role: "heading") {
+      Row(gap: 16, align: center) {
+        Icon(name: "{leading}", width: 24, height: 24)
+        Text("{title}", size: 22)
+        Spacer()
+        Icon(name: "settings", width: 24, height: 24)
+      }
+    }
+  }
+}
