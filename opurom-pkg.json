@@ -88,6 +88,7 @@
     "components/pickers_m3.opu",
     "components/inputs_ext_m3.opu",
     "components/menu_m3.opu",
-    "components/nav_rail_m3.opu"
+    "components/nav_rail_m3.opu",
+    "components/state_wrappers.opu"
   ]
 }

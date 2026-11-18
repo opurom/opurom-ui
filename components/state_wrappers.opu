@@ -1,0 +1,235 @@
+// Additive five-state wrappers for legacy presentation shells.
+// Flutter stable 3.50.0 state vocabulary: WidgetState.default/pressed/hovered/
+// focused/disabled in widgets.dart WidgetState enum; Opurom IR carries the
+// mapped names default/active/hover/focus/disabled as a static `state` prop.
+
+// StateAppBarShell: state-aware wrapper around AppBarShell; existing API and digests unchanged.
+component StateAppBarShell(state: string) {
+  Container(state: "{state}", label: "StateAppBarShell") {
+    AppBarShell("x", "home", "home", "{state}")
+  }
+}
+
+// StateAvatarGroup: state-aware wrapper around AvatarGroup; existing API and digests unchanged.
+component StateAvatarGroup(state: string) {
+  Container(state: "{state}", label: "StateAvatarGroup") {
+    AvatarGroup("x", "x", "x")
+  }
+}
+
+// StateBanner: state-aware wrapper around Banner; existing API and digests unchanged.
+component StateBanner(state: string) {
+  Container(state: "{state}", label: "StateBanner") {
+    Banner("x", "x", "info")
+  }
+}
+
+// StateBreadcrumb: state-aware wrapper around Breadcrumb; existing API and digests unchanged.
+component StateBreadcrumb(state: string) {
+  Container(state: "{state}", label: "StateBreadcrumb") {
+    Breadcrumb("x", "x", "x")
+  }
+}
+
+// StateChartCard: state-aware wrapper around ChartCard; existing API and digests unchanged.
+component StateChartCard(state: string) {
+  Container(state: "{state}", label: "StateChartCard") {
+    ChartCard("x", "start")
+  }
+}
+
+// StateCodeSnippet: state-aware wrapper around CodeSnippet; existing API and digests unchanged.
+component StateCodeSnippet(state: string) {
+  Container(state: "{state}", label: "StateCodeSnippet") {
+    CodeSnippet("x", "x", "x", "x")
+  }
+}
+
+// StateConfirmDialog: state-aware wrapper around ConfirmDialog; existing API and digests unchanged.
+component StateConfirmDialog(state: string) {
+  Container(state: "{state}", label: "StateConfirmDialog") {
+    ConfirmDialog("x", "x", "x")
+  }
+}
+
+// StateDetailRow: state-aware wrapper around DetailRow; existing API and digests unchanged.
+component StateDetailRow(state: string) {
+  Container(state: "{state}", label: "StateDetailRow") {
+    DetailRow("home", "x", "x")
+  }
+}
+
+// StateDrawer: state-aware wrapper around Drawer; existing API and digests unchanged.
+component StateDrawer(state: string) {
+  Container(state: "{state}", label: "StateDrawer") {
+    Drawer("x", "x", "x", "x")
+  }
+}
+
+// StateEmptyState: state-aware wrapper around EmptyState; existing API and digests unchanged.
+component StateEmptyState(state: string) {
+  Container(state: "{state}", label: "StateEmptyState") {
+    EmptyState("home", "x", "x")
+  }
+}
+
+// StateFileTree: state-aware wrapper around FileTree; existing API and digests unchanged.
+component StateFileTree(state: string) {
+  Container(state: "{state}", label: "StateFileTree") {
+    FileTree("x", "x", "x", "x")
+  }
+}
+
+// StateFilterChip: state-aware wrapper around FilterChip; existing API and digests unchanged.
+component StateFilterChip(state: string) {
+  Container(state: "{state}", label: "StateFilterChip") {
+    FilterChip("x", "primary")
+  }
+}
+
+// StateFormField: state-aware wrapper around FormField; existing API and digests unchanged.
+component StateFormField(state: string) {
+  Container(state: "{state}", label: "StateFormField") {
+    FormField("x", "x")
+  }
+}
+
+// StateGridTile: state-aware wrapper around GridTile; existing API and digests unchanged.
+component StateGridTile(state: string) {
+  Container(state: "{state}", label: "StateGridTile") {
+    GridTile("x", "x")
+  }
+}
+
+// StateHeroHeader: state-aware wrapper around HeroHeader; existing API and digests unchanged.
+component StateHeroHeader(state: string) {
+  Container(state: "{state}", label: "StateHeroHeader") {
+    HeroHeader("x", "x")
+  }
+}
+
+// StateMetricCard: state-aware wrapper around MetricCard; existing API and digests unchanged.
+component StateMetricCard(state: string) {
+  Container(state: "{state}", label: "StateMetricCard") {
+    MetricCard("x", "x", "x", "info")
+  }
+}
+
+// StateNumberFlow: state-aware wrapper around NumberFlow; existing API and digests unchanged.
+component StateNumberFlow(state: string) {
+  Container(state: "{state}", label: "StateNumberFlow") {
+    NumberFlow("x", "x")
+  }
+}
+
+// StatePaginationBar: state-aware wrapper around PaginationBar; existing API and digests unchanged.
+component StatePaginationBar(state: string) {
+  Container(state: "{state}", label: "StatePaginationBar") {
+    PaginationBar(12, 12)
+  }
+}
+
+// StateProfileHeader: state-aware wrapper around ProfileHeader; existing API and digests unchanged.
+component StateProfileHeader(state: string) {
+  Container(state: "{state}", label: "StateProfileHeader") {
+    ProfileHeader("x", "x", "x")
+  }
+}
+
+// StateProgressTrack: state-aware wrapper around ProgressTrack; existing API and digests unchanged.
+component StateProgressTrack(state: string) {
+  Container(state: "{state}", label: "StateProgressTrack") {
+    ProgressTrack(12)
+  }
+}
+
+// StateSearchField: state-aware wrapper around SearchField; existing API and digests unchanged.
+component StateSearchField(state: string) {
+  Container(state: "{state}", label: "StateSearchField") {
+    SearchField("x")
+  }
+}
+
+// StateSectionHeader: state-aware wrapper around SectionHeader; existing API and digests unchanged.
+component StateSectionHeader(state: string) {
+  Container(state: "{state}", label: "StateSectionHeader") {
+    SectionHeader("x")
+  }
+}
+
+// StateSecureField: state-aware wrapper around SecureField; existing API and digests unchanged.
+component StateSecureField(state: string) {
+  Container(state: "{state}", label: "StateSecureField") {
+    SecureField("x")
+  }
+}
+
+// StateSegmentedControl: state-aware wrapper around SegmentedControl; existing API and digests unchanged.
+component StateSegmentedControl(state: string) {
+  Container(state: "{state}", label: "StateSegmentedControl") {
+    SegmentedControl("x", "x", "x", 12)
+  }
+}
+
+// StateSidebarNav: state-aware wrapper around SidebarNav; existing API and digests unchanged.
+component StateSidebarNav(state: string) {
+  Container(state: "{state}", label: "StateSidebarNav") {
+    SidebarNav("x", "x", "x", "x", "x")
+  }
+}
+
+// StateSkeleton: state-aware wrapper around Skeleton; existing API and digests unchanged.
+component StateSkeleton(state: string) {
+  Container(state: "{state}", label: "StateSkeleton") {
+    Skeleton(12, 12)
+  }
+}
+
+// StateStarRating: state-aware wrapper around StarRating; existing API and digests unchanged.
+component StateStarRating(state: string) {
+  Container(state: "{state}", label: "StateStarRating") {
+    StarRating("x", 12, 12)
+  }
+}
+
+// StateStatusPill: state-aware wrapper around StatusPill; existing API and digests unchanged.
+component StateStatusPill(state: string) {
+  Container(state: "{state}", label: "StateStatusPill") {
+    StatusPill("x", "info")
+  }
+}
+
+// StateStepBar: state-aware wrapper around StepBar; existing API and digests unchanged.
+component StateStepBar(state: string) {
+  Container(state: "{state}", label: "StateStepBar") {
+    StepBar(12, 12)
+  }
+}
+
+// StateTabsBar: state-aware wrapper around TabsBar; existing API and digests unchanged.
+component StateTabsBar(state: string) {
+  Container(state: "{state}", label: "StateTabsBar") {
+    TabsBar(12, 12)
+  }
+}
+
+// StateTimeline: state-aware wrapper around Timeline; existing API and digests unchanged.
+component StateTimeline(state: string) {
+  Container(state: "{state}", label: "StateTimeline") {
+    Timeline("x", "x", "x", "x")
+  }
+}
+
+// StateTipCallout: state-aware wrapper around TipCallout; existing API and digests unchanged.
+component StateTipCallout(state: string) {
+  Container(state: "{state}", label: "StateTipCallout") {
+    TipCallout("x", "start")
+  }
+}
+
+// StateToolbar: state-aware wrapper around Toolbar; existing API and digests unchanged.
+component StateToolbar(state: string) {
+  Container(state: "{state}", label: "StateToolbar") {
+    Toolbar("x", "x")
+  }
+}
