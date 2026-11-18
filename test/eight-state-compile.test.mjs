@@ -75,6 +75,7 @@ const CASES = [
   ['components/bottom_app_bar_m3.opu', 'BottomAppBarM3("Actions", "{state}", "ease")'],
   ['components/dropdown_menu_metrics_m3.opu', 'DefaultDropdownMenuM3("Country", 0, "United States,Canada,Mexico", "Choose", "{state}", "ease")'],
   ['components/list_tile_metrics_m3.opu', 'DefaultListTileM3("Inbox", "3 unread messages", "{state}", "ease")'],
+  ['components/autocomplete_field_m3.opu', 'AutocompleteFieldM3("City", "San", "San Francisco,San Diego", 0, "{state}", "ease")'],
 ];
 
 function source(mod, call) {

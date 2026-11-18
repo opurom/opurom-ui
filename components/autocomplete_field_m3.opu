@@ -1,0 +1,38 @@
+// Material 3 autocomplete input presentation shell. Flutter stable 3.50.0
+// source anchors:
+//   material/autocomplete.dart:61-68    optionsBuilder, displayStringForOption,
+//                                       fieldViewBuilder, onSelected
+//   material/autocomplete.dart:113       optionsMaxHeight default 200dp
+//   material/autocomplete.dart:205-220   Material elevation 4, ConstrainedBox
+//                                       maxHeight optionsMaxHeight
+//   material/autocomplete.dart:278-298   ListView.builder options and tap select
+//   widgets/autocomplete.dart:404-417    keyboard shortcuts: Up/Down navigate,
+//                                       Ctrl/Meta+Up/Down first/last,
+//                                       PageUp/PageDown paging
+//   widgets/autocomplete.dart:531-547    _select collapses text and hides options
+//   motion.dart:52                       200ms short4 state transition
+// Opurom component arguments are literals, so the query text, candidate count,
+// selected index and option labels are compile-time presentation slots.
+// Runtime filtering, focus, keyboard event routing and TextEditingController
+// remain kernel gaps (A3/B3/B4) and are reserved; no behaviour is faked.
+// Eight states drive one design state across field, options and affordances.
+// Boundary: empty labels render empty options; out-of-range selected values
+// stay unselected; overlong labels clip in the primitive nodes.
+// Example AutocompleteFieldM3("City", "San", "San Francisco,San Diego", 0, "default", "ease")
+component AutocompleteFieldM3(label: string, query: string, options: string, selected: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "autocomplete field", role: "text") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      Row(gap: 8, align: center) {
+        Input(value: query, state: "{state}", animate: "{animate}", duration: 200, label: "autocomplete query")
+        Icon(name: "close", width: 16, height: 16)
+      }
+      Container(height: 200, rounded: 8, variant: "ghost", state: "{state}", animate: "{animate}", duration: 200, label: "autocomplete options") {
+        List() {
+          Text("{options}", size: 12, maxLines: 4)
+          Text("selected: {selected}", size: 11)
+        }
+      }
+    }
+  }
+}

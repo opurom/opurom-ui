@@ -5149,6 +5149,62 @@
       "use": "DefaultListTileM3(\"Inbox\",\"3 unread messages\",\"error\",\"ease\")",
       "state": "error",
       "digest": "d2d742029f87c899"
+    },
+    {
+      "name": "AutocompleteFieldM3-default",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "561510765930ab79"
+    },
+    {
+      "name": "AutocompleteFieldM3-hover",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "112521276359981e"
+    },
+    {
+      "name": "AutocompleteFieldM3-active",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "16ad4a88f3a2723a"
+    },
+    {
+      "name": "AutocompleteFieldM3-focus",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "02e8a6f90b9f21a9"
+    },
+    {
+      "name": "AutocompleteFieldM3-disabled",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "e5d751f6da17a48b"
+    },
+    {
+      "name": "AutocompleteFieldM3-loading",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "b7b75c0416b52816"
+    },
+    {
+      "name": "AutocompleteFieldM3-success",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "432e551c9a603d40"
+    },
+    {
+      "name": "AutocompleteFieldM3-error",
+      "module": "components/autocomplete_field_m3.opu",
+      "use": "AutocompleteFieldM3(\"City\", \"San\", \"San Francisco,San Diego\", 0, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "319d9a67504e5582"
     }
   ]
 }

@@ -30,6 +30,7 @@ const REQUIRED = [
   'components/bottom_app_bar_m3.opu',
   'components/dropdown_menu_metrics_m3.opu',
   'components/list_tile_metrics_m3.opu',
+  'components/autocomplete_field_m3.opu',
   'components/date_range_m3.opu',
   'components/sticky_header_m3.opu',
   'components/nav_drawer_m3.opu',

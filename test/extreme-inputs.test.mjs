@@ -31,6 +31,7 @@ const CASES = [
   ['bottom app bar', 'components/bottom_app_bar_m3.opu', `BottomAppBarM3("${long}", "{s}", "ease")`],
   ['default dropdown menu', 'components/dropdown_menu_metrics_m3.opu', `DefaultDropdownMenuM3("${long}", -1, "${long}", "${long}", "{s}", "ease")`],
   ['default list tile', 'components/list_tile_metrics_m3.opu', `DefaultListTileM3("${long}", "${long}", "{s}", "ease")`],
+  ['autocomplete field', 'components/autocomplete_field_m3.opu', `AutocompleteFieldM3("${long}", "${long}", "${long}", -1, "{s}", "ease")`],
 ];
 
 function source(mod, use) {

@@ -543,3 +543,16 @@ at the call site (A3/M7/B3). Verification adds eight state pins (732 total
 over 94 components), one eight-state compile case, one a11y case, two boundary
 cases, one extreme-input case, a provenance audit entry and an explicit
 source-budget update.
+
+## Autocomplete field shell (uibuild, 2026-11-18)
+
+`components/autocomplete_field_m3.opu` adds `AutocompleteFieldM3`, an
+additive M3 presentation shell with a 200dp options panel and 200ms state
+transition (`autocomplete.dart:61-68,113,205-220,278-298`,
+`widgets/autocomplete.dart:404-417,531-547`). Query text, candidate labels and
+the selected index are compile-time presentation slots; runtime filtering,
+keyboard routing and text-controller binding remain at the call site
+(A3/B3/B4). Verification adds eight state pins (740 total over 95 components),
+one eight-state compile case, one a11y case, two boundary cases, one
+extreme-input case, a provenance audit entry and an explicit source-budget
+update.
