@@ -142,6 +142,7 @@ import "components/text.opu";
 | `components/pickers_m3.opu` | `DatePickerM3`, `TimePickerM3`, `ColorPickerM3`, `RegionPickerM3` (label, value, state, animate) | closed picker presentation over DateField/TimeField/ColorWell/SelectBox; eight states; anchors `date_picker.dart:196-215`, `cupertino/date_picker.dart:299-312`, `dropdown.dart:566-570`, `color_scheme.dart:449-477`; routes/wheel physics/bindings reserved (A3/B3/B4) |
 | `components/inputs_ext_m3.opu` | `AutocompleteM3`, `MultilineFieldM3`, `NumberFieldM3`, `BottomSheetM3`, `TooltipM3` (label/text, value, state, animate) | remaining basic input/feedback shells; eight states, 150ms short3; anchors `autocomplete.dart:61-67`, `text_field.dart:363-366`, `bottom_sheet.dart:97-103`, `material/tooltip.dart:96-104`; callbacks/routes/keyboard reserved (A3/A4/B4) |
 | `components/menu_m3.opu` | `PopupMenuM3(items, width, state, animate)` | M3 popup-menu shell with semantic button role; eight states, elevation 3 and 8dp vertical padding; anchors `popup_menu.dart:47,1176-1218,1424-1427,1837-1872`, `motion.dart:52`; route/keyboard/callback reserved (A3/A4/B3) |
+| `components/nav_rail_m3.opu` | `NavigationRailM3(labels, selected, state, animate)` | M3 rail shell at 80dp width, eight states; anchors `navigation_rail.dart:91-116,1236-1244,1272-1274`, `motion.dart:52`; extended mode/routing reserved (A3/A4/B3) |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

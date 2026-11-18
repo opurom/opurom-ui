@@ -42,6 +42,7 @@ const CASES = [
   ['components/inputs_ext_m3.opu', 'BottomSheetM3("Share", "Choose a target", "{state}", "ease")'],
   ['components/inputs_ext_m3.opu', 'TooltipM3("More options", "below", "{state}", "ease")'],
   ['components/menu_m3.opu', 'PopupMenuM3("Open,Copy,Close", 160, "{state}", "ease")'],
+  ['components/nav_rail_m3.opu', 'NavigationRailM3("Home,Search,Profile", 1, "{state}", "ease")'],
 ];
 
 function source(mod, call) {

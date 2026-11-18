@@ -3189,6 +3189,62 @@
       "use": "PopupMenuM3(\"Open,Copy,Close\", 160, \"error\", \"ease\")",
       "state": "error",
       "digest": "14f2d5efdd9987ad"
+    },
+    {
+      "name": "NavigationRailM3-default",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "01cdfccbb49a849a"
+    },
+    {
+      "name": "NavigationRailM3-hover",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "360bcc30eb6300fa"
+    },
+    {
+      "name": "NavigationRailM3-active",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "ceb1eb968e05fe34"
+    },
+    {
+      "name": "NavigationRailM3-focus",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "1194dad9ccb6a39a"
+    },
+    {
+      "name": "NavigationRailM3-disabled",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "3ca9445e62a58bc7"
+    },
+    {
+      "name": "NavigationRailM3-loading",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "651d660608e54fae"
+    },
+    {
+      "name": "NavigationRailM3-success",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "83106e7bb69cc6ca"
+    },
+    {
+      "name": "NavigationRailM3-error",
+      "module": "components/nav_rail_m3.opu",
+      "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "aee9b07516267356"
     }
   ]
 }

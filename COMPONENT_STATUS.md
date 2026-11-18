@@ -204,3 +204,15 @@ navigation remain reserved (A3/A4/B3).
 New gates: eight-state compile case, 8 settled-frame pins (452 total over 59
 components), one accessibility-tree case checking name plus role, and two
 boundary renders (empty label and overlong label at extreme width).
+
+## Navigation rail shell (ui-dev, 2026-11-18, part 5)
+
+`components/nav_rail_m3.opu` adds `NavigationRailM3` over the Opurom `NavRail`
+primitive. Flutter stable 3.50.0 anchors: `navigation_rail.dart:91-116`
+(extended, destinations, selectedIndex, labelType, indicatorShape),
+`:1236-1244` (M3 minWidth 80, extended 256, useIndicator, groupAlignment -1),
+`:1272-1274` (secondaryContainer indicator and StadiumBorder), and
+`motion.dart:52` (200ms short4). Extended mode, selection callbacks and route
+changes are reserved (A3/A4/B3). New gates: eight-state compile case, 8 state
+pins (460 total over 60 components), one a11y name/role case, and two boundary
+renders (empty/overlong labels with out-of-range selections).

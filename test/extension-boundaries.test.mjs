@@ -37,6 +37,8 @@ const CASES = [
   ['RegionPickerM3("Region", -5, "success", "ease")', 'components/pickers_m3.opu'],
   ['PopupMenuM3("", 160, "default", "ease")', 'components/menu_m3.opu'],
   [`PopupMenuM3("${long}", 9999, "error", "ease")`, 'components/menu_m3.opu'],
+  ['NavigationRailM3("", 999, "default", "ease")', 'components/nav_rail_m3.opu'],
+  [`NavigationRailM3("${long}", -1, "error", "ease")`, 'components/nav_rail_m3.opu'],
 ];
 
 function source(mod, use) {

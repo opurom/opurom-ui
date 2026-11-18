@@ -31,6 +31,7 @@ const CASES = [
   ['Bottom sheet', 'BottomSheetM3("Share", "Choose a target", "default", "ease")', 'bottom sheet', 'heading', 'components/inputs_ext_m3.opu'],
   ['Tooltip', 'TooltipM3("More options", "below", "default", "ease")', 'tooltip', 'text', 'components/inputs_ext_m3.opu'],
   ['Popup menu', 'PopupMenuM3("Open,Copy,Close", 160, "default", "ease")', 'popup menu', 'button', 'components/menu_m3.opu'],
+  ['Navigation rail', 'NavigationRailM3("Home,Search,Profile", 1, "default", "ease")', 'navigation rail', 'none', 'components/nav_rail_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

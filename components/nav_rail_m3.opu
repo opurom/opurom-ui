@@ -1,0 +1,21 @@
+// Material 3 navigation rail shell. Flutter stable 3.50.0 sources:
+//   navigation_rail.dart:91-116       extended, destinations, selectedIndex,
+//                                     groupAlignment, labelType, indicatorShape
+//   navigation_rail.dart:1236-1244    M3 minWidth 80, minExtendedWidth 256,
+//                                     useIndicator true, groupAlignment -1
+//   navigation_rail.dart:1272-1274    indicator colour secondaryContainer,
+//                                     StadiumBorder shape
+//   navigation_rail.dart:116,1194     selectedIndex in destination range,
+//                                     72dp M2 minimum (superseded by M3 80dp)
+//   motion.dart:52                    200ms short4 state transition
+// The Opurom NavRail primitive renders the closed rail deterministically.
+// Route changes, selection callbacks and extended-mode animation need kernel
+// gaps A3/A4/B3 and stay reserved.
+// Boundary: out-of-range selected values are clamped by NavRail; empty labels
+// render empty destinations; overlong labels clip inside the rail.
+// Example NavigationRailM3("Home,Search,Profile", 1, "default", "ease")
+component NavigationRailM3(labels: string, selected: int, state: string, animate: string) {
+  Container(width: 80, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "navigation rail", role: "none") {
+    NavRail(value: selected, segments: 3, labels: "{labels}", state: "{state}", animate: "{animate}", duration: 200, label: "rail destinations")
+  }
+}
