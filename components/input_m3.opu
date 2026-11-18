@@ -1,0 +1,54 @@
+// Input shells with the eight-state design prop. Input has no required bind,
+// so these wrappers emit real Input nodes with state passthrough; caret,
+// selection, keyboard focus and validators stay reserved (kernel gap B4).
+// Flutter anchors: input_decorator.dart:40 (167 ms border transition), :63
+// (hint fade), :205 (hover), :819-825 (focus), :2104-2138 (state borders),
+// :2212 (error); text_field.dart:335-346 (single-line obscure),
+// :1157-1191 (length enforcement); search_anchor.dart:1543,1896 (stadium
+// search-bar shape), :1900 (horizontal 8dp padding).
+// Durations are Opurom selections among Flutter Durations tokens
+// (ANIMATION_DURATION_ADJUDICATION.md): 150 ms short3 (motion.dart:44) for the
+// border/state change, not a claimed Flutter property-class binding. The glass
+// "ease" curve family is NO_FLUTTER_EQUIVALENT. No theme is declared here; paint
+// comes from variant/tone tokens only, with no literal hex.
+
+// TextFieldM3(label, placeholder, state, animate): labelled filled field shell.
+// API   R: label, placeholder, state (8-value keyword). O: animate.
+//       X: bind, caret, selection, keyboard focus, validation (B4).
+// Example TextFieldM3("Email", "name@example.com", "default", "ease")
+component TextFieldM3(label: string, placeholder: string, state: string, animate: string) {
+  Column(gap: 4) {
+    Text("{label}", size: 12)
+    Container(p: 12, rounded: 4, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "text field") {
+      Input(placeholder: "{placeholder}", state: "{state}", animate: "{animate}", duration: 150)
+    }
+  }
+}
+
+// SearchBarM3(placeholder, state, animate): stadium shell with the official
+// search icon and a real Input node; bind the query at the call site.
+// API   R: placeholder, state. O: animate. X: bind, submit, voice affordance (B4).
+// Example SearchBarM3("Search", "hover", "ease")
+component SearchBarM3(placeholder: string, state: string, animate: string) {
+  Container(p: 8, rounded: 20, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "search bar") {
+    Row(gap: 8, align: center) {
+      Icon(name: "search", width: 24, height: 24)
+      Input(placeholder: "{placeholder}", state: "{state}", animate: "{animate}", duration: 150)
+    }
+  }
+}
+
+// PasswordFieldM3(label, placeholder, state, animate): masked single-line
+// field; `secure` is the Input primitive flag, with maxLines fixed at 1 by the
+// primitive contract (text_field.dart:335-346).
+// API   R: label, placeholder, state. O: animate. X: bind, caret, selection,
+//       reveal toggle, validators (B4).
+// Example PasswordFieldM3("Password", "Enter password", "error", "ease")
+component PasswordFieldM3(label: string, placeholder: string, state: string, animate: string) {
+  Column(gap: 4) {
+    Text("{label}", size: 12)
+    Container(p: 12, rounded: 4, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "password field") {
+      Input(placeholder: "{placeholder}", secure: true, state: "{state}", animate: "{animate}", duration: 150)
+    }
+  }
+}

@@ -49,6 +49,7 @@
     "components/grid_tile.opu",
     "components/hero_header.opu",
     "components/icon_button.opu",
+    "components/input_m3.opu",
     "components/list.opu",
     "components/list_tile_m3.opu",
     "components/navbar.opu",

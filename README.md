@@ -80,6 +80,7 @@ import "components/text.opu";
 | `components/sidebar.opu` | `SidebarNav(title, active, itemA, itemB, itemC)` | navigation panel with the active row highlighted |
 | `components/stat_card.opu` | `MetricCard(label, value, trend, tone)` | statistic card; `tone` colours the trend line |
 | `components/form_field.opu` | `FormField(label, placeholder)` | label above a field; bind at the call site |
+| `components/input_m3.opu` | `TextFieldM3`, `PasswordFieldM3` (label, placeholder, state, animate), `SearchBarM3` (placeholder, state, animate) | eight-state Input shells; caret/selection/keyboard focus reserved (B4); 150 ms short3 border state, glass curve `NO_FLUTTER_EQUIVALENT`; Flutter `input_decorator.dart:40,63,205,819,2104,2212`, `text_field.dart:335-346`, `search_anchor.dart:1543,1896` |
 | `components/search.opu` | `SearchField(placeholder)` | search box with a leading glyph |
 | `components/chip.opu` | `FilterChip(label, variant)` | pass `primary` when active, `ghost` when idle |
 | `components/chips_m3.opu` | `AssistChipM3`, `SelectedChipM3` (label, state, animate) | static M3 chip appearances; eight states, radius 8 / 195 ms motion; runtime selection and delete affordance (A3/M4) reserved |

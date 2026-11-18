@@ -14,6 +14,8 @@ All component APIs accept eight `state` keywords: default, hover, active, focus,
 
 The selection batch adds `components/selection_m3.opu`: `CheckboxM3`, `RadioM3`, `SwitchOnM3`, `SwitchOffM3`, `SliderM3` and `SegmentedM3`, each pinned in all eight states (48 further pins, 108 total). Checkbox, radio, switch and slider primitives require an app-state `bind`; component arguments are literals, so those shells carry the visual state and leave `bind`/value/drag at the call site. `SegmentedM3` passes state directly to `SegmentedInput`. Durations are Opurom selections among Flutter `Durations` tokens (200 ms short4, 300 ms medium2 for the switch per `switch.dart:2387`); the glass "ease" curve family is `NO_FLUTTER_EQUIVALENT`.
 
+The input batch adds `components/input_m3.opu`: `TextFieldM3`, `SearchBarM3` and `PasswordFieldM3`, each pinned in all eight states (24 further pins, 132 total). `Input` has no required `bind`, so these emit real `Input` nodes with state passthrough; caret, selection, keyboard focus and validators remain reserved (kernel gap B4). The 150 ms state duration is an Opurom selection among Flutter `Durations` tokens (`motion.dart:44`); Flutter's own 167 ms decorator transition is recorded at `input_decorator.dart:40` and is not presented as a component-owned value. Source anchors: `input_decorator.dart:63,205,819-825,2104-2138,2212`, `text_field.dart:335-346,1157-1191`, `search_anchor.dart:1543,1896,1900`. No theme is owned by these modules; paint comes only from `variant`/`tone` tokens.
+
 R = required, O = optional, X = reserved / not expressive in the current IR. Every row is transcribed from the corresponding component file header and the README component table.
 
 | Module | API | R | O | X (reserved) | Gaps | Stage |

@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "internal consistency pins, not Flutter parity",
-    "note": "Settle-frame byte locks under the signed state-transition renderer. The original 60 pins use six non-default states; the selection batch adds eight states per component. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
+    "note": "Settle-frame byte locks under the signed state-transition renderer. The original 60 pins use six non-default states; the selection and input batches add eight states per component. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
     "render": "7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2",
     "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
     "profile": "debug",
@@ -781,6 +781,174 @@
       "use": "SegmentedM3(\"Day\", \"Week\", \"Month\", 1, \"error\", \"ease\")",
       "state": "error",
       "digest": "46e2cb701de570e5"
+    },
+    {
+      "name": "TextFieldM3-default",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "5d71a56f9fad5cd1"
+    },
+    {
+      "name": "TextFieldM3-hover",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "caa439e32ace3e08"
+    },
+    {
+      "name": "TextFieldM3-active",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "e411aae81ef2bc2a"
+    },
+    {
+      "name": "TextFieldM3-focus",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "8c0ec286e19d2361"
+    },
+    {
+      "name": "TextFieldM3-disabled",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "ad8ed53d9d6db50c"
+    },
+    {
+      "name": "TextFieldM3-loading",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "2c9e4ed610134683"
+    },
+    {
+      "name": "TextFieldM3-success",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "fd405cd9d15ba077"
+    },
+    {
+      "name": "TextFieldM3-error",
+      "module": "components/input_m3.opu",
+      "use": "TextFieldM3(\"Email\", \"name@example.com\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "4e43eed9bdaee747"
+    },
+    {
+      "name": "SearchBarM3-default",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "fd0b455650fff1c7"
+    },
+    {
+      "name": "SearchBarM3-hover",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "d3b1714c4caa0323"
+    },
+    {
+      "name": "SearchBarM3-active",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "fa3d9e6ab1a20e67"
+    },
+    {
+      "name": "SearchBarM3-focus",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "98895e7e2b4daf97"
+    },
+    {
+      "name": "SearchBarM3-disabled",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "d838e93d0a49d746"
+    },
+    {
+      "name": "SearchBarM3-loading",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "562312ae1d8b3b8b"
+    },
+    {
+      "name": "SearchBarM3-success",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "9465749c95ad09f5"
+    },
+    {
+      "name": "SearchBarM3-error",
+      "module": "components/input_m3.opu",
+      "use": "SearchBarM3(\"Search\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "ef57c834edcadf32"
+    },
+    {
+      "name": "PasswordFieldM3-default",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "a75665a3819a9317"
+    },
+    {
+      "name": "PasswordFieldM3-hover",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "0d5a75181233a9d2"
+    },
+    {
+      "name": "PasswordFieldM3-active",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "645abb80a3b25a41"
+    },
+    {
+      "name": "PasswordFieldM3-focus",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "815f416882f3946f"
+    },
+    {
+      "name": "PasswordFieldM3-disabled",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "e21721205be6bbbd"
+    },
+    {
+      "name": "PasswordFieldM3-loading",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "98d85ad21e925b8a"
+    },
+    {
+      "name": "PasswordFieldM3-success",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "fa629a0ce5f11dc6"
+    },
+    {
+      "name": "PasswordFieldM3-error",
+      "module": "components/input_m3.opu",
+      "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "c84feada80a7827e"
     }
   ]
 }
