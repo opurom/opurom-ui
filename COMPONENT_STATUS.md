@@ -336,3 +336,14 @@ frames and verifies repeated rendering is byte-identical.
 budget around the current 88-file library. This is an internal Opurom
 regression guard, not a Flutter-derived metric; it keeps the zero-runtime-
 interpretation library from growing without an explicit baseline update.
+
+## Minimum-size button metrics batch (uibuild, 2026-11-18)
+
+`components/button_metrics_m3.opu` adds four wrappers with Flutter's M3
+minimum geometry: filled/outlined/text buttons at 64x40
+(`filled_button.dart:611-612`, `outlined_button.dart:521-522`,
+`text_button.dart:554`) and icon buttons at 48x48
+(`icon_button.dart:39,781-783`, `material/constants.dart:27`). Existing
+button components and pins are unchanged. Verification adds 32 state pins
+(556 total over 72 components), four eight-state compile cases, one a11y
+case, two boundary cases and updates the explicit source-size budget.

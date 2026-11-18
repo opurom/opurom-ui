@@ -97,6 +97,7 @@
     "components/expansion_m3.opu",
     "components/page_states_m3.opu",
     "components/responsive_m3.opu",
-    "tools/emit-theme.mjs"
+    "tools/emit-theme.mjs",
+    "components/button_metrics_m3.opu"
   ]
 }

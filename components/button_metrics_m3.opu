@@ -1,0 +1,42 @@
+// Minimum-size button variants with explicit Flutter source-backed metrics; input labels are literals.
+
+// Material 3-size button variants with explicit Flutter minimumSize geometry.
+// Flutter stable 3.50.0 sources:
+//   filled_button.dart:611-612       M3 minimumSize Size(64, 40)
+//   outlined_button.dart:521-522     M3 minimumSize Size(64, 40)
+//   text_button.dart:554             M3 minimumSize Size(64, 40)
+//   icon_button.dart:39,781-783      _kMinButtonSize = kMinInteractiveDimension
+//   material/constants.dart:27       48dp minimum touch target
+//   motion.dart:52                   200ms short4 state transition
+// These wrappers keep the existing M3 button family untouched and add an
+// explicit minimum-size container. The IR Container enforces width/height,
+// so deterministic frames satisfy the source-backed 64x40 / 48x48 budgets.
+// Boundary: empty labels keep the full minimum box; overlong text clips via
+// maxLines; gesture and callbacks remain at the call site (A3).
+// Example MinFilledButtonM3("Save", "default", "ease")
+component MinFilledButtonM3(label: string, state: string, animate: string) {
+  Container(width: 64, height: 40, rounded: 20, variant: "text", state: "{state}", label: "filled min host") {
+    FilledActionButton("{label}", "{state}", "{animate}")
+  }
+}
+
+component MinOutlinedButtonM3(label: string, state: string, animate: string) {
+  Container(width: 64, height: 40, rounded: 20, variant: "text", state: "{state}", label: "outlined min host") {
+    OutlinedActionButton("{label}", "{state}", "{animate}")
+  }
+}
+
+component MinTextButtonM3(label: string, state: string, animate: string) {
+  Container(width: 64, height: 40, rounded: 20, variant: "text", state: "{state}", label: "text min host") {
+    TextActionButton("{label}", "{state}", "{animate}")
+  }
+}
+
+component MinIconButtonM3(icon: string, state: string, gesture: string) {
+  Container(width: 48, height: 48, rounded: 24, variant: "text", state: "{state}", label: "icon min host") {
+    IconAction("{icon}", "{state}", "{gesture}")
+  }
+}
+
+import "components/buttons_m3.opu";
+import "components/icon_button.opu";

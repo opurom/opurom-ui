@@ -51,6 +51,10 @@ const CASES = [
   ['components/page_states_m3.opu', 'PageLoadingShell("Loading", "{state}", "ease")'],
   ['components/page_states_m3.opu', 'PageEmptyShell("Empty", "Nothing", "{state}", "ease")'],
   ['components/page_states_m3.opu', 'PageErrorShell("Error", "Retry", "{state}", "ease")'],
+  ['components/button_metrics_m3.opu', 'MinFilledButtonM3("Save", "{state}", "ease")'],
+  ['components/button_metrics_m3.opu', 'MinOutlinedButtonM3("Cancel", "{state}", "ease")'],
+  ['components/button_metrics_m3.opu', 'MinTextButtonM3("More", "{state}", "ease")'],
+  ['components/button_metrics_m3.opu', 'MinIconButtonM3("home", "{state}", "tap")'],
 ];
 
 function source(mod, call) {

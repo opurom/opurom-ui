@@ -50,6 +50,8 @@ const CASES = [
   ['PageLoadingShell("", "disabled", "ease")', 'components/page_states_m3.opu'],
   [`PageEmptyShell("${long}", "${long}", "error", "ease")`, 'components/page_states_m3.opu'],
   ['PageErrorShell("", "", "loading", "ease")', 'components/page_states_m3.opu'],
+  ['MinFilledButtonM3("", "disabled", "ease")', 'components/button_metrics_m3.opu'],
+  ['MinIconButtonM3("home", "error", "tap")', 'components/button_metrics_m3.opu'],
 ];
 
 function source(mod, use) {

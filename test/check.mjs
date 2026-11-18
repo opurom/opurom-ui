@@ -54,7 +54,7 @@ for (const file of components) {
   assert.ok(text.length > 0, `${file} must be non-empty`);
   assert.match(text, /component\s+[A-Z]/, `${file} must declare a component`);
   assert.match(text, /^\/\/ /, `${file} must open with a one-line usage comment`);
-  if (file !== 'components/state_wrappers.opu') {
+  if (!['components/state_wrappers.opu', 'components/button_metrics_m3.opu'].includes(file)) {
     assert.ok(
       !/^import\b/m.test(text),
       `${file} must not import modules; the app owns the theme`,
