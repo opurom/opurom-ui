@@ -370,3 +370,10 @@ stable 3.50.0 anchors: `dialog.dart:1961-1993`, `:32`, `:417-442` and
 action callbacks remain reserved (A3/A4/B3). Verification adds eight state
 pins (572 total over 74 components), one eight-state compile case, one a11y
 case and one boundary case; the source-size budget is updated explicitly.
+
+## Component API uniqueness gate (uibuild, 2026-11-18)
+
+`test/component-api-uniqueness.test.mjs` rejects duplicate `component` names
+across all `.opu` modules. Duplicate names would shadow pinned
+implementations at import time; the gate keeps the package API unambiguous
+without touching IR or runtime semantics.

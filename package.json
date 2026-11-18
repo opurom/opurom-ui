@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node test/check.mjs && node test/material-tokens.test.mjs && node --test test/digests.test.mjs test/button-states.test.mjs test/m3-component-states.test.mjs test/eight-state-compile.test.mjs test/state-digests.test.mjs test/gallery-structure.test.mjs test/extension-boundaries.test.mjs test/extension-a11y.test.mjs test/seed-scheme.test.mjs test/state-wrappers.test.mjs test/layout-core.test.mjs test/responsive-layout.test.mjs test/theme-rules.test.mjs test/emit-theme.test.mjs test/package-size.test.mjs"
+    "test": "node test/check.mjs && node test/material-tokens.test.mjs && node --test test/digests.test.mjs test/button-states.test.mjs test/m3-component-states.test.mjs test/eight-state-compile.test.mjs test/state-digests.test.mjs test/gallery-structure.test.mjs test/extension-boundaries.test.mjs test/extension-a11y.test.mjs test/seed-scheme.test.mjs test/state-wrappers.test.mjs test/layout-core.test.mjs test/responsive-layout.test.mjs test/theme-rules.test.mjs test/emit-theme.test.mjs test/package-size.test.mjs test/component-api-uniqueness.test.mjs"
   }
 }
