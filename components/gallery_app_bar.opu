@@ -14,7 +14,7 @@
 // Events onTitleReserved (no-op gesture fallback; never crashes).
 // Bounds radius/height 0..10000 by compiler; overlong title clipped by container.
 // Note IR Container rounds all four corners; the golden rounds the top only.
-// Example GalleryAppBar("Cards", bandColor, titleColor, 25, 147, "default")
+// Example GalleryAppBar("Cards", "{@md-sys-color-primary}", "{@md-sys-color-primary}", 25, 147, "default")
 component GalleryAppBar(title: string, bg: string, textColor: string, radius: int, height: int, state: string) {
   Container(width: 996, height: height, rounded: radius, color: "{bg}", border: "{bg}", p: 0, state: "{state}", gesture: tap, label: "gallery app bar") {
     Text("{title}", size: 64, weight: "bold", color: "{textColor}", label: "gallery/title")

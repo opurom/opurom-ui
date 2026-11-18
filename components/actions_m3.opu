@@ -15,7 +15,7 @@
 //          mini/location/heroTag (A4), 6dp touch target beyond the visual box.
 // Boundary: empty icon still renders the circular target; unknown icon names
 // fall back to the renderer's default glyph; overlong label clips in extended.
-// Example FabM3("add", "default", "ease")
+// Example FabM3("plus", "default", "ease")
 component FabM3(icon: string, state: string, animate: string) {
   Container(width: 56, height: 56, rounded: 28, variant: "primary", shadow: 2, state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "FAB", role: "button") {
     Icon(name: "{icon}", width: 24, height: 24)
@@ -23,7 +23,7 @@ component FabM3(icon: string, state: string, animate: string) {
 }
 
 // Small FAB: 40dp circle per floating_action_button.dart:405,730.
-// Example SmallFabM3("add", "hover", "ease")
+// Example SmallFabM3("plus", "hover", "ease")
 component SmallFabM3(icon: string, state: string, animate: string) {
   Container(width: 40, height: 40, rounded: 20, variant: "primary", shadow: 2, state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "small FAB", role: "button") {
     Icon(name: "{icon}", width: 24, height: 24)
@@ -33,7 +33,7 @@ component SmallFabM3(icon: string, state: string, animate: string) {
 // Extended FAB: 48dp tall stadium per floating_action_button.dart:732,820.
 // API   R: label. O: icon, state, animate.
 //       X: icon label spacing 8dp (:733; the Row gap is the stand-in).
-// Example ExtendedFabM3("Create", "add", "default", "ease")
+// Example ExtendedFabM3("Create", "plus", "default", "ease")
 component ExtendedFabM3(label: string, icon: string, state: string, animate: string) {
   Container(height: 48, rounded: 24, variant: "primary", shadow: 2, state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "extended FAB", role: "button") {
     Row(padding: 16, gap: 8) {
@@ -45,7 +45,7 @@ component ExtendedFabM3(label: string, icon: string, state: string, animate: str
 
 // Large FAB: 96dp circle per floating_action_button.dart:731,819 (radius 28
 // on the M3 shape, kept here as the circle radius half the width).
-// Example LargeFabM3("add", "focus", "ease")
+// Example LargeFabM3("plus", "focus", "ease")
 component LargeFabM3(icon: string, state: string, animate: string) {
   Container(width: 96, height: 96, rounded: 48, variant: "primary", shadow: 2, state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "large FAB", role: "button") {
     Icon(name: "{icon}", width: 36, height: 36)

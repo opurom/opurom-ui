@@ -25,7 +25,7 @@
 // tracked with the render kernel owner; this gate does not assert them.
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
@@ -90,6 +90,37 @@ function intSlots(component) {
 function freeStringSlots(component) {
   return component.params.map((p, i) => (p.type === 'string' && isFreeString(component, p, effective) ? i : -1)).filter((i) => i >= 0);
 }
+
+test('every authored Example call compiles against the current API', () => {
+  const tmp = mkdtempSync(path.join(tmpdir(), 'uibuild-doc-example-'));
+  try {
+    cpSync(componentsDir, path.join(tmp, 'components'), { recursive: true });
+    let audited = 0;
+    const byName = componentIndex(components);
+    for (const file of readdirSync(componentsDir).filter((f) => f.endsWith('.opu'))) {
+      const raw = readFileSync(path.join(componentsDir, file), 'utf8');
+      for (const component of components.filter((c) => c.file === `components/${file}`)) {
+        const index = raw.indexOf(`component ${component.name}(`);
+        if (index === -1) continue;
+        const before = raw.slice(0, index);
+        const example = [...before.matchAll(/\/\/.*Example\s+([A-Za-z_][A-Za-z0-9_]*)\(([^\n]*?)\)\s*$/g)].at(-1);
+        if (!example) continue;
+        audited += 1;
+        const callee = byName.get(example[1]);
+        assert.ok(callee, `${component.file} Example calls unknown component ${example[1]}`);
+        assert.equal(callee.name, component.name, `${component.file} Example for ${component.name} calls ${callee.name}`);
+        const src = path.join(tmp, 'example.opu');
+        const ir = path.join(tmp, 'example.json');
+        writeFileSync(src, program(modulesFor(callee, edges), `${example[1]}(${example[2]})`));
+        const result = spawnSync(compiler, ['compile', src, '-o', ir], { encoding: 'utf8' });
+        assert.equal(result.status, 0, `${component.file} Example must compile: ${result.stderr}`);
+      }
+    }
+    assert.ok(audited >= 90, `expected at least 90 authored Examples, found ${audited}`);
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+});
 
 test('no component declares a parameter that its body never uses', () => {
   const dead = [];
