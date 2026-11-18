@@ -228,3 +228,17 @@ so only static Container/Row geometry is emitted; true constraint solving
 stays reserved (kernel gap L4). `test/layout-core.test.mjs` compiles all five
 shells in five states and checks zero/overlong bounds. The shells are
 additive and change no existing component or golden.
+
+## Date-range picker shell (ui-dev, 2026-11-18, part 6)
+
+`components/date_range_m3.opu` adds `DateRangePickerM3`, a declarative
+two-field shell with a divider between range endpoints. Flutter stable 3.50.0
+sources: `date_picker.dart:1167-1243` (showDateRangePicker parameters and
+firstDate/lastDate assertions), `:1074-1083` (start <= end contract),
+`:130-131` (help/cancel labels), `:791-801` (header/grid divider) and
+`motion.dart:52` (200ms short4). Integer slots stand in for DateTime because
+component arguments are literals; routes, selectableDayPredicate and save
+callbacks remain reserved (A3/A4/B3/B4). New gates: eight-state compile case,
+8 settled-frame pins (468 total over 61 components), one a11y name/role case
+and two boundary renders (empty labels/negative slots and overlong label at
+extreme values).

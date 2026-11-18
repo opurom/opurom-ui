@@ -3245,6 +3245,62 @@
       "use": "NavigationRailM3(\"Home,Search,Profile\", 1, \"error\", \"ease\")",
       "state": "error",
       "digest": "aee9b07516267356"
+    },
+    {
+      "name": "DateRangePickerM3-default",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "f257a3d3b0963518"
+    },
+    {
+      "name": "DateRangePickerM3-hover",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "49233cf6e9a2cb7d"
+    },
+    {
+      "name": "DateRangePickerM3-active",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "43b90c47d0e50a06"
+    },
+    {
+      "name": "DateRangePickerM3-focus",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "15755341f3cc33b8"
+    },
+    {
+      "name": "DateRangePickerM3-disabled",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "3150348ee1a06318"
+    },
+    {
+      "name": "DateRangePickerM3-loading",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "4f6b574ff96da29f"
+    },
+    {
+      "name": "DateRangePickerM3-success",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "6531bf3369e72caa"
+    },
+    {
+      "name": "DateRangePickerM3-error",
+      "module": "components/date_range_m3.opu",
+      "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "0134270288617bc3"
     }
   ]
 }

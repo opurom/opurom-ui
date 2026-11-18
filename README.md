@@ -143,6 +143,7 @@ import "components/text.opu";
 | `components/inputs_ext_m3.opu` | `AutocompleteM3`, `MultilineFieldM3`, `NumberFieldM3`, `BottomSheetM3`, `TooltipM3` (label/text, value, state, animate) | remaining basic input/feedback shells; eight states, 150ms short3; anchors `autocomplete.dart:61-67`, `text_field.dart:363-366`, `bottom_sheet.dart:97-103`, `material/tooltip.dart:96-104`; callbacks/routes/keyboard reserved (A3/A4/B4) |
 | `components/menu_m3.opu` | `PopupMenuM3(items, width, state, animate)` | M3 popup-menu shell with semantic button role; eight states, elevation 3 and 8dp vertical padding; anchors `popup_menu.dart:47,1176-1218,1424-1427,1837-1872`, `motion.dart:52`; route/keyboard/callback reserved (A3/A4/B3) |
 | `components/nav_rail_m3.opu` | `NavigationRailM3(labels, selected, state, animate)` | M3 rail shell at 80dp width, eight states; anchors `navigation_rail.dart:91-116,1236-1244,1272-1274`, `motion.dart:52`; extended mode/routing reserved (A3/A4/B3) |
+| `components/date_range_m3.opu` | `DateRangePickerM3(label, start, end, state, animate)` | M3 date-range shell with two ordered DateFields and a divider; eight states; anchors `date_picker.dart:1167-1243,1074-1083,130-131,791-801`, `motion.dart:52`; DateTime/routes/predicate reserved (A3/A4/B3/B4) |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

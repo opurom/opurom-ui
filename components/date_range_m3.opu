@@ -1,0 +1,29 @@
+// Material 3 date-range picker presentation shell. Flutter stable 3.50.0
+// source anchors:
+//   date_picker.dart:1167-1243        showDateRangePicker parameters and the
+//                                     firstDate/lastDate ordering assertions
+//   date_picker.dart:1074-1083        initialDateRange start <= end contract
+//   date_picker.dart:130-131          helpText / cancelText labels
+//   date_picker.dart:791-801          dialog divider between header and grid
+//   motion.dart:52                    200ms short4 state duration
+// Opurom has no DateTime value type in component arguments, so the range
+// endpoints are integer slots. The two DateField nodes preserve the start/end
+// order required by Flutter's DateTimeRange; the divider separates them as
+// the dialog header separates the two input fields in input entry mode.
+// This is a declarative shell: DateTime conversion, route presentation,
+// selectableDayPredicate and onSaved callbacks are kernel gaps (A3/A4/B3/B4)
+// and stay reserved. No runtime interpretation is introduced.
+// Boundary: out-of-order slots are not silently reordered; the caller owns
+// the firstDate <= start <= end <= lastDate contract. Empty labels render an
+// empty caption; overlong labels clip inside the DateField primitive.
+// Example DateRangePickerM3("Travel dates", 10, 20, "default", "ease")
+component DateRangePickerM3(label: string, start: int, end: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "date range picker", role: "button") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      DateField(value: start, state: "{state}", animate: "{animate}", duration: 200, label: "range start")
+      Divider()
+      DateField(value: end, state: "{state}", animate: "{animate}", duration: 200, label: "range end")
+    }
+  }
+}
