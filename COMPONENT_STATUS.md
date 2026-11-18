@@ -216,3 +216,15 @@ primitive. Flutter stable 3.50.0 anchors: `navigation_rail.dart:91-116`
 changes are reserved (A3/A4/B3). New gates: eight-state compile case, 8 state
 pins (460 total over 60 components), one a11y name/role case, and two boundary
 renders (empty/overlong labels with out-of-range selections).
+
+## Core layout shell batch (uibuild, 2026-11-18)
+
+`components/layout_core.opu` adds `FixedBox`, `InsetBox`, `AlignedBox`,
+`CenteredBox` and `ConstrainedShell`, covering Flutter stable 3.50.0
+`SizedBox` (`widgets/basic.dart:2787-2812`), `Padding` (`:2331-2340`),
+`Align` (`:2493-2505`), `Center` (`:2581-2583`) and `ConstrainedBox`
+(`:2891-2901`). Opurom IR has no arbitrary single-child constraint delegate,
+so only static Container/Row geometry is emitted; true constraint solving
+stays reserved (kernel gap L4). `test/layout-core.test.mjs` compiles all five
+shells in five states and checks zero/overlong bounds. The shells are
+additive and change no existing component or golden.

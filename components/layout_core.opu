@@ -1,0 +1,52 @@
+// Core layout shells aligned with Flutter stable 3.50.0 primitives.
+//   basic.dart:2787-2812  SizedBox(width, height) tight constraints
+//   basic.dart:2331-2340  Padding(padding) child inset
+//   basic.dart:2493-2505  Align(alignment) child alignment
+//   basic.dart:2581-2583  Center = Align with center alignment
+//   basic.dart:2891-2901  ConstrainedBox(constraints) additional constraints
+// Opurom IR has no arbitrary single-child constraint delegate (kernel gap L4),
+// so these shells use Container width/height/padding and Row/Column align.
+// Only static, deterministic geometry is emitted; no runtime interpretation.
+// State default/hover/active/focus/disabled follows WidgetState vocabulary.
+// Example FixedBox(80, 40, "default")
+
+component FixedBox(width: int, height: int, state: string) {
+  Container(width: width, height: height, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "sized box") {
+    Text("box", size: 12)
+  }
+}
+
+component InsetBox(padding: int, state: string) {
+  Container(p: padding, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "padding") {
+    Text("content", size: 12)
+  }
+}
+
+component AlignedBox(align: string, state: string) {
+  Container(p: 8, rounded: 8, variant: "secondary", label: "align host") {
+    Row(gap: 8, align: align) {
+      Container(state: "{state}", gesture: tap, label: "align") { Text("start", size: 12) }
+      Spacer()
+      Text("end", size: 12)
+    }
+  }
+}
+
+component CenteredBox(state: string) {
+  Container(p: 8, rounded: 8, variant: "secondary", label: "center host") {
+    Row(gap: 8, align: center) {
+      Spacer()
+      Container(state: "{state}", gesture: tap, label: "center") { Text("center", size: 12) }
+      Spacer()
+    }
+  }
+}
+
+component ConstrainedShell(minWidth: int, maxWidth: int, state: string) {
+  Container(width: maxWidth, p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "constrained box") {
+    Row(gap: 8, align: start) {
+      Container(width: minWidth, p: 4, variant: "ghost") { Text("min", size: 12) }
+      Spacer()
+    }
+  }
+}
