@@ -303,3 +303,18 @@ components. Flutter stable 3.50.0 anchors: `widgets/layout_builder.dart:381`,
 `:76-109`. `test/responsive-layout.test.mjs` renders the same IR at 480, 800
 and 1280 logical pixels, asserts three distinct digests and byte-stable
 repeat rendering. No new IR field or runtime interpreter is introduced.
+
+## Theme and responsive rules module (ui-dev, 2026-11-18, part 8)
+
+`tools/theme-rules.mjs` is a data-only theme/breakpoint rule module; it does
+not change shared token files or IR. Flutter stable 3.50.0 anchors:
+`theme_data.dart:265-320,416-420,458-460,491-522,840-862` (ThemeData M3
+defaults, splash, dark elevation overlay, ColorScheme typography),
+`widgets/media_query.dart:205`, `widgets/layout_builder.dart:381`,
+`material/constants.dart:30` and `material/navigation_rail.dart:1236-1244`.
+Opurom tier mapping is retained from `render/src/layout.rs:50-109`. The module
+exposes five tiers, boundary widths, 120px minimum column clamp 1..12, and
+light/dark ThemeData construction rules. `test/theme-rules.test.mjs` checks
+every boundary (599/600, 899/900, 1199/1200, 1599/1600), invalid widths,
+light/dark rules, deterministic compile+render at nine widths in both modes,
+and all eight design states.
