@@ -50,6 +50,7 @@ const CASES = [
   ['Touch checkbox', 'TouchCheckboxM3("default", "ease")', 'checkbox touch target', 'none', 'components/selection_touch_m3.opu'],
   ['M3 FAB', 'M3Fab2024("plus", "default", "ease")', 'M3 FAB', 'button', 'components/fab_2024_m3.opu'],
   ['Segmented button', 'SegmentedButtonM3("Day", "Week", "Month", 1, "default", "ease")', 'segmented button host', 'none', 'components/segmented_button_m3.opu'],
+  ['Standard drawer', 'StandardDrawerM3("Navigation", "Overview", "Runs", "default", "ease")', 'standard drawer', 'none', 'components/drawer_metrics_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

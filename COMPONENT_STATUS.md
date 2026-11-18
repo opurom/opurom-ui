@@ -466,3 +466,13 @@ presentation stays at the call site (A3). The existing TooltipM3 pin is
 unchanged. Verification adds eight state pins (676 total over 87
 components), one eight-state compile case, one a11y case, one boundary case
 and an explicit source-budget update.
+
+## Standard drawer metrics shell (uibuild, 2026-11-18)
+
+`components/drawer_metrics_m3.opu` adds `StandardDrawerM3` with Flutter
+stable 3.50.0 M3 drawer values: 304dp width (`drawer.dart:61,276`),
+elevation 1 and 16dp end radius (`:778-804`). The existing 240dp Drawer and
+360dp NavigationDrawerM3 pins are unchanged. Route presentation, edge drag
+and focus handling remain reserved (A3/A4/B3). Verification adds eight state
+pins (684 total over 88 components), one eight-state compile case, one a11y
+case, one boundary case and an explicit source-budget update.

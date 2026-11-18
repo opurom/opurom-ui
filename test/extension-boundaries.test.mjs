@@ -64,6 +64,8 @@ const CASES = [
   ['TouchRadioM3("error", "ease")', 'components/selection_touch_m3.opu'],
   ['M3Fab2024("plus", "loading", "ease")', 'components/fab_2024_m3.opu'],
   ['SegmentedButtonM3("", "", "", -1, "error", "ease")', 'components/segmented_button_m3.opu'],
+  ['StandardDrawerM3("", "", "", "error", "ease")', 'components/drawer_metrics_m3.opu'],
+
 ];
 
 function source(mod, use) {

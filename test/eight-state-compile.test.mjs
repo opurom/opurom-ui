@@ -68,6 +68,7 @@ const CASES = [
   ['components/progress_2024_m3.opu', 'LinearProgress2024M3(60, "{state}", "ease")'],
   ['components/selection_touch_m3.opu', 'TouchCheckboxM3("{state}", "ease")'],
   ['components/selection_touch_m3.opu', 'TouchRadioM3("{state}", "ease")'],
+  ['components/drawer_metrics_m3.opu', 'StandardDrawerM3("Navigation", "Overview", "Runs", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

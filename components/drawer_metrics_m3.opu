@@ -1,0 +1,21 @@
+// Material 3 standard drawer geometry. Flutter stable 3.50.0 sources:
+//   drawer.dart:61           default width 304dp
+//   drawer.dart:276          width from DrawerTheme over the default
+//   drawer.dart:778-804      elevation 1, hard-edge clip, 16dp end radius
+//   material/motion.dart:52  200ms short4 state transition
+// The existing Drawer (240dp) and NavigationDrawerM3 (360dp) pins stay
+// untouched. Route presentation, edge drag and focus handling are reserved
+// (A3/A4/B3); no runtime drawer object model is introduced.
+// Example StandardDrawerM3("Navigation", "Overview", "Runs", "default", "ease")
+component StandardDrawerM3(title: string, itemA: string, itemB: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "drawer focus host") {
+    Container(width: 304, p: 12, rounded: 16, shadow: 1, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "standard drawer", role: "none") {
+      Column(gap: 8) {
+        Text("{title}", size: 24, maxLines: 1)
+        Divider()
+        Text("{itemA}", size: 14, maxLines: 1)
+        Text("{itemB}", size: 14, maxLines: 1)
+      }
+    }
+  }
+}
