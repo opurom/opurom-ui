@@ -1,0 +1,68 @@
+{
+  "purpose": "sticky header breakpoint catalog: pinned/floating static extent frames at compact, medium and expanded tiers; internal Opurom pins, not Flutter sliver parity",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "delegate": "widgets/sliver_persistent_header.dart:20-67",
+    "pinnedFloating": "widgets/sliver_persistent_header.dart:125-173",
+    "pinnedSliver": "widgets/pinned_header_sliver.dart:57-131",
+    "breakpoints": "render/src/layout.rs:50-74",
+    "sliverGap": "B2/B3/L"
+  },
+  "toolchain": {
+    "meta": "test/state-digests.json",
+    "profile": "debug",
+    "replayTicks": [0, 200],
+    "note": "Ticks record deterministic rendering only. Real sliver pinning, floating snap and shrinkOffset interpolation are not expressible in the current IR."
+  },
+  "tiers": [
+    { "name": "compact", "width": 480, "height": 800 },
+    { "name": "medium", "width": 800, "height": 480 },
+    { "name": "expanded", "width": 1000, "height": 600 }
+  ],
+  "docs": ["README.md", "COMPONENT_STATUS.md"],
+  "component": {
+    "module": "components/sticky_header_m3.opu",
+    "name": "StickyHeaderM3",
+    "pinned": "static extent, reserved sliver behavior",
+    "floating": "reserved B2/B3, no faked snap"
+  },
+  "modes": [
+    {
+      "name": "expanded",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "daa53a675cbd0829" },
+        "medium": { "0": "a33574c67265d325", "200": "7599ccfb50eea529" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "c695f1ddf911e109" }
+      }
+    },
+    {
+      "name": "compact",
+      "use": "StickyHeaderM3(\"Today\", 32, 32, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "9f695f60acefeb79" },
+        "medium": { "0": "a33574c67265d325", "200": "39a59bd2d0c26179" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "365ed6a73cc2dfb9" }
+      }
+    },
+    {
+      "name": "equal",
+      "use": "StickyHeaderM3(\"Today\", 56, 56, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "a5f3ddcfe651fae9" },
+        "medium": { "0": "a33574c67265d325", "200": "e83412506df043e9" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "e8c66e99c27b0749" }
+      }
+    },
+    {
+      "name": "zero",
+      "use": "StickyHeaderM3(\"Today\", 0, 0, \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "200": "ff37de6a4a766852" },
+        "medium": { "0": "a33574c67265d325", "200": "931c60021eb3b752" },
+        "expanded": { "0": "b7ff9ba99285e625", "200": "198190141100d672" }
+      }
+    }
+  ]
+}

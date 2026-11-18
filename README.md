@@ -185,6 +185,9 @@ consistency.
 gate for tier coverage, overflow rules, rebound reservation and deterministic
 rendering.
 
+`test/sticky-header-catalog.json` rolls static pinned-header extents into one
+signed audit gate for mode coverage, tier frames and reserved sliver behavior.
+
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction
 states (normal/default, pressed/active, focus, disabled, hover) have token-driven

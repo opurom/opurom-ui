@@ -687,3 +687,14 @@ rebound reservation, source anchors, component registration, documentation
 references and repeated-render determinism. Flutter stable 3.50.0 remains the
 sole source authority; rebound physics stays reserved B2/B3 because IR `Scroll`
 only declares `height`.
+
+## Sticky header breakpoint catalog audit (uibuild, 2026-11-18)
+
+`test/sticky-header-catalog.json` and `test/sticky-header-catalog.test.mjs` roll
+the authored expanded, compact, equal and zero extent modes into one signed
+JSON manifest and gate. The audit re-renders every mode at compact, medium and
+expanded tiers at replay ticks 0 and 200, verifying tier/mode coverage, static
+extent frames, pinned/floating reservation, source anchors, component
+registration, documentation references and repeated-render determinism.
+Flutter stable 3.50.0 remains the sole source authority; real sliver pinning,
+floating snap and shrinkOffset interpolation stay reserved B2/B3/L.
