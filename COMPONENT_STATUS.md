@@ -266,3 +266,16 @@ lazy sliver delegates and masonry geometry remain reserved (B2/B3). The
 200ms transition follows `material/motion.dart:52`. Eight state pins
 (484 total over 63 components), one eight-state compile case, one a11y case
 and one boundary case cover the new shell.
+
+## Expansion and select shell batch (uibuild, 2026-11-18)
+
+`components/expansion_m3.opu` adds `ExpandablePanelM3` and `SelectFieldM3`.
+Flutter stable 3.50.0 anchors: `expansion_tile.dart:118-140,233,532-552`
+(title/subtitle/initiallyExpanded/maintainState and expansion semantics) and
+`dropdown.dart:970-1010` (value/items/elevation 8/isExpanded). Opurom IR has
+no per-child expansion controller or callback route (A3/B4), so both shells
+emit deterministic static geometry with an eight-state placeholder; no
+runtime object model is introduced. The 200ms transition follows
+`material/motion.dart:52`. Verification adds 16 state pins (500 total over
+65 components), two eight-state compile cases, two a11y cases and two
+boundary cases.

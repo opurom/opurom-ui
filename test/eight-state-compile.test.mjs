@@ -46,6 +46,8 @@ const CASES = [
   ['components/date_range_m3.opu', 'DateRangePickerM3("Travel dates", 10, 20, "{state}", "ease")'],
   ['components/sticky_header_m3.opu', 'StickyHeaderM3("Today", 56, 32, "{state}", "ease")'],
   ['components/waterfall_m3.opu', 'WaterfallGridM3("One,Two,Three", 2, 8, "{state}", "ease")'],
+  ['components/expansion_m3.opu', 'ExpandablePanelM3("Details", "Body", true, "{state}", "ease")'],
+  ['components/expansion_m3.opu', 'SelectFieldM3("Choose", 1, "{state}", "ease")'],
 ];
 
 function source(mod, call) {

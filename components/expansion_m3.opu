@@ -1,0 +1,44 @@
+// Material 3 expansion tile presentation shell. Flutter stable 3.50.0:
+//   expansion_tile.dart:118-140  title/subtitle/initiallyExpanded/maintainState
+//   expansion_tile.dart:233      initiallyExpanded default false
+//   expansion_tile.dart:532-552  expansion state and semantics hint
+//   dropdown.dart:970-1010       DropdownButton(value, items, elevation 8)
+//   material/motion.dart:52      200ms short4 state transition
+// Opurom IR has no per-child expand/collapse controller (kernel gaps A3/B4),
+// so this shell renders the expanded or collapsed presentation from a literal
+// flag and an eight-state placeholder. Route/animation handoff is reserved;
+// no runtime object model or interpreted state is introduced.
+// Boundary: empty title/children render a minimal tile; overlong labels clip.
+// Example ExpandablePanelM3("Details", "Body", true, "default", "ease")
+component ExpandablePanelM3(title: string, body: string, expanded: bool, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "expansion focus host") {
+    Container(p: 12, rounded: 12, shadow: 1, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "expansion tile", role: "button") {
+      Column(gap: 8) {
+        Row(gap: 8, align: center) {
+          Text("{title}", size: 16, maxLines: 1)
+          Spacer()
+          Icon(name: "chevron_down", width: 24, height: 24)
+        }
+        Container(p: 8, rounded: 8, variant: "ghost", label: "expansion body") {
+          Text("{body}", size: 14, maxLines: 4)
+        }
+      }
+    }
+  }
+}
+
+// DropdownButtonFormField presentation shell. The selected slot is a literal
+// index; item builders, selected callbacks and keyboard focus are reserved.
+// Example SelectFieldM3("Choose", 1, "default", "ease")
+component SelectFieldM3(label: string, selected: int, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "select focus host") {
+    Container(p: 12, rounded: 4, shadow: 8, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "select field", role: "button") {
+      Row(gap: 8, align: center) {
+        Text("{label}", size: 16, maxLines: 1)
+        Spacer()
+        Text("{selected}", size: 14)
+        Icon(name: "chevron_down", width: 24, height: 24)
+      }
+    }
+  }
+}
