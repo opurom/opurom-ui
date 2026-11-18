@@ -36,6 +36,8 @@ const REQUIRED = [
   'components/time_picker_panel_m3.opu',
   'components/responsive_date_picker_m3.opu',
   'components/responsive_time_picker_m3.opu',
+  'components/responsive_color_picker_m3.opu',
+  'components/page_success_m3.opu',
   'components/date_range_m3.opu',
   'components/sticky_header_m3.opu',
   'components/nav_drawer_m3.opu',
@@ -47,7 +49,7 @@ test('M3 shells declare Flutter source anchors and version', () => {
   for (const file of REQUIRED) {
     const text = readFileSync(path.join(root, file), 'utf8');
     assert.ok(manifest.files.includes(file), `${file} must be in package manifest`);
-    assert.ok(/3\.50\.0|ab291203/.test(text), `${file} must name Flutter version/commit`);
+    assert.ok(/3\.50\.0|ab2912035e160d9cad6306df307576da6128ebdb/.test(text), `${file} must name Flutter version/commit`);
     assert.ok(/\b[a-z_]+\.dart:\d+/.test(text), `${file} must carry Flutter file:line anchor`);
     if (/state:\s*string/.test(text)) {
       assert.ok(STATE_MODULES.has(file), `${file} must have an eight-state compile case`);

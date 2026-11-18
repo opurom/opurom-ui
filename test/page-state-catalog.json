@@ -1,0 +1,98 @@
+{
+  "purpose": "responsive page-state layout catalog: loading/empty/error/success at compact, medium and expanded tiers; internal Opurom pins, not Flutter pixel parity",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "noPageStateWidget": "NO_FLUTTER_EQUIVALENT",
+    "progress": "progress_indicator.dart:48-90,1611-1637",
+    "listTile": "list_tile.dart:388-425",
+    "icon": "icons.dart:5370-5371",
+    "motion": "material/motion.dart:52",
+    "breakpoints": "render/src/layout.rs:50-74"
+  },
+  "toolchain": {
+    "meta": "test/state-digests.json",
+    "profile": "debug",
+    "tick": 4000
+  },
+  "tiers": [
+    {
+      "name": "compact",
+      "width": 480,
+      "height": 800
+    },
+    {
+      "name": "medium",
+      "width": 800,
+      "height": 480
+    },
+    {
+      "name": "expanded",
+      "width": 1000,
+      "height": 600
+    }
+  ],
+  "states": [
+    {
+      "name": "loading",
+      "module": "components/page_states_m3.opu",
+      "component": "PageLoadingShell",
+      "use": "PageLoadingShell(\"Loading\", \"default\", \"ease\")",
+      "anchors": [
+        "progress_indicator.dart:48-90",
+        "material/motion.dart:52"
+      ],
+      "pins": {
+        "compact": "2a865022a79cf5a7",
+        "medium": "66c783edd2f6eed7",
+        "expanded": "87e6f6c25cc35b47"
+      }
+    },
+    {
+      "name": "empty",
+      "module": "components/page_states_m3.opu",
+      "component": "PageEmptyShell",
+      "use": "PageEmptyShell(\"Empty\", \"Nothing here\", \"default\", \"ease\")",
+      "anchors": [
+        "progress_indicator.dart:48-90",
+        "material/motion.dart:52"
+      ],
+      "pins": {
+        "compact": "0f5fe4488891effe",
+        "medium": "ca65e66e1ad93696",
+        "expanded": "aba15dc15c4a48e6"
+      }
+    },
+    {
+      "name": "error",
+      "module": "components/page_states_m3.opu",
+      "component": "PageErrorShell",
+      "use": "PageErrorShell(\"Error\", \"Try again\", \"default\", \"ease\")",
+      "anchors": [
+        "progress_indicator.dart:48-90",
+        "material/motion.dart:52"
+      ],
+      "pins": {
+        "compact": "b359865fadb4c845",
+        "medium": "f8817100f2b64fd5",
+        "expanded": "5dd362e3ab89ffd5"
+      }
+    },
+    {
+      "name": "success",
+      "module": "components/page_success_m3.opu",
+      "component": "PageSuccessShell",
+      "use": "PageSuccessShell(\"Saved\", \"Changes are up to date\", \"default\", \"ease\")",
+      "anchors": [
+        "icons.dart:5370-5371",
+        "list_tile.dart:388-425",
+        "material/motion.dart:52"
+      ],
+      "pins": {
+        "compact": "4bb93c9144808fa2",
+        "medium": "ad81720eba45235a",
+        "expanded": "b1b0aa8e21286eea"
+      }
+    }
+  ]
+}

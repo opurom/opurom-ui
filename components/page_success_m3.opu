@@ -1,0 +1,22 @@
+// Page-level success status container shell. Flutter stable 3.50.0 has no
+// single PageState or success-page widget; this shell composes documented
+// Material patterns:
+//   icons.dart:5370-5371      material check icon
+//   list_tile.dart:388-425   title/subtitle content contract
+//   material/motion.dart:52  200ms short4 state transition
+// loading/empty/error already have pinned page shells; this additive wrapper
+// completes the Opurom business-state set. success has NO_FLUTTER_EQUIVALENT.
+// The static state string reaches every painted node; route transitions,
+// dismissal and callbacks stay at the call site (A3/B3/B4).
+// Boundary: empty labels render empty text nodes; overlong text clips by
+// maxLines; out-of-range state is compiler-rejected.
+// Example PageSuccessShell("Saved", "Changes are up to date", "default", "ease")
+component PageSuccessShell(title: string, body: string, state: string, animate: string) {
+  Container(p: 16, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "page success", role: "heading") {
+    Column(gap: 8, align: center, state: "{state}") {
+      Icon(name: "check", state: "{state}")
+      Text("{title}", size: 16, maxLines: 1, state: "{state}")
+      Text("{body}", size: 12, maxLines: 2, state: "{state}")
+    }
+  }
+}

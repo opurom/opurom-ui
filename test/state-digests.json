@@ -5541,6 +5541,62 @@
       "use": "ResponsiveColorPickerPanelM3(\"Blue\",\"error\",\"ease\")",
       "state": "error",
       "digest": "bbd60c963e9dfee1"
+    },
+    {
+      "name": "PageSuccessShell-default",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "6e52bffee5bc1caa"
+    },
+    {
+      "name": "PageSuccessShell-hover",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "78e9c0695e8c1771"
+    },
+    {
+      "name": "PageSuccessShell-active",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "4ef72e3870375156"
+    },
+    {
+      "name": "PageSuccessShell-focus",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "3813314032d009e2"
+    },
+    {
+      "name": "PageSuccessShell-disabled",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "eb56faf2fc1f984a"
+    },
+    {
+      "name": "PageSuccessShell-loading",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "cc1eaf5d0f3c2a51"
+    },
+    {
+      "name": "PageSuccessShell-success",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "6f358a7ce6af3e7e"
+    },
+    {
+      "name": "PageSuccessShell-error",
+      "module": "components/page_success_m3.opu",
+      "use": "PageSuccessShell(\"Saved\",\"Changes are up to date\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "7047ed97f4eb1acf"
     }
   ]
 }

@@ -171,9 +171,14 @@ import "components/text.opu";
 | `components/responsive_date_picker_m3.opu` | `ResponsiveDatePickerPanelM3` (month, state, animate) | M3 152dp landscape header and 384dp calendar cap; selection routing reserved |
 | `components/responsive_time_picker_m3.opu` | `ResponsiveTimePickerPanelM3` (clock, state, animate) | M3 216dp landscape header, 312dp input and orientation dials |
 | `components/responsive_color_picker_m3.opu` | `ResponsiveColorPickerPanelM3` (label, state, animate) | M3 swatch-grid panel with 2-column compact and 6-column expanded tiers |
+| `components/page_success_m3.opu` | `PageSuccessShell` (title, body, state, animate) | M3 page success presentation; success has no Flutter WidgetState equivalent |
 
 `test/responsive-catalog.json` rolls the date/time/color breakpoint pins into
 one signed audit gate for tier, orientation, column-count and source-anchor
+consistency.
+
+`test/page-state-catalog.json` rolls loading/empty/error/success page layouts
+into one signed audit gate for tier coverage, frame diversity and source-anchor
 consistency.
 
 The fourteen SKELETON modules above are API-complete placeholders: required,

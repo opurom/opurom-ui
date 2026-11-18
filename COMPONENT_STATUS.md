@@ -653,3 +653,26 @@ gate wiring and README/status references. Flutter authority remains stable
 3.50.0 at `ab2912035e160d9cad6306df307576da6128ebdb`, with orientation from
 `widgets/media_query.dart:34-39,855`, tiers from `render/src/layout.rs:50-74`
 and grid derivation from `rendering/sliver_grid.dart:174-190,354-375,449-518`.
+
+## Page success shell (uibuild, 2026-11-18)
+
+`components/page_success_m3.opu` adds `PageSuccessShell`, the fourth page-level
+status shell next to loading, empty and error. Flutter stable 3.50.0 has no
+single success-page widget, so this additive shell composes the documented
+material check icon and title/body layout (`icons.dart:5370-5371`,
+`list_tile.dart:388-425`, `material/motion.dart:52`). `success` is an Opurom
+business state (NO_FLUTTER_EQUIVALENT). Verification adds eight state pins
+(796 total over 102 components), one eight-state compile case, one a11y case,
+two boundary cases, one extreme-input case, a provenance audit entry and an
+explicit source-budget update.
+
+## Responsive page-state catalog audit (uibuild, 2026-11-18)
+
+`test/page-state-catalog.json` and `test/page-state-catalog.test.mjs` roll the
+loading, empty, error and success page shells into one signed JSON manifest and
+gate. The audit re-renders all four states at compact, medium and expanded
+tiers, pins 12 distinct layout digests, and checks state coverage, tier
+diversity, component registration, source anchors, documentation references and
+toolchain identity. Flutter stable 3.50.0 remains the sole source authority;
+page states have no single Flutter widget and are documented as
+NO_FLUTTER_EQUIVALENT.
