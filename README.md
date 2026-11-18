@@ -188,6 +188,10 @@ rendering.
 `test/sticky-header-catalog.json` rolls static pinned-header extents into one
 signed audit gate for mode coverage, tier frames and reserved sliver behavior.
 
+`test/collapsible-catalog.json` rolls expansion-panel cases into one signed
+audit gate for tier coverage, animation boundary and reserved controller
+behavior.
+
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction
 states (normal/default, pressed/active, focus, disabled, hover) have token-driven

@@ -1,0 +1,60 @@
+{
+  "purpose": "collapsible content breakpoint catalog: expanded-state static panels for single, pair and empty cases at compact, medium and expanded tiers; internal Opurom pins, not Flutter parity",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "expansionPanel": "material/expansion_panel.dart:185-195,425-452",
+    "themeDuration": "material/theme.dart:20",
+    "crossFade": "widgets/animated_cross_fade.dart:123-145",
+    "breakpoints": "render/src/layout.rs:50-74",
+    "gap": "A2/B4"
+  },
+  "toolchain": {
+    "meta": "test/state-digests.json",
+    "profile": "debug",
+    "replayTicks": [0, 100, 200],
+    "note": "Ticks record deterministic rendering only. Expansion controllers, collapsed-state interpolation and callbacks remain reserved because the current IR has no panel widget."
+  },
+  "tiers": [
+    { "name": "compact", "width": 480, "height": 800 },
+    { "name": "medium", "width": 800, "height": 480 },
+    { "name": "expanded", "width": 1000, "height": 600 }
+  ],
+  "docs": ["README.md", "COMPONENT_STATUS.md"],
+  "component": {
+    "module": "components/expansion_m3.opu",
+    "name": "ExpandablePanelM3",
+    "expanded": "static expanded presentation",
+    "collapsed": "reserved A2/B4",
+    "animation": "200 ms short4 token reaches IR, no controller is faked"
+  },
+  "cases": [
+    {
+      "name": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "100": "9f92989621e47b3d", "200": "602af782e56a1a88" },
+        "medium": { "0": "a33574c67265d325", "100": "0059383a71e21d75", "200": "4b8f16af53450990" },
+        "expanded": { "0": "b7ff9ba99285e625", "100": "8a23e551d35156b1", "200": "7b3c34011341bf38" }
+      }
+    },
+    {
+      "name": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "pins": {
+        "compact": { "0": "1c2535d2c774c1a2", "100": "c8c7b24519e5ec36", "200": "8c90bb26865a2bce" },
+        "medium": { "0": "1c90ed4b34afffa2", "100": "138f89b2aa49ad36", "200": "1eff5132cf3c734a" },
+        "expanded": { "0": "5a69b1b0d83577a2", "100": "95a7e4f203a8f5ae", "200": "7b8c82e6e523c972" }
+      }
+    },
+    {
+      "name": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "pins": {
+        "compact": { "0": "a33574c67265d325", "100": "efa79882269db488", "200": "167045e08cf34e69" },
+        "medium": { "0": "a33574c67265d325", "100": "a4db4c8f216dff98", "200": "3ff78de14bbac8f9" },
+        "expanded": { "0": "b7ff9ba99285e625", "100": "f01615afeef78900", "200": "d1f369e1998fdad1" }
+      }
+    }
+  ]
+}

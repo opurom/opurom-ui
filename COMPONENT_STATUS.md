@@ -698,3 +698,14 @@ extent frames, pinned/floating reservation, source anchors, component
 registration, documentation references and repeated-render determinism.
 Flutter stable 3.50.0 remains the sole source authority; real sliver pinning,
 floating snap and shrinkOffset interpolation stay reserved B2/B3/L.
+
+## Collapsible content breakpoint catalog audit (uibuild, 2026-11-18)
+
+`test/collapsible-catalog.json` and `test/collapsible-catalog.test.mjs` roll the
+single, pair and empty expansion-panel cases into one signed JSON manifest and
+gate. The audit re-renders every case at compact, medium and expanded tiers at
+replay ticks 0, 100 and 200, verifying case/tier coverage, tick frames, the
+authored 200 ms token in IR, collapsed-controller reservation, source anchors,
+component registration, documentation references and determinism. Flutter
+stable 3.50.0 remains the sole source authority; real panel controllers and
+cross-fade interpolation stay reserved A2/B4.
