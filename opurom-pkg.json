@@ -92,6 +92,7 @@
     "components/state_wrappers.opu",
     "components/layout_core.opu",
     "components/date_range_m3.opu",
-    "components/sticky_header_m3.opu"
+    "components/sticky_header_m3.opu",
+    "components/waterfall_m3.opu"
   ]
 }

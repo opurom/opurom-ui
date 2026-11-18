@@ -255,3 +255,14 @@ need kernel gaps B2/B3 and stay reserved. New gates: eight-state compile case,
 8 settled-frame pins (476 total over 62 components), one a11y name/role case
 and two boundary renders (zero extents with empty title and extreme extent
 with overlong title).
+
+## Waterfall grid shell (uibuild, 2026-11-18)
+
+`components/waterfall_m3.opu` adds `WaterfallGridM3`, a declarative
+presentation shell for the Flutter stable 3.50.0 grid family:
+`widgets/sliver.dart:739-742`, `rendering/sliver_grid.dart:346-364` and
+`:445-463`. The Opurom IR `Table` primitive supplies fixed columns and a gap;
+lazy sliver delegates and masonry geometry remain reserved (B2/B3). The
+200ms transition follows `material/motion.dart:52`. Eight state pins
+(484 total over 63 components), one eight-state compile case, one a11y case
+and one boundary case cover the new shell.

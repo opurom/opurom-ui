@@ -43,6 +43,8 @@ const CASES = [
   [`DateRangePickerM3("${long}", 999999, 0, "error", "ease")`, 'components/date_range_m3.opu'],
   ['StickyHeaderM3("", 0, 0, "disabled", "ease")', 'components/sticky_header_m3.opu'],
   [`StickyHeaderM3("${long}", 9999, 32, "error", "ease")`, 'components/sticky_header_m3.opu'],
+  ['WaterfallGridM3("", 1, 0, "disabled", "ease")', 'components/waterfall_m3.opu'],
+  [`WaterfallGridM3("${long}", 9999, 9999, "error", "ease")`, 'components/waterfall_m3.opu'],
 ];
 
 function source(mod, use) {

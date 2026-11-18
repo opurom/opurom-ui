@@ -34,6 +34,7 @@ const CASES = [
   ['Navigation rail', 'NavigationRailM3("Home,Search,Profile", 1, "default", "ease")', 'navigation rail', 'none', 'components/nav_rail_m3.opu'],
   ['Date range picker', 'DateRangePickerM3("Travel dates", 10, 20, "default", "ease")', 'date range picker', 'button', 'components/date_range_m3.opu'],
   ['Sticky header', 'StickyHeaderM3("Today", 56, 32, "default", "ease")', 'sticky header', 'heading', 'components/sticky_header_m3.opu'],
+  ['Waterfall grid', 'WaterfallGridM3("One,Two,Three", 2, 8, "default", "ease")', 'waterfall grid', 'none', 'components/waterfall_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

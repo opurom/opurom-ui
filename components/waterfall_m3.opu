@@ -1,0 +1,22 @@
+// Material 3 waterfall grid presentation shell. Flutter stable 3.50.0:
+//   widgets/sliver.dart:739-742    SliverGrid(delegate, gridDelegate)
+//   rendering/sliver_grid.dart:346-364  fixed crossAxisCount + spacing
+//   rendering/sliver_grid.dart:445-463  maxCrossAxisExtent adaptive columns
+//   material/motion.dart:52        200ms short4 state transition
+// Opurom IR exposes a deterministic Table shell with explicit columns and
+// gap; Grid has no gap prop in this kernel. True sliver delegates, lazy child
+// building and staggered masonry geometry need kernel gaps B2/B3 and stay
+// reserved; this component does not fake scrolling physics. Three literal
+// cards model visible items.
+// Boundary: columns > 0 is asserted in source. The shell accepts literal
+// columns/spacing; empty or overlong labels clip inside each card.
+// Example WaterfallGridM3("One,Two,Three", 2, 8, "default", "ease")
+component WaterfallGridM3(labels: string, columns: int, spacing: int, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "waterfall focus host") {
+    Table(columns: columns, rows: 2, gap: spacing, state: "{state}", animate: "{animate}", duration: 200, label: "waterfall grid", role: "none") {
+      Container(p: 8, rounded: 8, variant: "secondary") { Text("{labels}", size: 12, maxLines: 2) }
+      Container(p: 8, rounded: 8, variant: "ghost") { Text("tile", size: 12) }
+      Container(p: 8, rounded: 8, variant: "secondary") { Text("tile", size: 12) }
+    }
+  }
+}
