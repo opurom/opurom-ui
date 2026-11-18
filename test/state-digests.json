@@ -1,7 +1,7 @@
 {
   "meta": {
     "purpose": "internal consistency pins, not Flutter parity",
-    "note": "Settle-frame byte locks under the signed state-transition renderer. The original 60 pins use six non-default states; the selection and input batches add eight states per component. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
+    "note": "Settle-frame byte locks under the signed state-transition renderer. The original 60 pins use six non-default states; the selection, input and feedback batches add eight states per component. No Flutter oracle, font file, or 2%/12% pixel threshold is used. loading/success/error are business states (NO_FLUTTER_EQUIVALENT); see COMPONENT_STATE_PROPOSAL.md.",
     "render": "7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2",
     "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
     "profile": "debug",
@@ -949,6 +949,342 @@
       "use": "PasswordFieldM3(\"Password\", \"Enter password\", \"error\", \"ease\")",
       "state": "error",
       "digest": "c84feada80a7827e"
+    },
+    {
+      "name": "DialogM3-default",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "24a60ab5369368ee"
+    },
+    {
+      "name": "DialogM3-hover",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "372c41ba9212fdf6"
+    },
+    {
+      "name": "DialogM3-active",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "0eb1882d5987108f"
+    },
+    {
+      "name": "DialogM3-focus",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "3569c34a4c987dd1"
+    },
+    {
+      "name": "DialogM3-disabled",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "e7d84be6b6d964ea"
+    },
+    {
+      "name": "DialogM3-loading",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "b9dd158b4c6b84ad"
+    },
+    {
+      "name": "DialogM3-success",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "260cd586b7e05d53"
+    },
+    {
+      "name": "DialogM3-error",
+      "module": "components/feedback_m3.opu",
+      "use": "DialogM3(\"Delete\", \"Are you sure?\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "eec2c05f4e8e2af4"
+    },
+    {
+      "name": "ToastM3-default",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "231dc224ecac017d"
+    },
+    {
+      "name": "ToastM3-hover",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "a662ba96c2cb9d29"
+    },
+    {
+      "name": "ToastM3-active",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "63ef2139ddcc79c7"
+    },
+    {
+      "name": "ToastM3-focus",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "b102103fb34defb2"
+    },
+    {
+      "name": "ToastM3-disabled",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "d42f26b279db1cba"
+    },
+    {
+      "name": "ToastM3-loading",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "b7ce52fde7c5afa6"
+    },
+    {
+      "name": "ToastM3-success",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "1d7eee6d557a246e"
+    },
+    {
+      "name": "ToastM3-error",
+      "module": "components/feedback_m3.opu",
+      "use": "ToastM3(\"Saved\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "f5a9c33e6459b144"
+    },
+    {
+      "name": "LoadingM3-default",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"default\", \"ease\")",
+      "state": "default",
+      "digest": "05b12f4e10b46a87"
+    },
+    {
+      "name": "LoadingM3-hover",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "d6744904ac9aa632"
+    },
+    {
+      "name": "LoadingM3-active",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"active\", \"ease\")",
+      "state": "active",
+      "digest": "162f1b7a17acff3b"
+    },
+    {
+      "name": "LoadingM3-focus",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "5b46137d787ac26f"
+    },
+    {
+      "name": "LoadingM3-disabled",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "056363b36a9b808b"
+    },
+    {
+      "name": "LoadingM3-loading",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "09be2dc5b726052c"
+    },
+    {
+      "name": "LoadingM3-success",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"success\", \"ease\")",
+      "state": "success",
+      "digest": "2e0651a67cc0d2ff"
+    },
+    {
+      "name": "LoadingM3-error",
+      "module": "components/feedback_m3.opu",
+      "use": "LoadingM3(\"error\", \"ease\")",
+      "state": "error",
+      "digest": "3d67434467e035f1"
+    },
+    {
+      "name": "ProgressM3-default",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "66ac4d8e32cf9925"
+    },
+    {
+      "name": "ProgressM3-hover",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "47a581accaa02125"
+    },
+    {
+      "name": "ProgressM3-active",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "7aed7d1b08343825"
+    },
+    {
+      "name": "ProgressM3-focus",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "e883ec9b7338a0a5"
+    },
+    {
+      "name": "ProgressM3-disabled",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "b0c927b57d24ab26"
+    },
+    {
+      "name": "ProgressM3-loading",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "d671480832bdd425"
+    },
+    {
+      "name": "ProgressM3-success",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "f2ae72ee88c5ae25"
+    },
+    {
+      "name": "ProgressM3-error",
+      "module": "components/feedback_m3.opu",
+      "use": "ProgressM3(60, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "34d2300f0b3b3725"
+    },
+    {
+      "name": "EmptyStateM3-default",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "5f64c681d1236222"
+    },
+    {
+      "name": "EmptyStateM3-hover",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "39ed1b8a4a4956d6"
+    },
+    {
+      "name": "EmptyStateM3-active",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "345c43371a1834a6"
+    },
+    {
+      "name": "EmptyStateM3-focus",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "82fcb18211e2c07d"
+    },
+    {
+      "name": "EmptyStateM3-disabled",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "0c0358a2134840c7"
+    },
+    {
+      "name": "EmptyStateM3-loading",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "b361d511af477fca"
+    },
+    {
+      "name": "EmptyStateM3-success",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "7c2d4afbc54587ce"
+    },
+    {
+      "name": "EmptyStateM3-error",
+      "module": "components/feedback_m3.opu",
+      "use": "EmptyStateM3(\"folder\", \"Nothing here\", \"Add an item\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "4b50687556297c85"
+    },
+    {
+      "name": "ErrorViewM3-default",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "e3a04d295cac448e"
+    },
+    {
+      "name": "ErrorViewM3-hover",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "3355f822758cd250"
+    },
+    {
+      "name": "ErrorViewM3-active",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "5747cfc9a563d953"
+    },
+    {
+      "name": "ErrorViewM3-focus",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "173108d0cd61ccc5"
+    },
+    {
+      "name": "ErrorViewM3-disabled",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "c4097d3147b6cf5a"
+    },
+    {
+      "name": "ErrorViewM3-loading",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "fb2bac480e16380b"
+    },
+    {
+      "name": "ErrorViewM3-success",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "03ab983cf76d248b"
+    },
+    {
+      "name": "ErrorViewM3-error",
+      "module": "components/feedback_m3.opu",
+      "use": "ErrorViewM3(\"Failed\", \"Try again\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "588a277ea5b31ec7"
     }
   ]
 }

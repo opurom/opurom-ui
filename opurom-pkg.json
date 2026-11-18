@@ -35,6 +35,7 @@
     "components/expanded.opu",
     "components/filetree.opu",
     "components/flex.opu",
+    "components/feedback_m3.opu",
     "components/form.opu",
     "components/form_field.opu",
     "components/gallery_app_bar.opu",

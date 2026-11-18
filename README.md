@@ -87,6 +87,7 @@ import "components/text.opu";
 | `components/selection_m3.opu` | `CheckboxM3`, `RadioM3`, `SwitchOnM3`, `SwitchOffM3`, `SliderM3` (state, animate), `SegmentedM3` (first, second, third, selected, state, animate) | eight-state selection shells; `bind` stays at the call site (component args are literals), value/checkmark/drag reserved; M3 token durations 200/300 ms, segment state via `SegmentedInput` |
 | `components/progress.opu` | `ProgressTrack(percent)` | determinate bar in the theme accent |
 | `components/confirm_dialog.opu` | `ConfirmDialog(title, body, confirm)` | dialog with a primary confirm action |
+| `components/feedback_m3.opu` | `DialogM3`, `ToastM3`, `LoadingM3`, `ProgressM3` (state, animate), `EmptyStateM3`, `ErrorViewM3` (title, body, state, animate) | eight-state feedback shells; 150 ms short3 state transition, glass curve `NO_FLUTTER_EQUIVALENT`; anchors `dialog.dart:74-101`, `dialog_theme.dart:246`, `snack_bar.dart:271-285`, `progress_indicator.dart:68,283`; empty/error views `NO_FLUTTER_EQUIVALENT` |
 | `components/section_header.opu` | `SectionHeader(title)` | heading with a trailing action affordance |
 | `components/tooltip.opu` | `TipCallout(text, placement)` | hint bubble; reveal it with an `if` at the call site |
 | `components/drawer.opu` | `Drawer(title, itemA, itemB, itemC)` | side panel; toggle it with an `if` at the call site |

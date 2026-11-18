@@ -16,6 +16,8 @@ The selection batch adds `components/selection_m3.opu`: `CheckboxM3`, `RadioM3`,
 
 The input batch adds `components/input_m3.opu`: `TextFieldM3`, `SearchBarM3` and `PasswordFieldM3`, each pinned in all eight states (24 further pins, 132 total). `Input` has no required `bind`, so these emit real `Input` nodes with state passthrough; caret, selection, keyboard focus and validators remain reserved (kernel gap B4). The 150 ms state duration is an Opurom selection among Flutter `Durations` tokens (`motion.dart:44`); Flutter's own 167 ms decorator transition is recorded at `input_decorator.dart:40` and is not presented as a component-owned value. Source anchors: `input_decorator.dart:63,205,819-825,2104-2138,2212`, `text_field.dart:335-346,1157-1191`, `search_anchor.dart:1543,1896,1900`. No theme is owned by these modules; paint comes only from `variant`/`tone` tokens.
 
+The feedback batch adds `components/feedback_m3.opu`: `DialogM3`, `ToastM3`, `LoadingM3`, `ProgressM3`, `EmptyStateM3` and `ErrorViewM3`, each pinned in all eight states (48 further pins, 180 total). Source anchors: `dialog.dart:74-101`, `dialog_theme.dart:246`, `snack_bar.dart:271-285`, `progress_indicator.dart:68,283`. Empty and error views have no Flutter framework widget and are marked `NO_FLUTTER_EQUIVALENT`, not presented as Flutter parity. Tap handlers, route presentation, auto-dismiss and cancellation stay reserved, and the 150 ms state duration follows the same adjudicated token selection.
+
 R = required, O = optional, X = reserved / not expressive in the current IR. Every row is transcribed from the corresponding component file header and the README component table.
 
 | Module | API | R | O | X (reserved) | Gaps | Stage |

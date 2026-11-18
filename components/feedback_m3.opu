@@ -1,0 +1,79 @@
+// Feedback shells with the eight-state design prop. Flutter anchors:
+// dialog.dart:74-101 and dialog_theme.dart:246 (dialog elevation/shape),
+// snack_bar.dart:271-285 (SnackBar behavior/shape/duration),
+// progress_indicator.dart:68,283 (indicator color and linear draw). Empty and
+// error views have no Flutter framework widget: NO_FLUTTER_EQUIVALENT, they are
+// plain Opurom layout shells and are not attributed to Flutter.
+// Durations are Opurom selections among Flutter Durations tokens
+// (ANIMATION_DURATION_ADJUDICATION.md): 150 ms short3 (motion.dart:44) for the
+// state transition, not a claimed property-class binding. The glass "ease"
+// curve family is NO_FLUTTER_EQUIVALENT. No theme is owned here; paint comes
+// from variant/tone tokens only, with no literal hex.
+
+// DialogM3(title, body, state, animate): titled modal panel, real Dialog primitive.
+// API   R: title, body, state. O: animate. X: tap handlers, route presentation (A4).
+// Example DialogM3("Delete", "Are you sure?", "default", "ease")
+component DialogM3(title: string, body: string, state: string, animate: string) {
+  Container(padding: 2) {
+    Dialog(title: "{title}", variant: "secondary", state: "{state}", animate: "{animate}", duration: 150) {
+      Text("{body}", size: 14)
+    }
+  }
+}
+
+// ToastM3(message, state, animate): transient confirmation strip.
+// API   R: message, state. O: animate. X: auto-dismiss timing, action, queue (B4).
+// Example ToastM3("Saved", "success", "ease")
+component ToastM3(message: string, state: string, animate: string) {
+  Container(padding: 2) {
+    Container(p: 12, rounded: 4, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "toast") {
+      Text("{message}", size: 13)
+    }
+  }
+}
+
+// LoadingM3(state, animate): Spinner shell. Its natural business state is
+// loading; the other seven keywords are state-layer placeholders for callers.
+// API   R: state. O: animate. X: progress value, label, cancellation (B4).
+// Example LoadingM3("loading", "ease")
+component LoadingM3(state: string, animate: string) {
+  Container(padding: 2) {
+    Spinner(variant: "secondary", state: "{state}", animate: "{animate}", duration: 150)
+  }
+}
+
+// ProgressM3(percent, state, animate): determinate Progress primitive.
+// API   R: percent (0..100), state. O: animate. X: indeterminate mode (B4).
+// Example ProgressM3(60, "default", "ease")
+component ProgressM3(percent: int, state: string, animate: string) {
+  Container(width: 120, state: "{state}", animate: "{animate}", duration: 150, label: "progress") {
+    Progress(value: percent, state: "{state}", animate: "{animate}", duration: 150)
+  }
+}
+
+// EmptyStateM3(icon, title, body, state, animate): NO_FLUTTER_EQUIVALENT.
+// API   R: icon (built-in name), title, body, state. O: animate.
+//       X: action slot, scroll containment (M7).
+// Example EmptyStateM3("folder", "Nothing here", "Add an item", "default", "ease")
+component EmptyStateM3(icon: string, title: string, body: string, state: string, animate: string) {
+  Container(padding: 2) {
+    Column(gap: 8, align: center, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150) {
+      Icon(name: "{icon}")
+      Text("{title}", size: 16)
+      Text("{body}", size: 12)
+    }
+  }
+}
+
+// ErrorViewM3(title, body, state, animate): NO_FLUTTER_EQUIVALENT.
+// API   R: title, body, state. O: animate. X: retry handler, incident id (M7/A4).
+// Example ErrorViewM3("Failed", "Try again", "error", "ease")
+component ErrorViewM3(title: string, body: string, state: string, animate: string) {
+  Container(padding: 2) {
+    Column(gap: 8, align: center, variant: "secondary", tone: "error", state: "{state}", animate: "{animate}", duration: 150) {
+      Icon(name: "info")
+      Text("{title}", size: 16)
+      Text("{body}", size: 12)
+    }
+  }
+}
