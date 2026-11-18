@@ -318,3 +318,14 @@ light/dark ThemeData construction rules. `test/theme-rules.test.mjs` checks
 every boundary (599/600, 899/900, 1199/1200, 1599/1600), invalid widths,
 light/dark rules, deterministic compile+render at nine widths in both modes,
 and all eight design states.
+
+## Theme CLI entry (uibuild, 2026-11-18)
+
+`tools/emit-theme.mjs` exposes the audited seed kernel as a compile-time
+theme generator: one `#RRGGBB` seed writes a flat `md-sys-color-*` object for
+either mode, matching the compiler's `tokens.import` grammar. Flutter source
+anchors are carried by `tools/seed-scheme.mjs` (stable 3.50.0,
+`color_scheme.dart:268-320,1768-1787`, `scheme_tonal_spot.dart:20-38`).
+`test/emit-theme.test.mjs` runs the CLI, compiles both generated themes,
+asserts the pinned generated primary values, checks distinct light/dark
+frames and verifies repeated rendering is byte-identical.
