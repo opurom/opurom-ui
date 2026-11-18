@@ -83,6 +83,8 @@ const CASES = [
   [`DatePickerPanelM3("${long}", "error", "ease")`, 'components/date_picker_panel_m3.opu'],
   ['TimePickerPanelM3("", "disabled", "ease")', 'components/time_picker_panel_m3.opu'],
   [`TimePickerPanelM3("${long}", "error", "ease")`, 'components/time_picker_panel_m3.opu'],
+  ['ResponsiveDatePickerPanelM3("", "disabled", "ease")', 'components/responsive_date_picker_m3.opu'],
+  [`ResponsiveDatePickerPanelM3("${long}", "error", "ease")`, 'components/responsive_date_picker_m3.opu'],
 
 ];
 

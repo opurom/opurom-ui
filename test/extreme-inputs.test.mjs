@@ -35,6 +35,7 @@ const CASES = [
   ['filled card', 'components/filled_card_metrics_m3.opu', `DefaultFilledCardM3("${long}", "${long}", "{s}", "ease")`],
   ['date picker panel', 'components/date_picker_panel_m3.opu', `DatePickerPanelM3("${long}", "{s}", "ease")`],
   ['time picker panel', 'components/time_picker_panel_m3.opu', `TimePickerPanelM3("${long}", "{s}", "ease")`],
+  ['responsive date picker', 'components/responsive_date_picker_m3.opu', `ResponsiveDatePickerPanelM3("${long}", "{s}", "ease")`],
 ];
 
 function source(mod, use) {

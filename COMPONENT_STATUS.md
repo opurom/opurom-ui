@@ -594,3 +594,19 @@ formatting stay at the call site (A3/A4/B3). Verification adds eight state pins
 (764 total over 98 components), one eight-state compile case, one a11y case,
 two boundary cases, one extreme-input case, a provenance audit entry and an
 explicit source-budget update.
+
+## Responsive date picker panel shell (uibuild, 2026-11-18)
+
+`components/responsive_date_picker_m3.opu` adds
+`ResponsiveDatePickerPanelM3`, the source-backed Flutter 3.50.0 orientation
+shell: 152dp landscape header, 120dp portrait header, 384dp landscape and
+480dp portrait calendar caps, 42dp weekday rows and 8dp row gaps
+(`date_picker.dart:891-892,983-1025,1949-1955,2380-2392,2759-2787`,
+`widgets/media_query.dart:34-39,855`). Opurom's deterministic width tiers are
+declared in `render/src/layout.rs:50-74`. The existing DatePickerPanelM3 pin is
+unchanged. Selection callbacks, month scrolling, locale formatting and route
+dismissal stay at the call site (A3/A4/B3). Verification adds eight state pins
+(772 total over 99 components), one eight-state compile case, one a11y case,
+two boundary cases, one extreme-input case, a provenance audit entry, an
+explicit source-budget update and a dedicated compact/medium/expanded plus
+landscape/portrait breakpoint gate.

@@ -61,6 +61,7 @@ const CASES = [
   ['Default filled card', 'DefaultFilledCardM3("Colors", "Swatch list", "default", "ease")', 'filled card', 'none', 'components/filled_card_metrics_m3.opu'],
   ['Date picker panel', 'DatePickerPanelM3("November 2026", "default", "ease")', 'date picker panel', 'none', 'components/date_picker_panel_m3.opu'],
   ['Time picker panel', 'TimePickerPanelM3("10:30", "default", "ease")', 'time picker panel', 'none', 'components/time_picker_panel_m3.opu'],
+  ['Responsive date picker panel', 'ResponsiveDatePickerPanelM3("November 2026", "default", "ease")', 'responsive date picker host', 'none', 'components/responsive_date_picker_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

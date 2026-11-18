@@ -1,0 +1,36 @@
+// Responsive Material 3 date picker panel presentation. Flutter stable 3.50.0 sources:
+//   date_picker.dart:891-892  152dp landscape header width, 120dp portrait height
+//   date_picker.dart:983-1025 portrait and landscape header padding/rhythm
+//   date_picker.dart:1949-1955 42dp weekday row, 8dp row gap, 384dp landscape
+//                               and 480dp portrait calendar caps
+//   date_picker.dart:2380-2392 orientation-dependent calendar width cap
+//   date_picker.dart:2759-2787 month label/grid/footer vertical rhythm
+//   widgets/media_query.dart:34-39,855 orientation is width > height
+//   render/src/layout.rs:50-74 compact <600, medium <900, expanded <1200
+// The Opurom renderer chooses orientation and width tiers deterministically
+// from viewport metrics. This additive shell exposes both M3 calendar caps:
+// a 384dp landscape side header and a 480dp portrait top header. Selection,
+// month scrolling, locale formatting and route dismissal need kernel gaps
+// A3/A4/B3 and stay at the call site. loading/success/error are Opurom
+// business states (NO_FLUTTER_EQUIVALENT).
+// Boundary: an empty month renders an unnamed header; overlong text clips to
+// one line; out-of-range state is compiler-rejected.
+// Example ResponsiveDatePickerPanelM3("November 2026", "default", "ease")
+component ResponsiveDatePickerPanelM3(month: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "responsive date picker host") {
+    Grid(columns: 2, compactColumns: 1, state: "{state}", label: "date picker orientation tiers", role: "none") {
+      Container(width: 152, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "landscape date header") {
+        Text("{month}", size: 24, maxLines: 1, state: "{state}")
+      }
+      Container(width: 384, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "landscape date calendar") {
+        Calendar(date: "{month}", height: 210, state: "{state}")
+      }
+      Container(width: 480, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "portrait date header") {
+        Text("{month}", size: 24, maxLines: 2, state: "{state}")
+      }
+      Container(width: 480, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "portrait date calendar") {
+        Calendar(date: "{month}", height: 210, state: "{state}")
+      }
+    }
+  }
+}
