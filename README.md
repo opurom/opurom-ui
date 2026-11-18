@@ -152,6 +152,7 @@ import "components/text.opu";
 | `components/snackbar_m3.opu` | `SnackBarM3` (message, state, animate) | M3 SnackBar surface; dismiss/action callbacks reserved (A3/B3) |
 | `components/dialog_metrics_m3.opu` | `DefaultDialogM3` (title, body, state, animate) | M3 default dialog geometry; route/scrim retained at call site |
 | `components/progress_2024_m3.opu` | `LinearProgress2024M3` (percent, state, animate) | M3 2024 progress defaults; existing 2023 pin untouched |
+| `components/selection_touch_m3.opu` | `TouchCheckboxM3`, `TouchRadioM3` | 48dp minimum touch targets wrapping pinned selection shells |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

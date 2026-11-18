@@ -4085,6 +4085,174 @@
       "use": "LinearProgress2024M3(60,\"error\",\"ease\")",
       "state": "error",
       "digest": "ec2925a00d87a42c"
+    },
+    {
+      "name": "TouchCheckboxM3-default",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"default\",\"ease\")",
+      "state": "default",
+      "digest": "53c65ecc22b823f5"
+    },
+    {
+      "name": "TouchCheckboxM3-hover",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "28d0072b19871c15"
+    },
+    {
+      "name": "TouchCheckboxM3-active",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"active\",\"ease\")",
+      "state": "active",
+      "digest": "147c900c8ff7f033"
+    },
+    {
+      "name": "TouchCheckboxM3-focus",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "85d636c2b3c4ec75"
+    },
+    {
+      "name": "TouchCheckboxM3-disabled",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "3d700b538a0b75c5"
+    },
+    {
+      "name": "TouchCheckboxM3-loading",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "2d7607538b01cc05"
+    },
+    {
+      "name": "TouchCheckboxM3-success",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"success\",\"ease\")",
+      "state": "success",
+      "digest": "12bca44721672e65"
+    },
+    {
+      "name": "TouchCheckboxM3-error",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchCheckboxM3(\"error\",\"ease\")",
+      "state": "error",
+      "digest": "c64e1117dec44545"
+    },
+    {
+      "name": "TouchRadioM3-default",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"default\",\"ease\")",
+      "state": "default",
+      "digest": "53c65ecc22b823f5"
+    },
+    {
+      "name": "TouchRadioM3-hover",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "28d0072b19871c15"
+    },
+    {
+      "name": "TouchRadioM3-active",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"active\",\"ease\")",
+      "state": "active",
+      "digest": "147c900c8ff7f033"
+    },
+    {
+      "name": "TouchRadioM3-focus",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "85d636c2b3c4ec75"
+    },
+    {
+      "name": "TouchRadioM3-disabled",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "3d700b538a0b75c5"
+    },
+    {
+      "name": "TouchRadioM3-loading",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "fc5d1681a7fae602"
+    },
+    {
+      "name": "TouchRadioM3-success",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"success\",\"ease\")",
+      "state": "success",
+      "digest": "9189c2bfa10629e0"
+    },
+    {
+      "name": "TouchRadioM3-error",
+      "module": "components/selection_touch_m3.opu",
+      "use": "TouchRadioM3(\"error\",\"ease\")",
+      "state": "error",
+      "digest": "fd9b9bf6425a3f05"
+    },
+    {
+      "name": "NavigationDrawerM3-default",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "b00c0f62859d935d"
+    },
+    {
+      "name": "NavigationDrawerM3-hover",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "007f8e698a80edb3"
+    },
+    {
+      "name": "NavigationDrawerM3-active",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "55f09119ff227403"
+    },
+    {
+      "name": "NavigationDrawerM3-focus",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "740869a39aced705"
+    },
+    {
+      "name": "NavigationDrawerM3-disabled",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "17e4258bde925097"
+    },
+    {
+      "name": "NavigationDrawerM3-loading",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "f9f2bfe16761f87d"
+    },
+    {
+      "name": "NavigationDrawerM3-success",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "d139d25d551be6b9"
+    },
+    {
+      "name": "NavigationDrawerM3-error",
+      "module": "components/nav_drawer_m3.opu",
+      "use": "NavigationDrawerM3(\"Home,Search,Profile\", 1, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "59cd02cb4d45ac0c"
     }
   ]
 }

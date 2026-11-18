@@ -43,6 +43,8 @@ const CASES = [
   [`DateRangePickerM3("${long}", 999999, 0, "error", "ease")`, 'components/date_range_m3.opu'],
   ['StickyHeaderM3("", 0, 0, "disabled", "ease")', 'components/sticky_header_m3.opu'],
   [`StickyHeaderM3("${long}", 9999, 32, "error", "ease")`, 'components/sticky_header_m3.opu'],
+  ['NavigationDrawerM3("", 999, "disabled", "ease")', 'components/nav_drawer_m3.opu'],
+  [`NavigationDrawerM3("${long}", -1, "error", "ease")`, 'components/nav_drawer_m3.opu'],
   ['WaterfallGridM3("", 1, 0, "disabled", "ease")', 'components/waterfall_m3.opu'],
   [`WaterfallGridM3("${long}", 9999, 9999, "error", "ease")`, 'components/waterfall_m3.opu'],
   ['ExpandablePanelM3("", "", false, "disabled", "ease")', 'components/expansion_m3.opu'],
@@ -55,6 +57,7 @@ const CASES = [
   ['SnackBarM3("", "loading", "ease")', 'components/snackbar_m3.opu'],
   ['DefaultDialogM3("", "", "disabled", "ease")', 'components/dialog_metrics_m3.opu'],
   ['LinearProgress2024M3(-10, "loading", "ease")', 'components/progress_2024_m3.opu'],
+  ['TouchRadioM3("error", "ease")', 'components/selection_touch_m3.opu'],
 ];
 
 function source(mod, use) {

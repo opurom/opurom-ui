@@ -387,3 +387,25 @@ year2023=false selection path (`progress_indicator.dart:414-440,595-619,
 `ProgressTrack` pins are unchanged. Verification adds eight state pins
 (580 total over 75 components), one eight-state compile case, one a11y case
 and one boundary case; the source-size budget is updated explicitly.
+
+## Selection touch-target batch (uibuild, 2026-11-18)
+
+`components/selection_touch_m3.opu` adds `TouchCheckboxM3` and
+`TouchRadioM3`, wrapping the pinned 18dp selection visuals in Flutter's
+48dp minimum interactive target (`material/constants.dart:27`,
+`checkbox.dart:923-954,1033-1041`). Existing selection components and pins
+are unchanged. Verification adds 16 state pins (596 total over 77
+components), two eight-state compile cases, one a11y case, one boundary case
+and an explicit source-budget update.
+
+## Navigation drawer shell (ui-dev, 2026-11-19, part 9)
+
+`components/nav_drawer_m3.opu` adds `NavigationDrawerM3` over the Opurom
+`Sidebar` primitive. Flutter stable 3.50.0 anchors:
+`navigation_drawer.dart:54-68` (destinations, selectedIndex, indicatorShape),
+`:134-139` (selectedIndex range), `:148-172` (destination padding/tap routing)
+and `:722-748` (M3 defaults: elevation 1, tileHeight 56, 336x56 StadiumBorder
+indicator and surfaceContainerLow background). Route presentation, selection
+callbacks and animated indicators remain reserved (A3/A4/B3). New gates:
+eight-state compile case, 8 settled-frame pins, a11y name/role case and two
+boundary renders (empty/long labels with out-of-range selections).

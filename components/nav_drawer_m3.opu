@@ -1,0 +1,22 @@
+// Material 3 navigation drawer presentation shell. Flutter stable 3.50.0
+// source anchors:
+//   navigation_drawer.dart:54-68          NavigationDrawer destinations,
+//                                         selectedIndex, indicatorShape,
+//                                         onDestinationSelected
+//   navigation_drawer.dart:134-139        selectedIndex range / invalid -1
+//   navigation_drawer.dart:148-172        destination padding and tap routing
+//   navigation_drawer.dart:722-748        M3 defaults: elevation 1, tileHeight
+//                                         56, indicator 336x56 StadiumBorder,
+//                                         surfaceContainerLow background
+//   motion.dart:52                        200ms short4 state transition
+// Opurom's Sidebar primitive renders the closed drawer deterministically.
+// Route presentation, selection callbacks and animated indicators need kernel
+// gaps A3/A4/B3 and stay reserved; no runtime interpretation is introduced.
+// Boundary: out-of-range selected values are rendered unselected by Sidebar;
+// empty labels render empty destinations; overlong labels clip in the strip.
+// Example NavigationDrawerM3("Home,Search,Profile", 1, "default", "ease")
+component NavigationDrawerM3(labels: string, selected: int, state: string, animate: string) {
+  Container(width: 360, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "navigation drawer", role: "none") {
+    Sidebar(value: selected, segments: 3, labels: "{labels}", state: "{state}", animate: "{animate}", duration: 200, label: "drawer destinations")
+  }
+}

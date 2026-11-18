@@ -45,6 +45,7 @@ const CASES = [
   ['components/nav_rail_m3.opu', 'NavigationRailM3("Home,Search,Profile", 1, "{state}", "ease")'],
   ['components/date_range_m3.opu', 'DateRangePickerM3("Travel dates", 10, 20, "{state}", "ease")'],
   ['components/sticky_header_m3.opu', 'StickyHeaderM3("Today", 56, 32, "{state}", "ease")'],
+  ['components/nav_drawer_m3.opu', 'NavigationDrawerM3("Home,Search,Profile", 1, "{state}", "ease")'],
   ['components/waterfall_m3.opu', 'WaterfallGridM3("One,Two,Three", 2, 8, "{state}", "ease")'],
   ['components/expansion_m3.opu', 'ExpandablePanelM3("Details", "Body", true, "{state}", "ease")'],
   ['components/expansion_m3.opu', 'SelectFieldM3("Choose", 1, "{state}", "ease")'],
@@ -58,6 +59,8 @@ const CASES = [
   ['components/snackbar_m3.opu', 'SnackBarM3("Saved", "{state}", "ease")'],
   ['components/dialog_metrics_m3.opu', 'DefaultDialogM3("Delete", "This cannot be undone", "{state}", "ease")'],
   ['components/progress_2024_m3.opu', 'LinearProgress2024M3(60, "{state}", "ease")'],
+  ['components/selection_touch_m3.opu', 'TouchCheckboxM3("{state}", "ease")'],
+  ['components/selection_touch_m3.opu', 'TouchRadioM3("{state}", "ease")'],
 ];
 
 function source(mod, call) {
