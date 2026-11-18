@@ -77,6 +77,7 @@ const CASES = [
   ['components/list_tile_metrics_m3.opu', 'DefaultListTileM3("Inbox", "3 unread messages", "{state}", "ease")'],
   ['components/autocomplete_field_m3.opu', 'AutocompleteFieldM3("City", "San", "San Francisco,San Diego", 0, "{state}", "ease")'],
   ['components/filled_card_metrics_m3.opu', 'DefaultFilledCardM3("Colors", "Swatch list", "{state}", "ease")'],
+  ['components/date_picker_panel_m3.opu', 'DatePickerPanelM3("November 2026", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

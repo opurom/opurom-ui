@@ -5261,6 +5261,62 @@
       "use": "DefaultFilledCardM3(\"Colors\",\"Swatch list\",\"error\",\"ease\")",
       "state": "error",
       "digest": "a557f3269743330f"
+    },
+    {
+      "name": "DatePickerPanelM3-default",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "d417f652fe4918eb"
+    },
+    {
+      "name": "DatePickerPanelM3-hover",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "395c00ec01144dd4"
+    },
+    {
+      "name": "DatePickerPanelM3-active",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "b56d9c492f8fb394"
+    },
+    {
+      "name": "DatePickerPanelM3-focus",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "c6e7dd20e36c752b"
+    },
+    {
+      "name": "DatePickerPanelM3-disabled",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "592b3bae718f2d0a"
+    },
+    {
+      "name": "DatePickerPanelM3-loading",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "da9acd6a162ee64c"
+    },
+    {
+      "name": "DatePickerPanelM3-success",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "b9c4f6c83d951df7"
+    },
+    {
+      "name": "DatePickerPanelM3-error",
+      "module": "components/date_picker_panel_m3.opu",
+      "use": "DatePickerPanelM3(\"November 2026\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "14bdf28a46f4b3ad"
     }
   ]
 }

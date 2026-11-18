@@ -59,6 +59,7 @@ const CASES = [
   ['Default list tile', 'DefaultListTileM3("Inbox", "3 unread messages", "default", "ease")', 'default list tile', 'none', 'components/list_tile_metrics_m3.opu'],
   ['Autocomplete field', 'AutocompleteFieldM3("City", "San", "San Francisco,San Diego", 0, "default", "ease")', 'autocomplete field', 'text', 'components/autocomplete_field_m3.opu'],
   ['Default filled card', 'DefaultFilledCardM3("Colors", "Swatch list", "default", "ease")', 'filled card', 'none', 'components/filled_card_metrics_m3.opu'],
+  ['Date picker panel', 'DatePickerPanelM3("November 2026", "default", "ease")', 'date picker panel', 'none', 'components/date_picker_panel_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

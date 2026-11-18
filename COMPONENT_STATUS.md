@@ -568,3 +568,16 @@ unchanged. Content slots and gesture binding stay at the call site
 one eight-state compile case, one a11y case, two boundary cases, one
 extreme-input case, a provenance audit entry and an explicit source-budget
 update.
+
+## Date picker panel shell (uibuild, 2026-11-18)
+
+`components/date_picker_panel_m3.opu` adds `DatePickerPanelM3`, the
+source-backed Flutter 3.50.0 M3 expanded month panel: 480dp portrait calendar
+cap, 58dp header, 42dp weekday row, 12dp footer, 28dp surface radius and
+elevation 6 (`date_picker.dart:51,1949-1955,2380-2392,2760-2787`,
+`date_picker_theme.dart:1254-1335`). The existing DatePickerM3 field pin is
+unchanged. Selection callbacks, month scrolling, locale formatting and route
+dismissal stay at the call site (A3/A4/B3). Verification adds eight state pins
+(756 total over 97 components), one eight-state compile case, one a11y case,
+two boundary cases, one extreme-input case, a provenance audit entry and an
+explicit source-budget update.

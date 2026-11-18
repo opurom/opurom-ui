@@ -1,0 +1,28 @@
+// Material 3 month date picker panel presentation. Flutter stable 3.50.0 sources:
+//   date_picker.dart:1949-1955  58dp header, 12dp footer, 42dp weekday row,
+//                               384dp landscape/480dp portrait calendar cap
+//   date_picker.dart:2380-2392  orientation width cap and constrained month grid
+//   date_picker.dart:2760-2787  month label, grid and footer vertical rhythm
+//   date_picker_theme.dart:1254-1335  elevation 6, 28dp surface radius, circular
+//                                     day shape, primary selected fill
+//   material/constants.dart:27  48dp minimum touch target
+//   date_picker.dart:51         200ms dialog size animation
+// The existing DatePickerM3 field pin is unchanged. This additive shell records
+// the expanded month panel geometry with a declarative Calendar primitive.
+// Selection callbacks, month scrolling, locale formatting and route dismissal
+// need kernel gaps A3/A4/B3 and stay at the call site. loading/success/error
+// are Opurom business states (NO_FLUTTER_EQUIVALENT).
+// Boundary: an empty label renders an unnamed month; extreme month/day values
+// stay bounded by the renderer grid; out-of-range state is compiler-rejected.
+// Example DatePickerPanelM3("November 2026", "default", "ease")
+component DatePickerPanelM3(month: string, state: string, animate: string) {
+  Container(width: 480, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "date picker panel", role: "none") {
+    Column(gap: 8) {
+      Container(height: 58, p: 16, variant: "text", state: "{state}", label: "date picker header") {
+        Text("{month}", size: 24, maxLines: 1, state: "{state}")
+      }
+      Calendar(date: "{month}", height: 210, state: "{state}")
+      Container(height: 12, variant: "text", state: "{state}", label: "date picker footer")
+    }
+  }
+}
