@@ -81,6 +81,26 @@ test('M3 extension families survive empty, overlong and extreme inputs', () => {
   }
 });
 
+test('extreme state and animate values stay inside the declared grammar', () => {
+  const tmp = mkdtempSync(path.join(tmpdir(), 'uibuild-boundary-invalid-state-'));
+  try {
+    cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
+    for (const [use, mod] of [
+      ['WaterfallGridM3("x", 0, 0, "unknown", "ease")', 'components/waterfall_m3.opu'],
+      ['ExpandablePanelM3("x", "y", true, "unknown", "ease")', 'components/expansion_m3.opu'],
+      ['PageErrorShell("x", "y", "error", "unknown")', 'components/page_states_m3.opu'],
+    ]) {
+      const src = path.join(tmp, 'bad.opu');
+      writeFileSync(src, source(mod, use));
+      const c = spawnSync(compiler, ['compile', src, '-o', path.join(tmp, 'bad.json')], { encoding: 'utf8' });
+      assert.notEqual(c.status, 0, `${use.slice(0, 32)} must reject an unknown state/animate value`);
+      assert.match(c.stderr + c.stdout, /unknown (state|animate) value/);
+    }
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
 test('invalid form bounds are rejected with a typed diagnostic', () => {
   const tmp = mkdtempSync(path.join(tmpdir(), 'uibuild-boundary-invalid-'));
   try {
