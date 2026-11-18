@@ -1,0 +1,1726 @@
+{
+  "toolchain": {
+    "render": "f3a8bcaeb88b82068beb8c9cc10353a300aca5f8",
+    "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug",
+    "note": "gallery pinned toolchain; CI provisions these exact commits into opurom-lang-gal/opurom-render-gal"
+  },
+  "meta": {
+    "purpose": "UI page transition internal consistency pins, not Flutter parity",
+    "version": "flutter-3.50.0:ab291203",
+    "viewport": [
+      320,
+      240
+    ],
+    "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
+      "loading",
+      "success",
+      "error"
+    ],
+    "kinds": [
+      "slide",
+      "fade",
+      "scale"
+    ],
+    "ticks": [
+      0,
+      40,
+      80,
+      160,
+      320
+    ],
+    "note": "Internal consistency pins, not Flutter pixel parity. No Flutter oracle, font file or 2%/12% diff threshold. Transitions are slide/fade/scale over a caller-supplied fixed-point clock.",
+    "units": {
+      "ticks": "milliseconds of the caller-owned transition clock",
+      "settled": 320,
+      "digest": "FNV-1a 64 over RGBA bytes"
+    }
+  },
+  "pins": [
+    {
+      "name": "default-slide-0",
+      "state": "default",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-slide-40",
+      "state": "default",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "f34ec864d14484f5",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-slide-80",
+      "state": "default",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "dc0170b230bf4388",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-slide-160",
+      "state": "default",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "a4695982ec2e9a50",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-slide-320",
+      "state": "default",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "7b44222861a8a866",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-fade-0",
+      "state": "default",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-fade-40",
+      "state": "default",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "94a268124fef9f02",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-fade-80",
+      "state": "default",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "acab7eff120eb00e",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-fade-160",
+      "state": "default",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "38d24c5cc7f22285",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-fade-320",
+      "state": "default",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "7b44222861a8a866",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-scale-0",
+      "state": "default",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-scale-40",
+      "state": "default",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "de52ab2d5ab27ffc",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-scale-80",
+      "state": "default",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "c72559033d2bf054",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-scale-160",
+      "state": "default",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "3407da194b5220a0",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-scale-320",
+      "state": "default",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "7b44222861a8a866",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"default\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"default\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-slide-0",
+      "state": "hover",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-slide-40",
+      "state": "hover",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "dd48c8ed493e249a",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-slide-80",
+      "state": "hover",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "9fc6e2c18393f0fb",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-slide-160",
+      "state": "hover",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "b452c32b3cdffa5f",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-slide-320",
+      "state": "hover",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "a9075aa3f0229b65",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-fade-0",
+      "state": "hover",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-fade-40",
+      "state": "hover",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "9b3fade16ebccc5e",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-fade-80",
+      "state": "hover",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "227d97ee9fde5cae",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-fade-160",
+      "state": "hover",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "2fc123acf6e6c2b8",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-fade-320",
+      "state": "hover",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "a9075aa3f0229b65",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-scale-0",
+      "state": "hover",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-scale-40",
+      "state": "hover",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "412a397ab4a1a2eb",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-scale-80",
+      "state": "hover",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "5adf7287310c68c6",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-scale-160",
+      "state": "hover",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "0494a3aa16a2318f",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-scale-320",
+      "state": "hover",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "a9075aa3f0229b65",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"hover\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-slide-0",
+      "state": "active",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-slide-40",
+      "state": "active",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "3008ac66c165dcf8",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-slide-80",
+      "state": "active",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "54b13e0077a1c118",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-slide-160",
+      "state": "active",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "901fc85b357be554",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-slide-320",
+      "state": "active",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "300f598c809acf60",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-fade-0",
+      "state": "active",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-fade-40",
+      "state": "active",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "45ce14122c0e04fd",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-fade-80",
+      "state": "active",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "1759d626f38af1b9",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-fade-160",
+      "state": "active",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "3f09007ff9f00720",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-fade-320",
+      "state": "active",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "300f598c809acf60",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-scale-0",
+      "state": "active",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-scale-40",
+      "state": "active",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "185269776af884fd",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-scale-80",
+      "state": "active",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "37971990d2eaf71c",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-scale-160",
+      "state": "active",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "153da60f4def8340",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-scale-320",
+      "state": "active",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "300f598c809acf60",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"active\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"active\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-slide-0",
+      "state": "focus",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-slide-40",
+      "state": "focus",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "033a685d0d056918",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-slide-80",
+      "state": "focus",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "85714a58f2ddba76",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-slide-160",
+      "state": "focus",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "a4b617f8157a655e",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-slide-320",
+      "state": "focus",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "f2338acdcc970377",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-fade-0",
+      "state": "focus",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-fade-40",
+      "state": "focus",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "ef66902ef508913e",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-fade-80",
+      "state": "focus",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "1a57939a16fbd7f2",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-fade-160",
+      "state": "focus",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "7cc456aa31fde418",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-fade-320",
+      "state": "focus",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "f2338acdcc970377",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-scale-0",
+      "state": "focus",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-scale-40",
+      "state": "focus",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "fb7b70ef4c011571",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-scale-80",
+      "state": "focus",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "f193eda742832685",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-scale-160",
+      "state": "focus",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "8f944f7eb7ea9fea",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-scale-320",
+      "state": "focus",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "f2338acdcc970377",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"focus\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-slide-0",
+      "state": "disabled",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-slide-40",
+      "state": "disabled",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "cbc8a5aa6bbb0423",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-slide-80",
+      "state": "disabled",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "d82700bf8268d785",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-slide-160",
+      "state": "disabled",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "aae14f5bba6b6165",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-slide-320",
+      "state": "disabled",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "02fb0edb38fcf1c1",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-fade-0",
+      "state": "disabled",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-fade-40",
+      "state": "disabled",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "762d39dba743ecb0",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-fade-80",
+      "state": "disabled",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "3f41398f7283bf6f",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-fade-160",
+      "state": "disabled",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "a37f1b4738deee34",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-fade-320",
+      "state": "disabled",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "02fb0edb38fcf1c1",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-scale-0",
+      "state": "disabled",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-scale-40",
+      "state": "disabled",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "1f5dfc9aba466d4a",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-scale-80",
+      "state": "disabled",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "ed9bb5ffa057e7cf",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-scale-160",
+      "state": "disabled",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "450448eac9b4433a",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-scale-320",
+      "state": "disabled",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "02fb0edb38fcf1c1",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"disabled\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-slide-0",
+      "state": "loading",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-slide-40",
+      "state": "loading",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "d1ebe7076b3cfb2f",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-slide-80",
+      "state": "loading",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "95e3481e2fff986e",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-slide-160",
+      "state": "loading",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "72a30b6d80ee2832",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-slide-320",
+      "state": "loading",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "4deef2d659a995eb",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-fade-0",
+      "state": "loading",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-fade-40",
+      "state": "loading",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "bdcaaf79e6711996",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-fade-80",
+      "state": "loading",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "c7e8223904226054",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-fade-160",
+      "state": "loading",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "a8727281e217bd80",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-fade-320",
+      "state": "loading",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "4deef2d659a995eb",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-scale-0",
+      "state": "loading",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-scale-40",
+      "state": "loading",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "8cd4b065d09a22ae",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-scale-80",
+      "state": "loading",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "9261a6f9dfb623f3",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-scale-160",
+      "state": "loading",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "ca98d7ebb035cbeb",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-scale-320",
+      "state": "loading",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "4deef2d659a995eb",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"loading\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-slide-0",
+      "state": "success",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-slide-40",
+      "state": "success",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "857762bda73954d2",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-slide-80",
+      "state": "success",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "a8a71a1ff5212262",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-slide-160",
+      "state": "success",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "e24ce16f4205bcfa",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-slide-320",
+      "state": "success",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "0d910660c85a6aa7",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-fade-0",
+      "state": "success",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-fade-40",
+      "state": "success",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "184f7c8e0a65850b",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-fade-80",
+      "state": "success",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "03381024f7734540",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-fade-160",
+      "state": "success",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "f83b6cfe891793c6",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-fade-320",
+      "state": "success",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "0d910660c85a6aa7",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-scale-0",
+      "state": "success",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-scale-40",
+      "state": "success",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "361e4ef31cd0c32b",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-scale-80",
+      "state": "success",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "2998d7dd67dcc343",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-scale-160",
+      "state": "success",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "020968bf8d16a0d1",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-scale-320",
+      "state": "success",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "0d910660c85a6aa7",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"success\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"success\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-slide-0",
+      "state": "error",
+      "kind": "slide",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-slide-40",
+      "state": "error",
+      "kind": "slide",
+      "tick": 40,
+      "digest": "854e5b754e965fcc",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-slide-80",
+      "state": "error",
+      "kind": "slide",
+      "tick": 80,
+      "digest": "ae29219144414418",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-slide-160",
+      "state": "error",
+      "kind": "slide",
+      "tick": 160,
+      "digest": "f2206ccca219042c",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-slide-320",
+      "state": "error",
+      "kind": "slide",
+      "tick": 320,
+      "digest": "00cf9949946c206d",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-fade-0",
+      "state": "error",
+      "kind": "fade",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-fade-40",
+      "state": "error",
+      "kind": "fade",
+      "tick": 40,
+      "digest": "811530297cfcd2fc",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-fade-80",
+      "state": "error",
+      "kind": "fade",
+      "tick": 80,
+      "digest": "4f4b1931b0b2a13b",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-fade-160",
+      "state": "error",
+      "kind": "fade",
+      "tick": 160,
+      "digest": "52b1cf1d54aa6738",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-fade-320",
+      "state": "error",
+      "kind": "fade",
+      "tick": 320,
+      "digest": "00cf9949946c206d",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-scale-0",
+      "state": "error",
+      "kind": "scale",
+      "tick": 0,
+      "digest": "b7df7f8200a6d909",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-scale-40",
+      "state": "error",
+      "kind": "scale",
+      "tick": 40,
+      "digest": "618351b34907dcee",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-scale-80",
+      "state": "error",
+      "kind": "scale",
+      "tick": 80,
+      "digest": "195100dd70dc4c59",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-scale-160",
+      "state": "error",
+      "kind": "scale",
+      "tick": 160,
+      "digest": "15011d9fab4c119d",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-scale-320",
+      "state": "error",
+      "kind": "scale",
+      "tick": 320,
+      "digest": "00cf9949946c206d",
+      "module": "components/actions_m3.opu",
+      "imports": [
+        "components/actions_m3.opu",
+        "components/card_m3.opu",
+        "components/list_tile_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    FabM3(\"plus\", \"error\", \"ease\")\n    ElevatedCardM3(\"Page\", \"transition\", \"error\", \"ease\")\n    ListTileM3(\"Item\", \"detail\", \"error\", \"ease\")\n  }"
+    }
+  ]
+}
