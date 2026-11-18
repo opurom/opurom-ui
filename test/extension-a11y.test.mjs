@@ -56,6 +56,7 @@ const CASES = [
   ['Default assist chip', 'AssistChipM3Default("Today", "default", "ease")', 'assist chip', 'button', 'components/chip_metrics_m3.opu'],
   ['Bottom app bar', 'BottomAppBarM3("Actions", "default", "ease")', 'bottom app bar', 'none', 'components/bottom_app_bar_m3.opu'],
   ['Default dropdown menu', 'DefaultDropdownMenuM3("Country", 0, "United States,Canada,Mexico", "Choose", "default", "ease")', 'dropdown menu default', 'button', 'components/dropdown_menu_metrics_m3.opu'],
+  ['Default list tile', 'DefaultListTileM3("Inbox", "3 unread messages", "default", "ease")', 'default list tile', 'none', 'components/list_tile_metrics_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

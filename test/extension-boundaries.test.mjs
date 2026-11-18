@@ -73,6 +73,8 @@ const CASES = [
   [`BottomAppBarM3("${long}", "error", "ease")`, 'components/bottom_app_bar_m3.opu'],
   ['DefaultDropdownMenuM3("", -1, "", "", "disabled", "ease")', 'components/dropdown_menu_metrics_m3.opu'],
   [`DefaultDropdownMenuM3("${long}", 999999, "${long}", "${long}", "error", "ease")`, 'components/dropdown_menu_metrics_m3.opu'],
+  ['DefaultListTileM3("", "", "disabled", "ease")', 'components/list_tile_metrics_m3.opu'],
+  [`DefaultListTileM3("${long}", "${long}", "error", "ease")`, 'components/list_tile_metrics_m3.opu'],
 
 ];
 

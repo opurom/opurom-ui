@@ -1,0 +1,24 @@
+// Material 3 two-line list tile default geometry. Flutter stable 3.50.0 sources:
+//   list_tile.dart:1817-1823  start 16dp/end 24dp padding, 24dp leading width,
+//                             8dp minimum vertical padding, rectangle shape
+//   list_tile.dart:1830-1843  bodyLarge/onSurface title, bodyMedium/onSurfaceVariant
+//                             subtitle, 24dp onSurfaceVariant icon
+// list_tile.dart:1029-1034    per-instance values resolve over theme defaults
+//   motion.dart:52            200ms short4 state transition
+// The existing ListTileM3 pin is unchanged. This additive shell records exact
+// M3 tile metrics and labels; selection binding, leading/trailing slots and
+// route callbacks stay at the call site (A3/M7/B3).
+// Boundary: empty text renders an empty row; overlong text clips to one line;
+// zero or out-of-range leading width is bounded by the Container primitive.
+// Example DefaultListTileM3("Inbox", "3 unread messages", "default", "ease")
+component DefaultListTileM3(title: string, subtitle: string, state: string, animate: string) {
+  Container(p: 8, rounded: 2, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "default list tile", role: "none") {
+    Row(gap: 16, align: center) {
+      Icon(name: "mail", width: 24, height: 24, state: "{state}")
+      Column(gap: 4) {
+        Text("{title}", size: 16, maxLines: 1, state: "{state}")
+        Text("{subtitle}", size: 14, maxLines: 1, state: "{state}")
+      }
+    }
+  }
+}

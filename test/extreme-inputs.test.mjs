@@ -30,6 +30,7 @@ const CASES = [
   ['extended rail', 'components/nav_rail_extended_m3.opu', `ExtendedNavigationRailM3("${long}", -1, "{s}", "ease")`],
   ['bottom app bar', 'components/bottom_app_bar_m3.opu', `BottomAppBarM3("${long}", "{s}", "ease")`],
   ['default dropdown menu', 'components/dropdown_menu_metrics_m3.opu', `DefaultDropdownMenuM3("${long}", -1, "${long}", "${long}", "{s}", "ease")`],
+  ['default list tile', 'components/list_tile_metrics_m3.opu', `DefaultListTileM3("${long}", "${long}", "{s}", "ease")`],
 ];
 
 function source(mod, use) {

@@ -74,6 +74,7 @@ const CASES = [
   ['components/chip_metrics_m3.opu', 'AssistChipM3Default("Today", "{state}", "ease")'],
   ['components/bottom_app_bar_m3.opu', 'BottomAppBarM3("Actions", "{state}", "ease")'],
   ['components/dropdown_menu_metrics_m3.opu', 'DefaultDropdownMenuM3("Country", 0, "United States,Canada,Mexico", "Choose", "{state}", "ease")'],
+  ['components/list_tile_metrics_m3.opu', 'DefaultListTileM3("Inbox", "3 unread messages", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

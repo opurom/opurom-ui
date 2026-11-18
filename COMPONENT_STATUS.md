@@ -531,3 +531,15 @@ call site (A3/A4/B3). Verification adds eight state pins (724 total over 93
 components), one eight-state compile case, one a11y case, two boundary cases,
 one extreme-input case, a provenance audit entry and an explicit source-budget
 update.
+
+## Default list tile metrics shell (uibuild, 2026-11-18)
+
+`components/list_tile_metrics_m3.opu` adds `DefaultListTileM3`, the
+source-backed Flutter 3.50.0 M3 two-line tile: 16dp start and 24dp end content
+padding, 24dp leading width, 8dp vertical padding, bodyLarge title and
+bodyMedium subtitle (`list_tile.dart:1817-1843`). The existing ListTileM3 pin
+is unchanged. Selection binding, leading/trailing slots and tap routing stay
+at the call site (A3/M7/B3). Verification adds eight state pins (732 total
+over 94 components), one eight-state compile case, one a11y case, two boundary
+cases, one extreme-input case, a provenance audit entry and an explicit
+source-budget update.

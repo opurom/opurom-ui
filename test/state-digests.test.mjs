@@ -34,7 +34,7 @@ test('state digests pin settled frames under the signed toolchain', () => {
   assert.equal(meta.render, '7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2');
   assert.equal(meta.lang, 'd1a0418179fd20c58a899d012dffb82ac5f7d8a1');
   assert.equal(meta.tick, 4000);
-  assert.equal(pins.length, 724, '10 components x 6 states plus 83 eight-state components');
+  assert.equal(pins.length, 732, '10 components x 6 states plus 84 eight-state components');
   assert.equal(meta.states.length, 8, 'the eight state keywords must be declared');
   const byComponent = new Map();
   const expected = new Map();
@@ -58,7 +58,7 @@ test('state digests pin settled frames under the signed toolchain', () => {
       if (!byComponent.has(component)) byComponent.set(component, new Set());
       byComponent.get(component).add(got);
     }
-    assert.equal(byComponent.size, 93, '93 core components must be covered');
+    assert.equal(byComponent.size, 94, '94 core components must be covered');
     for (const [component, digests] of byComponent) {
       assert.equal(digests.size, expected.get(component), `${component} state frames must stay distinct`);
     }
