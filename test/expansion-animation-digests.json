@@ -1,0 +1,1080 @@
+{
+  "toolchain": {
+    "render": "f3a8bcaeb88b82068beb8c9cc10353a300aca5f8",
+    "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug"
+  },
+  "meta": {
+    "purpose": "UI expansion animation internal consistency pins, not Flutter parity",
+    "version": "flutter-3.50.0:ab2912035e160d9cad6306df307576da6128ebdb",
+    "viewport": [
+      320,
+      240
+    ],
+    "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
+      "loading",
+      "success",
+      "error"
+    ],
+    "animates": [
+      "ease",
+      "spring"
+    ],
+    "ticks": [
+      0,
+      50,
+      100,
+      200,
+      400
+    ],
+    "gap": "A2 + heightFactor/ClipRect: IR cannot express Align(heightFactor) or reverseCurve",
+    "note": "Internal consistency pins, not Flutter pixel parity. No Flutter oracle, font file or 2%/12% diff threshold. The shell animates the five pinned Opurom props at the Flutter 200 ms short4 token; Align.heightFactor/ClipRect remain registered kernel gaps."
+  },
+  "pins": [
+    {
+      "name": "default-ease-0",
+      "state": "default",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-ease-50",
+      "state": "default",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "3198b374d21be9b5",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-ease-100",
+      "state": "default",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "e921e989ffc45b59",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-ease-200",
+      "state": "default",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "77784b630c7489f3",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-spring-0",
+      "state": "default",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"spring\")\n  }"
+    },
+    {
+      "name": "default-spring-50",
+      "state": "default",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "201fbfc7158d68d1",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"spring\")\n  }"
+    },
+    {
+      "name": "default-spring-100",
+      "state": "default",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "7a336d8c1f22786e",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"spring\")\n  }"
+    },
+    {
+      "name": "default-spring-200",
+      "state": "default",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "d4aa5427ac913f70",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"spring\")\n  }"
+    },
+    {
+      "name": "hover-ease-0",
+      "state": "hover",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-ease-50",
+      "state": "hover",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "8c71633b4891f1c1",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-ease-100",
+      "state": "hover",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "1f46e90e9ec79689",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-ease-200",
+      "state": "hover",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "7d6e94dfacbf3aa7",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-spring-0",
+      "state": "hover",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"spring\")\n  }"
+    },
+    {
+      "name": "hover-spring-50",
+      "state": "hover",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "087f0d08d852def2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"spring\")\n  }"
+    },
+    {
+      "name": "hover-spring-100",
+      "state": "hover",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "c9c87328ba0671d4",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"spring\")\n  }"
+    },
+    {
+      "name": "hover-spring-200",
+      "state": "hover",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "45023a60c5bf21d0",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"spring\")\n  }"
+    },
+    {
+      "name": "active-ease-0",
+      "state": "active",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-ease-50",
+      "state": "active",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "4a29f9ee38919a03",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-ease-100",
+      "state": "active",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "1b4e8eee8b194718",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-ease-200",
+      "state": "active",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "5c17437f5ec927ed",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-spring-0",
+      "state": "active",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"spring\")\n  }"
+    },
+    {
+      "name": "active-spring-50",
+      "state": "active",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "c4e98330c536a40e",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"spring\")\n  }"
+    },
+    {
+      "name": "active-spring-100",
+      "state": "active",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "b722107d78c73ee9",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"spring\")\n  }"
+    },
+    {
+      "name": "active-spring-200",
+      "state": "active",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "33a3d7856343e8f9",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"spring\")\n  }"
+    },
+    {
+      "name": "focus-ease-0",
+      "state": "focus",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-ease-50",
+      "state": "focus",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "4cb185051269fcd0",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-ease-100",
+      "state": "focus",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "86ae0d8fdba4233e",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-ease-200",
+      "state": "focus",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "09b2a5bc168fee0e",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-spring-0",
+      "state": "focus",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"spring\")\n  }"
+    },
+    {
+      "name": "focus-spring-50",
+      "state": "focus",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "e9e1c83d8d29f5d1",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"spring\")\n  }"
+    },
+    {
+      "name": "focus-spring-100",
+      "state": "focus",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "d8adfb95fe507870",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"spring\")\n  }"
+    },
+    {
+      "name": "focus-spring-200",
+      "state": "focus",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "f03cba14b0a1069d",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"spring\")\n  }"
+    },
+    {
+      "name": "disabled-ease-0",
+      "state": "disabled",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-ease-50",
+      "state": "disabled",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "8af26d48262cb040",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-ease-100",
+      "state": "disabled",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "cdf94a5c72e75609",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-ease-200",
+      "state": "disabled",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "72588425afbb5a3a",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-spring-0",
+      "state": "disabled",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"spring\")\n  }"
+    },
+    {
+      "name": "disabled-spring-50",
+      "state": "disabled",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "b889c9280f6ca76f",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"spring\")\n  }"
+    },
+    {
+      "name": "disabled-spring-100",
+      "state": "disabled",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "56d52ed48aaa0f99",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"spring\")\n  }"
+    },
+    {
+      "name": "disabled-spring-200",
+      "state": "disabled",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "4160acc238bf2826",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"spring\")\n  }"
+    },
+    {
+      "name": "loading-ease-0",
+      "state": "loading",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-ease-50",
+      "state": "loading",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "73070591f188c0d0",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-ease-100",
+      "state": "loading",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "5245dc3498b76dbc",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-ease-200",
+      "state": "loading",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "36de05278d9abf64",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-spring-0",
+      "state": "loading",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"spring\")\n  }"
+    },
+    {
+      "name": "loading-spring-50",
+      "state": "loading",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "dc1166c97cceb163",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"spring\")\n  }"
+    },
+    {
+      "name": "loading-spring-100",
+      "state": "loading",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "a072609c76d9604c",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"spring\")\n  }"
+    },
+    {
+      "name": "loading-spring-200",
+      "state": "loading",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "7b33c037500b906e",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"spring\")\n  }"
+    },
+    {
+      "name": "success-ease-0",
+      "state": "success",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-ease-50",
+      "state": "success",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "0c19abe55a274f89",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-ease-100",
+      "state": "success",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "8d15f7080a98a320",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-ease-200",
+      "state": "success",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "0480a4534366c316",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-spring-0",
+      "state": "success",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"spring\")\n  }"
+    },
+    {
+      "name": "success-spring-50",
+      "state": "success",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "db534625cc8176f3",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"spring\")\n  }"
+    },
+    {
+      "name": "success-spring-100",
+      "state": "success",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "000fc8886ecfcf52",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"spring\")\n  }"
+    },
+    {
+      "name": "success-spring-200",
+      "state": "success",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "d8d653d6c341d4ee",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"spring\")\n  }"
+    },
+    {
+      "name": "error-ease-0",
+      "state": "error",
+      "animate": "ease",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-ease-50",
+      "state": "error",
+      "animate": "ease",
+      "tick": 50,
+      "digest": "6882783b835148d1",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-ease-100",
+      "state": "error",
+      "animate": "ease",
+      "tick": 100,
+      "digest": "f5e50714d0325825",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-ease-200",
+      "state": "error",
+      "animate": "ease",
+      "tick": 200,
+      "digest": "564019465b27eb5f",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-spring-0",
+      "state": "error",
+      "animate": "spring",
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"spring\")\n  }"
+    },
+    {
+      "name": "error-spring-50",
+      "state": "error",
+      "animate": "spring",
+      "tick": 50,
+      "digest": "72f565a504ed9787",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"spring\")\n  }"
+    },
+    {
+      "name": "error-spring-100",
+      "state": "error",
+      "animate": "spring",
+      "tick": 100,
+      "digest": "6b23ee4c752cb4cc",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"spring\")\n  }"
+    },
+    {
+      "name": "error-spring-200",
+      "state": "error",
+      "animate": "spring",
+      "tick": 200,
+      "digest": "0d57a88826fdd916",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"spring\")\n  }"
+    },
+    {
+      "name": "default-ease-400",
+      "state": "default",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "f2a92f43a20e6766",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"ease\")\n  }"
+    },
+    {
+      "name": "default-spring-400",
+      "state": "default",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "f2a92f43a20e6766",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details default\", \"Body content\", \"default\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"default\", \"spring\")\n  }"
+    },
+    {
+      "name": "hover-ease-400",
+      "state": "hover",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "4062887b9bf9fa5d",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"ease\")\n  }"
+    },
+    {
+      "name": "hover-spring-400",
+      "state": "hover",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "4062887b9bf9fa5d",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details hover\", \"Body content\", \"hover\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"hover\", \"spring\")\n  }"
+    },
+    {
+      "name": "active-ease-400",
+      "state": "active",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "23468d85e4102844",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"ease\")\n  }"
+    },
+    {
+      "name": "active-spring-400",
+      "state": "active",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "23468d85e4102844",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details active\", \"Body content\", \"active\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"active\", \"spring\")\n  }"
+    },
+    {
+      "name": "focus-ease-400",
+      "state": "focus",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "c5e2d8a5e89dd0f1",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"ease\")\n  }"
+    },
+    {
+      "name": "focus-spring-400",
+      "state": "focus",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "c5e2d8a5e89dd0f1",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details focus\", \"Body content\", \"focus\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"focus\", \"spring\")\n  }"
+    },
+    {
+      "name": "disabled-ease-400",
+      "state": "disabled",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "a6b7b6e17bfe19c5",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"ease\")\n  }"
+    },
+    {
+      "name": "disabled-spring-400",
+      "state": "disabled",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "a6b7b6e17bfe19c5",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details disabled\", \"Body content\", \"disabled\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"disabled\", \"spring\")\n  }"
+    },
+    {
+      "name": "loading-ease-400",
+      "state": "loading",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "803ae91d58390805",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"ease\")\n  }"
+    },
+    {
+      "name": "loading-spring-400",
+      "state": "loading",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "803ae91d58390805",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details loading\", \"Body content\", \"loading\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"loading\", \"spring\")\n  }"
+    },
+    {
+      "name": "success-ease-400",
+      "state": "success",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "db9dfd85eafc499b",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"ease\")\n  }"
+    },
+    {
+      "name": "success-spring-400",
+      "state": "success",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "db9dfd85eafc499b",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details success\", \"Body content\", \"success\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"success\", \"spring\")\n  }"
+    },
+    {
+      "name": "error-ease-400",
+      "state": "error",
+      "animate": "ease",
+      "tick": 400,
+      "digest": "260ef953f15cd530",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"ease\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"ease\")\n  }"
+    },
+    {
+      "name": "error-spring-400",
+      "state": "error",
+      "animate": "spring",
+      "tick": 400,
+      "digest": "260ef953f15cd530",
+      "module": "components/expansion_m3.opu",
+      "imports": [
+        "components/expansion_m3.opu",
+        "components/card_m3.opu"
+      ],
+      "use": "Column(gap: 8) {\n    ExpandablePanelM3(\"Details error\", \"Body content\", \"error\", \"spring\")\n    ElevatedCardM3(\"Adjacent\", \"sibling\", \"error\", \"spring\")\n  }"
+    }
+  ]
+}
