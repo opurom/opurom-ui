@@ -156,6 +156,7 @@ import "components/text.opu";
 | `components/fab_2024_m3.opu` | `M3Fab2024`, `M3SmallFab2024`, `M3LargeFab2024`, `M3ExtendedFab2024` | M3 2024 FAB default geometry; pinned 2023 family untouched |
 | `components/segmented_button_m3.opu` | `SegmentedButtonM3` | 40dp stadium M3 geometry over pinned segmented shell |
 | `components/slider_2024_m3.opu` | `Slider2024M3` (state, animate) | M3 2024 16dp slider defaults; 2023 pin untouched |
+| `components/tooltip_metrics_m3.opu` | `DesktopTooltipM3` (text, state, animate) | Flutter desktop tooltip geometry; timed show reserved (A3) |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

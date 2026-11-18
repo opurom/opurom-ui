@@ -455,3 +455,14 @@ reserved (A3/A4/B3). `test/source-provenance.test.mjs` statically audits every
 M3 shell module for the Flutter version, `file:line` source anchors, manifest
 registration, eight-state compile coverage and accessibility-case coverage;
 it prevents future source-less components from entering the package.
+
+## Desktop tooltip metrics shell (uibuild, 2026-11-18)
+
+`components/tooltip_metrics_m3.opu` adds `DesktopTooltipM3` with Flutter
+stable 3.50.0 desktop tooltip defaults: 24dp height, 8x4dp padding, 4dp
+radius and bodyMedium text (`tooltip.dart:426-441,482-497`). The source
+24dp offset and 1500ms touch show duration are documented, but timed
+presentation stays at the call site (A3). The existing TooltipM3 pin is
+unchanged. Verification adds eight state pins (676 total over 87
+components), one eight-state compile case, one a11y case, one boundary case
+and an explicit source-budget update.

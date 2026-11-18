@@ -1,0 +1,17 @@
+// Tooltip geometry aligned with Flutter stable 3.50.0 desktop defaults.
+// Sources:
+//   tooltip.dart:426-441    24dp height, 8x4dp horizontal/vertical padding
+//   tooltip.dart:482-497    bodyMedium, 4dp corner radius
+//   tooltip.dart:389-394    24dp vertical offset, 1500ms touch show duration
+//   motion.dart:52          200ms short4 state transition
+// The existing TooltipM3 shell uses 150ms and generic surface geometry; this
+// wrapper is additive and owns the source-backed desktop metrics. Timed show
+// and gesture routing stay at the call site (A3), no runtime timer is added.
+// Example DesktopTooltipM3("Copy", "default", "ease")
+component DesktopTooltipM3(text: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "tooltip focus host") {
+    Container(height: 24, p: 4, rounded: 4, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "desktop tooltip", role: "text") {
+      Text("{text}", size: 14, maxLines: 1)
+    }
+  }
+}

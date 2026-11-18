@@ -4701,6 +4701,62 @@
       "use": "Slider2024M3(\"error\",\"ease\")",
       "state": "error",
       "digest": "a482705e55b241ec"
+    },
+    {
+      "name": "DesktopTooltipM3-default",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "0fdb8fdc2c21b091"
+    },
+    {
+      "name": "DesktopTooltipM3-hover",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "cc4a30eeefb57fe1"
+    },
+    {
+      "name": "DesktopTooltipM3-active",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "db94b90ea7d585e7"
+    },
+    {
+      "name": "DesktopTooltipM3-focus",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "dd7ac24d1ebefd21"
+    },
+    {
+      "name": "DesktopTooltipM3-disabled",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "6b305234d2f71619"
+    },
+    {
+      "name": "DesktopTooltipM3-loading",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "537f22eddcfe7c21"
+    },
+    {
+      "name": "DesktopTooltipM3-success",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "0722ab146b84d5d8"
+    },
+    {
+      "name": "DesktopTooltipM3-error",
+      "module": "components/tooltip_metrics_m3.opu",
+      "use": "DesktopTooltipM3(\"Copy\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "f4ff310ba92e75b4"
     }
   ]
 }
