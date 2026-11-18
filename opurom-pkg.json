@@ -90,6 +90,7 @@
     "components/menu_m3.opu",
     "components/nav_rail_m3.opu",
     "components/nav_rail_extended_m3.opu",
+    "components/bottom_app_bar_m3.opu",
     "components/state_wrappers.opu",
     "components/layout_core.opu",
     "components/date_range_m3.opu",

@@ -72,6 +72,7 @@ const CASES = [
   ['components/drawer_metrics_m3.opu', 'StandardDrawerM3("Navigation", "Overview", "Runs", "{state}", "ease")'],
   ['components/app_bar_scrolled_m3.opu', 'ScrolledAppBarM3("Title", "home", "{state}", "ease")'],
   ['components/chip_metrics_m3.opu', 'AssistChipM3Default("Today", "{state}", "ease")'],
+  ['components/bottom_app_bar_m3.opu', 'BottomAppBarM3("Actions", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

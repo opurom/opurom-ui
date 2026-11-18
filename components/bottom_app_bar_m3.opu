@@ -1,0 +1,22 @@
+// Material 3 bottom app bar geometry. Flutter stable 3.50.0 sources:
+//   bottom_app_bar.dart:43        leading width 56dp from kToolbarHeight
+//   bottom_app_bar.dart:315-321   elevation 3, default height 80, notched shape
+//   bottom_app_bar.dart:327-333   surfaceContainer fill, transparent tint/shadow
+//   icon_button.dart:781-783      default 24dp action icon size
+//   motion.dart:52                200ms short4 state transition
+// The existing BottomNav pin stays unchanged. This additive shell records the
+// M3 bottom app bar surface and action rhythm. Notch clipping, FAB docking and
+// tap routing need kernel gaps A3/A4/B3 and remain at the call site.
+// Boundary: empty labels render an unnamed title slot; overlong labels clip to
+// one line; out-of-viewport widths are bounded by the renderer.
+// Example BottomAppBarM3("Actions", "default", "ease")
+component BottomAppBarM3(label: string, state: string, animate: string) {
+  Container(height: 80, p: 12, shadow: 3, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "bottom app bar", role: "none") {
+    Row(gap: 16, align: center) {
+      Icon(name: "home", width: 24, height: 24, state: "{state}")
+      Text("{label}", size: 14, maxLines: 1, state: "{state}")
+      Spacer()
+      Icon(name: "settings", width: 24, height: 24, state: "{state}")
+    }
+  }
+}

@@ -4981,6 +4981,62 @@
       "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"error\",\"ease\")",
       "state": "error",
       "digest": "e0a9ab83a9c02c1c"
+    },
+    {
+      "name": "BottomAppBarM3-default",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "10d768e002b73265"
+    },
+    {
+      "name": "BottomAppBarM3-hover",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "b3e72e4e64ef585e"
+    },
+    {
+      "name": "BottomAppBarM3-active",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "f9e00a941c38fed9"
+    },
+    {
+      "name": "BottomAppBarM3-focus",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "81768b3a489c45f4"
+    },
+    {
+      "name": "BottomAppBarM3-disabled",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "56c79118fae3bdaf"
+    },
+    {
+      "name": "BottomAppBarM3-loading",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "959cdb5a5950d0b8"
+    },
+    {
+      "name": "BottomAppBarM3-success",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "96d9198d592d9a8a"
+    },
+    {
+      "name": "BottomAppBarM3-error",
+      "module": "components/bottom_app_bar_m3.opu",
+      "use": "BottomAppBarM3(\"Actions\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "7d24f0999d89a4f0"
     }
   ]
 }

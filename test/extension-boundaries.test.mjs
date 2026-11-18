@@ -69,6 +69,8 @@ const CASES = [
   ['StandardDrawerM3("", "", "", "error", "ease")', 'components/drawer_metrics_m3.opu'],
   ['ScrolledAppBarM3("", "home", "disabled", "ease")', 'components/app_bar_scrolled_m3.opu'],
   ['AssistChipM3Default("", "error", "ease")', 'components/chip_metrics_m3.opu'],
+  ['BottomAppBarM3("", "disabled", "ease")', 'components/bottom_app_bar_m3.opu'],
+  [`BottomAppBarM3("${long}", "error", "ease")`, 'components/bottom_app_bar_m3.opu'],
 
 ];
 

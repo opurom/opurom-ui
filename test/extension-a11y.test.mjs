@@ -54,6 +54,7 @@ const CASES = [
   ['Standard drawer', 'StandardDrawerM3("Navigation", "Overview", "Runs", "default", "ease")', 'standard drawer', 'none', 'components/drawer_metrics_m3.opu'],
   ['Scrolled app bar', 'ScrolledAppBarM3("Title", "home", "default", "ease")', 'scrolled app bar', 'heading', 'components/app_bar_scrolled_m3.opu'],
   ['Default assist chip', 'AssistChipM3Default("Today", "default", "ease")', 'assist chip', 'button', 'components/chip_metrics_m3.opu'],
+  ['Bottom app bar', 'BottomAppBarM3("Actions", "default", "ease")', 'bottom app bar', 'none', 'components/bottom_app_bar_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

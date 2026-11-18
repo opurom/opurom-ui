@@ -507,3 +507,15 @@ selection binding remain at the call site (A3/A4/B3). Verification adds eight
 state pins (708 total over 91 components), one eight-state compile case, one
 a11y case, two boundary cases, one extreme-input case, a provenance audit entry
 and an explicit source-budget update.
+
+## Bottom app bar shell (uibuild, 2026-11-18)
+
+`components/bottom_app_bar_m3.opu` adds `BottomAppBarM3`, the source-backed
+Flutter 3.50.0 M3 bottom app bar presentation: 80dp height, elevation 3, 56dp
+leading width, surfaceContainer fill and 24dp action icons
+(`bottom_app_bar.dart:43,315-333`, `icon_button.dart:781-783`). The existing
+`BottomNav` pin is unchanged. Notch clipping, FAB docking and tap routing stay
+at the call site (A3/A4/B3). Verification adds eight state pins (716 total
+over 92 components), one eight-state compile case, one a11y case, two boundary
+cases, one extreme-input case, a provenance audit entry and an explicit
+source-budget update.
