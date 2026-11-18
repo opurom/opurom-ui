@@ -149,6 +149,7 @@ import "components/text.opu";
 | `components/expansion_m3.opu` | `ExpandablePanelM3`, `SelectFieldM3` | M3 expansion tile and dropdown shells; controllers/callbacks reserved (A3/B4) |
 | `components/page_states_m3.opu` | `PageLoadingShell`, `PageEmptyShell`, `PageErrorShell` | unified page status containers |
 | `components/button_metrics_m3.opu` | `MinFilledButtonM3`, `MinOutlinedButtonM3`, `MinTextButtonM3`, `MinIconButtonM3` | explicit Flutter M3 minimum-size wrappers |
+| `components/snackbar_m3.opu` | `SnackBarM3` (message, state, animate) | M3 SnackBar surface; dismiss/action callbacks reserved (A3/B3) |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

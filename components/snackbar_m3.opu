@@ -1,0 +1,19 @@
+// Material 3 SnackBar presentation shell. Flutter stable 3.50.0 sources:
+//   snack_bar.dart:271-296  content/elevation/width/duration/action props
+//   snack_bar.dart:29       default display duration 4000 ms
+//   snack_bar.dart:27,772   single-line vertical padding 14dp
+//   snack_bar.dart:941-995  M3 radius 4, elevation 6, inset 15/5/15/10
+//   material/motion.dart:52 200ms short4 state transition
+// Opurom IR renders a deterministic SnackBar surface; auto-dismiss timing,
+// route behaviour, gesture dismissal and action callbacks need kernel gaps
+// A3/A4/B3 and stay reserved. No runtime timer or interpreted action is added.
+// Boundary: empty message renders the full surface; overlong labels clip via
+// maxLines; state is a literal from the declared eight-value vocabulary.
+// Example SnackBarM3("Saved", "default", "ease")
+component SnackBarM3(message: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "snackbar focus host") {
+    Container(p: 14, rounded: 4, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "snackbar", role: "text") {
+      Text("{message}", size: 14, maxLines: 2)
+    }
+  }
+}

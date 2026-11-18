@@ -3917,6 +3917,62 @@
       "use": "MinIconButtonM3(\"home\",\"error\",\"tap\")",
       "state": "error",
       "digest": "3b6af44af395fcfd"
+    },
+    {
+      "name": "SnackBarM3-default",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "26d2bc78ed3cf24f"
+    },
+    {
+      "name": "SnackBarM3-hover",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "582f02a8ceea59d3"
+    },
+    {
+      "name": "SnackBarM3-active",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "6a9df950341df7dd"
+    },
+    {
+      "name": "SnackBarM3-focus",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "b96c244190fc386f"
+    },
+    {
+      "name": "SnackBarM3-disabled",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "b77bd34f3a48c7cd"
+    },
+    {
+      "name": "SnackBarM3-loading",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "0fe5f8a870d3111f"
+    },
+    {
+      "name": "SnackBarM3-success",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "e85719283cda298c"
+    },
+    {
+      "name": "SnackBarM3-error",
+      "module": "components/snackbar_m3.opu",
+      "use": "SnackBarM3(\"Saved\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "2998c425ab0d894a"
     }
   ]
 }

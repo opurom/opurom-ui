@@ -347,3 +347,15 @@ minimum geometry: filled/outlined/text buttons at 64x40
 button components and pins are unchanged. Verification adds 32 state pins
 (556 total over 72 components), four eight-state compile cases, one a11y
 case, two boundary cases and updates the explicit source-size budget.
+
+## SnackBar shell (uibuild, 2026-11-18)
+
+`components/snackbar_m3.opu` adds `SnackBarM3`, an M3 SnackBar surface with
+the source-backed 4dp radius, elevation 6, 14dp single-line vertical padding
+and 200ms state transition. Flutter stable 3.50.0 anchors:
+`snack_bar.dart:271-296`, `:29`, `:27,772`, `:941-995`, and
+`material/motion.dart:52`. Auto-dismiss timing, route presentation, gesture
+dismissal and action callbacks are reserved (A3/A4/B3); no runtime timer is
+introduced. Verification adds eight state pins (564 total over 73
+components), one eight-state compile case, one a11y case and one boundary
+case; the source-size budget is updated explicitly.
