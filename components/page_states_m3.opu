@@ -1,0 +1,43 @@
+// Page-level status container shells. Flutter stable 3.50.0 has no single
+// PageState widget; these shells compose documented Material patterns:
+//   progress_indicator.dart:48-90  ProgressIndicator(value, semanticsLabel,
+//                                  semanticsValue), value 0.0..1.0
+//   material/material.dart         ProgressIndicator / Card surfaces
+//   list_tile.dart:385-420         single-line title/subtitle layout
+//   material/motion.dart:52        200ms short4 state transition
+//   text_button.dart:230-232       state-layer alpha contract
+// Opurom IR carries one static `state` string; no runtime view switching or
+// builder closure is introduced. Each shell is a deterministic presentation
+// for one page status. loading/success/error are business states with no
+// Flutter WidgetState equivalent (NO_FLUTTER_EQUIVALENT).
+// Boundary: empty titles render empty text nodes; overlong labels clip via
+// maxLines; progress values are integer percentages clamped by the caller.
+// Example PageLoadingShell("Loading", "default", "ease")
+component PageLoadingShell(title: string, state: string, animate: string) {
+  Container(p: 16, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "page loading", role: "text") {
+    Column(gap: 12, align: center) {
+      Progress(value: 60, state: "{state}")
+      Text("{title}", size: 16, maxLines: 2, state: "{state}")
+    }
+  }
+}
+
+component PageEmptyShell(title: string, body: string, state: string, animate: string) {
+  Container(p: 16, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "page empty", role: "none") {
+    Column(gap: 8, align: center, state: "{state}") {
+      Icon(name: "folder", state: "{state}")
+      Text("{title}", size: 16)
+      Text("{body}", size: 12)
+    }
+  }
+}
+
+component PageErrorShell(title: string, body: string, state: string, animate: string) {
+  Container(p: 16, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "page error", role: "heading") {
+    Column(gap: 8, align: center, tone: "error", state: "{state}") {
+      Icon(name: "info", state: "{state}")
+      Text("{title}", size: 16)
+      Text("{body}", size: 12)
+    }
+  }
+}

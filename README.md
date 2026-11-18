@@ -147,6 +147,7 @@ import "components/text.opu";
 | `components/sticky_header_m3.opu` | `StickyHeaderM3(title, maxExtent, minExtent, state, animate)` | M3 pinned-header shell with expanded/compact extents and heading role; eight states; anchors `sliver_persistent_header.dart:20-67,125-161,165-173`, `constants.dart:30`, `motion.dart:52`; sliver pinning/floating snap reserved (B2/B3) |
 | `components/waterfall_m3.opu` | `WaterfallGridM3` (labels, columns, spacing, state, animate) | M3 grid shell with explicit columns/gap; lazy sliver delegates reserved (B2/B3) |
 | `components/expansion_m3.opu` | `ExpandablePanelM3`, `SelectFieldM3` | M3 expansion tile and dropdown shells; controllers/callbacks reserved (A3/B4) |
+| `components/page_states_m3.opu` | `PageLoadingShell`, `PageEmptyShell`, `PageErrorShell` | unified page status containers |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

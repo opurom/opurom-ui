@@ -47,6 +47,9 @@ const CASES = [
   [`WaterfallGridM3("${long}", 9999, 9999, "error", "ease")`, 'components/waterfall_m3.opu'],
   ['ExpandablePanelM3("", "", false, "disabled", "ease")', 'components/expansion_m3.opu'],
   [`SelectFieldM3("${long}", 9999, "error", "ease")`, 'components/expansion_m3.opu'],
+  ['PageLoadingShell("", "disabled", "ease")', 'components/page_states_m3.opu'],
+  [`PageEmptyShell("${long}", "${long}", "error", "ease")`, 'components/page_states_m3.opu'],
+  ['PageErrorShell("", "", "loading", "ease")', 'components/page_states_m3.opu'],
 ];
 
 function source(mod, use) {

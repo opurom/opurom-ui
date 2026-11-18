@@ -37,6 +37,9 @@ const CASES = [
   ['Waterfall grid', 'WaterfallGridM3("One,Two,Three", 2, 8, "default", "ease")', 'waterfall grid', 'none', 'components/waterfall_m3.opu'],
   ['Expansion tile', 'ExpandablePanelM3("Details", "Body", true, "default", "ease")', 'expansion tile', 'button', 'components/expansion_m3.opu'],
   ['Select field', 'SelectFieldM3("Choose", 1, "default", "ease")', 'select field', 'button', 'components/expansion_m3.opu'],
+  ['Page loading', 'PageLoadingShell("Loading", "default", "ease")', 'page loading', 'text', 'components/page_states_m3.opu'],
+  ['Page empty', 'PageEmptyShell("Empty", "Nothing", "default", "ease")', 'page empty', 'none', 'components/page_states_m3.opu'],
+  ['Page error', 'PageErrorShell("Error", "Retry", "error", "ease")', 'page error', 'heading', 'components/page_states_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

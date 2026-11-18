@@ -94,6 +94,7 @@
     "components/date_range_m3.opu",
     "components/sticky_header_m3.opu",
     "components/waterfall_m3.opu",
-    "components/expansion_m3.opu"
+    "components/expansion_m3.opu",
+    "components/page_states_m3.opu"
   ]
 }

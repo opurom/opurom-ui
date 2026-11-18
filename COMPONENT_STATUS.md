@@ -279,3 +279,15 @@ runtime object model is introduced. The 200ms transition follows
 `material/motion.dart:52`. Verification adds 16 state pins (500 total over
 65 components), two eight-state compile cases, two a11y cases and two
 boundary cases.
+
+## Page state shells (uibuild, 2026-11-18)
+
+`components/page_states_m3.opu` adds `PageLoadingShell`, `PageEmptyShell` and
+`PageErrorShell`, the unified page-level loading/empty/error presentation
+layer. Flutter stable 3.50.0 anchors: `progress_indicator.dart:48-90`
+(determinate/indeterminate progress and semantics), `list_tile.dart:385-420`
+(single-line title/subtitle), `material/motion.dart:52` (200ms short4), and
+`text_button.dart:230-232` (state-layer alphas). The shells compose existing
+M3 components statically; no runtime view switching or builder closure is
+introduced. Verification adds 24 state pins (524 total over 68 components),
+three eight-state compile cases, three a11y cases and three boundary cases.
