@@ -144,6 +144,7 @@ import "components/text.opu";
 | `components/menu_m3.opu` | `PopupMenuM3(items, width, state, animate)` | M3 popup-menu shell with semantic button role; eight states, elevation 3 and 8dp vertical padding; anchors `popup_menu.dart:47,1176-1218,1424-1427,1837-1872`, `motion.dart:52`; route/keyboard/callback reserved (A3/A4/B3) |
 | `components/nav_rail_m3.opu` | `NavigationRailM3(labels, selected, state, animate)` | M3 rail shell at 80dp width, eight states; anchors `navigation_rail.dart:91-116,1236-1244,1272-1274`, `motion.dart:52`; extended mode/routing reserved (A3/A4/B3) |
 | `components/date_range_m3.opu` | `DateRangePickerM3(label, start, end, state, animate)` | M3 date-range shell with two ordered DateFields and a divider; eight states; anchors `date_picker.dart:1167-1243,1074-1083,130-131,791-801`, `motion.dart:52`; DateTime/routes/predicate reserved (A3/A4/B3/B4) |
+| `components/sticky_header_m3.opu` | `StickyHeaderM3(title, maxExtent, minExtent, state, animate)` | M3 pinned-header shell with expanded/compact extents and heading role; eight states; anchors `sliver_persistent_header.dart:20-67,125-161,165-173`, `constants.dart:30`, `motion.dart:52`; sliver pinning/floating snap reserved (B2/B3) |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

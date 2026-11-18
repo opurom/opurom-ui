@@ -3301,6 +3301,62 @@
       "use": "DateRangePickerM3(\"Travel dates\", 10, 20, \"error\", \"ease\")",
       "state": "error",
       "digest": "0134270288617bc3"
+    },
+    {
+      "name": "StickyHeaderM3-default",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"default\", \"ease\")",
+      "state": "default",
+      "digest": "3e00b71b9c6a8729"
+    },
+    {
+      "name": "StickyHeaderM3-hover",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "295280f29338937d"
+    },
+    {
+      "name": "StickyHeaderM3-active",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"active\", \"ease\")",
+      "state": "active",
+      "digest": "dcd4c9e3a1524a38"
+    },
+    {
+      "name": "StickyHeaderM3-focus",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "c335459fc1577b49"
+    },
+    {
+      "name": "StickyHeaderM3-disabled",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "221831d43e6abc33"
+    },
+    {
+      "name": "StickyHeaderM3-loading",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "a68897860484e0f4"
+    },
+    {
+      "name": "StickyHeaderM3-success",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"success\", \"ease\")",
+      "state": "success",
+      "digest": "2108f7e930ca3519"
+    },
+    {
+      "name": "StickyHeaderM3-error",
+      "module": "components/sticky_header_m3.opu",
+      "use": "StickyHeaderM3(\"Today\", 56, 32, \"error\", \"ease\")",
+      "state": "error",
+      "digest": "a6f06a11da3f35c0"
     }
   ]
 }

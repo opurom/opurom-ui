@@ -1,0 +1,27 @@
+// Material 3 sticky-header presentation shell. Flutter stable 3.50.0 sources:
+//   sliver_persistent_header.dart:20-67    delegate minExtent/maxExtent and
+//                                          shrinkOffset/overlapsContent build
+//   sliver_persistent_header.dart:125-161  pinned/floating constructor flags
+//   sliver_persistent_header.dart:165-173  pinned+floating mode selection
+//   constants.dart:30                      56dp toolbar height baseline
+//   motion.dart:52                         200ms short4 state duration
+// The Opurom shell renders the header at its expanded extent and a compact
+// body placeholder for the covered content. Real sliver pinning, floating
+// snap and shrinkOffset-driven interpolation need kernel gaps B2/B3 and stay
+// reserved; this component does not fake scrolling behaviour.
+// Boundary: min/max are literal integer extents; max < min is not silently
+// reordered (Flutter asserts maxExtent >= minExtent), the compiler's numeric
+// bounds apply. Empty titles render an empty heading; overlong titles clip.
+// Example StickyHeaderM3("Today", 56, 32, "default", "ease")
+component StickyHeaderM3(title: string, maxExtent: int, minExtent: int, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "sticky header focus host") {
+    Container(rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "sticky header", role: "heading") {
+      Column(gap: 8) {
+        Container(height: maxExtent, p: 12, variant: "primary", state: "{state}", animate: "{animate}", duration: 200, label: "header extent") {
+          Text("{title}", size: 14)
+        }
+        Container(height: minExtent, rounded: 8, variant: "ghost", label: "covered content")
+      }
+    }
+  }
+}

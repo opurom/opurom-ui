@@ -242,3 +242,16 @@ callbacks remain reserved (A3/A4/B3/B4). New gates: eight-state compile case,
 8 settled-frame pins (468 total over 61 components), one a11y name/role case
 and two boundary renders (empty labels/negative slots and overlong label at
 extreme values).
+
+## Sticky header shell (ui-dev, 2026-11-18, part 7)
+
+`components/sticky_header_m3.opu` adds `StickyHeaderM3`, a declarative pinned
+header shell with expanded and compact extent slots. Flutter stable 3.50.0
+sources: `sliver_persistent_header.dart:20-67` (delegate min/max extent and
+shrinkOffset build), `:125-161` (pinned/floating flags), `:165-173` (mode
+selection), `constants.dart:30` (56dp toolbar baseline) and `motion.dart:52`
+(200ms short4). Real sliver pinning, floating snap and shrink interpolation
+need kernel gaps B2/B3 and stay reserved. New gates: eight-state compile case,
+8 settled-frame pins (476 total over 62 components), one a11y name/role case
+and two boundary renders (zero extents with empty title and extreme extent
+with overlong title).

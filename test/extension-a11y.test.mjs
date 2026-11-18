@@ -33,6 +33,7 @@ const CASES = [
   ['Popup menu', 'PopupMenuM3("Open,Copy,Close", 160, "default", "ease")', 'popup menu', 'button', 'components/menu_m3.opu'],
   ['Navigation rail', 'NavigationRailM3("Home,Search,Profile", 1, "default", "ease")', 'navigation rail', 'none', 'components/nav_rail_m3.opu'],
   ['Date range picker', 'DateRangePickerM3("Travel dates", 10, 20, "default", "ease")', 'date range picker', 'button', 'components/date_range_m3.opu'],
+  ['Sticky header', 'StickyHeaderM3("Today", 56, 32, "default", "ease")', 'sticky header', 'heading', 'components/sticky_header_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

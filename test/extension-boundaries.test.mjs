@@ -41,6 +41,8 @@ const CASES = [
   [`NavigationRailM3("${long}", -1, "error", "ease")`, 'components/nav_rail_m3.opu'],
   ['DateRangePickerM3("", -5, -5, "disabled", "ease")', 'components/date_range_m3.opu'],
   [`DateRangePickerM3("${long}", 999999, 0, "error", "ease")`, 'components/date_range_m3.opu'],
+  ['StickyHeaderM3("", 0, 0, "disabled", "ease")', 'components/sticky_header_m3.opu'],
+  [`StickyHeaderM3("${long}", 9999, 32, "error", "ease")`, 'components/sticky_header_m3.opu'],
 ];
 
 function source(mod, use) {
