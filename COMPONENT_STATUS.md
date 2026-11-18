@@ -329,3 +329,10 @@ anchors are carried by `tools/seed-scheme.mjs` (stable 3.50.0,
 `test/emit-theme.test.mjs` runs the CLI, compiles both generated themes,
 asserts the pinned generated primary values, checks distinct light/dark
 frames and verifies repeated rendering is byte-identical.
+
+## Component package size gate (uibuild, 2026-11-18)
+
+`test/package-size.test.mjs` pins the component source file count and a byte
+budget around the current 88-file library. This is an internal Opurom
+regression guard, not a Flutter-derived metric; it keeps the zero-runtime-
+interpretation library from growing without an explicit baseline update.
