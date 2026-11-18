@@ -359,3 +359,14 @@ dismissal and action callbacks are reserved (A3/A4/B3); no runtime timer is
 introduced. Verification adds eight state pins (564 total over 73
 components), one eight-state compile case, one a11y case and one boundary
 case; the source-size budget is updated explicitly.
+
+## Default dialog metrics shell (uibuild, 2026-11-18)
+
+`components/dialog_metrics_m3.opu` adds `DefaultDialogM3`, an M3 dialog
+surface using Flutter's source-backed defaults: center alignment, elevation
+6, 28dp radius, 24dp inner padding and 24dp headline/body rhythm. Flutter
+stable 3.50.0 anchors: `dialog.dart:1961-1993`, `:32`, `:417-442` and
+`material/motion.dart:52`. Route presentation, scrim, focus traversal and
+action callbacks remain reserved (A3/A4/B3). Verification adds eight state
+pins (572 total over 74 components), one eight-state compile case, one a11y
+case and one boundary case; the source-size budget is updated explicitly.

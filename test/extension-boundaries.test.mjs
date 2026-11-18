@@ -53,6 +53,7 @@ const CASES = [
   ['MinFilledButtonM3("", "disabled", "ease")', 'components/button_metrics_m3.opu'],
   ['MinIconButtonM3("home", "error", "tap")', 'components/button_metrics_m3.opu'],
   ['SnackBarM3("", "loading", "ease")', 'components/snackbar_m3.opu'],
+  ['DefaultDialogM3("", "", "disabled", "ease")', 'components/dialog_metrics_m3.opu'],
 ];
 
 function source(mod, use) {

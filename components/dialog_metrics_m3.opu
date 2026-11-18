@@ -1,0 +1,22 @@
+// Material 3 default-geometry dialog shell. Flutter stable 3.50.0:
+//   dialog.dart:1961-1993  alignment center, elevation 6, radius 28,
+//                          surfaceContainerHigh, actions padding 24
+//   dialog.dart:32         default inset padding 40 horizontal / 24 vertical
+//   dialog.dart:417-442    AlertDialog title/content/actions structure
+//   motion.dart:52         200ms short4 state transition
+// This shell records the source-backed M3 defaults as static IR geometry.
+// Route presentation, scrim, focus traversal and callback actions need
+// kernel gaps A3/A4/B3 and remain reserved. No runtime dialog object model.
+// Boundary: empty title/body render an empty dialog surface; overlong text
+// clips via maxLines; state is a literal from the declared state vocabulary.
+// Example DefaultDialogM3("Delete", "This cannot be undone", "default", "ease")
+component DefaultDialogM3(title: string, body: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "dialog focus host") {
+    Container(width: 280, p: 24, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "default dialog", role: "heading") {
+      Column(gap: 16) {
+        Text("{title}", size: 24, maxLines: 2)
+        Text("{body}", size: 14, maxLines: 4)
+      }
+    }
+  }
+}

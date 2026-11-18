@@ -56,6 +56,7 @@ const CASES = [
   ['components/button_metrics_m3.opu', 'MinTextButtonM3("More", "{state}", "ease")'],
   ['components/button_metrics_m3.opu', 'MinIconButtonM3("home", "{state}", "tap")'],
   ['components/snackbar_m3.opu', 'SnackBarM3("Saved", "{state}", "ease")'],
+  ['components/dialog_metrics_m3.opu', 'DefaultDialogM3("Delete", "This cannot be undone", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

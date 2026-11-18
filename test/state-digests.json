@@ -3973,6 +3973,62 @@
       "use": "SnackBarM3(\"Saved\",\"error\",\"ease\")",
       "state": "error",
       "digest": "2998c425ab0d894a"
+    },
+    {
+      "name": "DefaultDialogM3-default",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "9fcbe00600343723"
+    },
+    {
+      "name": "DefaultDialogM3-hover",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "48ad7296afdd524f"
+    },
+    {
+      "name": "DefaultDialogM3-active",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "9752ac0236b4e951"
+    },
+    {
+      "name": "DefaultDialogM3-focus",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "56006de0026f3458"
+    },
+    {
+      "name": "DefaultDialogM3-disabled",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "3aa41500e88b0848"
+    },
+    {
+      "name": "DefaultDialogM3-loading",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "4560091fb847cbd2"
+    },
+    {
+      "name": "DefaultDialogM3-success",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "e87f343d862e62fb"
+    },
+    {
+      "name": "DefaultDialogM3-error",
+      "module": "components/dialog_metrics_m3.opu",
+      "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "b8ff26013135bdc9"
     }
   ]
 }

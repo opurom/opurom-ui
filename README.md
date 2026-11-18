@@ -150,6 +150,7 @@ import "components/text.opu";
 | `components/page_states_m3.opu` | `PageLoadingShell`, `PageEmptyShell`, `PageErrorShell` | unified page status containers |
 | `components/button_metrics_m3.opu` | `MinFilledButtonM3`, `MinOutlinedButtonM3`, `MinTextButtonM3`, `MinIconButtonM3` | explicit Flutter M3 minimum-size wrappers |
 | `components/snackbar_m3.opu` | `SnackBarM3` (message, state, animate) | M3 SnackBar surface; dismiss/action callbacks reserved (A3/B3) |
+| `components/dialog_metrics_m3.opu` | `DefaultDialogM3` (title, body, state, animate) | M3 default dialog geometry; route/scrim retained at call site |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

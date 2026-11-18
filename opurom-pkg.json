@@ -99,6 +99,7 @@
     "components/responsive_m3.opu",
     "tools/emit-theme.mjs",
     "components/button_metrics_m3.opu",
-    "components/snackbar_m3.opu"
+    "components/snackbar_m3.opu",
+    "components/dialog_metrics_m3.opu"
   ]
 }
