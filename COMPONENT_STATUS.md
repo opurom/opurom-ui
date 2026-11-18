@@ -641,3 +641,15 @@ unchanged. Verification adds eight state pins (788 total over 101 components),
 one eight-state compile case, one a11y case, two boundary cases, one
 extreme-input case, a provenance audit entry, an explicit source-budget update
 and a dedicated compact/medium/expanded column-count gate.
+
+## Responsive component catalog audit (uibuild, 2026-11-18)
+
+`test/responsive-catalog.json` and `test/responsive-catalog.test.mjs` roll the
+date, time and color breakpoint suites into one signed JSON manifest and gate.
+The audit re-renders every catalog pin under the pinned toolchain, verifies
+compact/medium/expanded coverage, date/time orientation differences, color
+column-count progression, unique digests, component anchors, grid declarations,
+gate wiring and README/status references. Flutter authority remains stable
+3.50.0 at `ab2912035e160d9cad6306df307576da6128ebdb`, with orientation from
+`widgets/media_query.dart:34-39,855`, tiers from `render/src/layout.rs:50-74`
+and grid derivation from `rendering/sliver_grid.dart:174-190,354-375,449-518`.

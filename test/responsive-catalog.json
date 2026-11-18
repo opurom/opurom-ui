@@ -1,0 +1,178 @@
+{
+  "purpose": "single catalog audit for responsive date/time/color breakpoint evidence; signed re-render pins, not Flutter pixel parity",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "orientation": "widgets/media_query.dart:34-39,855",
+    "breakpoints": "render/src/layout.rs:50-74",
+    "grid": "rendering/sliver_grid.dart:174-190"
+  },
+  "toolchain": {
+    "meta": "test/state-digests.json",
+    "profile": "debug",
+    "tick": 4000
+  },
+  "suites": [
+    {
+      "name": "date",
+      "module": "components/responsive_date_picker_m3.opu",
+      "component": "ResponsiveDatePickerPanelM3",
+      "gate": "test/responsive-date-picker.test.mjs",
+      "docs": [
+        "README.md",
+        "COMPONENT_STATUS.md"
+      ],
+      "anchors": [
+        "date_picker.dart:891-892",
+        "date_picker.dart:983-1025",
+        "date_picker.dart:1949-1955",
+        "date_picker.dart:2380-2392",
+        "date_picker.dart:2759-2787"
+      ],
+      "grid": {
+        "columns": 2,
+        "compactColumns": 1
+      },
+      "requiresOrientationDifference": true,
+      "pins": [
+        {
+          "name": "compact-portrait",
+          "width": 480,
+          "height": 800,
+          "orientation": "portrait",
+          "tier": "compact",
+          "digest": "4e02b675476dc651"
+        },
+        {
+          "name": "medium-landscape",
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "tier": "medium",
+          "digest": "926b0a06ee1aada1"
+        },
+        {
+          "name": "expanded-landscape",
+          "width": 1000,
+          "height": 600,
+          "orientation": "landscape",
+          "tier": "expanded",
+          "digest": "3c2c6b9a411d71a0"
+        },
+        {
+          "name": "medium-portrait",
+          "width": 720,
+          "height": 1280,
+          "orientation": "portrait",
+          "tier": "medium",
+          "digest": "b79050baf541eaee"
+        }
+      ],
+      "pinUse": "ResponsiveDatePickerPanelM3(\"November 2026\", \"default\", \"ease\")"
+    },
+    {
+      "name": "time",
+      "module": "components/responsive_time_picker_m3.opu",
+      "component": "ResponsiveTimePickerPanelM3",
+      "gate": "test/responsive-time-picker.test.mjs",
+      "docs": [
+        "README.md",
+        "COMPONENT_STATUS.md"
+      ],
+      "anchors": [
+        "time_picker.dart:48",
+        "time_picker.dart:2408-2418",
+        "time_picker.dart:2534-2582"
+      ],
+      "grid": {
+        "columns": 2,
+        "compactColumns": 1
+      },
+      "requiresOrientationDifference": true,
+      "pins": [
+        {
+          "name": "compact-portrait",
+          "width": 480,
+          "height": 800,
+          "orientation": "portrait",
+          "tier": "compact",
+          "digest": "460c6bdb0bc117b0"
+        },
+        {
+          "name": "medium-landscape",
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "tier": "medium",
+          "digest": "99bf26e281dc6257"
+        },
+        {
+          "name": "expanded-landscape",
+          "width": 1000,
+          "height": 600,
+          "orientation": "landscape",
+          "tier": "expanded",
+          "digest": "f39d829b526bd44c"
+        },
+        {
+          "name": "medium-portrait",
+          "width": 720,
+          "height": 1280,
+          "orientation": "portrait",
+          "tier": "medium",
+          "digest": "f51cb9a2847b9b4b"
+        }
+      ],
+      "pinUse": "ResponsiveTimePickerPanelM3(\"10:30\", \"default\", \"ease\")"
+    },
+    {
+      "name": "color",
+      "module": "components/responsive_color_picker_m3.opu",
+      "component": "ResponsiveColorPickerPanelM3",
+      "gate": "test/responsive-color-picker.test.mjs",
+      "docs": [
+        "README.md",
+        "COMPONENT_STATUS.md"
+      ],
+      "anchors": [
+        "painting/colors.dart:420-432",
+        "material/colors.dart:174-204",
+        "material/colors.dart:1912-1937",
+        "rendering/sliver_grid.dart:174-190,354-375",
+        "rendering/sliver_grid.dart:449-518"
+      ],
+      "grid": {
+        "columns": 6,
+        "compactColumns": 2
+      },
+      "requiresOrientationDifference": false,
+      "pins": [
+        {
+          "name": "compact",
+          "width": 480,
+          "height": 800,
+          "orientation": "portrait",
+          "tier": "compact",
+          "digest": "63f7cdedc942856a"
+        },
+        {
+          "name": "medium",
+          "width": 800,
+          "height": 480,
+          "orientation": "landscape",
+          "tier": "medium",
+          "digest": "287ac40a842f4bf7"
+        },
+        {
+          "name": "expanded",
+          "width": 1000,
+          "height": 600,
+          "orientation": "landscape",
+          "tier": "expanded",
+          "digest": "a3b2e016951aa60a"
+        }
+      ],
+      "pinUse": "ResponsiveColorPickerPanelM3(\"Blue\", \"default\", \"ease\")"
+    }
+  ]
+}
