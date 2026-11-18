@@ -4533,6 +4533,62 @@
       "use": "M3ExtendedFab2024(\"Create\",\"plus\",\"error\",\"ease\")",
       "state": "error",
       "digest": "e282924cf3c48f5d"
+    },
+    {
+      "name": "SegmentedButtonM3-default",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"default\",\"ease\")",
+      "state": "default",
+      "digest": "a3f1fbc1ff5068b9"
+    },
+    {
+      "name": "SegmentedButtonM3-hover",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "5a2f99958732800c"
+    },
+    {
+      "name": "SegmentedButtonM3-active",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"active\",\"ease\")",
+      "state": "active",
+      "digest": "5fddfbff18fcdf3b"
+    },
+    {
+      "name": "SegmentedButtonM3-focus",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "2bbac6aa3d4d8d91"
+    },
+    {
+      "name": "SegmentedButtonM3-disabled",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "c5974207649c4341"
+    },
+    {
+      "name": "SegmentedButtonM3-loading",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "249b93d7a58e04f5"
+    },
+    {
+      "name": "SegmentedButtonM3-success",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"success\",\"ease\")",
+      "state": "success",
+      "digest": "2d17dbd3708a6ecf"
+    },
+    {
+      "name": "SegmentedButtonM3-error",
+      "module": "components/segmented_button_m3.opu",
+      "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"error\",\"ease\")",
+      "state": "error",
+      "digest": "2b9b31af86260377"
     }
   ]
 }

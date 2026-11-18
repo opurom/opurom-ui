@@ -50,6 +50,7 @@ const CASES = [
   ['components/fab_2024_m3.opu', 'M3SmallFab2024("plus", "{state}", "ease")'],
   ['components/fab_2024_m3.opu', 'M3LargeFab2024("plus", "{state}", "ease")'],
   ['components/fab_2024_m3.opu', 'M3ExtendedFab2024("Create", "plus", "{state}", "ease")'],
+  ['components/segmented_button_m3.opu', 'SegmentedButtonM3("Day", "Week", "Month", 1, "{state}", "ease")'],
   ['components/datetime_picker_m3.opu', 'DateTimePickerM3("Departure", 18, 9, 1, "{state}", "ease")'],
   ['components/waterfall_m3.opu', 'WaterfallGridM3("One,Two,Three", 2, 8, "{state}", "ease")'],
   ['components/expansion_m3.opu', 'ExpandablePanelM3("Details", "Body", true, "{state}", "ease")'],

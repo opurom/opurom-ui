@@ -154,6 +154,7 @@ import "components/text.opu";
 | `components/progress_2024_m3.opu` | `LinearProgress2024M3` (percent, state, animate) | M3 2024 progress defaults; existing 2023 pin untouched |
 | `components/selection_touch_m3.opu` | `TouchCheckboxM3`, `TouchRadioM3` | 48dp minimum touch targets wrapping pinned selection shells |
 | `components/fab_2024_m3.opu` | `M3Fab2024`, `M3SmallFab2024`, `M3LargeFab2024`, `M3ExtendedFab2024` | M3 2024 FAB default geometry; pinned 2023 family untouched |
+| `components/segmented_button_m3.opu` | `SegmentedButtonM3` | 40dp stadium M3 geometry over pinned segmented shell |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

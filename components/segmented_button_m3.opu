@@ -1,0 +1,19 @@
+// Segmented-button wrapper reuses the pinned selection shell; selection stays a call-site literal.
+
+// Material 3 SegmentedButton default geometry. Flutter stable 3.50.0:
+//   segmented_button.dart:1193-1272  M3 selected secondaryContainer,
+//                                   outline side, StadiumBorder,
+//                                   minimumSize Size.fromHeight(40)
+//   motion.dart:52                   200ms short4 state transition
+//   text_button.dart:230-232         state-layer alphas 0.10/0.08/0.10
+// The wrapper adds the source-backed 40dp host height and stadium shape over
+// the pinned SegmentedM3 shell. Existing pins are unchanged; callback routing
+// remains at the call site (A3/B4).
+// Example SegmentedButtonM3("Day","Week","Month",1,"default","ease")
+component SegmentedButtonM3(first: string, second: string, third: string, selected: int, state: string, animate: string) {
+  Container(height: 40, rounded: 20, variant: "text", state: "{state}", label: "segmented button host") {
+    SegmentedM3("{first}", "{second}", "{third}", selected, "{state}", "{animate}")
+  }
+}
+
+import "components/selection_m3.opu";

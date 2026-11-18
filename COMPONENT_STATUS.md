@@ -434,3 +434,13 @@ Flutter stable 3.50.0 anchors: `floating_action_button.dart:775-830`
 family is unchanged. Verification adds 32 state pins (644 total over 83
 components), four eight-state compile cases, one a11y case and one boundary
 case; the source-size budget is updated explicitly.
+
+## Segmented button geometry shell (uibuild, 2026-11-18)
+
+`components/segmented_button_m3.opu` adds `SegmentedButtonM3`, a 40dp stadium
+host over the pinned `SegmentedM3` shell. Flutter stable 3.50.0 source:
+`segmented_button.dart:1193-1272` (selected secondaryContainer, outline side,
+StadiumBorder, minimumSize Size.fromHeight(40)). The existing segmented
+component and pins are unchanged. Verification adds eight state pins (652
+total over 84 components), one eight-state compile case, one a11y case, one
+boundary case and an explicit source-budget update.
