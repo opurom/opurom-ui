@@ -33,6 +33,7 @@ const REQUIRED = [
   'components/autocomplete_field_m3.opu',
   'components/filled_card_metrics_m3.opu',
   'components/date_picker_panel_m3.opu',
+  'components/time_picker_panel_m3.opu',
   'components/date_range_m3.opu',
   'components/sticky_header_m3.opu',
   'components/nav_drawer_m3.opu',

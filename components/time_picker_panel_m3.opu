@@ -1,0 +1,29 @@
+// Material 3 dial time picker panel presentation. Flutter stable 3.50.0 sources:
+//   time_picker.dart:48-51          200ms dial animation, 216dp landscape header,
+//                                   50dp minimum dial radius, 28dp dial padding
+//   time_picker.dart:2411-2418      312x252 input size, 312x196 minimum size
+//   time_picker.dart:3629-3676      M3 surfaceContainerHigh, 8dp period radius,
+//                                   52x80 portrait and 216x38 landscape period
+//   time_picker.dart:3770-3837      elevation 6, 24dp padding, 28dp surface radius,
+//                                   96x80 hour/minute selector and 8dp shape radius
+//   time_picker.dart:3944-3948      M3 28dp dialog corner radius
+// The existing TimePickerM3 field pin is unchanged. This additive shell records
+// the expanded dial geometry with declarative Container/Text nodes. Clock tick
+// placement, drag gestures, entry-mode routing and locale formatting need kernel
+// gaps A3/A4/B3 and stay at the call site. loading/success/error are Opurom
+// business states (NO_FLUTTER_EQUIVALENT).
+// Boundary: an empty clock label renders an unnamed time; overlong labels clip
+// to one line; out-of-range state is compiler-rejected.
+// Example TimePickerPanelM3("10:30", "default", "ease")
+component TimePickerPanelM3(clock: string, state: string, animate: string) {
+  Container(width: 312, p: 24, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "time picker panel", role: "none") {
+    Column(gap: 12) {
+      Container(width: 96, height: 80, rounded: 8, variant: "primary", state: "{state}", label: "hour minute selector") {
+        Text("{clock}", size: 32, maxLines: 1, state: "{state}")
+      }
+      Container(width: 216, height: 38, rounded: 8, variant: "secondary", state: "{state}", label: "day period selector") {
+        Text("AM", size: 14, maxLines: 1, state: "{state}")
+      }
+    }
+  }
+}

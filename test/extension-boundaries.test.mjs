@@ -81,6 +81,8 @@ const CASES = [
   [`DefaultFilledCardM3("${long}", "${long}", "error", "ease")`, 'components/filled_card_metrics_m3.opu'],
   ['DatePickerPanelM3("", "disabled", "ease")', 'components/date_picker_panel_m3.opu'],
   [`DatePickerPanelM3("${long}", "error", "ease")`, 'components/date_picker_panel_m3.opu'],
+  ['TimePickerPanelM3("", "disabled", "ease")', 'components/time_picker_panel_m3.opu'],
+  [`TimePickerPanelM3("${long}", "error", "ease")`, 'components/time_picker_panel_m3.opu'],
 
 ];
 

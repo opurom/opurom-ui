@@ -5317,6 +5317,62 @@
       "use": "DatePickerPanelM3(\"November 2026\",\"error\",\"ease\")",
       "state": "error",
       "digest": "14bdf28a46f4b3ad"
+    },
+    {
+      "name": "TimePickerPanelM3-default",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "b266ff259018324a"
+    },
+    {
+      "name": "TimePickerPanelM3-hover",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "08080fd1b173478b"
+    },
+    {
+      "name": "TimePickerPanelM3-active",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "30a681260235d6a0"
+    },
+    {
+      "name": "TimePickerPanelM3-focus",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "c2c5e5507f4c13be"
+    },
+    {
+      "name": "TimePickerPanelM3-disabled",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "d2a93f6786861c34"
+    },
+    {
+      "name": "TimePickerPanelM3-loading",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "ab6af4a54c84d3eb"
+    },
+    {
+      "name": "TimePickerPanelM3-success",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "cf800fa8a20c60c0"
+    },
+    {
+      "name": "TimePickerPanelM3-error",
+      "module": "components/time_picker_panel_m3.opu",
+      "use": "TimePickerPanelM3(\"10:30\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "6b46c48831a15be9"
     }
   ]
 }

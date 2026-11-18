@@ -581,3 +581,16 @@ dismissal stay at the call site (A3/A4/B3). Verification adds eight state pins
 (756 total over 97 components), one eight-state compile case, one a11y case,
 two boundary cases, one extreme-input case, a provenance audit entry and an
 explicit source-budget update.
+
+## Time picker panel shell (uibuild, 2026-11-18)
+
+`components/time_picker_panel_m3.opu` adds `TimePickerPanelM3`, the
+source-backed Flutter 3.50.0 M3 dial panel: 312dp dialog width, 24dp padding,
+28dp surface radius, elevation 6, 96x80 hour/minute selector and a 216x38 day
+period selector with 8dp corners (`time_picker.dart:48-51,2411-2418,
+3629-3676,3770-3837,3944-3948`). The existing TimePickerM3 field pin is
+unchanged. Clock tick placement, drag gestures, entry-mode routing and locale
+formatting stay at the call site (A3/A4/B3). Verification adds eight state pins
+(764 total over 98 components), one eight-state compile case, one a11y case,
+two boundary cases, one extreme-input case, a provenance audit entry and an
+explicit source-budget update.
