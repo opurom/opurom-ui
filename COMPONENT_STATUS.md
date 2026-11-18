@@ -720,3 +720,14 @@ anchor counts, source-anchor shape, registered modules and documentation
 references. The five catalogs contain 53 pin records and 43 Flutter/Opurom
 source anchors. Each catalog gate remains responsible for re-rendering its
 signed frames; this registry is the completeness roll-up.
+
+## UI catalog evidence archive gate (uibuild, 2026-11-19)
+
+`test/catalog-evidence.json` and `test/catalog-evidence.test.mjs` archive the
+five breakpoint/state catalogs with SHA-256 hashes over their manifests and
+gates, plus the registry roll-up. The gate recomputes every hash, verifies pin
+and anchor counts against the registry, confirms documentation coverage,
+signed state toolchain identity and npm-test wiring, and declares the
+reproducibility steps. Shared documentation files stay hash-free because
+parallel work edits them. CI status is not claimed here. Flutter stable 3.50.0
+at `ab2912035e160d9cad6306df307576da6128ebdb` remains the sole source authority.

@@ -194,6 +194,8 @@ behavior.
 
 `test/catalog-registry.json` is the single registry over all five catalogs,
 checking manifest completeness, pin counts and documentation coverage.
+`test/catalog-evidence.json` archives the five catalogs with SHA-256 hashes and
+reproducibility steps, and its gate verifies the archive on every run.
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

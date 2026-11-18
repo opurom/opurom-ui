@@ -1,0 +1,93 @@
+{
+  "purpose": "hashed evidence archive for the five UI breakpoint/state catalogs, their gates and the registry roll-up; source completeness and reproducibility audit",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "engine": "371f77202a73e8dff57a8b3bff75bca55c090aee",
+    "authority": "Flutter official source at revision ab2912035e160d9cad6306df307576da6128ebdb"
+  },
+  "algorithm": "sha256 over the UTF-8 file contents",
+  "toolchain": {
+    "statePins": "test/state-digests.json",
+    "renderCommit": "7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2",
+    "langCommit": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug",
+    "tick": 4000,
+    "viewport": [
+      320,
+      240
+    ],
+    "note": "The five catalog gates and the registry gate replay every signed pin under this toolchain. CI provisions the exact commits; CI status is not claimed here."
+  },
+  "archives": [
+    {
+      "name": "responsive-components",
+      "manifest": "test/responsive-catalog.json",
+      "manifestHash": "c855928db7d434055a5529a7b1e6ec0cb5c5ea3427e876ec2c9aba37281beae2",
+      "gate": "test/responsive-catalog.test.mjs",
+      "gateHash": "222566825a4c4dead8b2a0c79161e37e8cf453d01b467e936d0556a2c2d5bf5c",
+      "pinRecords": 11,
+      "anchorCount": 16
+    },
+    {
+      "name": "page-states",
+      "manifest": "test/page-state-catalog.json",
+      "manifestHash": "16ddb32e6ced914dbc9742cb1802e2b41139fac721e4a131974fb725f43d3b52",
+      "gate": "test/page-state-catalog.test.mjs",
+      "gateHash": "dd31f70219680463256c3f16c5b15be529adbcbc496e44e73539b85a9428c719",
+      "pinRecords": 12,
+      "anchorCount": 14
+    },
+    {
+      "name": "scroll-clipping",
+      "manifest": "test/scroll-catalog.json",
+      "manifestHash": "4490046da934bea873a943e833b3fbe1b6398140e8bd2eb0182f94575ad47260",
+      "gate": "test/scroll-catalog.test.mjs",
+      "gateHash": "22f0df4b2346ec6c22f718816f8f273aa4e140908b33ff0438593a787904bb21",
+      "pinRecords": 9,
+      "anchorCount": 5
+    },
+    {
+      "name": "sticky-header",
+      "manifest": "test/sticky-header-catalog.json",
+      "manifestHash": "e4d22dd6f18ad604dcfb193bde471a91013c7162814a66149c632748be8a8dc6",
+      "gate": "test/sticky-header-catalog.test.mjs",
+      "gateHash": "d9858b420d7a28cf2cfa8e10c3b1b6081c56abbad25c296f7ad68526c36580c7",
+      "pinRecords": 12,
+      "anchorCount": 4
+    },
+    {
+      "name": "collapsible-content",
+      "manifest": "test/collapsible-catalog.json",
+      "manifestHash": "7a06459c2ac3c813590695fe3cc7d0842284219aa0f14d55511b0a6e206c03f7",
+      "gate": "test/collapsible-catalog.test.mjs",
+      "gateHash": "d47361570368ae3fbbdb763257f10cbcff1604e16f06dda66c400486bfab32cf",
+      "pinRecords": 9,
+      "anchorCount": 4
+    }
+  ],
+  "registry": {
+    "manifest": "test/catalog-registry.json",
+    "manifestHash": "03c1928470d97130e1e1c44210a2e30840020351e73caf7abc1f41a32f0f001c",
+    "gate": "test/catalog-registry.test.mjs",
+    "gateHash": "37ae388573e6dfbf88eb1d3c915999ff9c231240227eba834c6e253111ede2ab",
+    "pinRecords": 53,
+    "anchorCount": 43
+  },
+  "reproducibility": {
+    "npmTest": "node test/check.mjs && node test/material-tokens.test.mjs && node --test ...",
+    "steps": [
+      "check out opurom-ui at the recorded commit",
+      "provision opurom-lang-statedigests at d1a0418179fd20c58a899d012dffb82ac5f7d8a1 (debug)",
+      "provision opurom-render-statedigests at 7ec55e0d6098dda2fff1e1c4150c5189f59d6bb2 (debug)",
+      "run npm test; all catalog, registry and digest gates must pass"
+    ]
+  },
+  "documentation": {
+    "files": [
+      "README.md",
+      "COMPONENT_STATUS.md"
+    ],
+    "note": "Shared documentation files are edited by parallel work, so the archive records content coverage requirements instead of file hashes. The archive hashes only the catalog manifests and gates it owns."
+  }
+}
