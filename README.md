@@ -159,6 +159,7 @@ import "components/text.opu";
 | `components/tooltip_metrics_m3.opu` | `DesktopTooltipM3` (text, state, animate) | Flutter desktop tooltip geometry; timed show reserved (A3) |
 | `components/drawer_metrics_m3.opu` | `StandardDrawerM3` (title, itemA, itemB, state, animate) | M3 304dp drawer geometry; route/drag reserved |
 | `components/app_bar_scrolled_m3.opu` | `ScrolledAppBarM3` (title, leading, state, animate) | M3 scrolled-under app bar; route actions reserved |
+| `components/chip_metrics_m3.opu` | `AssistChipM3Default` (label, state, animate) | M3 8dp chip radius; filter binding reserved |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

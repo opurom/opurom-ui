@@ -486,3 +486,12 @@ flat AppBarShell pin is unchanged. Route actions and scroll observation stay
 at the call site (A3/A4). Verification adds eight state pins (692 total over
 89 components), one eight-state compile case, one a11y case, one boundary
 case and an explicit source-budget update.
+
+## Default chip metrics shell (uibuild, 2026-11-18)
+
+`components/chip_metrics_m3.opu` adds `AssistChipM3Default` with Flutter
+stable 3.50.0 M3 chip defaults: 0 elevation, 8dp radius and labelLarge role
+(`chip.dart:2492-2510`). The existing FilterChip and AssistChipM3 pins are
+unchanged. Verification adds eight state pins (700 total over 90
+components), one eight-state compile case, one a11y case, one boundary case
+and an explicit source-budget update.

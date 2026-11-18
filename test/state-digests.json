@@ -4869,6 +4869,62 @@
       "use": "ScrolledAppBarM3(\"Title\",\"home\",\"error\",\"ease\")",
       "state": "error",
       "digest": "997892f1c5cd68ea"
+    },
+    {
+      "name": "AssistChipM3Default-default",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "5dda04d004a7c0a8"
+    },
+    {
+      "name": "AssistChipM3Default-hover",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "37dbe575bc9653b4"
+    },
+    {
+      "name": "AssistChipM3Default-active",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "12f24c1855c8b218"
+    },
+    {
+      "name": "AssistChipM3Default-focus",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "1f9f2622633371b8"
+    },
+    {
+      "name": "AssistChipM3Default-disabled",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "e5b47428b8c49781"
+    },
+    {
+      "name": "AssistChipM3Default-loading",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "618dd4c3435d5f31"
+    },
+    {
+      "name": "AssistChipM3Default-success",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "b1a98dee57249a07"
+    },
+    {
+      "name": "AssistChipM3Default-error",
+      "module": "components/chip_metrics_m3.opu",
+      "use": "AssistChipM3Default(\"Today\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "ca61ca43d0787865"
     }
   ]
 }

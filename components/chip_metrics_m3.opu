@@ -1,0 +1,13 @@
+// Material 3 default filter/assist chip geometry. Flutter stable 3.50.0:
+//   chip.dart:2492-2498  elevation 0, 8dp radius, checkmark enabled
+//   chip.dart:2505-2510  labelLarge with onSurfaceVariant
+//   motion.dart:52       200ms short4 state transition
+// The existing FilterChip (16dp) and AssistChipM3 pins are unchanged. This
+// additive shell records the M3 8dp radius and stateful label role; tap
+// callbacks and filter state binding stay at the call site (A3/B4).
+// Example AssistChipM3Default("Today", "default", "ease")
+component AssistChipM3Default(label: string, state: string, animate: string) {
+  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "assist chip", role: "button") {
+    Text("{label}", size: 14, maxLines: 1, state: "{state}")
+  }
+}
