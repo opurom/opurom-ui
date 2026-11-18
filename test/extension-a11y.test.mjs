@@ -36,6 +36,7 @@ const CASES = [
   ['Sticky header', 'StickyHeaderM3("Today", 56, 32, "default", "ease")', 'sticky header', 'heading', 'components/sticky_header_m3.opu'],
   ['Navigation drawer', 'NavigationDrawerM3("Home,Search,Profile", 1, "default", "ease")', 'navigation drawer', 'none', 'components/nav_drawer_m3.opu'],
   ['Date time picker', 'DateTimePickerM3("Departure", 18, 9, 1, "default", "ease")', 'date time picker', 'button', 'components/datetime_picker_m3.opu'],
+  ['Dropdown menu', 'DropdownMenuM3("Country", 0, "United States,Canada,Mexico", "Choose", "default", "ease")', 'dropdown menu', 'button', 'components/dropdown_menu_m3.opu'],
   ['Waterfall grid', 'WaterfallGridM3("One,Two,Three", 2, 8, "default", "ease")', 'waterfall grid', 'none', 'components/waterfall_m3.opu'],
   ['Expansion tile', 'ExpandablePanelM3("Details", "Body", true, "default", "ease")', 'expansion tile', 'button', 'components/expansion_m3.opu'],
   ['Select field', 'SelectFieldM3("Choose", 1, "default", "ease")', 'select field', 'button', 'components/expansion_m3.opu'],

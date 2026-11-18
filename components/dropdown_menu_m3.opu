@@ -1,0 +1,23 @@
+// Material 3 dropdown-menu presentation shell. Flutter stable 3.50.0 sources:
+//   dropdown_menu.dart:190-232    enabled, width, menuHeight, helper/error text,
+//                                 enableFilter/enableSearch parameters
+//   dropdown_menu.dart:257-266    width semantics and menuHeight contract
+//   dropdown_menu.dart:340-359    helper/error text exclusivity
+//   dropdown_menu.dart:417-427    field/menu composition and default arrow icons
+//   dropdown_menu.dart:1728-1732  M3 OutlineInputBorder default
+//   motion.dart:52                200ms short4 state transition
+// Opurom's ComboBox is the closed field and Menu carries the literal option
+// labels. True popup routing, filtering and onSelected callbacks need kernel
+// gaps A3/A4/B3 and stay reserved. The shell does not fake selection physics.
+// Boundary: the caller owns the 0 <= value < option count contract; empty
+// labels render empty fields; overlong labels clip in the primitives.
+// Example DropdownMenuM3("Country", "0", "United States,Canada,Mexico", "Choose", "default", "ease")
+component DropdownMenuM3(label: string, value: int, options: string, placeholder: string, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "dropdown menu", role: "button") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      ComboBox(value: value, state: "{state}", animate: "{animate}", duration: 200, label: "dropdown field")
+      Menu(items: "{options}", state: "{state}", animate: "{animate}", duration: 200, label: "dropdown options")
+    }
+  }
+}

@@ -4589,6 +4589,118 @@
       "use": "SegmentedButtonM3(\"Day\",\"Week\",\"Month\",1,\"error\",\"ease\")",
       "state": "error",
       "digest": "2b9b31af86260377"
+    },
+    {
+      "name": "DropdownMenuM3-default",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"default\", \"ease\")",
+      "state": "default",
+      "digest": "2e013c37397d1950"
+    },
+    {
+      "name": "DropdownMenuM3-hover",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"hover\", \"ease\")",
+      "state": "hover",
+      "digest": "f93964fdbcbe7687"
+    },
+    {
+      "name": "DropdownMenuM3-active",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"active\", \"ease\")",
+      "state": "active",
+      "digest": "47f117cd94a82506"
+    },
+    {
+      "name": "DropdownMenuM3-focus",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"focus\", \"ease\")",
+      "state": "focus",
+      "digest": "21f5b1df11ede110"
+    },
+    {
+      "name": "DropdownMenuM3-disabled",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "digest": "39915052b794b79c"
+    },
+    {
+      "name": "DropdownMenuM3-loading",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"loading\", \"ease\")",
+      "state": "loading",
+      "digest": "4ebd09b17ab17924"
+    },
+    {
+      "name": "DropdownMenuM3-success",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"success\", \"ease\")",
+      "state": "success",
+      "digest": "e4a1de5ccb9ee070"
+    },
+    {
+      "name": "DropdownMenuM3-error",
+      "module": "components/dropdown_menu_m3.opu",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"error\", \"ease\")",
+      "state": "error",
+      "digest": "e49c6506baab6e97"
+    },
+    {
+      "name": "Slider2024M3-default",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"default\",\"ease\")",
+      "state": "default",
+      "digest": "a046d671aab788c9"
+    },
+    {
+      "name": "Slider2024M3-hover",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "6aa29189348b3c2a"
+    },
+    {
+      "name": "Slider2024M3-active",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"active\",\"ease\")",
+      "state": "active",
+      "digest": "f363a8e145b872f4"
+    },
+    {
+      "name": "Slider2024M3-focus",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "d02e5281571a0559"
+    },
+    {
+      "name": "Slider2024M3-disabled",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "4378b97e817f60ec"
+    },
+    {
+      "name": "Slider2024M3-loading",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "733d70043e532eaa"
+    },
+    {
+      "name": "Slider2024M3-success",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"success\",\"ease\")",
+      "state": "success",
+      "digest": "2566ed7e3bda75f8"
+    },
+    {
+      "name": "Slider2024M3-error",
+      "module": "components/slider_2024_m3.opu",
+      "use": "Slider2024M3(\"error\",\"ease\")",
+      "state": "error",
+      "digest": "a482705e55b241ec"
     }
   ]
 }

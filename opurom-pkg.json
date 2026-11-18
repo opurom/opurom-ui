@@ -105,6 +105,7 @@
     "components/nav_drawer_m3.opu",
     "components/datetime_picker_m3.opu",
     "components/fab_2024_m3.opu",
-    "components/segmented_button_m3.opu"
+    "components/segmented_button_m3.opu",
+    "components/dropdown_menu_m3.opu"
   ]
 }

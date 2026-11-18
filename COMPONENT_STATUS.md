@@ -444,3 +444,14 @@ StadiumBorder, minimumSize Size.fromHeight(40)). The existing segmented
 component and pins are unchanged. Verification adds eight state pins (652
 total over 84 components), one eight-state compile case, one a11y case, one
 boundary case and an explicit source-budget update.
+
+## Dropdown menu shell and provenance auditor (ui-dev, 2026-11-19, part 11)
+
+`components/dropdown_menu_m3.opu` adds `DropdownMenuM3`, a closed-field
+DropdownMenu presentation with ComboBox + Menu primitives. Flutter stable
+3.50.0 anchors: `dropdown_menu.dart:190-232,257-266,340-359,417-427,1728-1732`
+and `motion.dart:52`. Popup routing, filtering and selection callbacks stay
+reserved (A3/A4/B3). `test/source-provenance.test.mjs` statically audits every
+M3 shell module for the Flutter version, `file:line` source anchors, manifest
+registration, eight-state compile coverage and accessibility-case coverage;
+it prevents future source-less components from entering the package.

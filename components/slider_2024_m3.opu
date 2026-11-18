@@ -1,0 +1,18 @@
+// M3 2024 slider presentation shell. Flutter stable 3.50.0 sources:
+//   slider.dart:2270-2273  year2023=false trackHeight 16dp
+//   slider.dart:2274-2315  active primary, inactive secondaryContainer,
+//                          overlay 0.10/0.08/0.10, thumb primary
+//   slider.dart:2181-2183  legacy 2023 trackHeight 4dp (pinned shell)
+//   motion.dart:52         200ms short4 state transition
+// This shell records the 2024 default track height without changing the
+// pinned SliderM3. Drag binding and value callbacks stay at the call site
+// (A3/B4); no runtime painter or timer is introduced.
+// Example Slider2024M3("default", "ease")
+component Slider2024M3(state: string, animate: string) {
+  Container(width: 160, height: 16, rounded: 8, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: drag, label: "slider 2024", role: "slider") {
+    Row(gap: 0) {
+      Container(width: 48, height: 16, rounded: 8, variant: "primary", state: "{state}")
+      Spacer(width: 112)
+    }
+  }
+}

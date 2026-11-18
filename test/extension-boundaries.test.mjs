@@ -47,6 +47,8 @@ const CASES = [
   [`NavigationDrawerM3("${long}", -1, "error", "ease")`, 'components/nav_drawer_m3.opu'],
   ['DateTimePickerM3("", -1, -1, 0, "disabled", "ease")', 'components/datetime_picker_m3.opu'],
   [`DateTimePickerM3("${long}", 999999, 999999, 1, "error", "ease")`, 'components/datetime_picker_m3.opu'],
+  ['DropdownMenuM3("", -1, "", "", "disabled", "ease")', 'components/dropdown_menu_m3.opu'],
+  [`DropdownMenuM3("${long}", 999999, "${long}", "${long}", "error", "ease")`, 'components/dropdown_menu_m3.opu'],
   ['WaterfallGridM3("", 1, 0, "disabled", "ease")', 'components/waterfall_m3.opu'],
   [`WaterfallGridM3("${long}", 9999, 9999, "error", "ease")`, 'components/waterfall_m3.opu'],
   ['ExpandablePanelM3("", "", false, "disabled", "ease")', 'components/expansion_m3.opu'],
