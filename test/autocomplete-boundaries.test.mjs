@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Complex-boundary gate for the M3 autocomplete presentation shell.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   material/autocomplete.dart:113,205-220    optionsMaxHeight 200dp, elevation 4
 //   material/autocomplete.dart:208-218        highlightedIndex, constrained list
 //   material/autocomplete.dart:276-298        ListView.builder highlight mapping

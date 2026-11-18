@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Component API parameter-boundary and diagnostic-consistency gate.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   card.dart:80-89               Card constructor contract
 //   list_tile.dart:391-430        ListTile constructor contract
 //   date_picker.dart:196-215      showDatePicker required parameters

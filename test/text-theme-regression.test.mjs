@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Extreme text and theme interaction regression gate for card/list shells.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   card.dart:263-266,301-322     elevated M3 card defaults (elevation 1, 12dp)
 //   list_tile.dart:391-430        ListTile title/subtitle/isThreeLine
 //   list_tile.dart:921-944        title/subtitle style resolution

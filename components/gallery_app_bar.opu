@@ -1,5 +1,5 @@
 // GalleryAppBar(title, bg, textColor, radius, height, state): Material 3
-// Gallery detail-page title band. Measured from flutter-golden ab291203:
+// Gallery detail-page title band. Measured from flutter-golden ab2912035e160d9cad6306df307576da6128ebdb:
 // the audited brand-purple band, x=42..1037 (996 px at 1080-wide canvas),
 // y=275..421 (147 px), top corner radius ~25 px, white bold title left-padded
 // 45 px, baseline near the band bottom. Colours are parameters so no literal

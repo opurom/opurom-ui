@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // End-to-end theme output and component-state coupling gate.
-// Flutter stable 3.50.0 (flutter-golden ab291203) anchors:
+// Flutter stable 3.50.0 (flutter-golden ab2912035e160d9cad6306df307576da6128ebdb) anchors:
 //   material/theme_data.dart:265-320      ThemeData factory inputs
 //   material/theme_data.dart:436-460      brightness / dark elevation overlay
 //   material/theme_data.dart:840-862      ThemeData.from(ColorScheme) semantics

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Gallery structural parity: Material 3 AppBar and NavigationBar metrics plus a
-// rendered-frame pin for each. Flutter authority (revision ab2912035e):
+// rendered-frame pin for each. Flutter authority (revision ab2912035e160d9cad6306df307576da6128ebdb):
 // app_bar.dart:2526 toolbarHeight 64.0 (kToolbarHeight 56 is the M2 constant),
 // :2546 leading icon 24, :2560 title titleLarge 22/400;
 // navigation_bar.dart:1430 height 80.0, :1431 elevation 3.0, label labelMedium 12.

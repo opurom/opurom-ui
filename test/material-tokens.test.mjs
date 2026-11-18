@@ -10,7 +10,7 @@ const doc = JSON.parse(readFileSync(path.join(root, 'theme/material-tokens.json'
 
 assert.equal(doc.kind, 'design-tokens');
 assert.equal(doc.namespace, 'md');
-assert.equal(doc.source.commit, 'ab291203');
+assert.equal(doc.source.commit, 'ab2912035e160d9cad6306df307576da6128ebdb');
 const cats = doc.tokens;
 assert.deepEqual(Object.keys(cats), [
   'color', 'shape', 'elevation', 'typography', 'spacing', 'motion', 'state',

@@ -1,5 +1,5 @@
 // Signature-derived component API diagnostic matrix.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   widgets/app.dart:1009-1038        WidgetState vocabulary (default/hovered/
 //                                     pressed/focused/disabled)
 //   material/card.dart:80-89          Card constructor contract

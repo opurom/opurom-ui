@@ -1,6 +1,6 @@
 // BottomNav(labels, selected, segments, state, gesture): skeleton of the Flutter
 // Material 3 NavigationBar. Metrics pinned to navigation_bar.dart:1427-1470 at
-// ab291203: height 80, elevation 3, square bar (no radius), label labelMedium 12. Per-segment tap routing and press feedback need kernel
+// ab2912035e160d9cad6306df307576da6128ebdb: height 80, elevation 3, square bar (no radius), label labelMedium 12. Per-segment tap routing and press feedback need kernel
 // gaps B3 and A3; selection here is a static TabStrip readout and the gesture is
 // a no-op fallback, so no tap is mis-routed to the first segment.
 // API   R: labels (comma-separated). O: selected (zero-based), segments, state,

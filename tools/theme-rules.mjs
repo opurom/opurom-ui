@@ -1,5 +1,5 @@
 // Flutter Material 3 theme and responsive breakpoint rules for Opurom UI
-// tooling. Flutter stable 3.50.0 (flutter-golden ab291203) source anchors:
+// tooling. Flutter stable 3.50.0 (flutter-golden ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   material/theme_data.dart:265-320       ThemeData factory parameters
 //   material/theme_data.dart:416-420       M3 splash factory selection
 //   material/theme_data.dart:458-460       dark elevation overlay default

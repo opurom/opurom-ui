@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Page transition consistency gate. Authoritative layer: `opurom-render/src/anim.rs`
 // (transition vocabulary `slide`/`fade`/`scale`, fixed-point progress in `0..=ONE`,
-// `TRANSITION_MS = 320`). Flutter 3.50.0 (ab291203) sources:
+// `TRANSITION_MS = 320`). Flutter 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) sources:
 //   material/page_transitions_theme.dart:465-486   kTransitionMilliseconds 450,
 //     the analog transition Duration, eased over the full page
 //   material/curves.dart:440-525                   `ThreePointCubic` for

@@ -1,5 +1,5 @@
 // AppBarShell(title, leading, action, state): skeleton of the Flutter Material 3
-// AppBar. Metrics pinned to app_bar.dart:2522-2570 at ab291203: toolbar height 64
+// AppBar. Metrics pinned to app_bar.dart:2522-2570 at ab2912035e160d9cad6306df307576da6128ebdb: toolbar height 64
 // (kToolbarHeight 56 is the M2 constant), elevation 0, leading icon 24, title
 // titleLarge 22/400, action label 14, middle spacing 16.
 // API   R: none. O: title, leading (icon name), action, state. X: PreferredSize,

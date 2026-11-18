@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Card/list extreme-content and deterministic-performance gate.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   card.dart:80-89             Card parameters and defaults
 //   card.dart:263-266,301-322   elevated M3: elevation 1, 12dp radius,
 //                               surfaceContainerLow background

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Theme/breakpoint rule gate. Rules module: tools/theme-rules.mjs.
-// Flutter stable 3.50.0 (ab291203) anchors: theme_data.dart:265-320,416-420,
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) anchors: theme_data.dart:265-320,416-420,
 // 458-460,491-522,840-862; widgets/media_query.dart:205;
 // widgets/layout_builder.dart:381; material/constants.dart:30;
 // material/navigation_rail.dart:1236-1244. Opurom tier implementation:

@@ -2,7 +2,7 @@
 // End-to-end theme customization gate: the CLI output must be accepted by the
 // compiler's token import and produce distinct light/dark deterministic frames.
 // Flutter source and HCT constants are pinned in tools/seed-scheme.mjs and
-// test/seed-scheme.test.mjs (stable 3.50.0, ab291203).
+// test/seed-scheme.test.mjs (stable 3.50.0, ab2912035e160d9cad6306df307576da6128ebdb).
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Picker-to-card/list error-state propagation gate.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   widgets/form.dart:278-291      Form autovalidate error aggregation
 //   widgets/form.dart:385-397      validator errors become hasError/errorText
 //   widgets/form.dart:523-585      forceErrorText/validator/errorText contract

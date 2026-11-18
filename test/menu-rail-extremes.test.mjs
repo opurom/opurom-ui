@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Extreme popup-menu sizing and navigation rail collapse/expand gate.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   popup_menu.dart:45-48           width step 56, min 112, max 280, padding 8
 //   popup_menu.dart:279-303        kMinInteractiveDimension 48 for menu items
 //   popup_menu.dart:761-763        menu width clamped 112..280 with 56 step

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Component-count scaling gate for list/card families.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   card.dart:263-266,301-322      elevated M3 card defaults
 //   list_tile.dart:391-430         ListTile parameters
 //   list_view.dart:1324-1367       ListView childrenDelegate construction

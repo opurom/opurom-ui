@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Page-state vocabulary, eight-state coverage and token-hygiene audit.
-// Flutter stable 3.50.0 (ab291203) source anchors:
+// Flutter stable 3.50.0 (ab2912035e160d9cad6306df307576da6128ebdb) source anchors:
 //   theme_data.dart:194-261        components depend on colorScheme/textTheme
 //   theme_data.dart:427-460        brightness/dark construction
 //   theme_data.dart:840-862        ThemeData.from(ColorScheme) semantics

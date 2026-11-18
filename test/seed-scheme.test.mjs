@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Seed-colour parity gate. The expected hex values are Flutter's own pinned
 // spot checks in packages/flutter/test/material/color_scheme_test.dart:945-973
-// (flutter-golden ab291203, stable 3.50.0). HCT intermediates were also
+// (flutter-golden ab2912035e160d9cad6306df307576da6128ebdb, stable 3.50.0). HCT intermediates were also
 // cross-checked against the vendored material_color_utilities 0.13.0.
 import assert from 'node:assert/strict';
 import test from 'node:test';

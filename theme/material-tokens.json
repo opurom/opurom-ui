@@ -5,7 +5,7 @@
   "license": "BSD-3-Clause",
   "source": {
     "repo": "flutter-golden",
-    "commit": "ab291203",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
     "flutter": "stable 3.50.0",
     "root": "packages/flutter/lib/src/material"
   },
