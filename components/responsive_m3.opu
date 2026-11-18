@@ -1,0 +1,21 @@
+// Responsive layout shell driven by the existing deterministic IR breakpoint
+// engine. Flutter stable 3.50.0 references:
+//   widgets/layout_builder.dart:381   LayoutBuilder constrains child layout
+//   widgets/media_query.dart:205      MediaQueryData size/viewport metrics
+//   material/constants.dart:30        kToolbarHeight 56 (compact baseline)
+//   material/navigation_rail.dart:1236-1244  M3 rail 80/256 width tiers
+// Opurom's renderer already maps width to tiers: compact <600, medium <900,
+// expanded <1200, wide <1600, ultra >=1600 (layout.rs:50-74), with a fluid
+// grid using a 120px minimum column and clamp 1..12 (layout.rs:76-109).
+// This shell exposes those existing rules to components without adding a
+// runtime interpreter or a new IR field. Child layout stays at the call site.
+// Example ResponsiveGridShell("One,Two,Three", 3, "default")
+component ResponsiveGridShell(labels: string, compactColumns: int, state: string) {
+  Container(p: 8, variant: "text", label: "responsive focus host") {
+    Grid(columns: 3, compactColumns: compactColumns, state: "{state}", label: "responsive grid", role: "none") {
+      Container(p: 8, rounded: 8, variant: "secondary") { Text("{labels}", size: 12, maxLines: 2) }
+      Container(p: 8, rounded: 8, variant: "ghost") { Text("adaptive", size: 12) }
+      Container(p: 8, rounded: 8, variant: "secondary") { Text("columns", size: 12) }
+    }
+  }
+}

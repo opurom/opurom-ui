@@ -291,3 +291,15 @@ layer. Flutter stable 3.50.0 anchors: `progress_indicator.dart:48-90`
 M3 components statically; no runtime view switching or builder closure is
 introduced. Verification adds 24 state pins (524 total over 68 components),
 three eight-state compile cases, three a11y cases and three boundary cases.
+
+## Responsive layout shell (uibuild, 2026-11-18)
+
+`components/responsive_m3.opu` adds `ResponsiveGridShell`, exposing the
+renderer's existing deterministic breakpoint and fluid-column behaviour to
+components. Flutter stable 3.50.0 anchors: `widgets/layout_builder.dart:381`,
+`widgets/media_query.dart:205`, `material/constants.dart:30` and
+`material/navigation_rail.dart:1236-1244`. Opurom's tier rule is
+`render/src/layout.rs:50-74` with a 120px minimum column and 1..12 clamp at
+`:76-109`. `test/responsive-layout.test.mjs` renders the same IR at 480, 800
+and 1280 logical pixels, asserts three distinct digests and byte-stable
+repeat rendering. No new IR field or runtime interpreter is introduced.
