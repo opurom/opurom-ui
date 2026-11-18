@@ -5037,6 +5037,62 @@
       "use": "BottomAppBarM3(\"Actions\",\"error\",\"ease\")",
       "state": "error",
       "digest": "7d24f0999d89a4f0"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-default",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"default\",\"ease\")",
+      "state": "default",
+      "digest": "99b5c5edf84b3048"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-hover",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "5f210a9df2699bba"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-active",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"active\",\"ease\")",
+      "state": "active",
+      "digest": "546d858bf4d1cc07"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-focus",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "306fd6e66f7a2041"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-disabled",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "840bb9e140d6be71"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-loading",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "c019264e49fccd8d"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-success",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"success\",\"ease\")",
+      "state": "success",
+      "digest": "2d9848ee912671e3"
+    },
+    {
+      "name": "DefaultDropdownMenuM3-error",
+      "module": "components/dropdown_menu_metrics_m3.opu",
+      "use": "DefaultDropdownMenuM3(\"Country\",0,\"United States,Canada,Mexico\",\"Choose\",\"error\",\"ease\")",
+      "state": "error",
+      "digest": "2c6bbabdd940c927"
     }
   ]
 }

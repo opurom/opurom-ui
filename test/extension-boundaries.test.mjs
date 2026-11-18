@@ -71,6 +71,8 @@ const CASES = [
   ['AssistChipM3Default("", "error", "ease")', 'components/chip_metrics_m3.opu'],
   ['BottomAppBarM3("", "disabled", "ease")', 'components/bottom_app_bar_m3.opu'],
   [`BottomAppBarM3("${long}", "error", "ease")`, 'components/bottom_app_bar_m3.opu'],
+  ['DefaultDropdownMenuM3("", -1, "", "", "disabled", "ease")', 'components/dropdown_menu_metrics_m3.opu'],
+  [`DefaultDropdownMenuM3("${long}", 999999, "${long}", "${long}", "error", "ease")`, 'components/dropdown_menu_metrics_m3.opu'],
 
 ];
 

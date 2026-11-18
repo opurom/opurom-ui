@@ -28,6 +28,7 @@ const REQUIRED = [
   'components/nav_rail_m3.opu',
   'components/nav_rail_extended_m3.opu',
   'components/bottom_app_bar_m3.opu',
+  'components/dropdown_menu_metrics_m3.opu',
   'components/date_range_m3.opu',
   'components/sticky_header_m3.opu',
   'components/nav_drawer_m3.opu',

@@ -162,6 +162,7 @@ import "components/text.opu";
 | `components/chip_metrics_m3.opu` | `AssistChipM3Default` (label, state, animate) | M3 8dp chip radius; filter binding reserved |
 | `components/nav_rail_extended_m3.opu` | `ExtendedNavigationRailM3` (labels, selected, state, animate) | M3 256dp extended rail geometry; route binding reserved |
 | `components/bottom_app_bar_m3.opu` | `BottomAppBarM3` (label, state, animate) | M3 80dp bottom app bar; notch/FAB docking reserved |
+| `components/dropdown_menu_metrics_m3.opu` | `DefaultDropdownMenuM3` (label, value, options, placeholder, state, animate) | M3 112dp dropdown minimum; popup routing reserved |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

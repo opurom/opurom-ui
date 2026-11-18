@@ -73,6 +73,7 @@ const CASES = [
   ['components/app_bar_scrolled_m3.opu', 'ScrolledAppBarM3("Title", "home", "{state}", "ease")'],
   ['components/chip_metrics_m3.opu', 'AssistChipM3Default("Today", "{state}", "ease")'],
   ['components/bottom_app_bar_m3.opu', 'BottomAppBarM3("Actions", "{state}", "ease")'],
+  ['components/dropdown_menu_metrics_m3.opu', 'DefaultDropdownMenuM3("Country", 0, "United States,Canada,Mexico", "Choose", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

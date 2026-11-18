@@ -519,3 +519,15 @@ at the call site (A3/A4/B3). Verification adds eight state pins (716 total
 over 92 components), one eight-state compile case, one a11y case, two boundary
 cases, one extreme-input case, a provenance audit entry and an explicit
 source-budget update.
+
+## Default dropdown menu metrics shell (uibuild, 2026-11-18)
+
+`components/dropdown_menu_metrics_m3.opu` adds `DefaultDropdownMenuM3`, the
+source-backed Flutter 3.50.0 M3 dropdown defaults: 112dp minimum width,
+bodyLarge field text, OutlineInputBorder and standard density
+(`dropdown_menu.dart:63,1628-1655,1711-1733`). The existing DropdownMenuM3 pin
+is unchanged. Filtering, popup routing and selection callbacks remain at the
+call site (A3/A4/B3). Verification adds eight state pins (724 total over 93
+components), one eight-state compile case, one a11y case, two boundary cases,
+one extreme-input case, a provenance audit entry and an explicit source-budget
+update.
