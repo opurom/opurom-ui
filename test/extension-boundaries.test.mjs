@@ -87,6 +87,8 @@ const CASES = [
   [`ResponsiveDatePickerPanelM3("${long}", "error", "ease")`, 'components/responsive_date_picker_m3.opu'],
   ['ResponsiveTimePickerPanelM3("", "disabled", "ease")', 'components/responsive_time_picker_m3.opu'],
   [`ResponsiveTimePickerPanelM3("${long}", "error", "ease")`, 'components/responsive_time_picker_m3.opu'],
+  ['ResponsiveColorPickerPanelM3("", "disabled", "ease")', 'components/responsive_color_picker_m3.opu'],
+  [`ResponsiveColorPickerPanelM3("${long}", "error", "ease")`, 'components/responsive_color_picker_m3.opu'],
 
 ];
 

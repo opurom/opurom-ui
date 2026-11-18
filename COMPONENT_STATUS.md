@@ -39,7 +39,7 @@ R = required, O = optional, X = reserved / not expressive in the current IR. Eve
 
 ## Material 3 Card standard
 
-This section records the Material 3 Card surface and text-role standard for the Cards page remediation. Values are drawn from `theme/material-tokens.json` (extracted from flutter-golden `ab291203`, stable 3.50.0); each row names its token. This is documentation only: no component code is changed by this section.
+This section records the Material 3 Card surface and text-role standard for the Cards page remediation. Values are drawn from `theme/material-tokens.json` (extracted from flutter-golden `ab2912035e160d9cad6306df307576da6128ebdb`, stable 3.50.0); each row names its token. This is documentation only: no component code is changed by this section.
 
 ### Card surface
 
@@ -97,7 +97,7 @@ These entries of the standard cannot be realised by current components or the re
 
 ## M3 component extension batch (ui-dev, 2026-11-18)
 
-Source baseline: Flutter stable 3.50.0 in `flutter-golden` (`ab291203`), the
+Source baseline: Flutter stable 3.50.0 in `flutter-golden` (`ab2912035e160d9cad6306df307576da6128ebdb`), the
 same commit pinned by `theme/material-tokens.json`. This batch adds five module
 families to the package: `actions_m3.opu` (four FAB appearances),
 `rating_m3.opu`, `lists_m3.opu` (refresh/grouped/load-more), `forms_m3.opu`
@@ -625,3 +625,19 @@ formatting stay at the call site (A3/A4/B3). Verification adds eight state pins
 two boundary cases, one extreme-input case, a provenance audit entry, an
 explicit source-budget update and a dedicated landscape/portrait plus
 compact/medium/expanded breakpoint gate.
+
+## Responsive color picker panel shell (uibuild, 2026-11-18)
+
+`components/responsive_color_picker_m3.opu` adds
+`ResponsiveColorPickerPanelM3`, an additive M3 swatch-grid presentation.
+Flutter has no standalone color-picker widget, so the shell maps the official
+`ColorSwatch` keyed shade table and material swatch list onto Opurom's existing
+deterministic grid at 2 compact columns and 6 expanded columns
+(`painting/colors.dart:420-432`, `material/colors.dart:174-204,1912-1937`,
+`rendering/sliver_grid.dart:174-190,354-375,449-518`,
+`render/src/layout.rs:50-109`). Selected shade, callbacks, eyedropper and text
+entry stay at the call site (A3/A4/B4). The existing ColorPickerM3 pin is
+unchanged. Verification adds eight state pins (788 total over 101 components),
+one eight-state compile case, one a11y case, two boundary cases, one
+extreme-input case, a provenance audit entry, an explicit source-budget update
+and a dedicated compact/medium/expanded column-count gate.

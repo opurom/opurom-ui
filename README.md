@@ -44,7 +44,7 @@ The values are the built-in defaults. Programs that declare their own `theme` ke
 
 ### Material 3 token baseline
 
-`theme/material-tokens.json` is an independent `md-` namespace extracted from the Flutter Material 3 source (flutter-golden `ab291203`, stable 3.50.0). Every value carries a `file:line` source or an explicit `spec:` marker. Groups: color (light/dark, 49 keys each), shape (6 levels), elevation (10 levels plus 3 shadow colours), typography (15 styles), spacing (14 keys), motion (17 duration constants and 9 easing constants), state (4 button state-layer alphas). It does not override any Liquid Glass default.
+`theme/material-tokens.json` is an independent `md-` namespace extracted from the Flutter Material 3 source (flutter-golden `ab2912035e160d9cad6306df307576da6128ebdb`, stable 3.50.0). Every value carries a `file:line` source or an explicit `spec:` marker. Groups: color (light/dark, 49 keys each), shape (6 levels), elevation (10 levels plus 3 shadow colours), typography (15 styles), spacing (14 keys), motion (17 duration constants and 9 easing constants), state (4 button state-layer alphas). It does not override any Liquid Glass default.
 
 The compiler's `theme { tokens { import "..." } }` branch flattens `md-*` data into compile-time string constants; the renderer resolves all 49 colour roles from those constants or its pinned Flutter fallback table. Color-capable props accept flattened role names such as `md-sys-color-primary` through compile-time import and rendering resolution; semantic `variant`/`tone` props remain the component-level route. Shape, elevation and typography values remain storage-layer references until their kernel gaps M1/M2 and typed-token import are authorised. `node test/material-tokens.test.mjs` validates structure, source coverage and light/dark parity.
 
@@ -170,6 +170,7 @@ import "components/text.opu";
 | `components/time_picker_panel_m3.opu` | `TimePickerPanelM3` (clock, state, animate) | M3 312dp dial panel; tick placement and drag routing reserved |
 | `components/responsive_date_picker_m3.opu` | `ResponsiveDatePickerPanelM3` (month, state, animate) | M3 152dp landscape header and 384dp calendar cap; selection routing reserved |
 | `components/responsive_time_picker_m3.opu` | `ResponsiveTimePickerPanelM3` (clock, state, animate) | M3 216dp landscape header, 312dp input and orientation dials |
+| `components/responsive_color_picker_m3.opu` | `ResponsiveColorPickerPanelM3` (label, state, animate) | M3 swatch-grid panel with 2-column compact and 6-column expanded tiers |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction
