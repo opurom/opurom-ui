@@ -4029,6 +4029,62 @@
       "use": "DefaultDialogM3(\"Delete\",\"This cannot be undone\",\"error\",\"ease\")",
       "state": "error",
       "digest": "b8ff26013135bdc9"
+    },
+    {
+      "name": "LinearProgress2024M3-default",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"default\",\"ease\")",
+      "state": "default",
+      "digest": "7fe33098cb4baee9"
+    },
+    {
+      "name": "LinearProgress2024M3-hover",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "d317dcbcbcda4d81"
+    },
+    {
+      "name": "LinearProgress2024M3-active",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"active\",\"ease\")",
+      "state": "active",
+      "digest": "b1e842393931b509"
+    },
+    {
+      "name": "LinearProgress2024M3-focus",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "e0341ed848d10ece"
+    },
+    {
+      "name": "LinearProgress2024M3-disabled",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "89e656a3ecd904a2"
+    },
+    {
+      "name": "LinearProgress2024M3-loading",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "bbe812635819c023"
+    },
+    {
+      "name": "LinearProgress2024M3-success",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"success\",\"ease\")",
+      "state": "success",
+      "digest": "a6c599876329688a"
+    },
+    {
+      "name": "LinearProgress2024M3-error",
+      "module": "components/progress_2024_m3.opu",
+      "use": "LinearProgress2024M3(60,\"error\",\"ease\")",
+      "state": "error",
+      "digest": "ec2925a00d87a42c"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "files": 91,
-  "minBytes": 101000,
-  "maxBytes": 105000,
+  "files": 92,
+  "minBytes": 102000,
+  "maxBytes": 106000,
   "note": "Internal Opurom UI source budget at Flutter 3.50.0 parity batch 2026-11-18. Not a Flutter-derived value; update explicitly when adding components."
 }

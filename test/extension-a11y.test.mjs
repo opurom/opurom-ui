@@ -43,6 +43,7 @@ const CASES = [
   ['Minimum filled button', 'MinFilledButtonM3("Save", "default", "ease")', 'filled min host', 'none', 'components/button_metrics_m3.opu'],
   ['Snackbar', 'SnackBarM3("Saved", "default", "ease")', 'snackbar', 'text', 'components/snackbar_m3.opu'],
   ['Default dialog', 'DefaultDialogM3("Delete", "This cannot be undone", "default", "ease")', 'default dialog', 'heading', 'components/dialog_metrics_m3.opu'],
+  ['Linear progress', 'LinearProgress2024M3(60, "default", "ease")', 'linear progress 2024', 'none', 'components/progress_2024_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

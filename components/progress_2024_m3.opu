@@ -1,0 +1,21 @@
+// Flutter stable 3.50.0 M3 (2024) linear progress indicator presentation.
+// Sources:
+//   progress_indicator.dart:414-440  LinearProgressIndicator props
+//   progress_indicator.dart:1611-1627  minHeight 4dp, radius 2dp, track/color roles
+//   progress_indicator.dart:595-619  year2023 false selects 2024 defaults
+//   progress_indicator.dart:48-90    ProgressIndicator value 0.0..1.0 + semantics
+// Opurom IR uses an integer percent 0..100 mapped by the Progress primitive;
+// no runtime timer or interpreted painter is added. Existing ProgressM3
+// (2023-style, 150ms) and ProgressTrack pins stay untouched.
+// Boundary: negative or >100 percentages are clamped by the renderer; label
+// is decorative; state is a literal from the declared vocabulary.
+// Example LinearProgress2024M3(60, "default", "ease")
+component LinearProgress2024M3(percent: int, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "linear progress focus host") {
+    Column(gap: 4) {
+      Container(width: 160, height: 4, rounded: 2, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "linear progress 2024", role: "none") {
+        Progress(value: percent, state: "{state}", animate: "{animate}", duration: 200)
+      }
+    }
+  }
+}

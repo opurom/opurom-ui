@@ -377,3 +377,13 @@ case and one boundary case; the source-size budget is updated explicitly.
 across all `.opu` modules. Duplicate names would shadow pinned
 implementations at import time; the gate keeps the package API unambiguous
 without touching IR or runtime semantics.
+
+## M3 2024 linear progress shell (uibuild, 2026-11-18)
+
+`components/progress_2024_m3.opu` adds `LinearProgress2024M3` with the
+Flutter stable 3.50.0 M3 2024 defaults: 4dp minHeight, 2dp radius and the
+year2023=false selection path (`progress_indicator.dart:414-440,595-619,
+1611-1627`). It is additive; the existing 2023-style `ProgressM3` and
+`ProgressTrack` pins are unchanged. Verification adds eight state pins
+(580 total over 75 components), one eight-state compile case, one a11y case
+and one boundary case; the source-size budget is updated explicitly.

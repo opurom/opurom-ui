@@ -57,6 +57,7 @@ const CASES = [
   ['components/button_metrics_m3.opu', 'MinIconButtonM3("home", "{state}", "tap")'],
   ['components/snackbar_m3.opu', 'SnackBarM3("Saved", "{state}", "ease")'],
   ['components/dialog_metrics_m3.opu', 'DefaultDialogM3("Delete", "This cannot be undone", "{state}", "ease")'],
+  ['components/progress_2024_m3.opu', 'LinearProgress2024M3(60, "{state}", "ease")'],
 ];
 
 function source(mod, call) {
