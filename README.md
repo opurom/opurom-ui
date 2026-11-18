@@ -192,6 +192,9 @@ signed audit gate for mode coverage, tier frames and reserved sliver behavior.
 audit gate for tier coverage, animation boundary and reserved controller
 behavior.
 
+`test/catalog-registry.json` is the single registry over all five catalogs,
+checking manifest completeness, pin counts and documentation coverage.
+
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction
 states (normal/default, pressed/active, focus, disabled, hover) have token-driven

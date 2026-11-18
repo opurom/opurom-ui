@@ -1,0 +1,56 @@
+{
+  "purpose": "single registry for UI breakpoint and state catalog audits; data-only manifest and documentation consistency roll-up",
+  "flutter": {
+    "version": "stable 3.50.0",
+    "commit": "ab2912035e160d9cad6306df307576da6128ebdb",
+    "authority": "Flutter official source at revision ab2912035e160d9cad6306df307576da6128ebdb"
+  },
+  "docs": ["README.md", "COMPONENT_STATUS.md"],
+  "registries": [
+    {
+      "name": "responsive-components",
+      "manifest": "test/responsive-catalog.json",
+      "gate": "test/responsive-catalog.test.mjs",
+      "pinCount": 11,
+      "anchorCount": 16,
+      "anchorSubjects": ["date", "time", "color"],
+      "property": "suites"
+    },
+    {
+      "name": "page-states",
+      "manifest": "test/page-state-catalog.json",
+      "gate": "test/page-state-catalog.test.mjs",
+      "pinCount": 12,
+      "anchorCount": 14,
+      "anchorSubjects": ["loading", "empty", "error", "success"],
+      "property": "states"
+    },
+    {
+      "name": "scroll-clipping",
+      "manifest": "test/scroll-catalog.json",
+      "gate": "test/scroll-catalog.test.mjs",
+      "pinCount": 9,
+      "anchorCount": 5,
+      "anchorSubjects": ["bouncingPhysics", "clampingPhysics", "scrollSimulation", "breakpoints", "scrollIR"],
+      "property": "shells"
+    },
+    {
+      "name": "sticky-header",
+      "manifest": "test/sticky-header-catalog.json",
+      "gate": "test/sticky-header-catalog.test.mjs",
+      "pinCount": 12,
+      "anchorCount": 4,
+      "anchorSubjects": ["delegate", "pinnedFloating", "pinnedSliver", "breakpoints"],
+      "property": "modes"
+    },
+    {
+      "name": "collapsible-content",
+      "manifest": "test/collapsible-catalog.json",
+      "gate": "test/collapsible-catalog.test.mjs",
+      "pinCount": 9,
+      "anchorCount": 4,
+      "anchorSubjects": ["expansionPanel", "themeDuration", "crossFade", "breakpoints"],
+      "property": "cases"
+    }
+  ]
+}

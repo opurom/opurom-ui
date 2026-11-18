@@ -709,3 +709,14 @@ authored 200 ms token in IR, collapsed-controller reservation, source anchors,
 component registration, documentation references and determinism. Flutter
 stable 3.50.0 remains the sole source authority; real panel controllers and
 cross-fade interpolation stay reserved A2/B4.
+
+## UI catalog registry audit (uibuild, 2026-11-19)
+
+`test/catalog-registry.json` and `test/catalog-registry.test.mjs` roll the five
+breakpoint/state catalogs into one data-only registry: responsive components,
+page states, scroll clipping, sticky header and collapsible content. The gate
+checks manifest presence, Flutter version/commit parity, gate wiring, pin and
+anchor counts, source-anchor shape, registered modules and documentation
+references. The five catalogs contain 53 pin records and 43 Flutter/Opurom
+source anchors. Each catalog gate remains responsible for re-rendering its
+signed frames; this registry is the completeness roll-up.
