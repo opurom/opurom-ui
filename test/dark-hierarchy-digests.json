@@ -1,0 +1,1484 @@
+{
+  "toolchain": {
+    "render": "f3a8bcaeb88b82068beb8c9cc10353a300aca5f8",
+    "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug",
+    "note": "gallery pinned toolchain; CI provisions these exact commits into opurom-lang-gal/opurom-render-gal"
+  },
+  "meta": {
+    "purpose": "UI dark-theme information hierarchy internal consistency pins, not Flutter contrast parity",
+    "version": "flutter-3.50.0:ab2912035e160d9cad6306df307576da6128ebdb",
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "kinds": [
+      "card",
+      "tile",
+      "header"
+    ],
+    "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
+      "loading",
+      "success",
+      "error"
+    ],
+    "viewports": [
+      [
+        320,
+        240
+      ]
+    ],
+    "ticks": [
+      0,
+      200
+    ],
+    "note": "Dark mode uses the authored theme/dark.opu tokens; the renderer has no WCAG contrast oracle, so polarity and distinctness are pinned, not a ratio."
+  },
+  "pins": [
+    {
+      "name": "light-card-default-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "default",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"default\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-default-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "default",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"default\", \"ease\")",
+      "digest": "149973f87ee424af",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-hover-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "hover",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"hover\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-hover-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "hover",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"hover\", \"ease\")",
+      "digest": "23ace9bd768e640f",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-active-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "active",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"active\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-active-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "active",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"active\", \"ease\")",
+      "digest": "9f4fe396ccf73c0b",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-focus-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "focus",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"focus\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-focus-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "focus",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"focus\", \"ease\")",
+      "digest": "58649ab1d48689b7",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-disabled-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "disabled",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"disabled\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-disabled-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "disabled",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"disabled\", \"ease\")",
+      "digest": "dd973e4d3cec03c8",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-loading-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "loading",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"loading\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-loading-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "loading",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"loading\", \"ease\")",
+      "digest": "611f5ae7bccfea90",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-success-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "success",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"success\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-success-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "success",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"success\", \"ease\")",
+      "digest": "1568163f3ef765ca",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-error-0",
+      "mode": "light",
+      "kind": "card",
+      "state": "error",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"error\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-card-error-200",
+      "mode": "light",
+      "kind": "card",
+      "state": "error",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"error\", \"ease\")",
+      "digest": "60db436bd30cc921",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-default-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "default",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"default\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-default-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "default",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"default\", \"ease\")",
+      "digest": "884ae15490aab09f",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-hover-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "hover",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"hover\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-hover-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "hover",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"hover\", \"ease\")",
+      "digest": "56acd58d5cedb45e",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-active-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "active",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"active\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-active-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "active",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"active\", \"ease\")",
+      "digest": "49e5deb315c4cb7c",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-focus-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "focus",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"focus\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-focus-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "focus",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"focus\", \"ease\")",
+      "digest": "ce3bd4fb0fdd71e7",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-disabled-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "disabled",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"disabled\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-disabled-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "disabled",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"disabled\", \"ease\")",
+      "digest": "965adfa43de3469a",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-loading-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "loading",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"loading\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-loading-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "loading",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"loading\", \"ease\")",
+      "digest": "99ce56c44931bfa7",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-success-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "success",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"success\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-success-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "success",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"success\", \"ease\")",
+      "digest": "7ddc1e6b6d622ceb",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-error-0",
+      "mode": "light",
+      "kind": "tile",
+      "state": "error",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"error\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-tile-error-200",
+      "mode": "light",
+      "kind": "tile",
+      "state": "error",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"error\", \"ease\")",
+      "digest": "d1cb032f4ad74ea0",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-default-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "default",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"default\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-default-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "default",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"default\", \"ease\")",
+      "digest": "7f84d1726ba67169",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-hover-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "hover",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"hover\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-hover-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "hover",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"hover\", \"ease\")",
+      "digest": "3119caaafd8b5cd2",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-active-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "active",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"active\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-active-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "active",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"active\", \"ease\")",
+      "digest": "c554da139b3bacba",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-focus-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "focus",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"focus\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-focus-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "focus",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"focus\", \"ease\")",
+      "digest": "4c61b1e2bcb65c1d",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-disabled-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "disabled",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"disabled\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-disabled-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "disabled",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"disabled\", \"ease\")",
+      "digest": "b9a8c2fa4fbbc735",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-loading-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "loading",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"loading\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-loading-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "loading",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"loading\", \"ease\")",
+      "digest": "0c51acbb62796554",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-success-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "success",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"success\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-success-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "success",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"success\", \"ease\")",
+      "digest": "2c24a17026f93173",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-error-0",
+      "mode": "light",
+      "kind": "header",
+      "state": "error",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"error\", \"ease\")",
+      "digest": "828f55cd2ab06b25",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "light-header-error-200",
+      "mode": "light",
+      "kind": "header",
+      "state": "error",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/default.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"error\", \"ease\")",
+      "digest": "fbbca62ba00f5466",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-default-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "default",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"default\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-default-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "default",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"default\", \"ease\")",
+      "digest": "dc73fa248696b9b8",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-hover-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "hover",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"hover\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-hover-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "hover",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"hover\", \"ease\")",
+      "digest": "f8ef2ba85a8a72ff",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-active-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "active",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"active\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-active-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "active",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"active\", \"ease\")",
+      "digest": "e3d980325e0497db",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-focus-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "focus",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"focus\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-focus-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "focus",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"focus\", \"ease\")",
+      "digest": "6f93b9c5d34e3d6a",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-disabled-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "disabled",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"disabled\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-disabled-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "disabled",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"disabled\", \"ease\")",
+      "digest": "ed525055f9e300d4",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-loading-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "loading",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"loading\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-loading-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "loading",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"loading\", \"ease\")",
+      "digest": "8b6e0fb4e93b9b6c",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-success-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "success",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"success\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-success-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "success",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"success\", \"ease\")",
+      "digest": "b7c8f0fa7c7964f8",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-error-0",
+      "mode": "dark",
+      "kind": "card",
+      "state": "error",
+      "tick": 0,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"error\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-card-error-200",
+      "mode": "dark",
+      "kind": "card",
+      "state": "error",
+      "tick": 200,
+      "module": "components/card_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ElevatedCardM3(\"Card title\", \"Card subtitle\", \"error\", \"ease\")",
+      "digest": "fde68c84fb2bc42c",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-default-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "default",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"default\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-default-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "default",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"default\", \"ease\")",
+      "digest": "6b754506cd9ee764",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-hover-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "hover",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"hover\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-hover-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "hover",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"hover\", \"ease\")",
+      "digest": "1bfda5fb501657d7",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-active-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "active",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"active\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-active-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "active",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"active\", \"ease\")",
+      "digest": "73cb5fb1d87e4ad8",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-focus-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "focus",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"focus\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-focus-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "focus",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"focus\", \"ease\")",
+      "digest": "864cabcdf4e1976c",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-disabled-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "disabled",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"disabled\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-disabled-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "disabled",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"disabled\", \"ease\")",
+      "digest": "499cf236f4a6ded9",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-loading-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "loading",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"loading\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-loading-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "loading",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"loading\", \"ease\")",
+      "digest": "b6f50d24b77bb163",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-success-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "success",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"success\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-success-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "success",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"success\", \"ease\")",
+      "digest": "8ab3fbcf2faf30df",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-error-0",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "error",
+      "tick": 0,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"error\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-tile-error-200",
+      "mode": "dark",
+      "kind": "tile",
+      "state": "error",
+      "tick": 200,
+      "module": "components/list_tile_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ListTileM3(\"Inbox\", \"3 unread\", \"error\", \"ease\")",
+      "digest": "f4d29464b8fe8dc5",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-default-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "default",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"default\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-default-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "default",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"default\", \"ease\")",
+      "digest": "0ae929091f5d1791",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-hover-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "hover",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"hover\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-hover-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "hover",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"hover\", \"ease\")",
+      "digest": "e57a068002ac7841",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-active-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "active",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"active\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-active-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "active",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"active\", \"ease\")",
+      "digest": "fbd9c6c3cb3ed7c8",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-focus-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "focus",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"focus\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-focus-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "focus",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"focus\", \"ease\")",
+      "digest": "a819c4aa2ae16ba9",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-disabled-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "disabled",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"disabled\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-disabled-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "disabled",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"disabled\", \"ease\")",
+      "digest": "30f049087b8b5e7f",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-loading-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "loading",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"loading\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-loading-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "loading",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"loading\", \"ease\")",
+      "digest": "a58dc93e28f0d2aa",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-success-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "success",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"success\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-success-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "success",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"success\", \"ease\")",
+      "digest": "8d302d623e506853",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-error-0",
+      "mode": "dark",
+      "kind": "header",
+      "state": "error",
+      "tick": 0,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"error\", \"ease\")",
+      "digest": "8cfdd985c0759325",
+      "viewport": [
+        320,
+        240
+      ]
+    },
+    {
+      "name": "dark-header-error-200",
+      "mode": "dark",
+      "kind": "header",
+      "state": "error",
+      "tick": 200,
+      "module": "components/app_bar_scrolled_m3.opu",
+      "theme": "theme/dark.opu",
+      "use": "ScrolledAppBarM3(\"Title\", \"home\", \"error\", \"ease\")",
+      "digest": "95a8ab55afc4dbe0",
+      "viewport": [
+        320,
+        240
+      ]
+    }
+  ]
+}
