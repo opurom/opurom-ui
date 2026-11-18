@@ -27,6 +27,7 @@ const CASES = [
   ['drawer', 'components/nav_drawer_m3.opu', 'NavigationDrawerM3("", -1, "{s}", "ease")'],
   ['sticky', 'components/sticky_header_m3.opu', 'StickyHeaderM3("", 0, 0, "{s}", "ease")'],
   ['menu', 'components/menu_m3.opu', `PopupMenuM3("${long}", 9999, "{s}", "ease")`],
+  ['extended rail', 'components/nav_rail_extended_m3.opu', `ExtendedNavigationRailM3("${long}", -1, "{s}", "ease")`],
 ];
 
 function source(mod, use) {

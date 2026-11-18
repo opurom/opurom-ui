@@ -26,6 +26,7 @@ const REQUIRED = [
   'components/rating_m3.opu',
   'components/menu_m3.opu',
   'components/nav_rail_m3.opu',
+  'components/nav_rail_extended_m3.opu',
   'components/date_range_m3.opu',
   'components/sticky_header_m3.opu',
   'components/nav_drawer_m3.opu',

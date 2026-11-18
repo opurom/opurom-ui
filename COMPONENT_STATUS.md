@@ -495,3 +495,15 @@ stable 3.50.0 M3 chip defaults: 0 elevation, 8dp radius and labelLarge role
 unchanged. Verification adds eight state pins (700 total over 90
 components), one eight-state compile case, one a11y case, one boundary case
 and an explicit source-budget update.
+
+## Extended navigation rail shell (uibuild, 2026-11-18)
+
+`components/nav_rail_extended_m3.opu` adds `ExtendedNavigationRailM3`, the
+source-backed Flutter 3.50.0 M3 extended rail presentation: elevation 0,
+top grouping, 80dp normal width, 256dp extended width, indicator enabled and
+24dp destination icons (`navigation_rail.dart:1233-1272`). The existing closed
+`NavigationRailM3` pin is unchanged. Route callbacks, extended animation and
+selection binding remain at the call site (A3/A4/B3). Verification adds eight
+state pins (708 total over 91 components), one eight-state compile case, one
+a11y case, two boundary cases, one extreme-input case, a provenance audit entry
+and an explicit source-budget update.

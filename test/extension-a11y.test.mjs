@@ -32,6 +32,7 @@ const CASES = [
   ['Tooltip', 'TooltipM3("More options", "below", "default", "ease")', 'tooltip', 'text', 'components/inputs_ext_m3.opu'],
   ['Popup menu', 'PopupMenuM3("Open,Copy,Close", 160, "default", "ease")', 'popup menu', 'button', 'components/menu_m3.opu'],
   ['Navigation rail', 'NavigationRailM3("Home,Search,Profile", 1, "default", "ease")', 'navigation rail', 'none', 'components/nav_rail_m3.opu'],
+  ['Extended navigation rail', 'ExtendedNavigationRailM3("Home,Search,Profile", 1, "default", "ease")', 'extended navigation rail', 'none', 'components/nav_rail_extended_m3.opu'],
   ['Date range picker', 'DateRangePickerM3("Travel dates", 10, 20, "default", "ease")', 'date range picker', 'button', 'components/date_range_m3.opu'],
   ['Sticky header', 'StickyHeaderM3("Today", 56, 32, "default", "ease")', 'sticky header', 'heading', 'components/sticky_header_m3.opu'],
   ['Navigation drawer', 'NavigationDrawerM3("Home,Search,Profile", 1, "default", "ease")', 'navigation drawer', 'none', 'components/nav_drawer_m3.opu'],

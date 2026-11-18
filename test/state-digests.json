@@ -4925,6 +4925,62 @@
       "use": "AssistChipM3Default(\"Today\",\"error\",\"ease\")",
       "state": "error",
       "digest": "ca61ca43d0787865"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-default",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"default\",\"ease\")",
+      "state": "default",
+      "digest": "14d54b4c0d7d66c2"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-hover",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"hover\",\"ease\")",
+      "state": "hover",
+      "digest": "51b485b44ffa980d"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-active",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"active\",\"ease\")",
+      "state": "active",
+      "digest": "d0670b0e4060f9db"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-focus",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"focus\",\"ease\")",
+      "state": "focus",
+      "digest": "f06f9dfe399f3b62"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-disabled",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"disabled\",\"ease\")",
+      "state": "disabled",
+      "digest": "b4706fd3f06bcdf2"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-loading",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"loading\",\"ease\")",
+      "state": "loading",
+      "digest": "885d085f05fc3de0"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-success",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"success\",\"ease\")",
+      "state": "success",
+      "digest": "84955a502955465f"
+    },
+    {
+      "name": "ExtendedNavigationRailM3-error",
+      "module": "components/nav_rail_extended_m3.opu",
+      "use": "ExtendedNavigationRailM3(\"Home,Search,Profile\",1,\"error\",\"ease\")",
+      "state": "error",
+      "digest": "e0a9ab83a9c02c1c"
     }
   ]
 }

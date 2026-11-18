@@ -39,6 +39,8 @@ const CASES = [
   [`PopupMenuM3("${long}", 9999, "error", "ease")`, 'components/menu_m3.opu'],
   ['NavigationRailM3("", 999, "default", "ease")', 'components/nav_rail_m3.opu'],
   [`NavigationRailM3("${long}", -1, "error", "ease")`, 'components/nav_rail_m3.opu'],
+  ['ExtendedNavigationRailM3("", 999, "default", "ease")', 'components/nav_rail_extended_m3.opu'],
+  [`ExtendedNavigationRailM3("${long}", -1, "error", "ease")`, 'components/nav_rail_extended_m3.opu'],
   ['DateRangePickerM3("", -5, -5, "disabled", "ease")', 'components/date_range_m3.opu'],
   [`DateRangePickerM3("${long}", 999999, 0, "error", "ease")`, 'components/date_range_m3.opu'],
   ['StickyHeaderM3("", 0, 0, "disabled", "ease")', 'components/sticky_header_m3.opu'],
