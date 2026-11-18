@@ -190,3 +190,17 @@ intermediates of `#00FF00` against the vendored material_color_utilities.
 Seed generation is a theme-authoring tool, not a component: it writes token
 data for the existing compiler token-import path, and does not change
 `theme/material-tokens.json` (owned by another in-flight batch).
+
+## Popup menu shell (ui-dev, 2026-11-18, part 4)
+
+`components/menu_m3.opu` adds `PopupMenuM3` over the Opurom `Menu` primitive.
+Flutter stable 3.50.0 anchors: `popup_menu.dart:1176-1218` and `:1424-1427`
+(route/theme parameters), `:1837-1872` (M3 elevation 3, vertical padding 8dp),
+`:47` (56dp width step) and `motion.dart:52` (200ms short4). Elevation 3 is
+expressed through the `shadow` design prop; items are literal labels and the
+semantic role is `button`. Route anchoring, `onSelected` and keyboard
+navigation remain reserved (A3/A4/B3).
+
+New gates: eight-state compile case, 8 settled-frame pins (452 total over 59
+components), one accessibility-tree case checking name plus role, and two
+boundary renders (empty label and overlong label at extreme width).

@@ -1,0 +1,15 @@
+// Material 3 popup-menu presentation shell. Flutter stable 3.50.0 sources:
+//   popup_menu.dart:1176-1218,1424-1427  popup menu route/theme parameters
+//   popup_menu.dart:1837-1872           M3 elevation 3, vertical padding 8dp
+//   popup_menu.dart:47                   56dp width step
+//   motion.dart:52                       200ms short4 state duration
+// The Menu primitive is declarative in Opurom: `items` carries the literal
+// labels and the closed/open presentation is authored at the call site.
+// Route anchoring, onSelected callbacks and keyboard navigation need kernel
+// gaps A3/A4/B3 and are reserved, not faked.
+// Boundary: empty labels render an empty menu surface; overlong items clip in
+// the primitive; width/elevation are bounded by the compiler.
+// Example PopupMenuM3("Open,Copy,Close", 160, "default", "ease")
+component PopupMenuM3(items: string, width: int, state: string, animate: string) {
+  Menu(items: "{items}", width: width, shadow: 3, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "popup menu", role: "button")
+}

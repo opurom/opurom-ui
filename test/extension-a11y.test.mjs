@@ -30,6 +30,7 @@ const CASES = [
   ['Autocomplete', 'AutocompleteM3("City", 0, "default", "ease")', 'autocomplete', 'text', 'components/inputs_ext_m3.opu'],
   ['Bottom sheet', 'BottomSheetM3("Share", "Choose a target", "default", "ease")', 'bottom sheet', 'heading', 'components/inputs_ext_m3.opu'],
   ['Tooltip', 'TooltipM3("More options", "below", "default", "ease")', 'tooltip', 'text', 'components/inputs_ext_m3.opu'],
+  ['Popup menu', 'PopupMenuM3("Open,Copy,Close", 160, "default", "ease")', 'popup menu', 'button', 'components/menu_m3.opu'],
 ];
 
 test('new M3 shells expose accessible names in the deterministic a11y tree', () => {

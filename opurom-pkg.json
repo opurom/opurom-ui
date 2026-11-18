@@ -86,6 +86,7 @@
     "components/lists_m3.opu",
     "components/forms_m3.opu",
     "components/pickers_m3.opu",
-    "components/inputs_ext_m3.opu"
+    "components/inputs_ext_m3.opu",
+    "components/menu_m3.opu"
   ]
 }

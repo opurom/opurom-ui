@@ -35,6 +35,8 @@ const CASES = [
   ['TimePickerM3("Time", -1, 0, "error", "ease")', 'components/pickers_m3.opu'],
   ['ColorPickerM3("", 9999, "default", "ease")', 'components/pickers_m3.opu'],
   ['RegionPickerM3("Region", -5, "success", "ease")', 'components/pickers_m3.opu'],
+  ['PopupMenuM3("", 160, "default", "ease")', 'components/menu_m3.opu'],
+  [`PopupMenuM3("${long}", 9999, "error", "ease")`, 'components/menu_m3.opu'],
 ];
 
 function source(mod, use) {
