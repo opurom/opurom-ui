@@ -80,6 +80,7 @@ const CASES = [
   ['components/date_picker_panel_m3.opu', 'DatePickerPanelM3("November 2026", "{state}", "ease")'],
   ['components/time_picker_panel_m3.opu', 'TimePickerPanelM3("10:30", "{state}", "ease")'],
   ['components/responsive_date_picker_m3.opu', 'ResponsiveDatePickerPanelM3("November 2026", "{state}", "ease")'],
+  ['components/responsive_time_picker_m3.opu', 'ResponsiveTimePickerPanelM3("10:30", "{state}", "ease")'],
 ];
 
 function source(mod, call) {

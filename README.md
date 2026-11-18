@@ -169,6 +169,7 @@ import "components/text.opu";
 | `components/date_picker_panel_m3.opu` | `DatePickerPanelM3` (month, state, animate) | M3 480dp month panel; selection/scroll routing reserved |
 | `components/time_picker_panel_m3.opu` | `TimePickerPanelM3` (clock, state, animate) | M3 312dp dial panel; tick placement and drag routing reserved |
 | `components/responsive_date_picker_m3.opu` | `ResponsiveDatePickerPanelM3` (month, state, animate) | M3 152dp landscape header and 384dp calendar cap; selection routing reserved |
+| `components/responsive_time_picker_m3.opu` | `ResponsiveTimePickerPanelM3` (clock, state, animate) | M3 216dp landscape header, 312dp input and orientation dials |
 
 The fourteen SKELETON modules above are API-complete placeholders: required,
 optional and reserved props are marked in each file header, the five interaction

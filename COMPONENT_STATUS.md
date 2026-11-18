@@ -610,3 +610,18 @@ dismissal stay at the call site (A3/A4/B3). Verification adds eight state pins
 two boundary cases, one extreme-input case, a provenance audit entry, an
 explicit source-budget update and a dedicated compact/medium/expanded plus
 landscape/portrait breakpoint gate.
+
+## Responsive time picker panel shell (uibuild, 2026-11-18)
+
+`components/responsive_time_picker_m3.opu` adds
+`ResponsiveTimePickerPanelM3`, the source-backed Flutter 3.50.0 orientation
+shell: 216dp landscape header, 312x252 input size, 524x342 landscape dial and
+310x468 portrait dial (`time_picker.dart:48,2408-2418,2534-2582`). Direction
+follows `widgets/media_query.dart:34-39,855`; Opurom width tiers are declared
+in `render/src/layout.rs:50-74`. The existing TimePickerPanelM3 pin is
+unchanged. Tick placement, drag gestures, entry-mode routing and locale
+formatting stay at the call site (A3/A4/B3). Verification adds eight state pins
+(780 total over 100 components), one eight-state compile case, one a11y case,
+two boundary cases, one extreme-input case, a provenance audit entry, an
+explicit source-budget update and a dedicated landscape/portrait plus
+compact/medium/expanded breakpoint gate.

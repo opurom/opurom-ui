@@ -36,6 +36,7 @@ const CASES = [
   ['date picker panel', 'components/date_picker_panel_m3.opu', `DatePickerPanelM3("${long}", "{s}", "ease")`],
   ['time picker panel', 'components/time_picker_panel_m3.opu', `TimePickerPanelM3("${long}", "{s}", "ease")`],
   ['responsive date picker', 'components/responsive_date_picker_m3.opu', `ResponsiveDatePickerPanelM3("${long}", "{s}", "ease")`],
+  ['responsive time picker', 'components/responsive_time_picker_m3.opu', `ResponsiveTimePickerPanelM3("${long}", "{s}", "ease")`],
 ];
 
 function source(mod, use) {

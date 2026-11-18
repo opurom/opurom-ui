@@ -1,0 +1,34 @@
+// Responsive Material 3 time picker panel presentation. Flutter stable 3.50.0 sources:
+//   time_picker.dart:48          216dp landscape header width
+//   time_picker.dart:2408-2418   310x468 portrait dialog, 524x342 landscape
+//                                dialog, 312x252 input size, 312x196 minimum
+//   time_picker.dart:2534-2582   orientation-dependent dialog size switch
+//   widgets/media_query.dart:34-39,855 width > height selects landscape
+//   render/src/layout.rs:50-74   compact <600, medium <900, expanded <1200
+// The Opurom renderer selects width tiers deterministically. This additive
+// shell exposes both M3 orientation geometries: the 216dp landscape header,
+// the 312dp input field, the 524x342 landscape dial and the 310x468 portrait
+// dial. Tick placement, drag gestures, entry-mode routing and locale
+// formatting need kernel gaps A3/A4/B3 and stay at the call site.
+// loading/success/error are Opurom business states (NO_FLUTTER_EQUIVALENT).
+// Boundary: an empty clock label renders an unnamed time; overlong labels clip
+// to one line; out-of-range state is compiler-rejected.
+// Example ResponsiveTimePickerPanelM3("10:30", "default", "ease")
+component ResponsiveTimePickerPanelM3(clock: string, state: string, animate: string) {
+  Container(p: 8, variant: "text", label: "responsive time picker host") {
+    Grid(columns: 2, compactColumns: 1, state: "{state}", label: "time picker orientation tiers", role: "none") {
+      Container(width: 216, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "landscape time header") {
+        Text("{clock}", size: 24, maxLines: 1, state: "{state}")
+      }
+      Container(width: 312, height: 252, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "time input field") {
+        Text("{clock}", size: 32, maxLines: 1, state: "{state}")
+      }
+      Container(width: 524, height: 342, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "landscape time dial") {
+        Text("{clock}", size: 32, maxLines: 1, state: "{state}")
+      }
+      Container(width: 310, height: 468, p: 16, rounded: 28, shadow: 6, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "portrait time dial") {
+        Text("{clock}", size: 24, maxLines: 2, state: "{state}")
+      }
+    }
+  }
+}
