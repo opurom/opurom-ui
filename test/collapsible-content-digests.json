@@ -1,0 +1,1773 @@
+{
+  "toolchain": {
+    "render": "f3a8bcaeb88b82068beb8c9cc10353a300aca5f8",
+    "lang": "d1a0418179fd20c58a899d012dffb82ac5f7d8a1",
+    "profile": "debug",
+    "note": "gallery pinned toolchain; CI provisions these exact commits into opurom-lang-gal/opurom-render-gal"
+  },
+  "meta": {
+    "purpose": "UI collapsible content internal consistency pins, not Flutter parity",
+    "version": "flutter-3.50.0:ab2912035e160d9cad6306df307576da6128ebdb",
+    "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
+      "loading",
+      "success",
+      "error"
+    ],
+    "cases": [
+      "single",
+      "pair",
+      "empty"
+    ],
+    "viewports": [
+      [
+        320,
+        240
+      ],
+      [
+        200,
+        120
+      ]
+    ],
+    "ticks": [
+      0,
+      100,
+      200
+    ],
+    "note": "Internal consistency pins, not Flutter parity. No ExpansionPanelList or AnimatedCrossFade in the IR; the authored shell only carries the 200 ms short4 token and static body text. A2/B4 stay open."
+  },
+  "pins": [
+    {
+      "name": "single-default-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-default-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "a056b2094ffabd9b"
+    },
+    {
+      "name": "single-default-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "f19ba31ae87afa74"
+    },
+    {
+      "name": "single-default-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-default-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "4c946e6ed71640d5"
+    },
+    {
+      "name": "single-default-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "f1201dae2e92270a"
+    },
+    {
+      "name": "single-hover-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-hover-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "4dcbf422b6dd1957"
+    },
+    {
+      "name": "single-hover-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "0678e3e82b104adc"
+    },
+    {
+      "name": "single-hover-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-hover-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "079b15a28ef1add2"
+    },
+    {
+      "name": "single-hover-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "bcbfdf977356bee2"
+    },
+    {
+      "name": "single-active-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-active-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "9c45d863ffa03495"
+    },
+    {
+      "name": "single-active-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "877cb67047321612"
+    },
+    {
+      "name": "single-active-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-active-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "d87d01f97a8e9f71"
+    },
+    {
+      "name": "single-active-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "f3f1ee7c6284f404"
+    },
+    {
+      "name": "single-focus-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-focus-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "01225bc14e450d2a"
+    },
+    {
+      "name": "single-focus-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "7b3c6869c8f6bda1"
+    },
+    {
+      "name": "single-focus-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-focus-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "f223962913eaaa59"
+    },
+    {
+      "name": "single-focus-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "4ac9e75438867837"
+    },
+    {
+      "name": "single-disabled-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-disabled-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "1c71035c70d95260"
+    },
+    {
+      "name": "single-disabled-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "394e7b3cb91ec6d9"
+    },
+    {
+      "name": "single-disabled-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-disabled-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "37708620668f5fd8"
+    },
+    {
+      "name": "single-disabled-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "4fded9e5a1eb7def"
+    },
+    {
+      "name": "single-loading-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-loading-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "6b9ee440b4d2fe9a"
+    },
+    {
+      "name": "single-loading-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "041970dbfaca4d28"
+    },
+    {
+      "name": "single-loading-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-loading-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "6cd07b850fbaff9d"
+    },
+    {
+      "name": "single-loading-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "349a5b65311385a7"
+    },
+    {
+      "name": "single-success-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-success-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "9e4a5dcc71af5495"
+    },
+    {
+      "name": "single-success-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "b7db88d816b0160b"
+    },
+    {
+      "name": "single-success-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-success-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "763fa8f1314318f5"
+    },
+    {
+      "name": "single-success-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "80bbb59e9811acb0"
+    },
+    {
+      "name": "single-error-320x240-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "single-error-320x240-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "7975131ea852c26b"
+    },
+    {
+      "name": "single-error-320x240-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "361f4591e07e0381"
+    },
+    {
+      "name": "single-error-200x120-0",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "single-error-200x120-100",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "31987a6447d7b43a"
+    },
+    {
+      "name": "single-error-200x120-200",
+      "case": "single",
+      "use": "ExpandablePanelM3(\"Details\", \"Body content\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "c311ec1c6a504877"
+    },
+    {
+      "name": "pair-default-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-default-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "b4ac0929b6a38d89"
+    },
+    {
+      "name": "pair-default-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "bea237e13372625a"
+    },
+    {
+      "name": "pair-default-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-default-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "cbddb671724f5132"
+    },
+    {
+      "name": "pair-default-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"default\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"default\", \"ease\")\n  }",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "b714745a2826e3e9"
+    },
+    {
+      "name": "pair-hover-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"hover\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"hover\", \"ease\")\n  }",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-hover-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"hover\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"hover\", \"ease\")\n  }",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "866ba0e0cc5a6b31"
+    },
+    {
+      "name": "pair-hover-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"hover\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"hover\", \"ease\")\n  }",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "b5f7097b270d8fd6"
+    },
+    {
+      "name": "pair-hover-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"hover\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"hover\", \"ease\")\n  }",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-hover-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"hover\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"hover\", \"ease\")\n  }",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "65e6875a0fd8d33d"
+    },
+    {
+      "name": "pair-hover-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"hover\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"hover\", \"ease\")\n  }",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "cb32f8c99afc6f81"
+    },
+    {
+      "name": "pair-active-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"active\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"active\", \"ease\")\n  }",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-active-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"active\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"active\", \"ease\")\n  }",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "0fffa85b9cfbc6e1"
+    },
+    {
+      "name": "pair-active-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"active\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"active\", \"ease\")\n  }",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "e839ee921275f892"
+    },
+    {
+      "name": "pair-active-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"active\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"active\", \"ease\")\n  }",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-active-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"active\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"active\", \"ease\")\n  }",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "e3ca0535148e8d4a"
+    },
+    {
+      "name": "pair-active-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"active\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"active\", \"ease\")\n  }",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "8f03d09a56738277"
+    },
+    {
+      "name": "pair-focus-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"focus\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"focus\", \"ease\")\n  }",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-focus-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"focus\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"focus\", \"ease\")\n  }",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "8eea8ccd2a257c1d"
+    },
+    {
+      "name": "pair-focus-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"focus\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"focus\", \"ease\")\n  }",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "9fa14b81f402e242"
+    },
+    {
+      "name": "pair-focus-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"focus\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"focus\", \"ease\")\n  }",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-focus-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"focus\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"focus\", \"ease\")\n  }",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "631c7694e623c7de"
+    },
+    {
+      "name": "pair-focus-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"focus\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"focus\", \"ease\")\n  }",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "282b63cb072cd118"
+    },
+    {
+      "name": "pair-disabled-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"disabled\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"disabled\", \"ease\")\n  }",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-disabled-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"disabled\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"disabled\", \"ease\")\n  }",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "e2324c8827f7c5c2"
+    },
+    {
+      "name": "pair-disabled-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"disabled\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"disabled\", \"ease\")\n  }",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "afd912605b225a0c"
+    },
+    {
+      "name": "pair-disabled-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"disabled\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"disabled\", \"ease\")\n  }",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-disabled-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"disabled\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"disabled\", \"ease\")\n  }",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "6123bceb93dbda37"
+    },
+    {
+      "name": "pair-disabled-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"disabled\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"disabled\", \"ease\")\n  }",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "41dc4bc5df2b563c"
+    },
+    {
+      "name": "pair-loading-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"loading\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"loading\", \"ease\")\n  }",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-loading-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"loading\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"loading\", \"ease\")\n  }",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "690da4f1faaa9db8"
+    },
+    {
+      "name": "pair-loading-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"loading\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"loading\", \"ease\")\n  }",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "d17317bf50471988"
+    },
+    {
+      "name": "pair-loading-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"loading\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"loading\", \"ease\")\n  }",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-loading-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"loading\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"loading\", \"ease\")\n  }",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "4a9af37424c23e0e"
+    },
+    {
+      "name": "pair-loading-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"loading\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"loading\", \"ease\")\n  }",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "a2368acea7973489"
+    },
+    {
+      "name": "pair-success-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"success\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"success\", \"ease\")\n  }",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-success-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"success\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"success\", \"ease\")\n  }",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "450103cf871884b0"
+    },
+    {
+      "name": "pair-success-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"success\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"success\", \"ease\")\n  }",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "1070b1e42891c75e"
+    },
+    {
+      "name": "pair-success-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"success\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"success\", \"ease\")\n  }",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-success-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"success\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"success\", \"ease\")\n  }",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "411ea2077dd8868a"
+    },
+    {
+      "name": "pair-success-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"success\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"success\", \"ease\")\n  }",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "2a49faf27af1d36e"
+    },
+    {
+      "name": "pair-error-320x240-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"error\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"error\", \"ease\")\n  }",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "b8b6c5a540d867a2"
+    },
+    {
+      "name": "pair-error-320x240-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"error\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"error\", \"ease\")\n  }",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "63c94a3df2beceea"
+    },
+    {
+      "name": "pair-error-320x240-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"error\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"error\", \"ease\")\n  }",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "380404d2b22dbfb7"
+    },
+    {
+      "name": "pair-error-200x120-0",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"error\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"error\", \"ease\")\n  }",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "d0cbb5450bdc19a2"
+    },
+    {
+      "name": "pair-error-200x120-100",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"error\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"error\", \"ease\")\n  }",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "3dac5ee2009740f9"
+    },
+    {
+      "name": "pair-error-200x120-200",
+      "case": "pair",
+      "use": "Row(gap: 8) {\n    ExpandablePanelM3(\"First\", \"Alpha body\", \"error\", \"ease\")\n    ExpandablePanelM3(\"Second\", \"Beta body\", \"error\", \"ease\")\n  }",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "30a7bb81d8006afd"
+    },
+    {
+      "name": "empty-default-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-default-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "ce5e3bef6de6faea"
+    },
+    {
+      "name": "empty-default-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "3316ba37ad06f941"
+    },
+    {
+      "name": "empty-default-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-default-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "950eb9e31fab0b97"
+    },
+    {
+      "name": "empty-default-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"default\", \"ease\")",
+      "state": "default",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "c154a0611475fa0b"
+    },
+    {
+      "name": "empty-hover-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-hover-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "9735e746ff068226"
+    },
+    {
+      "name": "empty-hover-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "1f1342746e5db411"
+    },
+    {
+      "name": "empty-hover-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-hover-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "f1c3a2b7a39bdcdc"
+    },
+    {
+      "name": "empty-hover-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"hover\", \"ease\")",
+      "state": "hover",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "7ce66c30c24f6db7"
+    },
+    {
+      "name": "empty-active-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-active-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "e0fd895d6e691068"
+    },
+    {
+      "name": "empty-active-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "2a28eb53b2100bbb"
+    },
+    {
+      "name": "empty-active-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-active-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "41ad652ad6cbc28f"
+    },
+    {
+      "name": "empty-active-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"active\", \"ease\")",
+      "state": "active",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "d668ceb6ec18b5c5"
+    },
+    {
+      "name": "empty-focus-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-focus-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "7b4928f4b646872f"
+    },
+    {
+      "name": "empty-focus-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "fdfcd441919af7e4"
+    },
+    {
+      "name": "empty-focus-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-focus-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "16ab78774aa6c0ff"
+    },
+    {
+      "name": "empty-focus-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"focus\", \"ease\")",
+      "state": "focus",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "9bc194e5996844b6"
+    },
+    {
+      "name": "empty-disabled-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-disabled-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "958f1f1774aa1b59"
+    },
+    {
+      "name": "empty-disabled-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "000d14f316b3bdd4"
+    },
+    {
+      "name": "empty-disabled-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-disabled-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "f264128e19c0e2fa"
+    },
+    {
+      "name": "empty-disabled-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"disabled\", \"ease\")",
+      "state": "disabled",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "1ac74ec0baf11ada"
+    },
+    {
+      "name": "empty-loading-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-loading-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "5c43cbd3faffcf6f"
+    },
+    {
+      "name": "empty-loading-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "38290d678192ead5"
+    },
+    {
+      "name": "empty-loading-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-loading-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "64ffb50b99245ecb"
+    },
+    {
+      "name": "empty-loading-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"loading\", \"ease\")",
+      "state": "loading",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "e3e2ed60aac88a0e"
+    },
+    {
+      "name": "empty-success-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-success-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "8b75aa6a9e323b3c"
+    },
+    {
+      "name": "empty-success-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "cdb7584237961492"
+    },
+    {
+      "name": "empty-success-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-success-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "4afecdc59e4db5a3"
+    },
+    {
+      "name": "empty-success-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"success\", \"ease\")",
+      "state": "success",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "f2556ae66ecb3ec9"
+    },
+    {
+      "name": "empty-error-320x240-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 0,
+      "digest": "24cda718d8961325"
+    },
+    {
+      "name": "empty-error-320x240-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 100,
+      "digest": "fcd0e5fb2719f6d6"
+    },
+    {
+      "name": "empty-error-320x240-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        320,
+        240
+      ],
+      "tick": 200,
+      "digest": "28b7b6cbaae7f574"
+    },
+    {
+      "name": "empty-error-200x120-0",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 0,
+      "digest": "3a1dc2de48c05e25"
+    },
+    {
+      "name": "empty-error-200x120-100",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 100,
+      "digest": "6aa89ae1c7a93d28"
+    },
+    {
+      "name": "empty-error-200x120-200",
+      "case": "empty",
+      "use": "ExpandablePanelM3(\"\", \"\", \"error\", \"ease\")",
+      "state": "error",
+      "viewport": [
+        200,
+        120
+      ],
+      "tick": 200,
+      "digest": "14eb772b04fd2e7a"
+    }
+  ]
+}
