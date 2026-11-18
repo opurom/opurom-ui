@@ -6,6 +6,10 @@
 // hex lives in the module.
 // API   R: title, bg, textColor, radius, height. O: state.
 //       X: bottom-only radius, exact top-corner clip, elevation (reserved; M1).
+//       Token call site: pass md role names such as md-sys-color-primary for
+//       bg and md-sys-color-on-primary for textColor. Imported md-* colour
+//       values and built-in role fallbacks are resolved by opurom-render
+//       against theme.mode (Flutter 3.50.0 color_scheme.dart:449/450,542/543).
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onTitleReserved (no-op gesture fallback; never crashes).
 // Bounds radius/height 0..10000 by compiler; overlong title clipped by container.

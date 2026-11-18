@@ -7,15 +7,18 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onSliverReserved (no-op gesture fallback until B2/B3 land; never crashes).
 // Bounds height/columns 0..10000 enforced by compiler; fixed cells bound overflow.
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example SliverGridShell(240, 2, "default")
 component SliverGridShell(height: int, columns: int, state: string) {
-  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "sliver grid") {
-    Scroll(height: height) {
-      Grid(columns: columns) {
-        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-0", size: 12) }
-        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-1", size: 12) }
-        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-2", size: 12) }
-        Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-3", size: 12) }
+  Container(p: 8, variant: "text", label: "sliver grid focus host") {
+    Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "sliver grid") {
+      Scroll(height: height) {
+        Grid(columns: columns) {
+          Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-0", size: 12) }
+          Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-1", size: 12) }
+          Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-2", size: 12) }
+          Container(p: 8, rounded: 8, variant: "ghost") { Text("cell-3", size: 12) }
+        }
       }
     }
   }

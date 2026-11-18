@@ -6,13 +6,16 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onFlexReserved (no-op gesture fallback; never crashes).
 // Bounds gap 0..10000 enforced by compiler; invalid align falls back to renderer default.
+// Focus note: the outer transparent host leaves room for the renderer's 2dp focus ring (FOCUS_RING in render/src/interaction.rs:12).
 // Example FlexRun(8, "center", "default")
 component FlexRun(gap: int, align: string, state: string) {
-  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "flex") {
-    Row(gap: gap, align: align) {
-      Text("start", size: 12)
-      Spacer()
-      Text("end", size: 12)
+  Container(p: 8, variant: "text", label: "flex focus host") {
+    Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "flex") {
+      Row(gap: gap, align: align) {
+        Text("start", size: 12)
+        Spacer()
+        Text("end", size: 12)
+      }
     }
   }
 }

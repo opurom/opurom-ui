@@ -6,14 +6,17 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onSliverReserved (no-op gesture fallback until B2/B3 land; never crashes).
 // Bounds height 0..10000 enforced by compiler; fixed rows bound overflow.
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example SliverListShell(240, "default")
 component SliverListShell(height: int, state: string) {
-  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "sliver list") {
-    Scroll(height: height) {
-      List() {
-        Text("sliver-0", size: 12)
-        Text("sliver-1", size: 12)
-        Text("sliver-2", size: 12)
+  Container(p: 8, variant: "text", label: "sliver list focus host") {
+    Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "sliver list") {
+      Scroll(height: height) {
+        List() {
+          Text("sliver-0", size: 12)
+          Text("sliver-1", size: 12)
+          Text("sliver-2", size: 12)
+        }
       }
     }
   }

@@ -6,12 +6,15 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onOffsetReserved (no-op gesture fallback until L1 lands; never crashes).
 // Bounds offset 0..10000 enforced by compiler (Spacer width); label bounded by cell.
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example OffsetBox(16, "default")
 component OffsetBox(offset: int, state: string) {
-  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "positioned") {
-    Row(gap: 0) {
-      Spacer(width: offset)
-      Text("offset", size: 12)
+  Container(p: 8, variant: "text", label: "positioned focus host") {
+    Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "positioned") {
+      Row(gap: 0) {
+        Spacer(width: offset)
+        Text("offset", size: 12)
+      }
     }
   }
 }

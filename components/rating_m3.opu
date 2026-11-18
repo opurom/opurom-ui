@@ -1,0 +1,22 @@
+// Flutter 3.50.0 has no first-party Rating widget. The shell mirrors the
+// Material 3 icon-toggle interaction used by SegmentedButton (selected icon
+// `Icons.check`, state-driven colors) and the Rating primitive's value fill.
+// Source anchors: segmented_button.dart:88-92 (selected icon / enabled state),
+// segmented_button.dart:363-381 (WidgetState.selected color resolution),
+// motion.dart:52 (200ms short4 transition).
+// NO_FLUTTER_EQUIVALENT: the star-rating widget and its 5-star default are
+// Opurom selections, not a Flutter widget or design token.
+// Eight states pass through; loading/success/error are business states.
+// API   R: label. O: value (0..100), stars, state, animate.
+//       X: bind, tap-to-rate callback, fractional precision (A3/B4).
+// Boundary: stars <= 0 is clamped by the Rating primitive; empty label still
+// renders the value bar; out-of-range value is clamped at the call site.
+// Example RatingM3("Rating", 60, 5, "default", "ease")
+component RatingM3(label: string, value: int, stars: int, state: string, animate: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "rating") {
+    Column(gap: 4) {
+      Text("{label}", size: 11)
+      Rating(value: value, segments: stars, state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "rating value", role: "slider")
+    }
+  }
+}

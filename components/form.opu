@@ -8,14 +8,17 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onValidateReserved (no-op gesture fallback until B4 lands; never crashes).
 // Bounds validators checked by compiler; overlong text bounded by the shell.
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example FormShell("Sign in", "Email", "you@example.com", true, "default")
 component FormShell(title: string, label: string, placeholder: string, required: bool, state: string) {
-  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "form") {
-    Column(gap: 8) {
-      Text("{title}", size: 16)
-      Column(gap: 6) {
-        Text("{label}", size: 11)
-        Input(placeholder: "{placeholder}", required: required)
+  Container(p: 8, variant: "text", label: "form focus host") {
+    Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "form") {
+      Column(gap: 8) {
+        Text("{title}", size: 16)
+        Column(gap: 6) {
+          Text("{label}", size: 11)
+          Input(placeholder: "{placeholder}", required: required)
+        }
       }
     }
   }

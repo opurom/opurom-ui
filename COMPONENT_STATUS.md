@@ -94,3 +94,99 @@ These entries of the standard cannot be realised by current components or the re
 | Text line height and maxLines ellipsis | B12 | Renderer lacks line-height control and max-line truncation with ellipsis. |
 | Image and text content inside a card | M7 | Components take literal arguments only; `SurfaceCard` cannot host image + text content. No partial children implementation until M7 lands. |
 
+
+## M3 component extension batch (ui-dev, 2026-11-18)
+
+Source baseline: Flutter stable 3.50.0 in `flutter-golden` (`ab291203`), the
+same commit pinned by `theme/material-tokens.json`. This batch adds five module
+families to the package: `actions_m3.opu` (four FAB appearances),
+`rating_m3.opu`, `lists_m3.opu` (refresh/grouped/load-more), `forms_m3.opu`
+(two form shells), `pickers_m3.opu` (date/time/colour/region). All 14 new
+components emit the eight design states; 112 new settled-frame digests bring
+`test/state-digests.json` to 292 pins over 39 components. The digests are
+internal consistency pins under the signed toolchain, not Flutter pixel parity.
+
+| Component | Flutter source anchor | Opurom adaptation / reserved gap |
+| --- | --- | --- |
+| `FabM3` 56dp circle | `floating_action_button.dart:86-104`, `:404-405`, `:730-731`, `:756` | Container+Icon; theme resolver and location reserved (A4/M4) |
+| `SmallFabM3` 40dp circle | `floating_action_button.dart:405`, `:730`, `:817` | same |
+| `LargeFabM3` 96dp | `floating_action_button.dart:731`, `:819`, `:827` | same |
+| `ExtendedFabM3` 48dp stadium | `floating_action_button.dart:732`, `:733`, `:820`, `:825` | Row gap stands in for 8dp icon-label spacing |
+| `RatingM3` | `segmented_button.dart:88-92`, `:363-381`, `motion.dart:52` | `NO_FLUTTER_EQUIVALENT`: no Flutter Rating widget; tap-to-rate reserved (A3/B4) |
+| `RefreshListShell` | `refresh_indicator.dart:149-160`, `:645-676` | 40dp band stands in for displacement; `onRefresh` reserved (A3/B3) |
+| `GroupedListShell` | `sliver_persistent_header.dart:125-158` | pinned header shell; delegate/floating snap reserved (B2/B3) |
+| `LoadMoreListShell` | `list_tile.dart:1079-1084`, `constants.dart:57` | 56dp trailing band; scroll-end callback reserved (A3/B3) |
+| `FormFieldM3`, `FormSectionM3` | `form.dart:78-79`, `:318`, `:360`, `input_decorator.dart:40` | literal validators only; `FormState`/submit reserved (B4) |
+| `DatePickerM3`, `TimePickerM3` | `date_picker.dart:196-215`, `cupertino/date_picker.dart:299-312` | integer slot values; `DateTime` routes and wheel physics reserved (B3) |
+| `ColorPickerM3` | `color_scheme.dart:449-477` | palette slot; colour value/callback reserved (A4/B4) |
+| `RegionPickerM3` | `dropdown.dart:566-570`, `dropdown_menu.dart:305-320` | zero-based option slot; options builder reserved (B3/A4) |
+
+Gates: `test/eight-state-compile.test.mjs` compiles all 29 eight-state cases
+and checks default IR byte identity against the pinned compiler;
+`test/state-digests.test.mjs` pins 292 settled frames;
+`test/extension-boundaries.test.mjs` renders empty, overlong and extreme inputs
+and asserts the typed `maxLength < minLength` diagnostic. All tests are in the
+`npm test` script and the UI CI job.
+
+Parity honest statement: these are declarative presentation shells with
+Flutter-sourced geometry, state machine and duration anchors. Callback-based
+interaction, real picker routes, sliver scroll physics, theme-resolved colours
+and font-metric-dependent truncation remain kernel gaps; they are not claimed
+as pixel-complete Flutter parity.
+
+## M3 input/feedback extension batch (ui-dev, 2026-11-18, part 2)
+
+`components/inputs_ext_m3.opu` adds five shells: `AutocompleteM3`,
+`MultilineFieldM3`, `NumberFieldM3`, `BottomSheetM3` and `TooltipM3`. Flutter
+stable 3.50.0 anchors are `autocomplete.dart:61-67` (optionsBuilder,
+displayStringForOption, onSelected), `text_field.dart:363-366` (maxLines),
+`input_decorator.dart:228-234` (error text), `bottom_sheet.dart:97-103` and
+`material/tooltip.dart:96-104`. The 150ms state transition uses the audited
+`motion.dart:44` short3 token; loading/success/error remain
+`NO_FLUTTER_EQUIVALENT`. Options builders, keyboard focus, route presentation
+and semantic actions stay reserved (A3/A4/B4, A11Y_PARITY_GAP layer 3).
+
+State pins now total 332 over 44 components (40 new pins in this batch).
+`test/extension-a11y.test.mjs` reads the deterministic renderer accessibility
+tree with `--a11y` and asserts accessible names for eight representative
+shells; it does not claim checked/expanded/liveRegion or keyboard semantics,
+which the IR does not carry. Full `npm test` is 13/13 green.
+
+## Design token audit (uibuild, 2026-11-18)
+
+`theme/material-tokens.json` now carries the complete Flutter 3.50.0 motion
+surface: 17 `Durations` values (`motion.dart:28-148`) and 9 `Easing` curves
+(`motion.dart:168-232`), plus the four button state-layer alphas at
+`text_button.dart:230-232` and `:387`. `test/material-tokens.test.mjs` checks
+every value, source and the light/dark colour key parity.
+
+A source-level audit of `components/*.opu` finds no hex literals outside the
+two pinned legacy modules and the documented two-stop brand gradient. The
+remaining numeric literals are either token-backed values, Flutter component
+constants, or reserved component geometry that the current IR cannot express
+as a token reference. The audit is recorded as a baseline, not presented as
+zero-hardcode parity.
+
+Open gaps: shape, elevation, typography and state-layer values still have no
+typed token reference in `.opu` props; the compiler's token importer accepts
+flat `md-*` colour constants only. Numeric geometry therefore remains literal
+until a typed token contract is approved. Real `md-sys-color-*` role reference
+is available for colour props through compile-time lower/IR resolution.
+
+## Seed theme generator (ui-dev, 2026-11-18, part 3)
+
+`tools/seed-scheme.mjs` ports the numeric kernel of Flutter stable 3.50.0
+`ColorScheme.fromSeed(tonalSpot)` from material_color_utilities 0.13.0:
+`utils/color_utils.dart:15-254`, `utils/math_utils.dart:15-124`,
+`hct/cam16.dart:96-381`, `hct/hct.dart:30-45`,
+`hct/viewing_conditions.dart:51-190`, `hct/src/hct_solver.dart:18-520`,
+`palettes/tonal_palette.dart:35-255` and `scheme/scheme_tonal_spot.dart:20-38`.
+The generator emits 23 light/dark `md-sys-color-*` roles as compile-time data;
+no runtime interpretation is introduced. `test/seed-scheme.test.mjs` asserts
+the four pinned primary values from Flutter's own
+`packages/flutter/test/material/color_scheme_test.dart:945-973` and the HCT
+intermediates of `#00FF00` against the vendored material_color_utilities.
+
+Seed generation is a theme-authoring tool, not a component: it writes token
+data for the existing compiler token-import path, and does not change
+`theme/material-tokens.json` (owned by another in-flight batch).

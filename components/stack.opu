@@ -5,12 +5,15 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onLayoutReserved (no-op gesture fallback until L1 lands; never crashes).
 // Bounds width/height via Container props; overflow clipping reserved (L1).
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example OverlayStack("default")
 component OverlayStack(state: string) {
-  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "stack") {
-    Column(gap: 6) {
-      Container(p: 8, rounded: 8, variant: "ghost") { Text("layer-0", size: 12) }
-      Container(p: 8, rounded: 8, variant: "secondary") { Text("layer-1", size: 12) }
+  Container(p: 8, variant: "text", label: "stack focus host") {
+    Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", gesture: tap, label: "stack") {
+      Column(gap: 6) {
+        Container(p: 8, rounded: 8, variant: "ghost") { Text("layer-0", size: 12) }
+        Container(p: 8, rounded: 8, variant: "secondary") { Text("layer-1", size: 12) }
+      }
     }
   }
 }

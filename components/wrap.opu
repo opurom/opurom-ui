@@ -6,13 +6,16 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onFlowReserved (no-op gesture fallback until L3 lands; never crashes).
 // Bounds gap 0..10000 enforced by compiler; overlong labels bounded by fixed cells.
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example FlowWrap(8, "default")
 component FlowWrap(gap: int, state: string) {
-  Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "wrap") {
-    Row(gap: gap) {
-      Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("a", size: 12) }
-      Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("b", size: 12) }
-      Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("c", size: 12) }
+  Container(p: 8, variant: "text", label: "wrap focus host") {
+    Container(p: 8, rounded: 8, variant: "secondary", state: "{state}", gesture: tap, label: "wrap") {
+      Row(gap: gap) {
+        Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("a", size: 12) }
+        Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("b", size: 12) }
+        Container(width: 48, p: 4, rounded: 8, variant: "ghost") { Text("c", size: 12) }
+      }
     }
   }
 }

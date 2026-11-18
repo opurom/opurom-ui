@@ -7,13 +7,16 @@
 // State default/hover/active/focus/disabled; map normal->default, pressed->active.
 // Events onRouteReserved (no-op gesture fallback until A4 lands; never crashes).
 // Bounds body/bottom are flat strings; overlong text bounded by each band.
+// Focus note: the outer transparent host leaves room for the 2dp focus ring (render/src/interaction.rs:12).
 // Example RouteShell("Title", "Body copy", "Home,Profile", "default")
 component RouteShell(title: string, body: string, bottom: string, state: string) {
-  Container(variant: "secondary", state: "{state}", gesture: tap, label: "route shell") {
-    Column(gap: 0) {
-      Container(p: 12, variant: "primary") { Text("{title}", size: 18) }
-      Container(p: 12) { Text("{body}", size: 14) }
-      Container(p: 8, variant: "secondary") { Text("{bottom}", size: 12) }
+  Container(p: 8, variant: "text", label: "route shell focus host") {
+    Container(variant: "secondary", state: "{state}", gesture: tap, label: "route shell") {
+      Column(gap: 0) {
+        Container(p: 12, variant: "primary") { Text("{title}", size: 18) }
+        Container(p: 12) { Text("{body}", size: 14) }
+        Container(p: 8, variant: "secondary") { Text("{bottom}", size: 12) }
+      }
     }
   }
 }

@@ -22,6 +22,25 @@ const CASES = [
   ['components/list_tile_m3.opu', 'ListTileM3("Title", "Subtitle", "{state}", "ease")'],
   ['components/chips_m3.opu', 'AssistChipM3("Label", "{state}", "ease")'],
   ['components/chips_m3.opu', 'SelectedChipM3("Label", "{state}", "ease")'],
+  ['components/actions_m3.opu', 'FabM3("plus", "{state}", "ease")'],
+  ['components/actions_m3.opu', 'SmallFabM3("plus", "{state}", "ease")'],
+  ['components/actions_m3.opu', 'ExtendedFabM3("Create", "plus", "{state}", "ease")'],
+  ['components/actions_m3.opu', 'LargeFabM3("plus", "{state}", "ease")'],
+  ['components/rating_m3.opu', 'RatingM3("Rating", 60, 5, "{state}", "ease")'],
+  ['components/lists_m3.opu', 'RefreshListShell(200, "{state}", "ease")'],
+  ['components/lists_m3.opu', 'GroupedListShell("Today", 200, "{state}", "ease")'],
+  ['components/lists_m3.opu', 'LoadMoreListShell(200, "{state}", "ease")'],
+  ['components/forms_m3.opu', 'FormFieldM3("Email", "you@example.com", true, 3, 60, "{state}", "ease")'],
+  ['components/forms_m3.opu', 'FormSectionM3("Sign in", "Email", "Password", true, "{state}", "ease")'],
+  ['components/pickers_m3.opu', 'DatePickerM3("Date", 18, "{state}", "ease")'],
+  ['components/pickers_m3.opu', 'TimePickerM3("Time", 9, 1, "{state}", "ease")'],
+  ['components/pickers_m3.opu', 'ColorPickerM3("Colour", 2, "{state}", "ease")'],
+  ['components/pickers_m3.opu', 'RegionPickerM3("Region", 1, "{state}", "ease")'],
+  ['components/inputs_ext_m3.opu', 'AutocompleteM3("City", 0, "{state}", "ease")'],
+  ['components/inputs_ext_m3.opu', 'MultilineFieldM3("Notes", "Type here", "{state}", "ease")'],
+  ['components/inputs_ext_m3.opu', 'NumberFieldM3("Quantity", "0", "{state}", "ease")'],
+  ['components/inputs_ext_m3.opu', 'BottomSheetM3("Share", "Choose a target", "{state}", "ease")'],
+  ['components/inputs_ext_m3.opu', 'TooltipM3("More options", "below", "{state}", "ease")'],
 ];
 
 function source(mod, call) {
@@ -82,7 +101,7 @@ test('default-state IR stays byte-identical to the pinned compiler', () => {
       assert.equal(readFileSync(fresh.ir, 'utf8'), readFileSync(pinned.ir, 'utf8'),
         `${mod} default IR changed between pinned and eight-state compilers`);
     }
-    console.log('default IR byte-identical for all five component cases');
+    console.log('default IR byte-identical for all pinned component cases');
   } finally {
     rmSync(tmp, { recursive: true, force: true });
   }

@@ -1,0 +1,78 @@
+// Long-list and grouped-list presentation shells. Flutter source anchors
+// (stable 3.50.0):
+//   refresh_indicator.dart:149-160    displacement 40dp, edgeOffset 0,
+//                                     triggerMode onEdge, onEdge refresh
+//   refresh_indicator.dart:645-676    indicator inset by displacement/edgeOffset
+//   sliver_persistent_header.dart:125-158 pinned/floating header modes
+//   list_tile.dart:1079-1084          one-line tile default height 56dp
+//   constants.dart:57                 8dp spacing token (md-space-8)
+//   motion.dart:52                    200ms short4 transition token
+// These are declarative shells: gesture callbacks and the sliver protocol are
+// kernel gaps (A3/B2/B3), so onRefresh/onScroll and sticky-offset binding stay
+// reserved. No runtime interpretation is introduced.
+// Boundary: height/columns are numeric and bounded by the compiler; empty
+// labels render empty header/footer bands; overlong labels clip in the row.
+
+// RefreshListShell: a 40dp refresh band above a scrollable three-row list.
+// API   R: height. O: state, animate.
+//       X: onRefresh callback, notificationPredicate, triggerMode (A3/B3).
+// Example RefreshListShell(200, "default", "ease")
+component RefreshListShell(height: int, state: string, animate: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "refresh list") {
+    Column(gap: 8) {
+      Container(height: 40, rounded: 20, variant: "ghost", state: "{state}", animate: "{animate}", duration: 200, label: "refresh indicator") {
+        Spinner(state: "{state}", animate: "{animate}", duration: 200)
+      }
+      Scroll(height: height) {
+        List() {
+          Text("row-0", size: 14)
+          Divider()
+          Text("row-1", size: 14)
+          Divider()
+          Text("row-2", size: 14)
+        }
+      }
+    }
+  }
+}
+
+// GroupedListShell: pinned header over a grouped, scrollable list.
+// API   R: title, height. O: state, animate.
+//       X: SliverPersistentHeaderDelegate, floating/pinned snap, builders (B2/B3).
+// Example GroupedListShell("Today", 200, "default", "ease")
+component GroupedListShell(title: string, height: int, state: string, animate: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "grouped list") {
+    Column(gap: 8) {
+      Container(height: 56, p: 8, variant: "ghost", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "pinned header", role: "heading") {
+        Text("{title}", size: 14)
+      }
+      Scroll(height: height) {
+        List() {
+          Text("group-0", size: 14)
+          Divider()
+          Text("group-1", size: 14)
+        }
+      }
+    }
+  }
+}
+
+// LoadMoreListShell: scrollable list plus a 56dp trailing load band.
+// API   R: height. O: state, animate.
+//       X: onLoadMore callback, scroll-end notification (A3/B3).
+// Example LoadMoreListShell(200, "loading", "ease")
+component LoadMoreListShell(height: int, state: string, animate: string) {
+  Container(p: 8, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "load more list") {
+    Column(gap: 8) {
+      Scroll(height: height) {
+        List() {
+          Text("page-0", size: 14)
+          Text("page-1", size: 14)
+        }
+      }
+      Container(height: 56, rounded: 8, variant: "ghost", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "load more", role: "button") {
+        Text("Load more", size: 14)
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+// Remaining Material 3 input/feedback basics. Flutter stable 3.50.0 anchors:
+//   autocomplete.dart:61-67           optionsBuilder, displayStringForOption,
+//                                     onSelected
+//   text_field.dart:363-366           maxLines (multiline input)
+//   input_decorator.dart:228-234      helperErrorTextStyle / error text
+//   bottom_sheet.dart:97-103          modal bottom sheet entry
+//   material/tooltip.dart:96-104      message, placement, show/hide duration
+//   motion.dart:44                    150ms short3 state token
+// M3 state transition is an Opurom adaptation; loading/success/error are
+// NO_FLUTTER_EQUIVALENT business states. No theme declaration or hex value.
+// Boundary: empty labels render an empty band; overlong text clips in the
+// primitive; invalid state keywords are rejected by the compiler.
+
+// AutocompleteM3: closed combobox presentation; options live in app state and
+// selection callbacks require the reviewed action-parameter kernel change.
+// API   R: label. O: value, state, animate.
+//       X: optionsBuilder, displayStringForOption, onSelected (A4/B4).
+// Example AutocompleteM3("City", 0, "default", "ease")
+component AutocompleteM3(label: string, value: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "autocomplete", role: "text") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      ComboBox(value: value, state: "{state}", animate: "{animate}", duration: 150, label: "autocomplete options")
+    }
+  }
+}
+
+// MultilineFieldM3: TextArea presentation with a label and state.
+// API   R: label. O: placeholder, state, animate.
+//       X: bind, TextEditingController, keyboard type (B4).
+// Example MultilineFieldM3("Notes", "Type here", "focus", "ease")
+component MultilineFieldM3(label: string, placeholder: string, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "multiline field", role: "text") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      TextArea(placeholder: "{placeholder}", state: "{state}", animate: "{animate}", duration: 150, label: "multiline value")
+    }
+  }
+}
+
+// NumberFieldM3: numeric input presentation with literal placeholder.
+// API   R: label. O: placeholder, state, animate.
+//       X: bind, min/max clamp, formatter (B4).
+// Example NumberFieldM3("Quantity", "0", "default", "ease")
+component NumberFieldM3(label: string, placeholder: string, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 150, label: "number field", role: "text") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      NumberField(placeholder: "{placeholder}", state: "{state}", animate: "{animate}", duration: 150, label: "number value")
+    }
+  }
+}
+
+// BottomSheetM3: modal sheet shape with a title and body caption.
+// API   R: title, body. O: state, animate.
+//       X: route presentation, drag dismissal, showModalBottomSheet (A4/B3).
+// Example BottomSheetM3("Share", "Choose a target", "default", "ease")
+component BottomSheetM3(title: string, body: string, state: string, animate: string) {
+  BottomSheet(title: "{title}", variant: "secondary", label: "bottom sheet", role: "heading") {
+    Text("{body}", size: 14, state: "{state}", animate: "{animate}", duration: 150, label: "sheet body")
+  }
+}
+
+// TooltipM3: hint bubble over the Tooltip primitive.
+// API   R: text. O: placement, state, animate.
+//       X: rich message, show/hide duration, trigger gesture (A3/A4).
+// Example TooltipM3("More options", "below", "default", "ease")
+component TooltipM3(text: string, placement: string, state: string, animate: string) {
+  Tooltip(text: "{text}", placement: "{placement}", variant: "secondary", label: "tooltip", role: "text", state: "{state}", animate: "{animate}", duration: 150) {
+    Container(width: 1, height: 1, state: "{state}", animate: "{animate}", duration: 150, label: "tooltip focus target") {
+    }
+  }
+}

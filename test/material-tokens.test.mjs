@@ -13,7 +13,7 @@ assert.equal(doc.namespace, 'md');
 assert.equal(doc.source.commit, 'ab291203');
 const cats = doc.tokens;
 assert.deepEqual(Object.keys(cats), [
-  'color', 'shape', 'elevation', 'typography', 'spacing', 'motion',
+  'color', 'shape', 'elevation', 'typography', 'spacing', 'motion', 'state',
 ]);
 
 const counts = {};
@@ -79,20 +79,50 @@ counts.typography = Object.keys(cats.typography).length;
 for (const [k, v] of Object.entries(cats.spacing)) { assert.match(k, /^md-space-/); checkSource(v, k); }
 counts.spacing = Object.keys(cats.spacing).length;
 
-// motion: five Flutter duration tokens and the standard easing curve
+// motion: all 17 Flutter Durations constants and all 9 Easing constants.
 const motion = cats.motion;
-assert.deepEqual(Object.keys(motion), [
-  'md-motion-duration-short1', 'md-motion-duration-short2', 'md-motion-duration-short3',
-  'md-motion-duration-short4', 'md-motion-duration-medium1', 'md-motion-easing-standard',
-]);
-for (const [key, ms] of [['short1', 50], ['short2', 100], ['short3', 150], ['short4', 200], ['medium1', 250]]) {
+const durations = {
+  short1: 50, short2: 100, short3: 150, short4: 200,
+  medium1: 250, medium2: 300, medium3: 350, medium4: 400,
+  long1: 450, long2: 500, long3: 550, long4: 600,
+  extralong1: 700, extralong2: 800, extralong3: 900, extralong4: 1000,
+};
+const easings = {
+  'emphasized-accelerate': 'cubic-bezier(0.3,0,0.8,0.15)',
+  'emphasized-decelerate': 'cubic-bezier(0.05,0.7,0.1,1)',
+  linear: 'cubic-bezier(0,0,1,1)',
+  standard: 'cubic-bezier(0.2,0,0,1)',
+  'standard-accelerate': 'cubic-bezier(0.3,0,1,1)',
+  'standard-decelerate': 'cubic-bezier(0,0,0,1)',
+  'legacy-decelerate': 'cubic-bezier(0,0,0.2,1)',
+  'legacy-accelerate': 'cubic-bezier(0.4,0,1,1)',
+  legacy: 'cubic-bezier(0.4,0,0.2,1)',
+};
+assert.deepEqual(Object.keys(motion).sort(), [
+  ...Object.keys(durations).map((k) => `md-motion-duration-${k}`),
+  ...Object.keys(easings).map((k) => `md-motion-easing-${k}`),
+].sort());
+for (const [key, ms] of Object.entries(durations)) {
   const entry = motion[`md-motion-duration-${key}`];
   assert.equal(entry.value, ms, `${key} must be ${ms}ms`);
   checkSource(entry, key);
 }
-assert.equal(motion['md-motion-easing-standard'].value, 'cubic-bezier(0.2,0,0,1)');
-checkSource(motion['md-motion-easing-standard'], 'standard easing');
+for (const [key, css] of Object.entries(easings)) {
+  const entry = motion[`md-motion-easing-${key}`];
+  assert.equal(entry.value, css, `${key} easing`);
+  checkSource(entry, key);
+}
 counts.motion = Object.keys(motion).length;
+
+// State-layer alphas are Flutter button constants, not invented values.
+const state = cats.state;
+assert.deepEqual(state, {
+  'md-state-layer-pressed': { value: 0.10, source: 'text_button.dart:230' },
+  'md-state-layer-hovered': { value: 0.08, source: 'text_button.dart:231' },
+  'md-state-layer-focused': { value: 0.10, source: 'text_button.dart:232' },
+  'md-state-disabled-foreground': { value: 0.38, source: 'text_button.dart:387' },
+});
+counts.state = Object.keys(state).length;
 
 assert.equal(missingSource, 0, 'every token must carry a source reference');
 console.log('material-tokens OK', JSON.stringify(counts), 'total=' + Object.values(counts).reduce((a, b) => a + b, 0));

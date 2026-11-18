@@ -1,0 +1,64 @@
+// Picker presentation shells. Flutter stable 3.50.0 source anchors:
+//   showDatePicker / date_picker.dart:196-215   initialDate, firstDate, lastDate
+//   cupertino/date_picker.dart:299-312          mode, use24hFormat, itemExtent
+//   dropdown.dart:566-570                       menu item extent / elevation
+//   dropdown_menu.dart:305-320                  menu defaults, M3 surface
+//   color_scheme.dart:449-477                   primary/on-primary/surface roles
+// Opurom has no DateTime/Color value type in component args, so date/time/color
+// shells take integer slot values; the palette and region options are literal
+// captions. Picker routes, wheel physics and selection callbacks are kernel
+// gaps (A3/B3/B4) and stay reserved. No runtime interpretation is introduced.
+// Boundary: empty captions render an empty picker band; out-of-range integer
+// values are clamped by the compiler's numeric bounds; long labels clip.
+
+// DatePickerM3: closed date field with a caption and value slot.
+// API   R: label, value. O: state, animate.
+//       X: DateTime value, firstDate/lastDate, route presentation, onChanged.
+// Example DatePickerM3("Date", 18, "default", "ease")
+component DatePickerM3(label: string, value: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "date picker", role: "button") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      DateField(value: value, state: "{state}", animate: "{animate}", duration: 200, label: "date value")
+    }
+  }
+}
+
+// TimePickerM3: closed time field with 24h/12h slot supplied as an int flag.
+// API   R: label, value. O: use24h, state, animate.
+//       X: TimeOfDay value, wheel physics, onChanged (B3).
+// Example TimePickerM3("Time", 9, 1, "default", "ease")
+component TimePickerM3(label: string, value: int, use24h: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "time picker", role: "button") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      TimeField(value: value, state: "{state}", animate: "{animate}", duration: 200, label: "time value")
+    }
+  }
+}
+
+// ColorPickerM3: closed swatch field; value is the renderer palette slot.
+// API   R: label, value. O: state, animate.
+//       X: Color value, eyedropper, onChanged (A4/B4).
+// Example ColorPickerM3("Colour", 2, "default", "ease")
+component ColorPickerM3(label: string, value: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "color picker", role: "button") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      ColorWell(value: value, state: "{state}", animate: "{animate}", duration: 200, label: "color value")
+    }
+  }
+}
+
+// RegionPickerM3: closed select field; value is a zero-based option index.
+// API   R: label, value. O: state, animate.
+//       X: options builder, search/filter, onChanged (B3/A4).
+// Example RegionPickerM3("Region", 1, "default", "ease")
+component RegionPickerM3(label: string, value: int, state: string, animate: string) {
+  Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "region picker", role: "button") {
+    Column(gap: 8) {
+      Text("{label}", size: 11)
+      SelectBox(value: value, state: "{state}", animate: "{animate}", duration: 200, label: "region value")
+    }
+  }
+}

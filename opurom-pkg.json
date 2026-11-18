@@ -80,6 +80,12 @@
     "components/toast.opu",
     "components/toolbar.opu",
     "components/tooltip.opu",
-    "components/wrap.opu"
+    "components/wrap.opu",
+    "components/actions_m3.opu",
+    "components/rating_m3.opu",
+    "components/lists_m3.opu",
+    "components/forms_m3.opu",
+    "components/pickers_m3.opu",
+    "components/inputs_ext_m3.opu"
   ]
 }
