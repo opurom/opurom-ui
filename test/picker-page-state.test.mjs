@@ -31,12 +31,12 @@ const VIEWPORTS = [[240, 240], [320, 240], [1600, 900]];
 const EXTREMES = [
   ['date-zero', 'components/pickers_m3.opu', 'DatePickerM3("", 0, "disabled", "ease")', 240],
   ['date-over', 'components/pickers_m3.opu', `DatePickerM3("${long}", 999999, "error", "ease")`, 1600],
-  ['time-zero', 'components/pickers_m3.opu', 'TimePickerM3("", 0, 0, "disabled", "ease")', 240],
-  ['time-over', 'components/pickers_m3.opu', `TimePickerM3("${long}", 999999, 1, "error", "ease")`, 1600],
+  ['time-zero', 'components/pickers_m3.opu', 'TimePickerM3("", 0, "disabled", "ease")', 240],
+  ['time-over', 'components/pickers_m3.opu', `TimePickerM3("${long}", 999999, "error", "ease")`, 1600],
   ['range-zero', 'components/date_range_m3.opu', 'DateRangePickerM3("", 0, 0, "disabled", "ease")', 240],
   ['range-inverted', 'components/date_range_m3.opu', `DateRangePickerM3("${long}", 999999, -999999, "error", "ease")`, 1600],
-  ['datetime-zero', 'components/datetime_picker_m3.opu', 'DateTimePickerM3("", 0, 0, 0, "loading", "ease")', 240],
-  ['datetime-over', 'components/datetime_picker_m3.opu', `DateTimePickerM3("${long}", 999999, 999999, 1, "success", "ease")`, 1600],
+  ['datetime-zero', 'components/datetime_picker_m3.opu', 'DateTimePickerM3("", 0, 0, "loading", "ease")', 240],
+  ['datetime-over', 'components/datetime_picker_m3.opu', `DateTimePickerM3("${long}", 999999, 999999, "success", "ease")`, 1600],
   ['color-empty', 'components/pickers_m3.opu', 'ColorPickerM3("", -1, "error", "ease")', 240],
   ['region-empty', 'components/pickers_m3.opu', 'RegionPickerM3("", 999999, "disabled", "ease")', 240],
 ];
@@ -93,11 +93,11 @@ test('all eight states reach IR for every picker family at extreme sizes', () =>
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
     const families = [
       ['date', 'components/pickers_m3.opu', v => `DatePickerM3("Date", ${v}, "{s}", "ease")`],
-      ['time', 'components/pickers_m3.opu', v => `TimePickerM3("Time", ${v}, 1, "{s}", "ease")`],
+      ['time', 'components/pickers_m3.opu', v => `TimePickerM3("Time", ${v}, "{s}", "ease")`],
       ['color', 'components/pickers_m3.opu', v => `ColorPickerM3("Color", ${v}, "{s}", "ease")`],
       ['region', 'components/pickers_m3.opu', v => `RegionPickerM3("Region", ${v}, "{s}", "ease")`],
       ['range', 'components/date_range_m3.opu', v => `DateRangePickerM3("Range", ${v}, ${v + 1}, "{s}", "ease")`],
-      ['datetime', 'components/datetime_picker_m3.opu', v => `DateTimePickerM3("When", ${v}, ${v}, 1, "{s}", "ease")`],
+      ['datetime', 'components/datetime_picker_m3.opu', v => `DateTimePickerM3("When", ${v}, ${v}, "{s}", "ease")`],
     ];
     for (const [name, mod, build] of families) {
       for (const state of meta.states) {

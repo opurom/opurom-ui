@@ -31,7 +31,7 @@ test('complex shell repeated renders stay deterministic in every state', () => {
 app One {
   quality { msaa: 4 }
   theme { mode: light, accent: "#6200EE", radius: 12, fontScale: 1.0, surface: "#FFFFFF", onSurface: "#000000", stage: "#FFFFFF", fontMetrics: proportional }
-  DateTimePickerM3("Departure", 18, 9, 1, "${state}", "ease")
+  DateTimePickerM3("Departure", 18, 9, "${state}", "ease")
 }
 `);
       const c = spawnSync(compiler, ['compile', src, '-o', ir], { encoding: 'utf8' });

@@ -24,11 +24,13 @@ component DatePickerM3(label: string, value: int, state: string, animate: string
   }
 }
 
-// TimePickerM3: closed time field with 24h/12h slot supplied as an int flag.
-// API   R: label, value. O: use24h, state, animate.
-//       X: TimeOfDay value, wheel physics, onChanged (B3).
-// Example TimePickerM3("Time", 9, 1, "default", "ease")
-component TimePickerM3(label: string, value: int, use24h: int, state: string, animate: string) {
+// TimePickerM3: closed time field with an integer hour slot.
+// API   R: label, value. O: state, animate.
+//       X: 12h/24h format (the TimeField primitive carries no format slot and
+//         a component parameter cannot drive a compile-time branch), TimeOfDay
+//         value, wheel physics, onChanged (B3).
+// Example TimePickerM3("Time", 9, "default", "ease")
+component TimePickerM3(label: string, value: int, state: string, animate: string) {
   Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "time picker", role: "button") {
     Column(gap: 8) {
       Text("{label}", size: 11)

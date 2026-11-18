@@ -13,10 +13,14 @@
 // slots; DateTime/TimeOfDay conversion, two-step route presentation and
 // onChanged callbacks need kernel gaps A3/A4/B3 and stay reserved.
 // This shell does not fake wheel physics or calendar interpolation.
+// API   R: label, date, time. O: state, animate.
+//       X: 12h/24h format (the TimeField primitive carries no format slot and
+//         a component parameter cannot drive a compile-time branch),
+//         DateTime/TimeOfDay values, two-step route, onChanged (A3/A4/B3).
 // Boundary: the caller owns date/time range validity; empty labels render an
 // empty caption; overlong labels clip inside the DateField/TimeField nodes.
-// Example DateTimePickerM3("Departure", 18, 9, 1, "default", "ease")
-component DateTimePickerM3(label: string, date: int, time: int, use24h: int, state: string, animate: string) {
+// Example DateTimePickerM3("Departure", 18, 9, "default", "ease")
+component DateTimePickerM3(label: string, date: int, time: int, state: string, animate: string) {
   Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "date time picker", role: "button") {
     Column(gap: 8) {
       Text("{label}", size: 11)

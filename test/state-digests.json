@@ -1905,56 +1905,56 @@
     {
       "name": "TimePickerM3-default",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"default\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"default\", \"ease\")",
       "state": "default",
       "digest": "460397562786b83b"
     },
     {
       "name": "TimePickerM3-hover",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"hover\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"hover\", \"ease\")",
       "state": "hover",
       "digest": "8f27de2cc1e83864"
     },
     {
       "name": "TimePickerM3-active",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"active\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"active\", \"ease\")",
       "state": "active",
       "digest": "7d989c84c1a91fe0"
     },
     {
       "name": "TimePickerM3-focus",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"focus\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"focus\", \"ease\")",
       "state": "focus",
       "digest": "7da917e2a60d39ab"
     },
     {
       "name": "TimePickerM3-disabled",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"disabled\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"disabled\", \"ease\")",
       "state": "disabled",
       "digest": "9dda99f9f4ede22b"
     },
     {
       "name": "TimePickerM3-loading",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"loading\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"loading\", \"ease\")",
       "state": "loading",
       "digest": "48202feaac998af7"
     },
     {
       "name": "TimePickerM3-success",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"success\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"success\", \"ease\")",
       "state": "success",
       "digest": "3736abf17fe73514"
     },
     {
       "name": "TimePickerM3-error",
       "module": "components/pickers_m3.opu",
-      "use": "TimePickerM3(\"Time\", 9, 1, \"error\", \"ease\")",
+      "use": "TimePickerM3(\"Time\", 9, \"error\", \"ease\")",
       "state": "error",
       "digest": "f6a8042cdc0ab835"
     },
@@ -3417,56 +3417,56 @@
     {
       "name": "ExpandablePanelM3-default",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"default\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"default\",\"ease\")",
       "state": "default",
       "digest": "05e6d4299f678ffd"
     },
     {
       "name": "ExpandablePanelM3-hover",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"hover\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"hover\",\"ease\")",
       "state": "hover",
       "digest": "ab8e0e8899bcab05"
     },
     {
       "name": "ExpandablePanelM3-active",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"active\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"active\",\"ease\")",
       "state": "active",
       "digest": "d373a7476f659feb"
     },
     {
       "name": "ExpandablePanelM3-focus",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"focus\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"focus\",\"ease\")",
       "state": "focus",
       "digest": "b8c62d63cddd2ee0"
     },
     {
       "name": "ExpandablePanelM3-disabled",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"disabled\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"disabled\",\"ease\")",
       "state": "disabled",
       "digest": "e0549257cbe80c68"
     },
     {
       "name": "ExpandablePanelM3-loading",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"loading\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"loading\",\"ease\")",
       "state": "loading",
       "digest": "deaa06b5e888cb39"
     },
     {
       "name": "ExpandablePanelM3-success",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"success\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"success\",\"ease\")",
       "state": "success",
       "digest": "571e48b648251f0e"
     },
     {
       "name": "ExpandablePanelM3-error",
       "module": "components/expansion_m3.opu",
-      "use": "ExpandablePanelM3(\"Details\",\"Body\",true,\"error\",\"ease\")",
+      "use": "ExpandablePanelM3(\"Details\",\"Body\",\"error\",\"ease\")",
       "state": "error",
       "digest": "6d2e39927053e010"
     },
@@ -4257,56 +4257,56 @@
     {
       "name": "DateTimePickerM3-default",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"default\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"default\", \"ease\")",
       "state": "default",
       "digest": "3721e498407adb43"
     },
     {
       "name": "DateTimePickerM3-hover",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"hover\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"hover\", \"ease\")",
       "state": "hover",
       "digest": "e85289a65ca91abf"
     },
     {
       "name": "DateTimePickerM3-active",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"active\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"active\", \"ease\")",
       "state": "active",
       "digest": "dd18864ebd03f47e"
     },
     {
       "name": "DateTimePickerM3-focus",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"focus\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"focus\", \"ease\")",
       "state": "focus",
       "digest": "2cbb03ac2c4b6da3"
     },
     {
       "name": "DateTimePickerM3-disabled",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"disabled\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"disabled\", \"ease\")",
       "state": "disabled",
       "digest": "483a7ea9ed80ab34"
     },
     {
       "name": "DateTimePickerM3-loading",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"loading\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"loading\", \"ease\")",
       "state": "loading",
       "digest": "f81d7c5d011b04af"
     },
     {
       "name": "DateTimePickerM3-success",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"success\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"success\", \"ease\")",
       "state": "success",
       "digest": "3c9914bd3b053117"
     },
     {
       "name": "DateTimePickerM3-error",
       "module": "components/datetime_picker_m3.opu",
-      "use": "DateTimePickerM3(\"Departure\", 18, 9, 1, \"error\", \"ease\")",
+      "use": "DateTimePickerM3(\"Departure\", 18, 9, \"error\", \"ease\")",
       "state": "error",
       "digest": "2a51d898304d80c0"
     },
@@ -4593,56 +4593,56 @@
     {
       "name": "DropdownMenuM3-default",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"default\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"default\", \"ease\")",
       "state": "default",
       "digest": "2e013c37397d1950"
     },
     {
       "name": "DropdownMenuM3-hover",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"hover\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"hover\", \"ease\")",
       "state": "hover",
       "digest": "f93964fdbcbe7687"
     },
     {
       "name": "DropdownMenuM3-active",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"active\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"active\", \"ease\")",
       "state": "active",
       "digest": "47f117cd94a82506"
     },
     {
       "name": "DropdownMenuM3-focus",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"focus\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"focus\", \"ease\")",
       "state": "focus",
       "digest": "21f5b1df11ede110"
     },
     {
       "name": "DropdownMenuM3-disabled",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"disabled\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"disabled\", \"ease\")",
       "state": "disabled",
       "digest": "39915052b794b79c"
     },
     {
       "name": "DropdownMenuM3-loading",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"loading\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"loading\", \"ease\")",
       "state": "loading",
       "digest": "4ebd09b17ab17924"
     },
     {
       "name": "DropdownMenuM3-success",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"success\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"success\", \"ease\")",
       "state": "success",
       "digest": "e4a1de5ccb9ee070"
     },
     {
       "name": "DropdownMenuM3-error",
       "module": "components/dropdown_menu_m3.opu",
-      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"Choose\", \"error\", \"ease\")",
+      "use": "DropdownMenuM3(\"Country\", 0, \"United States,Canada,Mexico\", \"error\", \"ease\")",
       "state": "error",
       "digest": "e49c6506baab6e97"
     },

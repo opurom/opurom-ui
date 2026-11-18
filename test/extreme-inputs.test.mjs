@@ -23,7 +23,7 @@ const CASES = [
   ['lists', 'components/lists_m3.opu', 'RefreshListShell(4000, "{s}", "ease")'],
   ['forms', 'components/forms_m3.opu', `FormFieldM3("${long}", "", true, 0, 99999, "{s}", "ease")`],
   ['pickers', 'components/pickers_m3.opu', 'DatePickerM3("", -999, "{s}", "ease")'],
-  ['datetime', 'components/datetime_picker_m3.opu', `DateTimePickerM3("${long}", -1, 999999, 0, "{s}", "ease")`],
+  ['datetime', 'components/datetime_picker_m3.opu', `DateTimePickerM3("${long}", -1, 999999, "{s}", "ease")`],
   ['drawer', 'components/nav_drawer_m3.opu', 'NavigationDrawerM3("", -1, "{s}", "ease")'],
   ['sticky', 'components/sticky_header_m3.opu', 'StickyHeaderM3("", 0, 0, "{s}", "ease")'],
   ['menu', 'components/menu_m3.opu', `PopupMenuM3("${long}", 9999, "{s}", "ease")`],

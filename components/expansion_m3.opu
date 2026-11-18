@@ -4,13 +4,17 @@
 //   expansion_tile.dart:532-552  expansion state and semantics hint
 //   dropdown.dart:970-1010       DropdownButton(value, items, elevation 8)
 //   material/motion.dart:52      200ms short4 state transition
-// Opurom IR has no per-child expand/collapse controller (kernel gaps A3/B4),
-// so this shell renders the expanded or collapsed presentation from a literal
-// flag and an eight-state placeholder. Route/animation handoff is reserved;
-// no runtime object model or interpreted state is introduced.
+// Opurom IR has no per-child expand/collapse controller (kernel gaps A3/B4)
+// and a component parameter cannot drive a compile-time branch, so this shell
+// renders the expanded presentation with an eight-state placeholder. The
+// collapsed presentation and the route/animation handoff stay reserved; no
+// runtime object model or interpreted state is introduced.
+// API   R: title, body. O: state, animate.
+//       X: expanded/collapsed flag (a compile-time literal branch over a
+//         component parameter), onExpansionChanged, maintainState (A3/B4).
 // Boundary: empty title/children render a minimal tile; overlong labels clip.
-// Example ExpandablePanelM3("Details", "Body", true, "default", "ease")
-component ExpandablePanelM3(title: string, body: string, expanded: bool, state: string, animate: string) {
+// Example ExpandablePanelM3("Details", "Body", "default", "ease")
+component ExpandablePanelM3(title: string, body: string, state: string, animate: string) {
   Container(p: 8, variant: "text", label: "expansion focus host") {
     Container(p: 12, rounded: 12, shadow: 1, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "expansion tile", role: "button") {
       Column(gap: 8) {

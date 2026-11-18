@@ -33,7 +33,7 @@ app Stress {
   Column(gap: 4) {
     FabM3("plus", "focus", "ease")
     RefreshListShell(80, "hover", "ease")
-    DateTimePickerM3("When", 18, 9, 1, "default", "ease")
+    DateTimePickerM3("When", 18, 9, "default", "ease")
   }
 }
 `;

@@ -9,10 +9,14 @@
 // Opurom's ComboBox is the closed field and Menu carries the literal option
 // labels. True popup routing, filtering and onSelected callbacks need kernel
 // gaps A3/A4/B3 and stay reserved. The shell does not fake selection physics.
+// API   R: label, value, options. O: state, animate.
+//       X: placeholder (the IR has no empty-value slot, so a placeholder that
+//         shows only while the field is empty cannot be expressed), item
+//         builders, onSelected, popup routing (A3/A4/B3).
 // Boundary: the caller owns the 0 <= value < option count contract; empty
 // labels render empty fields; overlong labels clip in the primitives.
-// Example DropdownMenuM3("Country", "0", "United States,Canada,Mexico", "Choose", "default", "ease")
-component DropdownMenuM3(label: string, value: int, options: string, placeholder: string, state: string, animate: string) {
+// Example DropdownMenuM3("Country", 0, "United States,Canada,Mexico", "default", "ease")
+component DropdownMenuM3(label: string, value: int, options: string, state: string, animate: string) {
   Container(p: 12, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "dropdown menu", role: "button") {
     Column(gap: 8) {
       Text("{label}", size: 11)

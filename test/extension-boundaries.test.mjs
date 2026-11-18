@@ -32,7 +32,7 @@ const CASES = [
   [`FormFieldM3("${long}", "", true, 3, 9999, "error", "ease")`, 'components/forms_m3.opu'],
   ['FormSectionM3("", "", "", false, "default", "ease")', 'components/forms_m3.opu'],
   ['DatePickerM3("", 999999, "disabled", "ease")', 'components/pickers_m3.opu'],
-  ['TimePickerM3("Time", -1, 0, "error", "ease")', 'components/pickers_m3.opu'],
+  ['TimePickerM3("Time", -1, "error", "ease")', 'components/pickers_m3.opu'],
   ['ColorPickerM3("", 9999, "default", "ease")', 'components/pickers_m3.opu'],
   ['RegionPickerM3("Region", -5, "success", "ease")', 'components/pickers_m3.opu'],
   ['PopupMenuM3("", 160, "default", "ease")', 'components/menu_m3.opu'],
@@ -47,13 +47,13 @@ const CASES = [
   [`StickyHeaderM3("${long}", 9999, 32, "error", "ease")`, 'components/sticky_header_m3.opu'],
   ['NavigationDrawerM3("", 999, "disabled", "ease")', 'components/nav_drawer_m3.opu'],
   [`NavigationDrawerM3("${long}", -1, "error", "ease")`, 'components/nav_drawer_m3.opu'],
-  ['DateTimePickerM3("", -1, -1, 0, "disabled", "ease")', 'components/datetime_picker_m3.opu'],
-  [`DateTimePickerM3("${long}", 999999, 999999, 1, "error", "ease")`, 'components/datetime_picker_m3.opu'],
-  ['DropdownMenuM3("", -1, "", "", "disabled", "ease")', 'components/dropdown_menu_m3.opu'],
-  [`DropdownMenuM3("${long}", 999999, "${long}", "${long}", "error", "ease")`, 'components/dropdown_menu_m3.opu'],
+  ['DateTimePickerM3("", -1, -1, "disabled", "ease")', 'components/datetime_picker_m3.opu'],
+  [`DateTimePickerM3("${long}", 999999, 999999, "error", "ease")`, 'components/datetime_picker_m3.opu'],
+  ['DropdownMenuM3("", -1, "", "disabled", "ease")', 'components/dropdown_menu_m3.opu'],
+  [`DropdownMenuM3("${long}", 999999, "${long}", "error", "ease")`, 'components/dropdown_menu_m3.opu'],
   ['WaterfallGridM3("", 1, 0, "disabled", "ease")', 'components/waterfall_m3.opu'],
   [`WaterfallGridM3("${long}", 9999, 9999, "error", "ease")`, 'components/waterfall_m3.opu'],
-  ['ExpandablePanelM3("", "", false, "disabled", "ease")', 'components/expansion_m3.opu'],
+  ['ExpandablePanelM3("", "", "disabled", "ease")', 'components/expansion_m3.opu'],
   [`SelectFieldM3("${long}", 9999, "error", "ease")`, 'components/expansion_m3.opu'],
   ['PageLoadingShell("", "disabled", "ease")', 'components/page_states_m3.opu'],
   [`PageEmptyShell("${long}", "${long}", "error", "ease")`, 'components/page_states_m3.opu'],
@@ -119,7 +119,7 @@ test('extreme state and animate values stay inside the declared grammar', () => 
     cpSync(path.join(root, 'components'), path.join(tmp, 'components'), { recursive: true });
     for (const [use, mod] of [
       ['WaterfallGridM3("x", 0, 0, "unknown", "ease")', 'components/waterfall_m3.opu'],
-      ['ExpandablePanelM3("x", "y", true, "unknown", "ease")', 'components/expansion_m3.opu'],
+      ['ExpandablePanelM3("x", "y", "unknown", "ease")', 'components/expansion_m3.opu'],
       ['PageErrorShell("x", "y", "error", "unknown")', 'components/page_states_m3.opu'],
     ]) {
       const src = path.join(tmp, 'bad.opu');
