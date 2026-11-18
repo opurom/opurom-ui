@@ -1,0 +1,36 @@
+// Flutter stable 3.50.0 M3 FAB defaults that differ from the pinned 2023-era
+// action shells. Sources:
+//   floating_action_button.dart:775-830 elevation 6, hover 8, sizes 56/40/96,
+//                               extended height 56, icon-label gap 8
+//   floating_action_button.dart:810-817 corner radii 16/12/28/16 and icon sizes
+//   text_button.dart:230-232    state-layer alphas 0.10/0.08/0.10
+//   motion.dart:52              200ms short4 state transition
+// These are additive default-geometry wrappers; the existing FabM3 family and
+// its pins stay byte-identical. Gesture handling stays at the call site (A3).
+// Example M3Fab2024("plus", "default", "ease")
+component M3Fab2024(icon: string, state: string, animate: string) {
+  Container(width: 56, height: 56, rounded: 16, shadow: 6, variant: "primary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "M3 FAB", role: "button") {
+    Icon(name: "{icon}", width: 24, height: 24)
+  }
+}
+
+component M3SmallFab2024(icon: string, state: string, animate: string) {
+  Container(width: 40, height: 40, rounded: 12, shadow: 6, variant: "primary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "small M3 FAB", role: "button") {
+    Icon(name: "{icon}", width: 24, height: 24)
+  }
+}
+
+component M3LargeFab2024(icon: string, state: string, animate: string) {
+  Container(width: 96, height: 96, rounded: 28, shadow: 6, variant: "primary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "large M3 FAB", role: "button") {
+    Icon(name: "{icon}", width: 36, height: 36)
+  }
+}
+
+component M3ExtendedFab2024(label: string, icon: string, state: string, animate: string) {
+  Container(height: 56, rounded: 16, shadow: 6, variant: "primary", state: "{state}", animate: "{animate}", duration: 200, gesture: tap, label: "extended M3 FAB", role: "button") {
+    Row(padding: 16, gap: 8) {
+      Icon(name: "{icon}", width: 24, height: 24)
+      Text("{label}", size: 14)
+    }
+  }
+}

@@ -409,3 +409,28 @@ indicator and surfaceContainerLow background). Route presentation, selection
 callbacks and animated indicators remain reserved (A3/A4/B3). New gates:
 eight-state compile case, 8 settled-frame pins, a11y name/role case and two
 boundary renders (empty/long labels with out-of-range selections).
+
+## Combined date-time picker shell (ui-dev, 2026-11-19, part 10)
+
+`components/datetime_picker_m3.opu` adds `DateTimePickerM3`, a declarative
+date+time field pair with a divider. Flutter stable 3.50.0 sources:
+`date_picker.dart:196-215,228-244` (showDatePicker parameters/assertions),
+`time_picker.dart:3246-3290` (showTimePicker parameters),
+`time_picker.dart:2297-2331` (TimePickerDialog labels),
+`date_picker.dart:791-801` (header divider) and `motion.dart:52` (200ms
+short4). Integer slots stand in for DateTime/TimeOfDay; multi-step routes,
+wheel physics and callbacks remain reserved (A3/A4/B3). New gates: eight-state
+compile case, 8 settled-frame pins (612 total over 79 components), accessible
+name/role case and two boundary renders (empty/negative and overlong/extreme
+values).
+
+## M3 2024 FAB batch (uibuild, 2026-11-18)
+
+`components/fab_2024_m3.opu` adds four default-geometry FAB wrappers:
+`M3Fab2024`, `M3SmallFab2024`, `M3LargeFab2024` and `M3ExtendedFab2024`.
+Flutter stable 3.50.0 anchors: `floating_action_button.dart:775-830`
+(elevation 6, 56/40/96 sizes, extended height 56, 8dp icon-label gap) and
+`:810-817` (16/12/28/16dp radii, 24/36dp icons). The pinned 2023-era FAB
+family is unchanged. Verification adds 32 state pins (644 total over 83
+components), four eight-state compile cases, one a11y case and one boundary
+case; the source-size budget is updated explicitly.
