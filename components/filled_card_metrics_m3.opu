@@ -1,0 +1,20 @@
+// Material 3 filled card default geometry. Flutter stable 3.50.0 sources:
+//   card.dart:336-342  elevation 0, 4dp margin, clipBehavior none
+//   card.dart:348-357  surfaceContainerHighest fill, transparent tint/shadow,
+//                      12dp corner radius
+//   motion.dart:52     200ms short4 state transition
+// The existing ElevatedCardM3 and OutlinedCardM3 pins are unchanged. This
+// additive shell records the filled variant with a secondary surface role;
+// content slots, layout margin and gesture binding stay at the call site
+// (M7/A3/B3). Cards remain inert presentation surfaces in this IR layer.
+// Boundary: empty titles render an empty heading; overlong text clips by line;
+// state is deterministic and does not imply Flutter WidgetState parity.
+// Example DefaultFilledCardM3("Colors", "Swatch list", "default", "ease")
+component DefaultFilledCardM3(title: string, subtitle: string, state: string, animate: string) {
+  Container(p: 16, rounded: 12, variant: "secondary", state: "{state}", animate: "{animate}", duration: 200, label: "filled card", role: "none") {
+    Column(gap: 4) {
+      Text("{title}", size: 16, maxLines: 1, state: "{state}")
+      Text("{subtitle}", size: 14, maxLines: 2, state: "{state}")
+    }
+  }
+}

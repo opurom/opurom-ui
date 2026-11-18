@@ -77,6 +77,8 @@ const CASES = [
   [`DefaultListTileM3("${long}", "${long}", "error", "ease")`, 'components/list_tile_metrics_m3.opu'],
   ['AutocompleteFieldM3("", "", "", -1, "disabled", "ease")', 'components/autocomplete_field_m3.opu'],
   [`AutocompleteFieldM3("${long}", "${long}", "${long}", 999999, "error", "ease")`, 'components/autocomplete_field_m3.opu'],
+  ['DefaultFilledCardM3("", "", "disabled", "ease")', 'components/filled_card_metrics_m3.opu'],
+  [`DefaultFilledCardM3("${long}", "${long}", "error", "ease")`, 'components/filled_card_metrics_m3.opu'],
 
 ];
 

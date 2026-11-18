@@ -32,6 +32,7 @@ const CASES = [
   ['default dropdown menu', 'components/dropdown_menu_metrics_m3.opu', `DefaultDropdownMenuM3("${long}", -1, "${long}", "${long}", "{s}", "ease")`],
   ['default list tile', 'components/list_tile_metrics_m3.opu', `DefaultListTileM3("${long}", "${long}", "{s}", "ease")`],
   ['autocomplete field', 'components/autocomplete_field_m3.opu', `AutocompleteFieldM3("${long}", "${long}", "${long}", -1, "{s}", "ease")`],
+  ['filled card', 'components/filled_card_metrics_m3.opu', `DefaultFilledCardM3("${long}", "${long}", "{s}", "ease")`],
 ];
 
 function source(mod, use) {

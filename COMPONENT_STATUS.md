@@ -556,3 +556,15 @@ keyboard routing and text-controller binding remain at the call site
 one eight-state compile case, one a11y case, two boundary cases, one
 extreme-input case, a provenance audit entry and an explicit source-budget
 update.
+
+## Filled card metrics shell (uibuild, 2026-11-18)
+
+`components/filled_card_metrics_m3.opu` adds `DefaultFilledCardM3`, the
+source-backed Flutter 3.50.0 M3 filled-card presentation: elevation 0, 4dp
+margin, 12dp radius and a surfaceContainerHighest-equivalent secondary role
+(`card.dart:336-357`). The existing elevated and outlined card pins are
+unchanged. Content slots and gesture binding stay at the call site
+(M7/A3/B3). Verification adds eight state pins (748 total over 96 components),
+one eight-state compile case, one a11y case, two boundary cases, one
+extreme-input case, a provenance audit entry and an explicit source-budget
+update.

@@ -115,6 +115,7 @@
     "components/drawer_metrics_m3.opu",
     "components/app_bar_scrolled_m3.opu",
     "components/chip_metrics_m3.opu",
-    "components/autocomplete_field_m3.opu"
+    "components/autocomplete_field_m3.opu",
+    "components/filled_card_metrics_m3.opu"
   ]
 }
