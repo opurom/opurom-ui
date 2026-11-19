@@ -1,0 +1,19 @@
+import "components.opu";
+import "theme-dark.opu";
+app ProductShowcaseDark {
+  Column(p: 12, gap: 8) {
+    ProductAppBar("Product UI v1", "default")
+    ProductCard("Result", "64", "default")
+    ProductButton("Filled action", "primary", "default", 48)
+    ProductButton("Secondary action", "secondary", "hover", 48)
+    ProductIconButton("Icon action", "active")
+    ProductInput("Label", "Value", "focus")
+    ProductSwitch("Switch", "disabled")
+    ProductSlider("Slider", "default")
+    ProductListItem("List item", "Subtitle", "default")
+    ProductTabs("Tab", "active")
+    ProductDialog("Dialog title", "Dialog body", "default")
+    ProductBadge("Badge", "default")
+    ProductProgress("Progress", "default")
+  }
+}

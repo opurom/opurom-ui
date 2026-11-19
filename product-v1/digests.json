@@ -1,0 +1,49 @@
+{
+  "toolchain": {
+    "render": "8a76e1dfdddc8b82ed5284cabd2921f17cd73571",
+    "lang": "6d5cb7454d904a7a62af5aef3cf6672e892d9013",
+    "profile": "debug"
+  },
+  "meta": {
+    "purpose": "product-v1 showcase internal consistency pins, not Flutter parity",
+    "version": "flutter-3.50.0:ab2912035e160d9cad6306df307576da6128ebdb",
+    "viewport": [
+      640,
+      480
+    ],
+    "ticks": [
+      0,
+      2000
+    ]
+  },
+  "pins": [
+    {
+      "name": "light-0",
+      "mode": "light",
+      "file": "showcase.opu",
+      "tick": 0,
+      "digest": "6a85096a61d4ebff"
+    },
+    {
+      "name": "light-2000",
+      "mode": "light",
+      "file": "showcase.opu",
+      "tick": 2000,
+      "digest": "6a85096a61d4ebff"
+    },
+    {
+      "name": "dark-0",
+      "mode": "dark",
+      "file": "showcase-dark.opu",
+      "tick": 0,
+      "digest": "1a42ef683addb9b4"
+    },
+    {
+      "name": "dark-2000",
+      "mode": "dark",
+      "file": "showcase-dark.opu",
+      "tick": 2000,
+      "digest": "1a42ef683addb9b4"
+    }
+  ]
+}

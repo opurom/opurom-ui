@@ -1,0 +1,190 @@
+{
+  "name": "opurom-product-v1",
+  "version": "1.0.0",
+  "kind": "design-tokens",
+  "namespace": "op",
+  "note": "OPUROM Product UI Standard v1 tokens. Values are product defaults; no external brand names.",
+  "tokens": {
+    "color": {
+      "light": {
+        "primary": "#0A71FC",
+        "on-primary": "#FFFFFF",
+        "primary-container": "#D8E8FF",
+        "on-primary-container": "#092A57",
+        "secondary": "#0DB2FF",
+        "on-secondary": "#FFFFFF",
+        "secondary-container": "#DDF4FF",
+        "on-secondary-container": "#07364A",
+        "surface": "#F4F6F9",
+        "surface-container": "#FFFFFF",
+        "surface-container-high": "#EDF2F8",
+        "surface-container-low": "#F9FBFD",
+        "on-surface": "#132C5A",
+        "on-surface-muted": "#5A6478",
+        "on-surface-disabled": "#9AA6B8",
+        "outline": "#DCE4EF",
+        "outline-strong": "#B9C6D8",
+        "success": "#1FB14C",
+        "on-success": "#FFFFFF",
+        "warning": "#FD960E",
+        "on-warning": "#3A2400",
+        "danger": "#F62B35",
+        "on-danger": "#FFFFFF",
+        "info": "#0A71FC",
+        "on-info": "#FFFFFF",
+        "scrim": "#99000000",
+        "shadow": "#1A132C5A"
+      },
+      "dark": {
+        "primary": "#0A71FC",
+        "on-primary": "#FFFFFF",
+        "primary-container": "#D8E8FF",
+        "on-primary-container": "#092A57",
+        "secondary": "#0DB2FF",
+        "on-secondary": "#FFFFFF",
+        "secondary-container": "#DDF4FF",
+        "on-secondary-container": "#07364A",
+        "surface": "#0E1729",
+        "surface-container": "#16223B",
+        "surface-container-high": "#1E2C49",
+        "surface-container-low": "#121D33",
+        "on-surface": "#EDF3FF",
+        "on-surface-muted": "#94A6BF",
+        "on-surface-disabled": "#60708A",
+        "outline": "#2A3A58",
+        "outline-strong": "#3F5375",
+        "success": "#1FB14C",
+        "on-success": "#FFFFFF",
+        "warning": "#FD960E",
+        "on-warning": "#3A2400",
+        "danger": "#F62B35",
+        "on-danger": "#FFFFFF",
+        "info": "#0A71FC",
+        "on-info": "#FFFFFF",
+        "scrim": "#99000000",
+        "shadow": "#1A132C5A"
+      }
+    },
+    "spacing": {
+      "space0": 0,
+      "space1": 4,
+      "space2": 8,
+      "space3": 12,
+      "space4": 16,
+      "space5": 20,
+      "space6": 24,
+      "space8": 32,
+      "space10": 40,
+      "space12": 48
+    },
+    "radius": {
+      "radius-none": 0,
+      "radius-sm": 8,
+      "radius-md": 12,
+      "radius-lg": 16,
+      "radius-xl": 24,
+      "radius-pill": 999
+    },
+    "typography": {
+      "display-large": {
+        "fontPx": 64,
+        "weight": 600,
+        "lineHeight": 72
+      },
+      "display-medium": {
+        "fontPx": 48,
+        "weight": 600,
+        "lineHeight": 56
+      },
+      "headline-large": {
+        "fontPx": 32,
+        "weight": 600,
+        "lineHeight": 40
+      },
+      "headline-small": {
+        "fontPx": 24,
+        "weight": 600,
+        "lineHeight": 32
+      },
+      "title-large": {
+        "fontPx": 22,
+        "weight": 600,
+        "lineHeight": 28
+      },
+      "title-medium": {
+        "fontPx": 16,
+        "weight": 600,
+        "lineHeight": 24
+      },
+      "body-large": {
+        "fontPx": 16,
+        "weight": 400,
+        "lineHeight": 24
+      },
+      "body-medium": {
+        "fontPx": 14,
+        "weight": 400,
+        "lineHeight": 20
+      },
+      "label-large": {
+        "fontPx": 14,
+        "weight": 600,
+        "lineHeight": 20
+      },
+      "label-medium": {
+        "fontPx": 12,
+        "weight": 500,
+        "lineHeight": 16
+      },
+      "label-small": {
+        "fontPx": 11,
+        "weight": 700,
+        "lineHeight": 16
+      }
+    },
+    "elevation": {
+      "elevation0": {
+        "blur": 0,
+        "y": 0,
+        "alpha": 0
+      },
+      "elevation1": {
+        "blur": 8,
+        "y": 2,
+        "alpha": 0.08
+      },
+      "elevation2": {
+        "blur": 16,
+        "y": 4,
+        "alpha": 0.12
+      },
+      "elevation3": {
+        "blur": 24,
+        "y": 8,
+        "alpha": 0.18
+      }
+    },
+    "motion": {
+      "duration-fast": 120,
+      "duration-normal": 200,
+      "duration-slow": 320,
+      "ease-standard": "cubic-bezier(0.2,0,0,1)",
+      "ease-emphasized": "cubic-bezier(0.2,0,0,1.2)",
+      "spring-damping": 0.8,
+      "spring-stiffness": 0.55
+    },
+    "touch": {
+      "min-touch": 48,
+      "icon-button-size": 48,
+      "list-item-min-height": 64,
+      "button-min-height": 48,
+      "input-height": 56,
+      "app-bar-height": 64
+    },
+    "stroke": {
+      "border-thin": 1,
+      "border-focus": 2,
+      "indicator-height": 3
+    }
+  }
+}
